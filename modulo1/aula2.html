@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Fiocruz</title>
+
+    <!-- Bootstrap LOCAL -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Seu CSS (sempre depois do bootstrap) -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/font/rawline-400.ttf">
+
+</head>
+
+<body><!-- Início da div banner -->
+    <div class="banner position-relative">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <button class="mobile-sidebar-toggle me-3" id="mobileSidebarToggle" aria-label="Abrir menu lateral"
+                        type="button" aria-expanded="false">
+                        <svg class="sidebar-arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path class="sidebar-arrow-stem" d="M5 12H17"></path>
+                            <path class="sidebar-arrow-head" d="M12 7L17 12L12 17"></path>
+                        </svg>
+                    </button>
+                    <img src="../assets/images/Logo_CVF.png" height="60" class="logo-move" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuTopo"
+                    aria-label="Abrir menu de navegação">
+                    <span class="top-menu-dots">&vellip;</span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="menuTopo">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Bibliografia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Crédito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <picture>
+            <source srcset="../assets/imgmod1/bg_mod1_1.png" media="(max-width: 768px)">
+            <img src="../assets/imgmod1/aula2/Bg_mod1-Au2.png" class="img-fluid w-100" alt="Banner">
+        </picture>
+        <!-- Fim da div banner -->
+    </div>
+
+    <!-- Overlay para fechar sidebar em mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="container-fluid p-0">
+        <div class="row g-0 row-full">
+
+            <!-- Início do aside sidebar -->
+            <aside class="col-12 col-md-2 sidebar">
+
+                <div class="menu-item" onclick="toggleMenu('mod1')">
+                    <h3>Módulo 1</h3>
+                    <p> - A EAD e o desenvolvimento de<br> cursos autoinstrucionais</p>
+                </div>
+                <div class="submenu" id="mod1">
+                    <a href="../modulo1/aula1.html" class="submenu-aula-longa"><span class="submenu-aula-numero">Aula
+                            1.1</span><span class="submenu-aula-titulo">– Contextualização de<br>EAD (ensino
+                            híbrido,<br>ensino on-line,<br>ensino presencial) e a<br>produção de
+                            cursos<br>autoinstrucionais</span></a>
+                    <a href="../modulo1/aula2.html"><span class="submenu-aula-numero">Aula 1.2</span><span
+                            class="submenu-aula-titulo">– Elaboração de<br>conteúdo para
+                            curso<br>autoinstrucional</span></a>
+                    <a href="../modulo1/aula3.html"><span class="submenu-aula-numero">Aula 1.3</span><span
+                            class="submenu-aula-titulo">– A criação de<br>Storyboards e a<br>relação com a<br>Designer
+                            Educacional</span></a>
+                    <a href="../modulo1/aula4.html"><span class="submenu-aula-numero">Aula 1.4</span><span
+                            class="submenu-aula-titulo">– Publicações on-line:<br>Mooc, Moodle e<br>linguagem
+                            HTML</span></a>
+                </div>
+
+                <div class="menu-item" onclick="toggleMenu('mod2')">
+                    <h3>Módulo 2</h3>
+                    <p> - Criação do Material Didático Digital</p>
+                </div>
+                <div class="submenu" id="mod2">
+                    <a href="../modulo2/aula1.html"><span class="submenu-aula-numero">Aula 2.1</span><span
+                            class="submenu-aula-titulo">– O material<br>didático digital</span></a>
+                    <a href="#"><span class="submenu-aula-numero">Aula 2.2</span><span class="submenu-aula-titulo">– O
+                            processo de<br>planejamento do<br>material didático</span></a>
+                    <a href="#"><span class="submenu-aula-numero">Aula 2.3</span><span class="submenu-aula-titulo">– O
+                            processo de<br>produção textual<br>e acessibilidade</span></a>
+                    <a href="#"><span class="submenu-aula-numero">Aula 2.4</span><span class="submenu-aula-titulo">–
+                            Avaliação e<br>feedbacks no EAD</span></a>
+                </div>
+
+                <div class="menu-item menu-material-complementar">
+                    <h3>Material</h3>
+                    <h3>Complementar</h3>
+                </div>
+
+            </aside>
+
+
+            <!-- CONTEÚDO -->
+            <!-- Início do main content -->
+            <main class="col-12 col-md-10 main-content">
+
+
+
+                <div class="container introducao-aula">
+                    <section class="objectives">
+                        <!-- Título Principal -->
+                        <h1 class="text-center mb-4">
+                            Elaboração de conteúdo<br>
+                            para curso autoinstrucionais
+                        </h1>
+
+                        <!-- Boas-vindas -->
+                        <p class="textoconteudo col-lg-8 mx-auto text-center text-md-start">
+                            Seja bem-vindo e bem-vinda!<br>
+                            A seguir veja algumas informações importantes sobre esta aula.
+                        </p>
+                    </section>
+
+                    <section class="objectives">
+                        <!-- Título da Seção -->
+                        <h2 class="text-start col-lg-8 mx-auto font-rawline-bold aula2-section-title">
+                            Objetivos de aprendizagem
+                        </h2>
+
+                        <p class="textoconteudo col-lg-8 mx-auto aula2-objectives-intro">
+                            Ao final desta aula você poderá:
+                        </p>
+
+                        <!-- Container da Lista Alinhado -->
+                        <div class="col-lg-8 mx-auto">
+                            <!-- Wrapper com espaçamento vertical entre itens -->
+                            <div class="d-flex flex-column ">
+
+                                <!-- Item 1 -->
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="../assets/imgmod1/check_1.png" alt="Ícone de check"
+                                            class="aula2-check-icon">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <p class="textoconteudo">
+                                            Identificar o papel estratégico do conteudista no processo de produção de
+                                            cursos autoinstrucionais
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Item 2 -->
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="../assets/imgmod1/check_1.png" alt="Ícone de check"
+                                            class="aula2-check-icon">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <p class="textoconteudo">
+                                            Reconhecer as etapas de produção e os procedimentos que antecedem a
+                                            entrega do conteúdo bruto.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Item 3 -->
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="../assets/imgmod1/check_1.png" alt="Ícone de check"
+                                            class="aula2-check-icon">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <p class="textoconteudo">
+                                            Identificar as camadas de prazos de entrega, assim como a relação entre a
+                                            entrega do conteúdo bruto e o fluxo de produção.
+                                        </p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="presentation">
+                        <!-- Título da Seção -->
+                        <h1 class="titulo-secao">
+                            Introdu&ccedil;&atilde;o
+                        </h1>
+
+                        <p class="paragrafo-conteudo col-lg-8 mx-auto  text-md-start">
+                            Na aula anterior, você teve a oportunidade de mergulhar no universo da Educação
+                            a Distância (EaD). Juntos, alinhamos os conceitos fundamentais que sustentam
+                            essa modalidade de ensino, explorando suas inovações e desafios.
+                        </p>
+                        <p class="paragrafo-conteudo col-lg-8 mx-auto  text-md-start">
+                            Você também se familiarizou com cada um dos passos do fluxo de produção
+                            necessário para a criação de um curso autoinstrucional online, desde a concepção
+                            da ideia inicial até as estratégias de avaliação.
+                        </p>
+
+
+
+
+                        <figure>
+                            <img src="../assets/imgmod1/grafic.png" class="img-fluid mx-auto d-block col-lg-8"
+                                alt="...">
+
+
+                        </figure>
+
+                        <p class="paragrafo-conteudo col-lg-8 mx-auto "><b>
+                                Vamos avançar para a produção de conteúdos para cursos autoinstrucionais!</p></b>
+
+
+
+
+                        <p class="paragrafo-conteudo col-lg-8 mx-auto ">
+                            Agora, é hora de aprofundar nosso conhecimento e nos concentrarmos em uma
+                            etapa essencial do processo, a de Produção. Nessa etapa temos uma fase que
+                            antecede a entrega do material bruto pelos conteudistas envolvidos no projeto.
+                            É nesse momento que se define:<br>
+                            • a qualidade final do conteúdo que será apresentado aos estudantes.<br>
+                            • quais são as melhores práticas na elaboração de materiais.<br>
+                            • como garantir que a informação seja não apenas precisa, mas também
+                            envolvente e motivadora.
+                            E aqui é fundamental a colaboração entre educadores e designers instrucionais</p>
+
+
+                        <h1 class="titulo-secao">
+                            Desenhando o papel do conteudista
+                        </h1>
+
+                        <p class="paragrafo-conteudo">
+                            A palavra "conteudista" é um neologismo interessante que designa a pessoa
+                            responsável por colaborar na criação do conteúdo de um curso. Em geral, são
+                            especialistas em determinados assuntos
+                        </p>
+
+
+                        <p class="paragrafo-conteudo">
+                            Colaborar na elaboração de um curso à distância envolve não apenas a
+                            produção de textos e referências essenciais, mas também a participação ativa na
+                            elaboração de experiências de aprendizagem que engajem os estudantes em sua
+                            área de atuação ou de pesquisa. Em essência, é um papel vital, quase como ser
+                            um chef de cozinha que prepara uma receita especial — é preciso tornar o
+                            aprendizado irresistível!
+                        </p>
+
+
+                        <p class="paragrafo-conteudo">
+                            No módulo 2 abordaremos as características da avaliação com maior
+                            profundidade. Contudo, cabe aqui ressaltar que as questões alinhadas aos
+                            objetivos de cada aula devem constar do material bruto a ser encaminhado ao
+                            design educacional.
+                        </p>
+
+
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8">
+                                <div class="quote-card">
+                                    <!-- CONTEÚDO -->
+                                    <div class="quote-body">
+
+                                        <!-- LINHA EM L -->
+                                        <div class="quote-accent-line"></div>
+
+                                        <!-- ÍCONE -->
+                                        <div class="quote-icon-wrapper d-flex ">
+                                            <img src="../assets/imgmod1/bx_citacao.png" alt="Aspas" class="quote-img">
+
+                                            
+                                        </div>
+                                        <!-- TEXTO -->
+                                        <div class="quote-content">
+                                            <h2 class="quote-title">
+                                                Citação
+                                            </h2>
+                                            <p class="quote-text">
+                                                "A Educação a Distância (EaD) pode ser definida
+                                                como um conjunto de métodos instrucionais, em que
+                                                alunos e tutores estão distantes geograficamente,
+                                                mas têm comunicação facilitada por intermédio das
+                                                Tecnologias da Informação e Comunicação (TICs)."
+                                            </p>
+
+                                            <div class="quote-author">
+                                                Salgado et al., 2014, p. 8
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="paragrafo-conteudo">
+                            Ser conteudista é uma oportunidade valiosa de impactar diretamente o
+                            processo educacional, pois não se trata apenas de estruturar e elaborar
+                            conteúdos que facilitam o aprendizado, mas também é uma oportunidade
+                            de desempenhar um papel primordial na formação e no desenvolvimento
+                            de muitos estudantes. Ao criar materiais que atendem às necessidades e
+                            interesses dos estudantes, o conteudista ajuda a moldar suas experiências de
+                            aprendizado e a promover habilidades essenciais para o futuro, contribuindo
+                            assim para a divulgação e a democratização dos saberes.
+                        </p>
+
+                        <p class="paragrafo-conteudo">
+                            A seguir vamos detalhar melhor as principais funções do conteudista para que
+                            você não perca nenhuma dica.
+                        </p>
+
+                        <section class="conteudista-tabs col-lg-8" aria-label="Funções do conteudista">
+                            <div class="conteudista-tab-list" role="tablist" aria-label="Etapas do conteudista">
+                                <button class="conteudista-tab-button active" type="button" role="tab"
+                                    aria-selected="true" aria-controls="conteudista-tab-panel" data-tab="planejamento">
+                                    Planejamento
+                                </button>
+                                <button class="conteudista-tab-button" type="button" role="tab" aria-selected="false"
+                                    aria-controls="conteudista-tab-panel" data-tab="producao">
+                                    Produção de material didático
+                                </button>
+                                <button class="conteudista-tab-button" type="button" role="tab" aria-selected="false"
+                                    aria-controls="conteudista-tab-panel" data-tab="atividades">
+                                    Atividades avaliativas
+                                </button>
+                            </div>
+
+                            <div class="conteudista-tab-panel" id="conteudista-tab-panel" role="tabpanel">
+                                <p>
+                                    No planejamento o ideal é o conteudista se envolver no planejamento da metodologia
+                                    e na organização dos conteúdos. Isso inclui a escolha das estratégias de
+                                    ensino-aprendizagem que serão utilizadas durante o módulo ou disciplina, garantindo
+                                    que tudo esteja alinhado com os objetivos educacionais do curso. Porém, em alguns
+                                    casos essa etapa fica a cargo da coordenação.
+                                </p>
+                            </div>
+                        </section>
+
+
+                        <h1 class="titulo-secao">
+                            Criação da identidade do curso
+                        </h1>
+
+                        <p class="paragrafo-conteudo">
+                            A identidade visual é um passo muito importante antes de criar o conteúdo de um
+                            curso online. Nessa etapa, é preciso entender quem são os estudantes, como eles
+                            vão acessar o curso e qual tipo de interface combina melhor com o perfil deles.
+                            A seguir, vamos ver as principais etapas para construir essa identidade de forma
+                            estratégica, destacando o trabalho conjunto entre coordenação, conteudistas e
+                            designers gráficos.
+                        </p>
+
+
+                        <section class="identidade-grid" aria-label="Etapas da identidade visual">
+                            <article class="identidade-card">
+                                <div class="identidade-icon-space">
+                                    <img src="../assets/imgmod1/aula2/icone_1.png" alt="">
+                                </div>
+                                <h3>Pesquisa e Análise</h3>
+                                <p>
+                                    Realize uma investigação detalhada do público-alvo, considerando características
+                                    demográficas e necessidades. Análise das tendências para diferenciar o curso.
+                                </p>
+                            </article>
+
+                            <article class="identidade-card">
+                                <div class="identidade-icon-space">
+                                    <img src="../assets/imgmod1/aula2/icone_2.png" alt="">
+                                </div>
+                                <h3>Definição de Conceito</h3>
+                                <p>
+                                    Com as informações obtidas, determine os valores, a missão e a mensagem que o curso
+                                    deseja transmitir. Isso guiará todas as decisões de design subsequentes.
+                                </p>
+                            </article>
+
+                            <article class="identidade-card">
+                                <div class="identidade-icon-space">
+                                    <img src="../assets/imgmod1/aula2/icone_3.png" alt="">
+                                </div>
+                                <h3>Logotipo</h3>
+                                <p>
+                                    Desenvolva um logotipo único e
+                                    memorável que capture a essência do
+                                    curso. Designers gráficos irão criar e
+                                    refinar opções até encontrar a versão
+                                    ideal. Essa criação não é obrigatória
+                                </p>
+                            </article>
+
+                            <article class="identidade-card">
+                                <div class="identidade-icon-space">
+                                    <img src="../assets/imgmod1/aula2/icone_4.png" alt="">
+                                </div>
+                                <h3>Escolha de Paleta de Cores</h3>
+                                <p>
+                                    Selecione uma paleta de cores
+                                    que se alinhe ao tema abordado.
+                                </p>
+                            </article>
+
+                            <article class="identidade-card">
+                                <div class="identidade-icon-space">
+                                    <img src="../assets/imgmod1/aula2/icone_5.png" alt="">
+                                </div>
+                                <h3>Tipografia</h3>
+                                <p>
+                                    Opte por fontes legíveis
+                                    que complementem o logotipo
+                                    e a paleta de cores, garantindo
+                                    uma aparência coesa.
+                                </p>
+                            </article>
+
+                            <article class="identidade-card">
+                                <div class="identidade-icon-space">
+                                    <img src="../assets/imgmod1/aula2/icone_6.png" alt="">
+                                </div>
+                                <h3>Desenvolvimento de Elementos Gráficos</h3>
+                                <p>
+                                    Crie elementos gráficos adicionais,
+                                    como ícones e padrões, para
+                                    enriquecer materiais promocionais
+                                    e plataformas online, tornando a
+                                    identidade visual mais envolvente.
+                                </p>
+                            </article>
+
+                            <article class="identidade-card">
+                                <div class="identidade-icon-space">
+                                    <img src="../assets/imgmod1/aula2/icone_7.png" alt="">
+                                </div>
+                                <h3>Aplicação da Identidade Visual</h3>
+                                <p>
+                                    Aplique a identidade visual
+                                    de forma consistente em todos
+                                    os materiais do curso, como sites
+                                    e redes sociais, para garantir
+                                    reconhecimento e credibilidade.
+                                </p>
+                            </article>
+
+                            <article class="identidade-card">
+                                <div class="identidade-icon-space">
+                                    <img src="../assets/imgmod1/aula2/icone_8.png" alt="">
+                                </div>
+                                <h3>Avaliação e Ajustes</h3>
+                                <p>
+                                    Monitorar e coletar feedback sobre
+                                    a eficácia da identidade visual é
+                                    primordial. Ajustes devem ser feitos
+                                    conforme necessário para manter
+                                    a relevância e o impacto
+                                </p>
+                            </article>
+                        </section>
+
+                        <p class="paragrafo-conteudo">
+                            Seguir essas etapas garante que a identidade visual do curso não só seja atraente,
+                            mas também comunique de forma clara e eficaz a proposta educacional, gerando
+                            conexão e engajamento com os estudantes. Todas essas etapas podem ser ajustadas
+                            com a equipe de Design Gráfico, que, inclusive, pode coletar as informações acima por
+                            intermédio de um formulário destinado aos coordenadores do curso.
+                        </p>
+
+
+
+
+
+
+
+                        <p class="paragrafo-conteudo">
+                            A elaboração do conteúdo é a segunda etapa na criação de um curso online
+                            e segue a definição da estratégia do curso, que serve como um guia nesse
+                            processo. É durante essa fase que as ideias começam a tomar forma e o curso
+                            começa a ganhar vida.
+                        </p>
+
+
+
+                        <p class="paragrafo-conteudo">
+                            Você vai encontrar mais detalhes sobre a elaboração do conteúdo no Módulo 2,
+                            Criação do material didático digital.
+                        </p>
+
+                        <div class="fluxo-producao">
+                            <h1 class="titulo-secao">
+                                Relação entre elaboração de conteúdo<br>
+bruto e fluxo de produção
+                            </h1>
+
+                            <p class="paragrafo-conteudo">
+                                Agora que já conheceu as fases que antecedem a elaboração do material didático para o
+                                curso online autoinstrucional, exploraremos a relação entre a elaboração de conteúdo
+                                bruto e o fluxo de produção de cursos online.
+                            </p>
+
+                            <p class="paragrafo-conteudo">
+                                O foco será o direcionamento de estratégias para criar conteúdo bruto especificamente
+                                pensado para o formato online, destacando a importância da seleção de conteúdos
+                                relevantes e o cumprimento de prazos para evitar gargalos no fluxo de produção.
+                            </p>
+
+                            <h2 class="subtitulo-secao">
+                                Definição de Conteúdo Relevante
+                            </h2>
+
+                            <p class="paragrafo-conteudo">
+                                Um dos primeiros passos na elaboração do conteúdo bruto é definir quais tópicos e
+                                conceitos são essenciais para o aprendizado.
+                            </p>
+
+                            <p class="paragrafo-conteudo">Assegure-se de:</p>
+
+                            <div class="conteudo-relevante-box col-lg-8 mx-auto">
+                                <div class="conteudo-relevante-item">
+                                    <img src="../assets/imgmod2/tag.png" alt=""
+                                        class="conteudo-relevante-icon" aria-hidden="true">
+                                    <p>
+                                        Alinhar com objetivos de aprendizagem: estabeleça uma conexão clara entre o que
+                                        se deseja ensinar e os objetivos de aprendizagem. Cada tema deve ter uma
+                                        finalidade pedagógica bem definida.
+                                    </p>
+                                </div>
+
+                                <div class="conteudo-relevante-item">
+                                    <img src="../assets/imgmod2/tag.png" alt=""
+                                        class="conteudo-relevante-icon" aria-hidden="true">
+                                    <p>
+                                        Identificar conteúdos importantes: realize uma curadoria de conteúdos que seja
+                                        pertinente ao público-alvo e ao contexto do curso.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="quote-card importante-card col-lg-8 mx-auto">
+                                <div class="quote-body">
+                                    <div class="quote-accent-line importante-accent-line"></div>
+
+                                    <div class="quote-icon-wrapper importante-icon-wrapper">
+                                        <img src="../assets/imgmod1/aula2/bx_importante.png" alt=""
+                                            class="quote-img importante-img">
+
+                                       
+                                    </div>
+
+                                    <div class="quote-content importante-content ps-1 ps-md-4 ps-lg-5">
+                                        <h3 class="quote-title">Importante</h3>
+                                        <p>
+                                            A criação de conteúdo bruto e a elaboração de storyboards são processos que
+                                            exigem colaboração significativa entre professores conteudistas e designers
+                                            educacionais. Ao empregar técnicas de transposição didática, ambos os
+                                            profissionais podem garantir que o conteúdo seja acessível, relevante e
+                                            eficaz.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="subtitulo-secao">Organização do conteúdo</h2>
+
+                            <p class="paragrafo-conteudo">
+                                Como destacamos acima, estruturar o conteúdo de forma lógica e clara é fundamental.
+                                Sendo assim, utilize os seguintes princípios para a organização:
+                            </p>
+
+                            <p class="paragrafo-conteudo">
+                                Clique no <img src="../assets/imgmod2/ic_mais1.png" alt="+"
+                                    class="icone-mais-inline"> do card para ver as informações no verso.
+                            </p>
+
+                            <div class="organizacao-card-grid" aria-label="Princípios para organização do conteúdo">
+                                <button class="organizacao-flip-card" type="button" aria-pressed="false">
+                                    <span class="organizacao-card-inner">
+                                        <span class="organizacao-card-face organizacao-card-front">
+                                            <img src="../assets/imgmod1/aula2/Card_hover_1.png"
+                                                alt="Módulos e Unidades">
+                                            <span class="organizacao-card-title">Módulos<br>e Unidades</span>
+                                        </span>
+                                        <span class="organizacao-card-face organizacao-card-back">
+                                            <p>
+                                                Divida o conteúdo em blocos de aprendizagem que conduzam gradualmente os
+                                                estudantes ao longo do material. Isso ajuda a construir conhecimento de
+                                                forma sequencial.
+                                            </p>
+                                        </span>
+                                    </span>
+                                </button>
+
+                                <button class="organizacao-flip-card" type="button" aria-pressed="false">
+                                    <span class="organizacao-card-inner">
+                                        <span class="organizacao-card-face organizacao-card-front">
+                                            <img src="../assets/imgmod1/aula2/Card_hover_2.png"
+                                                alt="Abordagem Progressiva">
+                                            <span class="organizacao-card-title">Abordagem<br>Progressiva</span>
+                                        </span>
+                                        <span class="organizacao-card-face organizacao-card-back">
+                                            <p>
+                                                Comece com conceitos básicos e avance para os mais complexos. Essa
+                                                progressão apoia a construção do conhecimento e é essencial para a
+                                                eficácia do ensino online.
+                                            </p>
+                                        </span>
+                                    </span>
+                                </button>
+
+                                <button class="organizacao-flip-card" type="button" aria-pressed="false">
+                                    <span class="organizacao-card-inner">
+                                        <span class="organizacao-card-face organizacao-card-front">
+                                            <img src="../assets/imgmod1/aula2/Card_hover_3.png"
+                                                alt="Diversificação de Formatos">
+                                            <span class="organizacao-card-title">Diversificação<br>de Formatos</span>
+                                        </span>
+                                        <span class="organizacao-card-face organizacao-card-back">
+                                            <p>
+                                                A utilização de diferentes formatos de conteúdo aumenta o engajamento e
+                                                atende a vários estilos de aprendizado. Textos devem ser objetivos e
+                                                vídeos devem ser curtos e informativos.
+                                            </p>
+                                        </span>
+                                    </span>
+                                </button>
+
+                                <div class="organizacao-card-grid-bottom">
+                                    <button class="organizacao-flip-card" type="button" aria-pressed="false">
+                                        <span class="organizacao-card-inner">
+                                            <span class="organizacao-card-face organizacao-card-front">
+                                                <img src="../assets/imgmod1/aula2/Card_hover_4.png"
+                                                    alt="Gráficos e Infográficos">
+                                                <span class="organizacao-card-title">Gráficos e<br>Infográficos:</span>
+                                            </span>
+                                            <span class="organizacao-card-face organizacao-card-back">
+                                                <p>
+                                                    Esses recursos visuais ajudam a simplificar conceitos complexos e a
+                                                    tornar o conteúdo mais acessível.
+                                                </p>
+                                            </span>
+                                        </span>
+                                    </button>
+
+                                    <button class="organizacao-flip-card" type="button" aria-pressed="false">
+                                        <span class="organizacao-card-inner">
+                                            <span class="organizacao-card-face organizacao-card-front">
+                                                <img src="../assets/imgmod1/aula2/Card_hover_5.png"
+                                                    alt="Atividades Interativas">
+                                                <span class="organizacao-card-title">Atividades<br>Interativas</span>
+                                            </span>
+                                            <span class="organizacao-card-face organizacao-card-back">
+                                                <p>
+                                                    Quizzes e questões objetivas com autocorreção ajudam a fixar o
+                                                    conteúdo, incentivam a participação e propiciam o acompanhamento do
+                                                    desempenho dos estudantes.
+                                                </p>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h1 class="titulo-secao">
+                               Avaliação e feedback
+                            </h1>
+
+
+                              <p class="paragrafo-conteudo">
+                              A avaliação em um curso online autoinstrucional apresenta especificidades que
+diferem da avaliação em ambientes presenciais. Um dos principais desafios
+é garantir que a avaliação não apenas mensure a retenção de conhecimento,
+mas também avalie a aplicabilidade e a compreensão profunda dos conteúdos
+abordados, considerando que, nessa modalidade de ensino, não há interação
+direta entre o formador e o estudante. Sendo assim, comandos, enunciados e
+contextualização dos temas tratados na questão tornam-se fundamentais para a
+boa compreensão da tarefa.
+                            </p>
+
+
+
+                            <p class="paragrafo-conteudo">
+                             Nesse cenário, as avaliações podem incluir quizzes interativos, questões objetivas,
+entre outras possibilidades autônomas já citadas, permitindo que os estudantes
+demonstrem suas habilidades de diferentes maneiras, como também utilize esse
+momento como etapa contínua de aprendizagem.
+                            </p>
+
+
+
+                            <p class="paragrafo-conteudo">
+Outra característica fundamental da avaliação em cursos online autoinstrucionais
+é a importância do feedback, que se torna um elemento essencial para a
+aprendizagem
+                            </p>
+
+
+
+
+
+
+
+                        <div class="row justify-content-center card-como-trabalhar">
+                            <div class="col-12 col-lg-8">
+
+                                <div class="card custom-card text-white border-0 mx-auto d-block">
+                                    <div class="card-body p-4 p-md-5 text-center">
+
+                                        <p class="  mb-0" style="font-size: 1rem;">
+                                           O feedback eficaz deve ser rápido e construtivo,
+orientando os estudantes não apenas sobre os acertos,
+mas principalmente sobre os erros.
+                                        </p><br>
+
+                                     
+
+                                        <p class="  mb-0" style="font-size: 1rem;">
+                                            Quando um estudante recebe uma correção detalhada após
+uma resposta incorreta, isso proporciona uma oportunidade valiosa
+de reflexão e aprendizagem, ajudando-o a identificar lacunas
+em seu conhecimento e a ajustar sua abordagem. Já o feedback
+em relação às respostas corretas fortalece a confiança do estudante
+e o incentiva a continuar no processo de aprendizagem. 
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+       <div class="quote-card importante-card col-lg-8 mx-auto">
+                                <div class="quote-body">
+                                    <div class="quote-accent-line importante-accent-line"></div>
+
+                                    <div class="quote-icon-wrapper importante-icon-wrapper">
+                                        <img src="../assets/imgmod1/aula2/bx_importante.png" alt=""
+                                            class="quote-img importante-img">
+
+                                       
+                                    </div>
+
+                                    <div class="quote-content importante-content ps-1 ps-md-4 ps-lg-5">
+                                        <h3 class="quote-title">Importante</h3>
+                                        <p>
+                                        A criação de conteúdo bruto e a elaboração de
+storyboards são processos que exigem colaboração
+significativa entre professores conteudistas e designers
+educacionais. Ao empregar técnicas de transposição
+didática, ambos os profissionais podem garantir que o
+conteúdo seja acessível, relevante e eficaz
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+      <h1 class="titulo-secao">
+                               Você chegou ao final da<br>
+segunda aula do Módulo 1
+                            </h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <p class="paragrafo-conteudo ">
+                           Nesta aula você reconheceu as etapas de produção e os procedimentos que
+antecedem a entrega do conteúdo bruto, assim como tornou-se capaz de identificar
+as camadas de prazos de entrega e a importante relação entre a entrega do conteúdo
+bruto e o fluxo de produção. </p>
+                        <p class="paragrafo-conteudo col-lg-8 mx-auto  text-md-start">
+                           Na próxima aula você vai conhecer a arquitetura do storyboard, a implantação da
+transposição didática e como ocorre a validação desse material. </p>
+               <p class="paragrafo-conteudo col-lg-8 mx-auto  text-md-start">
+                           Nos vemos lá!  </p>
+
+    <h2 class="subtitulo-secao">
+                            Conferindo a aprendizagem
+                        </h2>
+
+                        <section class="questionario-aprendizagem col-lg-8 mx-auto"
+                            aria-label="Questionário de aprendizagem">
+                            <article class="questao-card" data-correct="B">
+                                <div class="questao-cabecalho">
+                                    <span class="questao-numero">Questão 1</span>
+                                    <p class="questao-objetivo">
+                                        Objetivo: Identificar o papel do conteudista no processo de produção de cursos
+                                        autoinstrucionais.
+                                    </p>
+                                </div>
+
+                                <p class="questao-enunciado">
+                                    Antes de entregar o material didático, o conteudista precisa compreender o papel
+                                    estratégico que desempenha na estruturação de um curso online. Assinale a
+                                    alternativa que melhor representa as atribuições do conteudista em um curso
+                                    autoinstrucional:
+                                </p>
+
+                                <div class="questao-alternativas">
+                                    <button type="button" class="questao-opcao" data-option="A"
+                                        data-feedback="Incorreta. A produção de vídeos e a programação do AVA são tarefas de outras equipes. O conteudista pode sugerir, mas não executa essas etapas. Você está pensando além, o que é ótimo! Porém, o foco aqui é na autoria pedagógica, não técnica.">
+                                        <strong>A)</strong> Criar vídeos interativos e programar o ambiente virtual do
+                                        curso.
+                                    </button>
+                                    <button type="button" class="questao-opcao" data-option="B"
+                                        data-feedback="Correta. O conteudista é o autor pedagógico do curso, ele organiza os conteúdos e propõe atividades com base em objetivos claros, em diálogo com a equipe. Excelente! Esse é o principal papel do conteudista.">
+                                        <strong>B)</strong> Produzir conteúdo textual, audiovisual e atividades
+                                        avaliativas com base em objetivos educacionais, em diálogo com a equipe
+                                        pedagógica.
+                                    </button>
+                                    <button type="button" class="questao-opcao" data-option="C"
+                                        data-feedback="Incorreta. Design gráfico e HTML são responsabilidades técnicas. O conteudista participa antes, na elaboração do conteúdo que será adaptado. Lembre-se: cada profissional atua em um ponto da cadeia de produção.">
+                                        <strong>C)</strong> Validar o design gráfico e revisar os códigos HTML gerados
+                                        pela equipe de desenvolvimento.
+                                    </button>
+                                    <button type="button" class="questao-opcao" data-option="D"
+                                        data-feedback="Incorreta. A contribuição do conteudista vai muito além da curadoria: ele estrutura, planeja e cria conteúdo. O ideal é criarmos experiências de aprendizagem completas!">
+                                        <strong>D)</strong> Apenas indicar referências bibliográficas e sugerir temas,
+                                        sem necessidade de estruturar o conteúdo.
+                                    </button>
+                                </div>
+
+                                <div class="questao-feedback" aria-live="polite"></div>
+                            </article>
+
+                            <article class="questao-card" data-correct="B">
+                                <div class="questao-cabecalho">
+                                    <span class="questao-numero">Questão 2</span>
+                                    <p class="questao-objetivo">
+                                        Objetivo: Identificar as camadas de prazos de entrega, assim como a relação
+                                        entre a entrega do conteúdo bruto e o fluxo de produção.
+                                    </p>
+                                </div>
+
+                                <p class="questao-enunciado">
+                                    A entrega do conteúdo bruto marca o início de uma cadeia de produção que envolve
+                                    diversos profissionais. Por isso, sua clareza, completude e alinhamento com os
+                                    objetivos de aprendizagem são fundamentais para evitar gargalos e garantir a
+                                    qualidade final do curso. Sobre a elaboração do conteúdo bruto em cursos
+                                    autoinstrucionais, assinale a alternativa correta:
+                                </p>
+
+                                <div class="questao-alternativas">
+                                    <button type="button" class="questao-opcao" data-option="A"
+                                        data-feedback="Incorreta. Conteúdo bruto incompleto ou desorganizado gera retrabalho e atrasa toda a produção. Evitar gargalos começa com você! Capriche na entrega inicial.">
+                                        <strong>A)</strong> O conteúdo bruto deve conter apenas uma lista de links e
+                                        tópicos soltos para ser completado pelos designers educacionais.
+                                    </button>
+                                    <button type="button" class="questao-opcao" data-option="B"
+                                        data-feedback="Correta. Um conteúdo bem elaborado, claro e estruturado garante agilidade e qualidade em todas as etapas seguintes. Parabéns! Conteúdo bem-feito auxilia no engajamento e, consequentemente, no melhor desempenho das equipes e estudantes.">
+                                        <strong>B)</strong> É importante que o conteúdo bruto esteja completo,
+                                        organizado e alinhado com os objetivos de aprendizagem, pois sua qualidade
+                                        impacta todo o fluxo de produção.
+                                    </button>
+                                    <button type="button" class="questao-opcao" data-option="C"
+                                        data-feedback="Incorreta. Exatamente por não possuir mediação direta, o curso precisa ser planejado com clareza e intencionalidade. Planejamento é essencial, especialmente quando o estudante caminha por conta própria.">
+                                        <strong>C)</strong> Como o curso é autoinstrucional, o conteúdo pode ser
+                                        informal e improvisado, dispensando planejamento.
+                                    </button>
+                                    <button type="button" class="questao-opcao" data-option="D"
+                                        data-feedback="Incorreta. Atrasos comprometem o trabalho de toda a equipe. Cumprir prazos é parte do compromisso com a qualidade. Respeitar o tempo de todos é também parte do processo educacional.">
+                                        <strong>D)</strong> A entrega do conteúdo bruto pode ser feita a qualquer tempo,
+                                        pois os demais processos se adaptam à disponibilidade do conteudista.
+                                    </button>
+                                </div>
+
+                                <div class="questao-feedback" aria-live="polite"></div>
+                            </article>
+                        </section>
+
+
+            
+
+
+                   
+
+                        <nav class="navegacao-aula col-lg-8 mx-auto" aria-label="Navegação da aula">
+                            <a href="#" class="botao-aula botao-voltar" aria-label="Voltar">
+                                <img src="../assets/imgmod1/bt1_voltar_off.png" alt="Voltar">
+                            </a>
+
+                            <a href="../modulo1/aula2.html" class="botao-aula botao-proxima" aria-label="Próxima aula">
+                                <img src="../assets/imgmod1/bt_1 off.png" alt="Próxima">
+                            </a>
+                        </nav>
+
+
+
+
+
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <!-- Início do footer -->
+    <footer id="footer" class="py-4 mt-5">
+        <div class="container">
+            <div class="footer-logos row justify-content-center align-items-center text-center">
+                <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                    <img src="../assets/images/Logo_CVF.png" class="footer-logo w-100" alt="Campus Virtual Fiocruz">
+                </div>
+                <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                    <img src="../assets/images/Logo_Fiocruz.png" class="footer-logo w-100" alt="Fiocruz">
+                </div>
+                <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                    <img src="../assets/images/Logos_Sus35_Ms_Gov.png" class="footer-logo w-100" alt="Sus">
+                </div>
+                <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                    <img src="../assets/images/Logos_Sus35_Ms_Gov2.png" class="footer-logo w-100" alt="Sus">
+                </div>
+            </div>
+        </div>
+        <!-- Fim do footer -->
+    </footer>
+    <script>
+        function toggleMenu(id) {
+            const menu = document.getElementById(id);
+
+            document.querySelectorAll('.submenu').forEach(el => {
+                if (el.id !== id) el.classList.remove('open');
+            });
+
+            menu.classList.toggle('open');
+        }
+
+        // Mobile sidebar toggle
+        const mobileToggle = document.getElementById('mobileSidebarToggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', () => {
+                const isOpen = sidebar.classList.toggle('mobile-open');
+                overlay.classList.toggle('active');
+                mobileToggle.classList.toggle('is-open', isOpen);
+                mobileToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
+
+        if (overlay) {
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('mobile-open');
+                overlay.classList.remove('active');
+                mobileToggle.classList.remove('is-open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        // Fechar sidebar ao clicar em um link em mobile
+        if (window.innerWidth <= 767) {
+            document.querySelectorAll('.submenu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    sidebar.classList.remove('mobile-open');
+                    overlay.classList.remove('active');
+                    mobileToggle.classList.remove('is-open');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        // Fechar sidebar ao redimensionar para desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 767) {
+                sidebar.classList.remove('mobile-open');
+                overlay.classList.remove('active');
+                mobileToggle.classList.remove('is-open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.organizacao-flip-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const isFlipped = card.classList.toggle('is-flipped');
+                    card.setAttribute('aria-pressed', String(isFlipped));
+                });
+            });
+
+            const conteudistaTabs = {
+                planejamento: `No planejamento o ideal é o conteudista se envolver no planejamento da metodologia e na organização dos conteúdos. Isso inclui a escolha das estratégias de ensino-aprendizagem que serão utilizadas durante o módulo ou disciplina, garantindo que tudo esteja alinhado com os objetivos educacionais do curso. Porém, em alguns casos essa etapa fica a cargo da coordenação.`,
+                producao: `É essencial que o material didático produzido esteja em harmonia com as propostas do planejamento final. O conteudista tem a responsabilidade de criar conteúdos que sejam acessíveis e relevantes, proporcionando uma base sólida para o aprendizado do estudante. As orientações serão detalhadas no módulo 2.`,
+                atividades: `As atividades avaliativas são parte importante do processo de ensino. O conteudista deve elaborar atividades que correspondam a cada unidade do curso, ajudando a mensurar o aprendizado dos estudantes e a promover ajustes nas aulas quando necessário. Esse momento é privilegiado no sentido de construir mais um momento de aprendizagem. Sendo assim, a sugestão é que a questão seja precedida por um texto conclusivo para situar o tema e remeter o estudante às aprendizagens vivenciadas nas aulas. As orientações serão detalhadas no módulo 2.`
+            };
+            const conteudistaPanel = document.getElementById('conteudista-tab-panel');
+
+            document.querySelectorAll('.conteudista-tab-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    document.querySelectorAll('.conteudista-tab-button').forEach(tab => {
+                        tab.classList.remove('active');
+                        tab.setAttribute('aria-selected', 'false');
+                    });
+
+                    button.classList.add('active');
+                    button.setAttribute('aria-selected', 'true');
+
+                    if (conteudistaPanel) {
+                        conteudistaPanel.innerHTML = `<p>${conteudistaTabs[button.dataset.tab]}</p>`;
+                    }
+                });
+            });
+
+            document.querySelectorAll('.questao-card').forEach(questao => {
+                const respostaCorreta = questao.dataset.correct;
+                const feedback = questao.querySelector('.questao-feedback');
+
+                questao.querySelectorAll('.questao-opcao').forEach(opcao => {
+                    opcao.addEventListener('click', () => {
+                        const acertou = opcao.dataset.option === respostaCorreta;
+
+                        questao.querySelectorAll('.questao-opcao').forEach(item => {
+                            item.classList.remove('selecionada', 'correta', 'incorreta');
+                        });
+
+                        opcao.classList.add('selecionada', acertou ? 'correta' : 'incorreta');
+                        feedback.textContent = opcao.dataset.feedback;
+                        feedback.classList.remove('correto', 'incorreto');
+                        feedback.classList.add(acertou ? 'correto' : 'incorreto');
+                    });
+                });
+            });
+        });
+    </script>
+
+
+    <!-- TARJA FINAL -->
+    <div class="container-fluid p-0 text-center tarja-container">
+        <img src="../assets/images/tarja_1920.png" class="img-fluid w-100 traja-img" alt="Traja">
+    </div>
+
+    <!-- JS LOCAL -->
+    <script src="../js/menu.js"></script>
+    <script src="../js/page-transitions.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
