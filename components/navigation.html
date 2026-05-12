@@ -1,0 +1,88 @@
+<!-- =====================================================
+   COMPONENTES REUTILIZAVEIS - NAVIGATION
+===================================================== -->
+
+<!-- COMPONENTE: MOBILE SIDEBAR TOGGLE BUTTON -->
+<button class="mobile-sidebar-toggle" id="sidebarToggle" type="button" aria-label="Abrir menu lateral" title="Abrir menu lateral" aria-expanded="false">
+    <svg class="sidebar-arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path class="sidebar-arrow-stem" d="M5 12H17"></path>
+        <path class="sidebar-arrow-head" d="M12 7L17 12L12 17"></path>
+    </svg>
+</button>
+
+<!-- COMPONENTE: SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- COMPONENTE: SIDEBAR PRINCIPAL -->
+<aside class="col-md-3 col-lg-2 sidebar-wrapper">
+    <div class="sticky-sidebar">
+        <h5 class="fw-bold px-2 mb-4">Navegação</h5>
+
+        <nav class="nav flex-column sidebar-cascade">
+            <div class="sidebar-item">
+                <button class="sidebar-toggle expanded" type="button" data-target="submenu-1">
+                    <span class="menu-title">Módulo 1</span>
+                    <span class="menu-desc">A EAD e o desenvolvimento de cursos autoinstrucionais</span>
+                    <span class="menu-arrow">+</span>
+                </button>
+                <div id="submenu-1" class="sidebar-submenu show">
+                    <a class="submenu-link submenu-aula-longa" href="../modulo1/aula1.html"><span class="submenu-aula-numero">Aula 1.1</span><span class="submenu-aula-titulo">– Contextualização de<br>EAD (ensino híbrido,<br>ensino on-line,<br>ensino presencial) e a<br>produção de cursos<br>autoinstrucionais</span></a>
+                    <a class="submenu-link" href="../modulo1/aula2.html"><span class="submenu-aula-numero">Aula 1.2</span><span class="submenu-aula-titulo">– Elaboração de<br>conteúdo para curso<br>autoinstrucional</span></a>
+                    <a class="submenu-link" href="../modulo1/aula3.html"><span class="submenu-aula-numero">Aula 1.3</span><span class="submenu-aula-titulo">– A criação de<br>Storyboards e a<br>relação com a<br>Designer Educacional</span></a>
+                    <a class="submenu-link" href="../modulo1/aula4.html"><span class="submenu-aula-numero">Aula 1.4</span><span class="submenu-aula-titulo">– Publicações on-line:<br>Mooc, Moodle e<br>linguagem HTML</span></a>
+                </div>
+            </div>
+
+            <div class="sidebar-item">
+                <button class="sidebar-toggle" type="button" data-target="submenu-2">
+                    <span class="menu-title">Módulo 2</span>
+                    <span class="menu-desc">Criação do Material Didático Digital</span>
+                    <span class="menu-arrow">+</span>
+                </button>
+                <div id="submenu-2" class="sidebar-submenu">
+                    <a class="submenu-link" href="../modulo2/aula1.html"><span class="submenu-aula-numero">Aula 2.1</span><span class="submenu-aula-titulo">– O material<br>didático digital</span></a>
+                    <a class="submenu-link" href="../modulo2/aula2.html"><span class="submenu-aula-numero">Aula 2.2</span><span class="submenu-aula-titulo">– O processo de<br>planejamento do<br>material didático</span></a>
+                    <a class="submenu-link" href="../modulo2/aula3.html"><span class="submenu-aula-numero">Aula 2.3</span><span class="submenu-aula-titulo">– O processo de<br>produção textual<br>e acessibilidade</span></a>
+                    <a class="submenu-link" href="../modulo2/aula4.html"><span class="submenu-aula-numero">Aula 2.4</span><span class="submenu-aula-titulo">– Avaliação e<br>feedbacks no EAD</span></a>
+                </div>
+            </div>
+
+            <div class="sidebar-item">
+                <button class="sidebar-toggle" type="button" data-target="submenu-3">
+                    <span class="menu-title">Material Complementar</span>
+                    <span class="menu-arrow">+</span>
+                </button>
+                <div id="submenu-3" class="sidebar-submenu">
+                    <a class="submenu-link" href="#">Glossário</a>
+                    <a class="submenu-link" href="#">Referências</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</aside>
+
+<!-- COMPONENTE: NAVBAR PRINCIPAL -->
+<nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0">
+    <div class="container-fluid">
+        <div id="navbar-hamburger-placeholder"></div>
+
+        <a class="navbar-brand" href="#">
+            <img src="../assets/images/Logo_CVF.png" height="60" class="logo-move" alt="Logo Fiocruz">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuTopo">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="menuTopo">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bibliografia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Crédito</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

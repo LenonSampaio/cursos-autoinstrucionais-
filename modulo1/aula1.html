@@ -1,0 +1,817 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Fiocruz</title>
+
+    <!-- Bootstrap LOCAL -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Seu CSS (sempre depois do bootstrap) -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/font/rawline-400.ttf">
+
+    <style>
+        .responsive-margin {
+            margin-left: 0;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .responsive-margin {
+                margin-left: 200px;
+            }
+        }
+
+        @media (min-width: 1024px) and (max-width: 1439px) {
+            .responsive-margin {
+                margin-left: 300px;
+            }
+        }
+
+        @media (min-width: 1440px) and (max-width: 2559px) {
+            .responsive-margin {
+                margin-left: 400px;
+            }
+        }
+
+        @media (min-width: 2560px) {
+            .responsive-margin {
+                margin-left: 600px;
+            }
+        }
+    </style>
+
+</head>
+
+<body><!-- Início da div banner -->
+    <div class="banner position-relative">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <button class="mobile-sidebar-toggle me-3" id="mobileSidebarToggle" aria-label="Abrir menu lateral" type="button" aria-expanded="false">
+                        <svg class="sidebar-arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path class="sidebar-arrow-stem" d="M5 12H17"></path>
+                            <path class="sidebar-arrow-head" d="M12 7L17 12L12 17"></path>
+                        </svg>
+                    </button>
+                    <img src="../assets/images/Logo_CVF.png" height="60" class="logo-move" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuTopo"
+                    aria-label="Abrir menu de navegação">
+                    <span style="font-size: 1.5rem; color: white;">⋮</span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="menuTopo">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Bibliografia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Crédito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <picture>
+            <source srcset="../assets/imgmod1/bg_mod1_1.png" media="(max-width: 768px)">
+            <img src="../assets/imgmod1/Bg_mod1-Au1.png" class="img-fluid w-100" alt="Banner">
+        </picture>
+        <!-- Fim da div banner -->
+    </div>
+
+    <!-- Overlay para fechar sidebar em mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="container-fluid p-0">
+        <div class="row g-0 row-full">
+
+<!-- Início do aside sidebar -->
+            <aside class="col-12 col-md-2 sidebar">
+
+                <div class="menu-item" onclick="toggleMenu('mod1')">
+                    <h3>Módulo 1</h3>
+                    <p> - A EAD e o desenvolvimento de<br> cursos autoinstrucionais</p>
+                </div>
+                <div class="submenu" id="mod1">
+                    <a href="../modulo1/aula1.html" class="submenu-aula-longa"><span class="submenu-aula-numero">Aula 1.1</span><span class="submenu-aula-titulo">– Contextualização de<br>EAD (ensino híbrido,<br>ensino on-line,<br>ensino presencial) e a<br>produção de cursos<br>autoinstrucionais</span></a>
+                    <a href="../modulo1/aula2.html"><span class="submenu-aula-numero">Aula 1.2</span><span class="submenu-aula-titulo">– Elaboração de<br>conteúdo para curso<br>autoinstrucional</span></a>
+                    <a href="../modulo1/aula3.html"><span class="submenu-aula-numero">Aula 1.3</span><span class="submenu-aula-titulo">– A criação de<br>Storyboards e a<br>relação com a<br>Designer Educacional</span></a>
+                    <a href="../modulo1/aula4.html"><span class="submenu-aula-numero">Aula 1.4</span><span class="submenu-aula-titulo">– Publicações on-line:<br>Mooc, Moodle e<br>linguagem HTML</span></a>
+                </div>
+
+                <div class="menu-item" onclick="toggleMenu('mod2')">
+                    <h3>Módulo 2</h3>
+                    <p> - Criação do Material Didático Digital</p>
+                </div>
+                <div class="submenu" id="mod2">
+                    <a href="../modulo2/aula1.html"><span class="submenu-aula-numero">Aula 2.1</span><span class="submenu-aula-titulo">– O material<br>didático digital</span></a>
+                    <a href="#"><span class="submenu-aula-numero">Aula 2.2</span><span class="submenu-aula-titulo">– O processo de<br>planejamento do<br>material didático</span></a>
+                    <a href="#"><span class="submenu-aula-numero">Aula 2.3</span><span class="submenu-aula-titulo">– O processo de<br>produção textual<br>e acessibilidade</span></a>
+                    <a href="#"><span class="submenu-aula-numero">Aula 2.4</span><span class="submenu-aula-titulo">– Avaliação e<br>feedbacks no EAD</span></a>
+                </div>
+
+                <div class="menu-item menu-material-complementar">
+                    <h3>Material</h3>
+                    <h3>Complementar</h3>
+                </div>
+
+                </aside>
+
+
+    <!-- CONTEÚDO -->
+            <!-- Início do main content -->
+            <main class="col-12 col-md-10 main-content">
+
+       
+
+                <div class="container introducao-aula">
+                    <section class="objectives">
+                        <!-- Título Principal -->
+                        <h1 class="text-center mb-4">
+                            Contextualização de EaD, ensino híbrido,<br>
+                            ensino on-line, ensino presencial<br>
+                            e produção de cursos autoinstrucionais
+                        </h1>
+
+                        <!-- Boas-vindas -->
+                        <p class="textoconteudo col-lg-8 mx-auto text-center text-md-start">
+                            Seja bem-vindo e bem-vinda!<br>
+                            A seguir veja algumas informações importantes sobre esta aula.
+                        </p>
+                    </section>
+
+                    <section class="objectives">
+                        <!-- Título da Seção -->
+                        <h2 class="text-start col-lg-8 mx-auto font-rawline-bold" style="color: black;">
+                            Objetivos de aprendizagem
+                        </h2>
+
+                        <p class="textoconteudo col-lg-8 mx-auto" style="margin-top: 26px;">
+                            Ao final desta aula você poderá:
+                        </p>
+
+                        <!-- Container da Lista Alinhado -->
+                        <div class="col-lg-8 mx-auto">
+                            <!-- Wrapper com espaçamento vertical entre itens -->
+                            <div class="d-flex flex-column ">
+
+                                <!-- Item 1 -->
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="../assets/imgmod1/check_1.png" alt="Ícone de check"
+                                            style="width: 25px; height: auto;">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <p class="textoconteudo">
+                                            Conhecer as etapas de desenvolvimento do curso em tela, observando seu papel
+                                            de
+                                            estudante de acordo com a metodologia, as formas de interação e
+                                            participação,
+                                            assim como o processo de avaliação.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Item 2 -->
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="../assets/imgmod1/check_1.png" alt="Ícone de check"
+                                            style="width: 25px; height: auto;">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <p class="textoconteudo">
+                                            Identificar os conceitos principais abordados na aula: educação a distância,
+                                            ensino online e presencial, curso autoinstrucional, atividades síncronas e
+                                            atividades assíncronas.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Item 3 -->
+                                <div class="d-flex align-items-start">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="../assets/imgmod1/check_1.png" alt="Ícone de check"
+                                            style="width: 25px; height: auto;">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <p class="textoconteudo">
+                                            Identificar as linhas gerais do fluxo de produção dos cursos
+                                            autoinstrucionais
+                                            da Fiocruz.
+                                        </p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="presentation">
+                        <!-- Título da Seção -->
+                        <h2 class="text-start col-lg-8 mx-auto font-rawline-bold"
+                            style="color: black; margin-top: 26px; margin-bottom: 26px;">
+                            Apresentação
+                        </h2>
+
+                        <p class="paragrafo-conteudo col-lg-8 mx-auto text-center text-md-start">
+                            Seja bem-vinda(o) ao nosso curso!
+                        </p>
+
+                        <p class="paragrafo-conteudo col-lg-8 mx-auto  text-md-start">
+                            É com alegria que recebemos você neste curso autoinstrucional, especialmente
+                            elaborado para subsidiar professores e educadores na criação de conteúdo para
+                            cursos online também autoinstrucionais.
+                        </p>
+                        <p class="paragrafo-conteudo col-lg-8 mx-auto  text-md-start">
+                            Sabemos que o ensino a distância tem ganhado cada vez mais espaço, e os cursos
+                            autoinstrucionais — que não contam com tutoria contínua — exigem planejamento
+                            cuidadoso, clareza didática e foco na aprendizagem autônoma. Pensando nisso,
+                            este curso oferece orientações práticas, exemplos e ferramentas úteis para apoiar
+                            a produção de materiais educativos eficazes, acessíveis e envolventes.
+                        </p>
+    
+    
+    
+                        
+                        <figure>
+                            <img src="../assets/imgmod1/Ambiente_moderno.png" class="img-fluid mx-auto d-block col-lg-8" alt="...">
+                        
+                            <figcaption class="textolegenda">
+                                Fonte: Campus Virtual Fiocruz, por meio da ferramenta Chatgpt.
+                            </figcaption>
+                        </figure>
+    
+
+
+
+ <p class="paragrafo-conteudo col-lg-8 mx-auto ">
+                        Embora o curso traga elementos específicos do processo de produção do
+                        Campus Virtual Fiocruz, ele foi estruturado com base em etapas amplamente
+                        utilizadas por diversas instituições na criação de cursos autoinstrucionais.
+                        Por isso, o modelo aqui apresentado pode servir como referência para outras
+                        equipes pedagógicas envolvidas no desenvolvimento de formações online.</p>
+
+
+                    <p class="paragrafo-conteudo col-lg-8 mx-auto  text-md-start">
+                        Todo o conteúdo está organizado para que você possa avançar em seu próprio
+                        ritmo, com flexibilidade e autonomia. Esperamos que esta jornada contribua
+                        significativamente para o aprimoramento de suas práticas pedagógicas e para
+                        a construção de experiências de aprendizagem mais acolhedoras e efetivas.
+                    </p>
+
+                    <p class="paragrafo-conteudo col-lg-8 mx-auto">
+
+                        Desejamos a você um excelente percurso!
+
+
+                    </p>
+
+                    <h2 class="subtitulo-secao">
+                        Curadoria
+                    </h2>
+                    <p class="paragrafo-conteudo col-lg-8 mx-auto">
+                        Cláudia Reis<br>
+                        Pedagoga do Campus Virtual Fiocruz
+                    </p>
+
+
+                    <h1 class="titulo-secao">
+                        Introdução
+                    </h1>
+
+                    <p class="paragrafo-conteudo">
+                        Nesta aula convidamos você a pensar conosco sobre o contexto em que os cursos autoinstrucionais
+                        são desenvolvidos na modalidade online, sobretudo no Campus Virtual Fiocruz. Para isso, buscamos
+                        alinhar conceitos basilares para a compreensão de todo o processo. Para iniciar nossa jornada,
+                        apresentamos como o curso
+                        vai se desenvolver e, em seguida, discutiremos os conceitos de educação a distância, ensino
+                        online e presencial, curso autoinstrucional, atividades síncronas e atividades assíncronas.
+                    </p>
+
+                    <h1 class="text-center mb-4">
+                        Como vamos trabalhar?
+
+                    </h1>
+                    <p class="paragrafo-conteudo">
+                        Pretendemos desenvolver o curso utilizando metalinguagem, ou seja, à medida
+                        que o curso se desenvolve os participantes podem identificar algumas das etapas
+                        do processo de criação, desenvolvimento e conclusão de cursos autoinstrucionais.</p>
+
+
+
+
+                        <div class="row justify-content-center card-como-trabalhar">
+                        <div class="col-12 col-lg-8">
+
+                            <div class="card custom-card text-white border-0 mx-auto d-block">
+                                <div class="card-body p-4 p-md-5 text-center">
+
+                                    <p class="  mb-4" style="font-size: 1rem;">
+                                        Cada aula contará com a apresentação de conceitos e propostas de reflexão
+                                        sobre
+                                        eles utilizando diferentes linguagens e alguns exercícios para fixação de
+                                        tudo
+                                        que foi discutido na aula.
+                                    </p>
+
+                                    <p class="  mb-4" style="font-size: 1rem;">
+                                        Ao final do curso, você realizará atividade avaliativa com questões
+                                        objetivas e
+                                        receberá, no e-mail cadastrado ao se inscrever, o seu certificado de
+                                        qualificação.
+                                    </p>
+
+                                    <p class="  mb-0" style="font-size: 1rem;">
+                                        Participe de todas as tarefas e aproveite da melhor forma sua experiência
+                                        autoinstrucional.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <p class="paragrafo-conteudo ">
+                    Você já ouviu falar de educação a distância, aula online, atividades síncronas e
+                    assíncronas, entre outros verbetes, sobretudo depois do período pandêmico que
+                    vivenciamos entre os anos de 2020 e 2023? Em geral, quando determinados
+                    conceitos são popularizados, ganham versões bastante distintas.</p>
+                <p class="paragrafo-conteudo col-lg-8 mx-auto  text-md-start">
+                    Para alinhar esses conceitos, convidamos você a assistir a animação a seguir:</p>
+
+
+
+   <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8">
+                                <div
+                                    class="card video-card border-0 shadow-lg position-relative overflow-hidden mx-auto">
+                                    <img src="https://picsum.photos/id/670/800/450" class="card-img video-img"
+                                        alt="Thumbnail do vídeo">
+                                    <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                        <div class="play-button shadow">
+                                            <div class="play-triangle"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+      <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8">
+                                <div class="quote-card">
+                                    <!-- CONTEÚDO -->
+                                    <div class="quote-body">
+
+                                        <!-- LINHA EM L -->
+                                        <div class="quote-accent-line"></div>
+
+                                        <!-- ÍCONE -->
+                                        <div class="quote-icon-wrapper d-flex ">
+                                            <img src="../assets/imgmod1/bx_citacao.png" alt="Aspas" class="quote-img">
+
+                                            
+                                        </div>
+                                        <!-- TEXTO -->
+                                        <div class="quote-content">
+                                            <h2 class="quote-title">
+                                                Citação
+                                            </h2>
+                                            <p class="quote-text">
+                                                "A Educação a Distância (EaD) pode ser definida
+                                                como um conjunto de métodos instrucionais, em que
+                                                alunos e tutores estão distantes geograficamente,
+                                                mas têm comunicação facilitada por intermédio das
+                                                Tecnologias da Informação e Comunicação (TICs)."
+                                            </p>
+
+                                            <div class="quote-author">
+                                                Salgado et al., 2014, p. 8
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+   <h1 class="titulo-secao">
+                        A importância<br>
+                        do planejamento
+                    </h1>
+                    <h2 class="subtitulo-secao">
+                        Desenho da produção
+                    </h2>
+                    <p class="paragrafo-conteudo">
+                        Como você viu, as etapas descritas na animação oferecem uma panorâmica em
+                        todo o fluxo de um curso autoinstrucional. A seguir você conhecerá de forma
+                        mais detalha não só os processos, mas igualmente os profissionais envolvidos no
+                        planejamento, criação, realização e acompanhamento do curso.</p>
+
+                    <h2 class="subtitulo-secao">
+                        Etapas e envolvidos na produção
+                        de um curso autoinstrucional
+                    </h2>
+<div >
+    
+ <div class="row etapa-grid justify-content-center mb-5">
+            <div class="col-12 col-md-4">
+                <article class="etapa-card">
+                    <img src="../assets/imgmod1/icn_notes.png" class="etapa-img" alt="Ícone de planejamento">
+                    <h3 class="etapa-titulo">
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#etapaPlanejamento"
+                            aria-expanded="false" aria-controls="etapaPlanejamento">
+                            Planejamento <span class="etapa-seta" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div class="collapse" id="etapaPlanejamento">
+                        <div class="etapa-texto">
+                            <p>Atores: Coordenação</p>
+                            <p>A elaboração de um curso no Campus Virtual Fiocruz envolve etapas integradas:</p>
+                            <p><strong>Termo de Referência:</strong> esboça módulos, objetivos, estratégias e recursos.
+                            </p>
+                            <p><strong>Preenchimento do Lattissimo:</strong> registro do curso no sistema acadêmico no
+                                Campus Virtual FIOCRUZ.</p>
+                            <p><strong>Planejamento do curso com definição de:</strong> metodologia, materiais e
+                                referências teóricas.</p>
+                            <p><strong>Formação da equipe de produção:</strong> conteudistas, designers e demais
+                                profissionais responsáveis pelo desenvolvimento do curso.</p>
+                            <p>Aqui nasce o curso: planejamento estratégico e organização inicial.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <article class="etapa-card">
+                    <img src="../assets/imgmod1/icn_claquete.png" class="etapa-img" alt="Ícone de produção">
+                    <h3 class="etapa-titulo">
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#etapaProducao"
+                            aria-expanded="false" aria-controls="etapaProducao">
+                            Produção <span class="etapa-seta" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div class="collapse" id="etapaProducao">
+                        <div class="etapa-texto">
+                            <p>Atores: Coordenação, conteudistas, designer educacional, designer instrucional,
+                                desenvolvedores.</p>
+                            <p><strong>A produção do curso envolve:</strong></p>
+                            <p>• Criação do conteúdo bruto: conteudistas elaboram o material das aulas, seguido de
+                                acompanhamento contínuo da coordenação.</p>
+                            <p>• Revisões e validações: entre coordenação e equipe para ajustes e seleção final do
+                                conteúdo.</p>
+                            <p>• Construção dos Storyboards e identidade visual: organização do conteúdo em roteiro e
+                                linguagem visual para orientar como o curso será apresentado.</p>
+                            <p>• Desenvolvimento de recursos de acessibilidade: criação de recursos que garantem que
+                                todos possam acessar e compreender o curso.</p>
+                            <p>• Implementação no Ambiente Virtual de Aprendizagem (MOOC ou Moodle): acesso e utilização
+                                pelos estudantes.</p>
+                            <p>Aqui nasce o curso: planejamento estratégico e organização inicial.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <article class="etapa-card">
+                    <img src="../assets/imgmod1/icn_foguete.png" class="etapa-img" alt="Ícone de lançamento">
+                    <h3 class="etapa-titulo">
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#etapaLancamento"
+                            aria-expanded="false" aria-controls="etapaLancamento">
+                            Lançamento <span class="etapa-seta" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div class="collapse" id="etapaLancamento">
+                        <div class="etapa-texto">
+                            <p>Atores: Coordenação, comunicação, técnicos.</p>
+                            <p>O lançamento do curso envolve duas ações principais:</p>
+                            <p>• Divulgação nas mídias digitais: atrair estudantes e fortalecer a visibilidade da
+                                formação.</p>
+                            <p>• Publicação no ambiente virtual: disponibilização do conteúdo para os alunos inscritos.
+                            </p>
+                            <p>O curso chega ao público.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        </div>
+
+<div class="row etapa-grid justify-content-center">
+            <div class="col-12 col-md-4">
+                <article class="etapa-card">
+                    <img src="../assets/imgmod1/icn_agenda.png" class="etapa-img" alt="Ícone de acompanhamento">
+                    <h3 class="etapa-titulo">
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#etapaAcompanhamento"
+                            aria-expanded="false" aria-controls="etapaAcompanhamento">
+                            Acompanhamento <span class="etapa-seta" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div class="collapse" id="etapaAcompanhamento">
+                        <div class="etapa-texto">
+                            <p>Atores: Coordenação, Pedagogo, professor, técnico</p>
+                            <p>O acompanhamento do curso inclui:</p>
+                            <p>• Monitoramento de inscrições</p>
+                            <p>• Ajuste de vagas conforme demanda</p>
+                            <p>• Promoção do engajamento: estratégias interativas e pedagógicas conduzidas pela
+                                coordenação e equipe educacional, garantindo participação ativa e melhor experiência de
+                                aprendizagem.</p>
+                            <p>Garantir participação e boa experiência.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-md-4">
+                <article class="etapa-card">
+                    <img src="../assets/imgmod1/icn_stars.png" class="etapa-img" alt="Ícone de avaliação">
+                    <h3 class="etapa-titulo">
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#etapaAvaliacao"
+                            aria-expanded="false" aria-controls="etapaAvaliacao">
+                            Avaliação <span class="etapa-seta" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div class="collapse" id="etapaAvaliacao">
+                        <div class="etapa-texto">
+                            <p>Atores: Estudantes, pedagogo e professor</p>
+                            <p>A avaliação do curso contempla dois movimentos:</p>
+                            <p>• Avaliação da aprendizagem: análise qualitativa do desempenho dos estudantes, realizada
+                                por meio de questões interativas que permitem acompanhar a aprendizagem e garantir a
+                                certificação, elaboradas pelos conteudistas e aplicadas pelos desenvolvedores.</p>
+                            <p>• Avaliação do curso: feita por enquetes no início e no final da formação, cuja
+                                elaboração é da equipe pedagógica.</p>
+                            <p>• Análise dos resultados: envolve todos os participantes do projeto para orientar
+                                melhorias contínuas.</p>
+                            <p>Melhorar continuamente o curso.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!-- Fim da div etapas-producao -->
+    
+         <p class="paragrafo-conteudo">
+                        Diante de todo o processo que se desenrola para que um curso autoinstrucional
+chegue a ser publicado, vários profissionais encontram-se envolvidos nas diversas
+etapas do processo.</p>
+
+ <p class="paragrafo-conteudo">
+                        Embora o curso traga uma visão geral sobre o papel de cada participante em cada
+fase do processo, vamos nos aprofundar sobre as etapas que envolvem mais
+precisamente o planejamento e a elaboração de conteúdo para as aulas online. </p>
+
+<p class="paragrafo-conteudo">
+                       Porém, para que não se perca a ideia do processo educacional em questão,
+consideramos importante aprofundar um pouco mais as funções envolvidas em
+cada etapa que delineamos acima. </p>
+
+
+
+
+   <h1 class="titulo-secao">
+                        Você chegou ao final da<br>
+primeira aula do Módulo 1
+                    </h1>
+
+
+                     <p class="paragrafo-conteudo">
+                      Na próxima aula, você vai conhecer como elaborar conteúdo para cursos
+autoinstrucionais e dicas importantes para transmitir conhecimento gerando
+engajamento dos estudantes. Até lá!</p>
+
+
+   <figure>
+                            <img src="../assets/imgmod1/grafic.png" class="img-fluid mx-auto d-block col-lg-8" alt="...">
+                        
+                           
+                        </figure>
+
+
+
+                        <p class="paragrafo-conteudo">
+                       Na próxima aula, você vai conhecer como elaborar conteúdo para cursos
+autoinstrucionais e dicas importantes para transmitir conhecimento gerando
+engajamento dos estudantes. Até lá!</p>
+
+
+
+
+<h2 class="subtitulo-secao">
+                       Conferindo a aprendizagem
+                    </h2>
+
+                    <section class="questionario-aprendizagem col-lg-8 mx-auto" aria-label="Questionário de aprendizagem">
+                        <article class="questao-card" data-correct="B">
+                            <div class="questao-cabecalho">
+                                <span class="questao-numero">Questão 1</span>
+                                <p class="questao-objetivo">
+                                    Objetivo: Identificar os conceitos principais abordados na aula: educação a distância,
+                                    ensino online e presencial, curso autoinstrucional, atividades síncronas e atividades assíncronas.
+                                </p>
+                            </div>
+
+                            <p class="questao-enunciado">
+                                Os cursos autoinstrucionais têm ganhado destaque nas estratégias de ensino a distância
+                                por promoverem autonomia e flexibilidade na aprendizagem. Assinale a alternativa que
+                                melhor define o que caracteriza um curso autoinstrucional.
+                            </p>
+
+                            <div class="questao-alternativas">
+                                <button type="button" class="questao-opcao" data-option="A" data-feedback="Incorreta. Cursos autoinstrucionais não são presenciais nem dependem de tutoria contínua. Eles são planejados para serem realizados de forma autônoma. Você está quase lá! Reflita sobre o papel da autonomia nos cursos autoinstrucionais.">
+                                    <strong>A)</strong> Curso presencial com tutoria contínua, desenvolvido com o apoio de ferramentas digitais.
+                                </button>
+                                <button type="button" class="questao-opcao" data-option="B" data-feedback="Correta. Perfeito! Cursos autoinstrucionais são pensados para que o estudante estude no seu tempo, com conteúdo acessível e bem estruturado, sem a necessidade de mediação direta e contínua. Muito bem! A autonomia e a clareza do material são os pilares dessa modalidade.">
+                                    <strong>B)</strong> Curso online em que o estudante estuda de forma autônoma, com conteúdo previamente organizado e sem necessidade de interação em tempo real com tutores.
+                                </button>
+                                <button type="button" class="questao-opcao" data-option="C" data-feedback="Incorreta. A exigência de encontros síncronos contradiz a principal característica do curso autoinstrucional, que é a flexibilidade no tempo de estudo. Pense na liberdade que o aluno tem para acessar o conteúdo quando quiser.">
+                                    <strong>C)</strong> Curso que exige encontros síncronos obrigatórios para validação do conteúdo.
+                                </button>
+                                <button type="button" class="questao-opcao" data-option="D" data-feedback="Incorreta. Essa descrição se refere ao ensino híbrido e não aos cursos autoinstrucionais, que não contam com atividades presenciais. Boa tentativa! Porém, lembre-se: autoinstrucional significa 100% online e autônomo.">
+                                    <strong>D)</strong> Curso híbrido que combina momentos presenciais e atividades virtuais com acompanhamento pedagógico contínuo.
+                                </button>
+                            </div>
+
+                            <div class="questao-feedback" aria-live="polite"></div>
+                        </article>
+
+                        <article class="questao-card" data-correct="C">
+                            <div class="questao-cabecalho">
+                                <span class="questao-numero">Questão 2</span>
+                                <p class="questao-objetivo">
+                                    Objetivo: Identificar as linhas gerais do fluxo de produção dos cursos autoinstrucionais da Fiocruz.
+                                </p>
+                            </div>
+
+                            <p class="questao-enunciado">
+                                O Termo de Referência (TR) é um documento essencial no planejamento e organização
+                                de cursos autoinstrucionais, pois orienta toda a estrutura pedagógica e técnica do
+                                processo. Sobre o Termo de Referência (TR) na produção de cursos autoinstrucionais, é
+                                correto afirmar que:
+                            </p>
+
+                            <div class="questao-alternativas">
+                                <button type="button" class="questao-opcao" data-option="A" data-feedback="Incorreta. O TR é construído na fase inicial do curso, não no final. Ele orienta todo o planejamento, desde os objetivos até os recursos. Lembre-se: o TR é o ponto de partida, não de chegada.">
+                                    <strong>A)</strong> É um documento utilizado exclusivamente na fase de avaliação final do curso.
+                                </button>
+                                <button type="button" class="questao-opcao" data-option="B" data-feedback="Incorreta. O TR não é elaborado apenas por designers gráficos nem trata apenas da identidade visual. Ele envolve a equipe pedagógica e a coordenação do curso. Cuidado para não confundir o briefing de identidade visual com o Termo de Referência!">
+                                    <strong>B)</strong> É um roteiro técnico criado somente pelos designers gráficos para orientar a identidade visual do curso.
+                                </button>
+                                <button type="button" class="questao-opcao" data-option="C" data-feedback="Correta. Excelente! O TR é fundamental no início do processo e organiza todos os elementos que guiarão a produção do curso. Conhecer o TR é essencial para todo conteudista que quer fazer parte desse processo.">
+                                    <strong>C)</strong> É um documento elaborado na pré-produção, que orienta toda a estrutura pedagógica e técnica do curso, servindo como base para a produção do conteúdo.
+                                </button>
+                                <button type="button" class="questao-opcao" data-option="D" data-feedback="Incorreta. O TR é um documento da equipe pedagógica, não dos alunos. Ele é criado antes da publicação do curso. A resposta está no começo do caminho: na fase de planejamento.">
+                                    <strong>D)</strong> É um relatório final preenchido pelos alunos ao concluir o curso.
+                                </button>
+                            </div>
+
+                            <div class="questao-feedback" aria-live="polite"></div>
+                        </article>
+                    </section>
+
+                    <nav class="navegacao-aula col-lg-8 mx-auto" aria-label="Navegação da aula">
+                        <a href="#" class="botao-aula botao-voltar" aria-label="Voltar">
+                            <img src="../assets/imgmod1/bt1_voltar_off.png" alt="Voltar">
+                        </a>
+
+                        <a href="../modulo1/aula2.html" class="botao-aula botao-proxima" aria-label="Próxima aula">
+                            <img src="../assets/imgmod1/bt_1 off.png" alt="Próxima">
+                        </a>
+                    </nav>
+
+
+
+
+
+
+
+                    </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <!-- Início do footer -->
+    <footer id="footer" class="py-4 mt-5">
+        <div class="container">
+            <div class="footer-logos row justify-content-center align-items-center text-center">
+                <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                    <img src="../assets/images/Logo_CVF.png" class="footer-logo w-100"
+                        alt="Campus Virtual Fiocruz">
+                </div>
+                <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                    <img src="../assets/images/Logo_Fiocruz.png" class="footer-logo w-100" alt="Fiocruz">
+                </div>
+                <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                    <img src="../assets/images/Logos_Sus35_Ms_Gov.png" class="footer-logo w-100" alt="Sus">
+                </div>
+                <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                    <img src="../assets/images/Logos_Sus35_Ms_Gov2.png" class="footer-logo w-100" alt="Sus">
+                </div>
+            </div>
+        </div>
+        <!-- Fim do footer -->
+    </footer>
+    <script>
+        function toggleMenu(id) {
+            const menu = document.getElementById(id);
+
+            document.querySelectorAll('.submenu').forEach(el => {
+                if (el.id !== id) el.classList.remove('open');
+            });
+
+            menu.classList.toggle('open');
+        }
+
+        // Mobile sidebar toggle
+        const mobileToggle = document.getElementById('mobileSidebarToggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', () => {
+                const isOpen = sidebar.classList.toggle('mobile-open');
+                overlay.classList.toggle('active');
+                mobileToggle.classList.toggle('is-open', isOpen);
+                mobileToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
+
+        if (overlay) {
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('mobile-open');
+                overlay.classList.remove('active');
+                mobileToggle.classList.remove('is-open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        // Fechar sidebar ao clicar em um link em mobile
+        if (window.innerWidth <= 767) {
+            document.querySelectorAll('.submenu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    sidebar.classList.remove('mobile-open');
+                    overlay.classList.remove('active');
+                    mobileToggle.classList.remove('is-open');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        // Fechar sidebar ao redimensionar para desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 767) {
+                sidebar.classList.remove('mobile-open');
+                overlay.classList.remove('active');
+                mobileToggle.classList.remove('is-open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.questao-card').forEach(questao => {
+                const respostaCorreta = questao.dataset.correct;
+                const feedback = questao.querySelector('.questao-feedback');
+
+                questao.querySelectorAll('.questao-opcao').forEach(opcao => {
+                    opcao.addEventListener('click', () => {
+                        const acertou = opcao.dataset.option === respostaCorreta;
+
+                        questao.querySelectorAll('.questao-opcao').forEach(item => {
+                            item.classList.remove('selecionada', 'correta', 'incorreta');
+                        });
+
+                        opcao.classList.add('selecionada', acertou ? 'correta' : 'incorreta');
+                        feedback.textContent = opcao.dataset.feedback;
+                        feedback.classList.remove('correto', 'incorreto');
+                        feedback.classList.add(acertou ? 'correto' : 'incorreto');
+                    });
+                });
+            });
+        });
+    </script>
+
+
+    <!-- TARJA FINAL -->
+    <div class="container-fluid p-0 text-center tarja-container">
+        <img src="../assets/images/tarja_1920.png" class="img-fluid w-100 traja-img" alt="Traja">
+    </div>
+
+    <!-- JS LOCAL -->
+    <script src="../js/menu.js"></script>
+    <script src="../js/page-transitions.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+

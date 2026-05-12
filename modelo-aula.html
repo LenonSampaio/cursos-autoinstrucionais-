@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Fiocruz</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- =====================================================
+       MODELO PARA NOVAS AULAS
+       1. Copie este arquivo para modulo1/aulaX.html ou modulo2/aulaX.html.
+       2. Troque apenas o banner e o conteudo dentro de <main>.
+       3. Navbar, sidebar, footer e tarja sao carregados automaticamente.
+       4. Se abrir direto pelo navegador e os componentes nao aparecerem,
+          rode um servidor local, porque fetch() pode ser bloqueado via file://.
+    ===================================================== -->
+
+    <div class="banner position-relative">
+        <div id="navbar-container"></div>
+
+        <picture>
+            <source srcset="../assets/imgmod1/bg_mod1_1.png" media="(max-width: 768px)">
+            <img src="../assets/imgmod1/Bg_mod1-Au1.png" class="img-fluid w-100" alt="Banner">
+        </picture>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="row g-0 row-full">
+        <div id="sidebar-container"></div>
+
+        <main class="col-12 col-md-10 main-content">
+            <div class="container my-5">
+                <!-- TROQUE SOMENTE O CONTEUDO DA AULA A PARTIR DAQUI -->
+                <h1 class="content-title">Titulo da aula</h1>
+                <p class="content-text content-width">
+                    Escreva aqui o conteudo da nova aula.
+                </p>
+                <!-- FIM DO CONTEUDO DA AULA -->
+            </div>
+        </main>
+    </div>
+
+    <div id="footer-container"></div>
+    <div id="tarja-container"></div>
+
+    <script src="../js/page-transitions.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/component-loader.js"></script>
+</body>
+
+</html>
