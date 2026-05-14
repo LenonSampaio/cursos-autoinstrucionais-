@@ -90,7 +90,7 @@ function loadComponent(componentPath, targetElement, componentType, root = getPr
 }
 
 function initializeComponent(componentType) {
-    if (componentType === 'sidebar' || componentType === 'navbar') {
+    if (componentType === 'sidebar' || componentType === 'navbar' || componentType === 'overlay') {
         initializeSidebarCascade();
         initializeMobileSidebar();
     }
@@ -138,11 +138,16 @@ function initializeMobileSidebar() {
     const sidebar = document.querySelector('.sidebar-wrapper') || document.querySelector('.sidebar');
     const sidebarOverlay = document.getElementById('sidebarOverlay');
 
+    if (!sidebar) return;
+
+    const sidebarClose = ensureSidebarCloseButton(sidebar);
+
     if (sidebarToggle && sidebarToggle.dataset.bound !== 'true') {
         sidebarToggle.dataset.bound = 'true';
         sidebarToggle.addEventListener('click', () => {
             const isOpen = sidebar ? sidebar.classList.toggle('mobile-open') : false;
-            if (sidebarOverlay) sidebarOverlay.classList.toggle('active', isOpen);
+            const currentOverlay = document.getElementById('sidebarOverlay');
+            if (currentOverlay) currentOverlay.classList.toggle('active', isOpen);
             sidebarToggle.classList.toggle('is-open', isOpen);
             sidebarToggle.setAttribute('aria-expanded', String(isOpen));
         });
@@ -153,6 +158,11 @@ function initializeMobileSidebar() {
         sidebarOverlay.addEventListener('click', closeMobileSidebar);
     }
 
+    if (sidebarClose && sidebarClose.dataset.bound !== 'true') {
+        sidebarClose.dataset.bound = 'true';
+        sidebarClose.addEventListener('click', closeMobileSidebar);
+    }
+
     document.querySelectorAll('.submenu-link, .submenu a').forEach(link => {
         if (link.dataset.bound === 'true') return;
         link.dataset.bound = 'true';
@@ -161,12 +171,31 @@ function initializeMobileSidebar() {
 
     function closeMobileSidebar() {
         if (sidebar) sidebar.classList.remove('mobile-open');
-        if (sidebarOverlay) sidebarOverlay.classList.remove('active');
+        const currentOverlay = document.getElementById('sidebarOverlay');
+        if (currentOverlay) currentOverlay.classList.remove('active');
         if (sidebarToggle) {
             sidebarToggle.classList.remove('is-open');
             sidebarToggle.setAttribute('aria-expanded', 'false');
         }
     }
+}
+
+function ensureSidebarCloseButton(sidebar) {
+    if (!sidebar) return null;
+
+    const existingButton = sidebar.querySelector('.sidebar-close');
+    if (existingButton) return existingButton;
+
+    const button = document.createElement('button');
+    button.className = 'sidebar-close';
+    button.type = 'button';
+    button.setAttribute('aria-label', 'Fechar menu lateral');
+    button.innerHTML = '&times;';
+
+    const target = sidebar.querySelector('.sticky-sidebar') || sidebar;
+    target.prepend(button);
+
+    return button;
 }
 
 document.addEventListener('DOMContentLoaded', loadComponents);
@@ -175,5 +204,6 @@ window.ComponentLoader = {
     loadComponents,
     loadComponent,
     initializeSidebarCascade,
-    initializeMobileSidebar
+    initializeMobileSidebar,
+    ensureSidebarCloseButton
 };
