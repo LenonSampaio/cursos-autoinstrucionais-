@@ -2997,7 +2997,9 @@ padding-left: 88px;
     width: calc(100% + 34px);
     height: calc(100% + 28px);
     object-fit: cover;
-    transform: translate(-17px, -14px);
+
+    /* Ajuste para aumentar visualmente o card (aplica no Moodle e MOOC) */
+    transform: translate(-17px, -14px) scale(1.05);
 }
 
 .aula4-flip-front .aula4-card-flip-icon {
