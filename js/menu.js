@@ -1,11 +1,26 @@
-fetch('../menu.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('menu-container').innerHTML = data;
-  });
+const menuContainer = document.getElementById('menu-container');
 
-// botão mobile
-function toggleSidebar() {
-    document.getElementById('sidebarMenu').classList.toggle('show');
+if (menuContainer) {
+    fetch('../home/menu.html')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Menu nao encontrado: ${response.status}`);
+            }
+
+            return response.text();
+        })
+        .then(data => {
+            menuContainer.innerHTML = data;
+        })
+        .catch(error => {
+            console.warn(error.message);
+        });
 }
- 
+
+function toggleSidebar() {
+    const sidebarMenu = document.getElementById('sidebarMenu');
+
+    if (sidebarMenu) {
+        sidebarMenu.classList.toggle('show');
+    }
+}
