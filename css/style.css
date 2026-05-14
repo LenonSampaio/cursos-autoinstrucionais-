@@ -4932,7 +4932,7 @@ svg,
 video,
 canvas,
 iframe {
-    max-width: 105%;
+    max-width: 90%;
 }
 
 .main-content,
