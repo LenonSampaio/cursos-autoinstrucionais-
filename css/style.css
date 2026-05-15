@@ -318,6 +318,7 @@ button:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -420,6 +421,11 @@ em {
 }
 
 .titulo-secao {
+    color: #5a2d82;
+    font-family: 'Rawline', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.12;
     text-align: center;
     margin-bottom: 1.5rem;
 }
@@ -439,6 +445,12 @@ em {
 
 /* MOBILE */
 @media (max-width: 768px) {
+    .titulo-secao,
+    .aula3-heading {
+        font-size: 1.65rem;
+        line-height: 1.12;
+    }
+
     .introducao-aula {
         margin-top: 1rem;
         margin-bottom: 2rem;
@@ -548,26 +560,33 @@ em {
 ===================================================== */
 
 .footer-logo {
-    display: inline-block;
-    max-height: 70px;
+    display: block;
+    height: 86px;
+    max-height: none;
     width: auto;
     object-fit: contain;
     margin: 0 auto;
 }
 
 .footer-logos {
-    column-gap: 10px;
-    row-gap: 18px;
+    --bs-gutter-x: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(28px, 6vw, 82px);
+    row-gap: 22px;
 }
 
 .footer-logo-col {
+    flex: 0 1 auto;
     padding-left: 0;
     padding-right: 0;
 }
 
 .footer-logo-col .footer-logo {
+    height: 86px;
     width: auto !important;
-    max-width: 190px;
+    max-width: min(28vw, 330px);
 }
 
 .footer-logo:hover {
@@ -577,22 +596,20 @@ em {
 
 @media (max-width: 768px) {
     .footer-logos {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        column-gap: 16px;
-        row-gap: 18px;
+        gap: 18px 24px;
     }
 
     .footer-logo-col {
-        width: 100%;
-        max-width: none;
-        flex: none;
+        width: auto;
+        max-width: 100%;
+        flex: 0 1 auto;
         margin-bottom: 0 !important;
     }
 
     .footer-logo-col .footer-logo {
-        max-width: 140px;
-        width: 100% !important;
+        height: 56px;
+        max-width: 28vw;
+        width: auto !important;
     }
 }
 
@@ -724,18 +741,19 @@ em {
 
 .logo-right-wrap,
 .navbar-brand.logo-right-wrap {
-    margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding) + 18px);
+    margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding) + -4px);
 }
 
 
-.navbar-brand > .logo-right-wrap,
+.navbar-brand>.logo-right-wrap,
 .navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) {
     margin-left: 0;
 }
 
-.navbar-brand > .logo-right-wrap .logo-move.logo-right,
+.navbar-brand>.logo-right-wrap .logo-move.logo-right,
 .navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) .logo-move.logo-right {
     margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding) - var(--navbar-sidebar-space));
+     margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding) + -4px);
 }
 
 .logo-move.logo-right {
@@ -1651,7 +1669,7 @@ em {
     }
 
     .footer-logo {
-        max-height: 50px;
+        max-height: none;
     }
 
     .my-5 {
@@ -1779,10 +1797,11 @@ em {
 
 /* Definição de cores e fontes */
 :root {
-  --purple-main: #5a2d82; /* Cor roxa da imagem e ícone */
-  --text-gray: #555;
-  /* Espaçamento vertical padrão dos cards principais */
-  --card-spacing-y: 32px;
+    --purple-main: #5a2d82;
+    /* Cor roxa da imagem e ícone */
+    --text-gray: #555;
+    /* Espaçamento vertical padrão dos cards principais */
+    --card-spacing-y: 32px;
 }
 
 /* Aplica a mesma margem superior e inferior nos cards principais */
@@ -1801,8 +1820,10 @@ em {
     border-radius: 25px;
     border: 1px solid #e0e0e0;
     box-shadow: 0 14px 30px rgba(29, 16, 62, 0.2);
-    position: relative; /* Base para o posicionamento dos filhos */
-    padding: 40px;       /* Espaço interno geral */
+    position: relative;
+    /* Base para o posicionamento dos filhos */
+    padding: 40px;
+    /* Espaço interno geral */
 }
 
 /* 2. A IMAGEM (Ícone de Aspas) */
@@ -1812,9 +1833,9 @@ em {
 }
 
 .quote-icon-wrapper {
-   
+
     /* Manipule aqui a posição da imagem */
-top: -26px;
+    top: -26px;
     left: -40px;
     width: 118px;
     max-width: 100%;
@@ -1849,7 +1870,7 @@ top: -26px;
 /* 4. O BLOCO DE TEXTO (Afastamento da linha) */
 .quote-content {
     /* Manipule o recuo para não bater na linha */
-padding-left: 88px;
+    padding-left: 88px;
     padding-top: 3px;
     max-width: 640px;
     box-sizing: border-box;
@@ -1878,7 +1899,7 @@ padding-left: 88px;
     }
 
     .quote-content {
-                padding-left: 28px !important;
+        padding-left: 28px !important;
         padding-top: 44px;
         padding-right: 28px !important;
         max-width: 100%;
@@ -1977,8 +1998,12 @@ padding-left: 88px;
 }
 
 .etapa-grid {
-    --bs-gutter-x: -317px;
+    --bs-gutter-x: 24px;
     --bs-gutter-y: 18px;
+    width: 100%;
+    max-width: 66.666667%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .etapa-card {
@@ -2192,6 +2217,7 @@ padding-left: 88px;
     .etapa-grid {
         --bs-gutter-x: 16px;
         --bs-gutter-y: 28px;
+        max-width: 100%;
     }
 
     .etapa-card {
@@ -2314,6 +2340,7 @@ padding-left: 88px;
         display: inline-flex;
     }
 }
+
 /* =====================================================
    AULA 2 - COMPONENTES ESPECIFICOS
 ===================================================== */
@@ -2345,6 +2372,7 @@ padding-left: 88px;
 .navbar .navbar-nav {
     align-items: center;
     gap: 10px;
+    margin-bottom: 26px;
 }
 
 .navbar .nav-item {
@@ -2602,6 +2630,7 @@ padding-left: 88px;
 }
 
 @media (max-width: 767px) {
+
     .mobile-sidebar-toggle,
     .navbar-brand .mobile-sidebar-toggle {
         display: inline-flex;
@@ -2627,15 +2656,16 @@ padding-left: 88px;
 }
 
 .aula3-heading {
-    color: #5a35a0;
+    color: #5a2d82;
     font-family: 'Rawline', sans-serif;
+    font-size: 2.5rem;
     font-weight: 800;
-    line-height: 1.08;
-    margin: 34px auto 24px;
+    line-height: 1.12;
+    margin: 34px auto 1.5rem;
 }
 
 .aula3-split-section .paragrafo-conteudo,
-.aula3-content .presentation > .paragrafo-conteudo {
+.aula3-content .presentation>.paragrafo-conteudo {
     max-width: 100%;
 }
 
@@ -3185,7 +3215,7 @@ padding-left: 88px;
 }
 
 .aula4-tab-list {
-       display: flex;
+    display: flex;
     align-items: flex-end;
     gap: 0;
     margin: 0px 0 -29px;
@@ -3278,11 +3308,12 @@ padding-left: 88px;
 }
 
 .aula4-rea-section h2 {
-    margin: 0 0 24px;
-    color: #4b2f91;
-    font-size: 1.9rem;
+    margin: 0 0 1.5rem;
+    color: #5a2d82;
+    font-family: 'Rawline', sans-serif;
+    font-size: 2.5rem;
     font-weight: 800;
-    line-height: 1.15;
+    line-height: 1.12;
     text-align: center;
 }
 
@@ -3387,6 +3418,7 @@ padding-left: 88px;
     border-radius: 15px;
     background: #ffffff;
     box-shadow: none;
+    transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
 }
 
 .aula4-icon-accordion summary {
@@ -3403,6 +3435,7 @@ padding-left: 88px;
     font-size: 0.94rem;
     line-height: 1.12;
     list-style: none;
+    transition: background-color 220ms ease, color 220ms ease;
 }
 
 .aula4-icon-accordion summary::-webkit-details-marker {
@@ -3416,10 +3449,21 @@ padding-left: 88px;
     font-size: 2.2rem;
     font-weight: 800;
     line-height: 1;
+    transition: transform 220ms ease, opacity 220ms ease;
+}
+
+.aula4-icon-accordion details[open] {
+    border-color: #5a2d82;
+    box-shadow: 0 12px 24px rgba(52, 32, 72, 0.14);
+}
+
+.aula4-icon-accordion details[open] summary {
+    background: #c8b6dd;
 }
 
 .aula4-icon-accordion details[open] summary::after {
     content: "-";
+    transform: rotate(180deg);
 }
 
 .aula4-icon-accordion summary img {
@@ -3438,6 +3482,34 @@ padding-left: 88px;
     color: #555555;
     font-size: 0.92rem;
     line-height: 1.35;
+}
+
+.aula4-icon-accordion details[open] p {
+    animation: accordionReveal 260ms ease both;
+}
+
+@keyframes accordionReveal {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .aula4-icon-accordion details,
+    .aula4-icon-accordion summary,
+    .aula4-icon-accordion summary::after {
+        transition: none;
+    }
+
+    .aula4-icon-accordion details[open] p {
+        animation: none;
+    }
 }
 
 .aula4-flow {
@@ -3642,11 +3714,12 @@ padding-left: 88px;
 
 .aula4-final-card h2 {
     max-width: 520px;
-    margin: 0 auto 24px;
+    margin: 0 auto 1.5rem;
     color: #5a2d82;
-    font-size: 1.95rem;
+    font-family: 'Rawline', sans-serif;
+    font-size: 2.5rem;
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1.12;
     text-align: center;
 }
 
@@ -3744,7 +3817,7 @@ padding-left: 88px;
     margin-right: 0;
 }
 
-.aula3-storyboard-media-row > [class*="col-"]:first-child {
+.aula3-storyboard-media-row>[class*="col-"]:first-child {
     padding-left: 0;
 }
 
@@ -4022,7 +4095,7 @@ padding-left: 88px;
     }
 
     .aula4-rea-section h2 {
-        font-size: 1.55rem;
+        font-size: 1.65rem;
     }
 
     .aula4-rea-section h3 {
@@ -4060,7 +4133,7 @@ padding-left: 88px;
     }
 
     .aula4-final-card h2 {
-        font-size: 1.55rem;
+        font-size: 1.65rem;
     }
 
     .aula4-repo-tab-list {
@@ -4216,7 +4289,7 @@ padding-left: 88px;
     }
 
     .quote-card.aula3-example-card .quote-content {
-             padding-left: 12px !important;
+        padding-left: 12px !important;
         padding-top: 52px;
         padding-right: 0 !important
     }
@@ -4302,7 +4375,7 @@ padding-left: 88px;
 
 @media (max-width: 575px) {
     .aula3-heading {
-        font-size: 1.5rem;
+        font-size: 1.65rem;
     }
 
     .aula3-purple-list {
@@ -4943,7 +5016,7 @@ iframe {
 .questionario-aprendizagem,
 .navegacao-aula,
 .row,
-.row > [class*="col-"] {
+.row>[class*="col-"] {
     min-width: 0;
 }
 
@@ -5012,6 +5085,7 @@ iframe {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+
     .mobile-sidebar-toggle,
     .navbar-brand .mobile-sidebar-toggle {
         display: inline-flex !important;
@@ -5077,7 +5151,7 @@ iframe {
     }
 
     .card-como-trabalhar .col-md-4,
-    .etapa-grid > .col-md-4 {
+    .etapa-grid>.col-md-4 {
         flex: 0 0 50%;
         max-width: 50%;
     }
@@ -5119,7 +5193,7 @@ iframe {
     }
 
     .card-como-trabalhar .col-md-4,
-    .etapa-grid > .col-md-4 {
+    .etapa-grid>.col-md-4 {
         flex: 0 0 100%;
         max-width: 100%;
     }
@@ -5191,6 +5265,7 @@ iframe {
     .importante-content h3 {
         font-size: clamp(1.25rem, 8vw, 1.75rem);
     }
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -5216,6 +5291,7 @@ iframe {
 }
 
 @media (max-width: 991.98px) {
+
     .sidebar:not(.mobile-open),
     .sidebar-wrapper:not(.mobile-open) {
         transform: translateX(calc(-100% - 12px)) !important;
@@ -5235,6 +5311,7 @@ iframe {
 }
 
 @media (max-width: 767.98px) {
+
     .banner,
     .banner picture,
     .banner img {
@@ -5299,7 +5376,7 @@ iframe {
         align-items: flex-start;
     }
 
-    .navbar > .container-fluid {
+    .navbar>.container-fluid {
         position: relative;
         display: flex;
         flex-wrap: nowrap;
@@ -5310,7 +5387,7 @@ iframe {
         padding-right: 12px;
     }
 
-.navbar-brand,
+    .navbar-brand,
     .navbar-brand.logo-right-wrap,
     .navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) {
         flex: 1 1 auto;
@@ -5328,7 +5405,7 @@ iframe {
 
 
     .logo-home-link,
-    .navbar-brand > .logo-right-wrap {
+    .navbar-brand>.logo-right-wrap {
         display: inline-flex;
         align-items: center;
         min-width: 0;
@@ -5337,7 +5414,7 @@ iframe {
 
     .logo-move.logo-right,
     .navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) .logo-move.logo-right,
-    .navbar-brand > .logo-right-wrap .logo-move.logo-right {
+    .navbar-brand>.logo-right-wrap .logo-move.logo-right {
         width: auto !important;
         height: clamp(40px, 11vw, 54px) !important;
         max-width: min(48vw, 180px);
@@ -5412,10 +5489,10 @@ iframe {
 }
 
 @media (max-width: 380px) {
+
     .logo-move.logo-right,
     .navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) .logo-move.logo-right,
-    .navbar-brand > .logo-right-wrap .logo-move.logo-right {
+    .navbar-brand>.logo-right-wrap .logo-move.logo-right {
         max-width: 130px;
     }
 }
-
