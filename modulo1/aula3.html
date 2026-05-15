@@ -1,756 +1,1660 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Fiocruz</title>
-
-    <!-- Bootstrap LOCAL -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <!-- Seu CSS (sempre depois do bootstrap) -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../assets/font/rawline-400.ttf">
-
-</head>
-
-<body><!-- Início da div banner -->
-    <div class="banner position-relative">
-        <!-- NAVBAR -->
-       <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0">
-            <div class="container-fluid">
-                <div class="navbar-brand logo-right-wrap d-flex align-items-center">
-                    <button class="mobile-sidebar-toggle me-3" id="mobileSidebarToggle" aria-label="Abrir menu lateral"
-                        type="button" aria-expanded="false">
-                        <svg class="sidebar-arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                            <path class="sidebar-arrow-stem" d="M5 12H17"></path>
-                            <path class="sidebar-arrow-head" d="M12 7L17 12L12 17"></path>
-                        </svg>
-                    </button>
-                    <a class="logo-home-link" href="../home/index.html">
-                        <img src="../assets/images/Logo_CVF.png" height="60" class="logo-move logo-right" alt="Logo" style="max-width: 59%">
-                    </a>
-                </div>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuTopo"
-                    aria-label="Abrir menu de navegação">
-                    <span class="top-menu-dots">&vellip;</span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-end" id="menuTopo">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="../home/index.html">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../home/index.html">Bibliografia</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../home/index.html">Crédito</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-        <picture>
-            <source srcset="../assets/imgmod1/aula3/bg_mod1_3.png" media="(max-width: 768px)">
-            <img src="../assets/imgmod1/aula3/Bg_mod1_aul3.png" class="img-fluid w-100" alt="Banner">
-        </picture>
-
-        <!-- Fim da div banner -->
-    </div>
-
-    <!-- Overlay para fechar sidebar em mobile -->
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
-
-    <div class="container-fluid p-0">
-        <div class="row g-0 row-full">
-
-            <!-- Início do aside sidebar -->
-            <aside class="col-12 col-md-2 sidebar">
-
-                <div class="menu-item" onclick="toggleMenu('mod1')">
-                    <h3>Módulo 1</h3>
-                    <p> - A EAD e o desenvolvimento de<br> cursos autoinstrucionais</p>
-                </div>
-                <div class="submenu" id="mod1">
-                    <a href="../modulo1/aula1.html" class="submenu-aula-longa"><span class="submenu-aula-numero">Aula
-                            1.1</span><span class="submenu-aula-titulo">– Contextualização de<br>EAD (ensino
-                            híbrido,<br>ensino on-line,<br>ensino presencial) e a<br>produção de
-                            cursos<br>autoinstrucionais</span></a>
-                    <a href="../modulo1/aula2.html"><span class="submenu-aula-numero">Aula 1.2</span><span
-                            class="submenu-aula-titulo">– Elaboração de<br>conteúdo para
-                            curso<br>autoinstrucional</span></a>
-                    <a href="../modulo1/aula3.html"><span class="submenu-aula-numero">Aula 1.3</span><span
-                            class="submenu-aula-titulo">– A criação de<br>Storyboards e a<br>relação com a<br>Designer
-                            Educacional</span></a>
-                    <a href="../modulo1/aula4.html"><span class="submenu-aula-numero">Aula 1.4</span><span
-                            class="submenu-aula-titulo">– Publicações on-line:<br>Mooc, Moodle e<br>linguagem
-                            HTML</span></a>
-                </div>
-
-                <div class="menu-item" onclick="toggleMenu('mod2')">
-                    <h3>Módulo 2</h3>
-                    <p> - Criação do Material Didático Digital</p>
-                </div>
-                <div class="submenu" id="mod2">
-                    <a href="../modulo2/aula1.html"><span class="submenu-aula-numero">Aula 2.1</span><span
-                            class="submenu-aula-titulo">– O material<br>didático digital</span></a>
-                    <a href="../modulo2/aula2.html"><span class="submenu-aula-numero">Aula 2.2</span><span class="submenu-aula-titulo">– O
-                            processo de<br>planejamento do<br>material didático</span></a>
-                    <a href="../modulo2/aula3.html"><span class="submenu-aula-numero">Aula 2.3</span><span class="submenu-aula-titulo">– O
-                            processo de<br>produção textual<br>e acessibilidade</span></a>
-                    <a href="../modulo2/aula4.html"><span class="submenu-aula-numero">Aula 2.4</span><span class="submenu-aula-titulo">–
-                            Avaliação e<br>feedbacks no EAD</span></a>
-                </div>
-
-                <div class="menu-item menu-material-complementar">
-                    <h3>Material</h3>
-                    <h3>Complementar</h3>
-                </div>
-
-            </aside>
-
-
-            <!-- CONTEÚDO -->
-            <!-- Início do main content -->
-            <main class="col-12 col-md-10 main-content">
-                <div class="container introducao-aula aula3-content">
-                    <section class="objectives">
-                        <h1 class="text-center mb-4">
-                            A criação de storyboards e a relação<br>
-                            com o Designer Educacional
-                        </h1>
-
-                        <p class="textoconteudo col-lg-8 mx-auto text-md-start">
-                            Seja bem-vindo e bem-vinda!<br>
-                            A seguir veja algumas informações importantes sobre esta aula.
-                        </p>
-                    </section>
-
-                    <section class="objectives">
-                        <h2 class="text-start col-lg-8 mx-auto font-rawline-bold aula2-section-title">
-                            Objetivos de aprendizagem
-                        </h2>
-
-                        <p class="textoconteudo col-lg-8 mx-auto aula2-objectives-intro">
-                            Ao final desta aula você poderá:
-                        </p>
-
-                        <div class="col-lg-8 mx-auto">
-                            <div class="d-flex flex-column">
-                                <div class="d-flex align-items-start">
-                                    <div class="flex-shrink-0 me-3">
-                                        <img src="../assets/imgmod1/aula3/check_1.png" alt="Ícone de check" class="aula2-check-icon">
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <p class="textoconteudo">Reconhecer o trabalho de transposição didática realizado pelo Designer Educacional/Instrucional.</p>
-                                    </div>
-                                </div>
-
-                                <div class="d-flex align-items-start">
-                                    <div class="flex-shrink-0 me-3">
-                                        <img src="../assets/imgmod1/aula3/check_1.png" alt="Ícone de check" class="aula2-check-icon">
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <p class="textoconteudo">Reconhecer a linguagem e estrutura de um storyboard.</p>
-                                    </div>
-                                </div>
-
-                                <div class="d-flex align-items-start">
-                                    <div class="flex-shrink-0 me-3">
-                                        <img src="../assets/imgmod1/aula3/check_1.png" alt="Ícone de check" class="aula2-check-icon">
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <p class="textoconteudo">Identificar as etapas de validação/revalidação da arquitetura pedagógica das aulas.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="presentation">
-                        <h2 class="subtitulo-secao">Introdução</h2>
-
-                        <p class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">
-                            Na aula anterior você conheceu mais detalhadamente as etapas de produção e todos os procedimentos que antecedem a entrega do material bruto de um curso autoinstrucional. Igualmente, reconheceu a importância de observar os prazos para seleção e entrega de conteúdo objetivando manter a fluidez do processo de formação.
-                        </p>
-
-                        <p class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">
-                            Nesta aula vamos conhecer um pouco mais sobre o trabalho do Designer Educacional/Instrucional. Assim, para compreender as habilidades envolvidas, entra em cena o processo de transposição didática que apresentaremos nesta aula e aprofundaremos na primeira aula do módulo II. Para finalizar, analisaremos como se dá essa construção das aulas na parceria entre conteudistas e designers com vistas a oferecer a melhor experiência de aprendizagem possível em cursos autoinstrucionais.
-                        </p>
-
-                        <p class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">
-                            Ao final da aula você será capaz de articular a sua produção de conteúdo com o trabalho de design educacional, fundamental para a formação e o engajamento dos estudantes.
-                        </p>
-                    </section>
-
-                    <section class="presentation aula3-split-section col-lg-8 mx-auto">
-                        <h2 class="aula3-heading text-center">O trabalho de Design<br>Educacional/Instrucional</h2>
-
-                        <div class="row align-items-center g-4">
-                            <div class="col-md-6">
-                                <p class="paragrafo-conteudo w-100 mw-100">
-                                    Nos últimos anos, sobretudo no período pós-pandêmico de covid-19, a educação a distância se tornou modalidade de ensino essencial no cenário educacional. Com o avanço da tecnologia, cursos online têm se espalhado por várias plataformas, oferecendo uma variedade de opções para o aprendizado.
-                                </p>
-                                <p class="paragrafo-conteudo w-100 mw-100">
-                                    Nesse contexto, o designer educacional ganha destaque como um profissional indispensável para garantir que esse processo de ensino-aprendizagem seja bem-sucedido.
-                                </p>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <img src="../assets/imgmod1/aula3/gr_curvas.png" class="img-fluid aula3-diagram-small" alt="Crescimento do EaD, diversas plataformas e cursos online acessíveis">
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100 mt-3">
-                            Este profissional simplifica conteúdos complexos para tornar o aprendizado mais fácil e natural:
-                        </p>
-                    </section>
-
-                    <section class="aula3-purple-list col-lg-8 mx-auto">
-                        <div class="aula3-purple-item">
-                            <img src="../assets/imgmod1/aula3/tag.png" alt="" class="aula3-purple-icon"
-                                aria-hidden="true">
-                            <p>Na transposição didática dos conteúdos, transformando informações técnicas em material compreensível e pedagógico.</p>
-                        </div>
-                        <div class="aula3-purple-item">
-                            <img src="../assets/imgmod1/aula3/tag.png" alt="" class="aula3-purple-icon"
-                                aria-hidden="true">
-                            <p>Na criação de storyboards e estruturação da arquitetura pedagógica das aulas.</p>
-                        </div>
-                        <div class="aula3-purple-item">
-                            <img src="../assets/imgmod1/aula3/tag.png" alt="" class="aula3-purple-icon"
-                                aria-hidden="true">
-                            <p>No planejamento de experiências de aprendizagem que promovam engajamento, compreensão e eficácia.</p>
-                        </div>
-                        <div class="aula3-purple-item">
-                            <img src="../assets/imgmod1/aula3/tag.png" alt="" class="aula3-purple-icon"
-                                aria-hidden="true">
-                            <p>Na integração da pedagogia, tecnologia e design para a construção de ambientes de aprendizagem interativos, acessíveis e significativos.</p>
-                        </div>
-                    </section>
-
-                    <section class="presentation col-lg-8 mx-auto">
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Ao desenvolver um curso online, o designer educacional não apenas organiza o conteúdo de forma lógica, mas também precisa reunir um conjunto diverso de habilidades que integram pedagogia, criatividade e domínio tecnológico.
-                        </p>
-
-                        <figure class="aula3-figure">
-                            <img src="../assets/imgmod1/aula3/imagem_mulher.png" class="img-fluid w-100" alt="Mulher usando notebook">
-                            <figcaption class="textolegenda w-100 mw-100 text-end">fonte: Freepik.com</figcaption>
-                        </figure>
-
-                        <h2 class="subtitulo-secao w-100 mw-100">Competências do Designer<br>Educacional/Instrucional</h2>
-                        <img src="../assets/imgmod1/aula3/gr_setas.png" class="img-fluid aula3-wide-image" alt="Competências do Designer Educacional/Instrucional">
-                    </section>
-
-                    <section class="presentation col-lg-8 mx-auto">
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            A seguir, apresentamos alguns dos principais recursos de aprendizagem utilizados em Design Educacional/Instrucional para potencializar a experiência de aprendizagem.
-                        </p>
-
-                        <div class="aula3-resource-card">
-                            <div class="aula3-resource-item">
-                                <img src="../assets/imgmod1/aula3/icone_19.png" alt="" aria-hidden="true">
-                                <h3>Recursos audiovisuais</h3>
-                                <ul><li>Vídeos explicativos.</li><li>Videoaulas.</li><li>Vídeos animados.</li><li>Microvídeos (pílulas de aprendizagem).</li><li>Vídeos demonstrativos.</li></ul>
-                            </div>
-                            <div class="aula3-resource-item">
-                                <img src="../assets/imgmod1/aula3/icone_20.png" alt="" aria-hidden="true">
-                                <h3>Recursos visuais e gráficos</h3>
-                                <ul><li>Imagens ilustrativas.</li><li>Diagramas.</li><li>Gráficos.</li><li>Mapas conceituais.</li><li>Infográficos.</li><li>Linha do tempo visual.</li></ul>
-                            </div>
-                            <div class="aula3-resource-item">
-                                <img src="../assets/imgmod1/aula3/icone_21.png" alt="" aria-hidden="true">
-                                <h3>Recursos sonoros</h3>
-                                <ul><li>Podcasts educativos.</li><li>Áudios explicativos.</li><li>Depoimentos em áudio.</li><li>Narrações guiadas.</li></ul>
-                            </div>
-                            <div class="aula3-resource-item">
-                                <img src="../assets/imgmod1/aula3/icone_22.png" alt="" aria-hidden="true">
-                                <h3>Recursos interativos e experienciais</h3>
-                                <ul><li>Simulações.</li><li>Estudos de caso interativos.</li><li>Cenários de tomada de decisão.</li><li>Laboratórios virtuais.</li><li>Ambientes simulados.</li></ul>
-                            </div>
-                            <div class="aula3-resource-item">
-                                <img src="../assets/imgmod1/aula3/icone_23.png" alt="" aria-hidden="true">
-                                <h3>Recursos avaliativos</h3>
-                                <ul><li>Quizzes.</li><li>Questionários.</li><li>Exercícios práticos.</li><li>Atividades de fixação.</li><li>Avaliações diagnósticas.</li><li>Avaliações formativas.</li></ul>
-                            </div>
-                            <div class="aula3-resource-item">
-                                <img src="../assets/imgmod1/aula3/icone_24.png" alt="" aria-hidden="true">
-                                <h3>Recursos narrativos e culturais</h3>
-                                <ul><li>Histórias em quadrinhos (HQs).</li><li>Storytelling educativo.</li><li>Narrativas baseadas em casos reais.</li><li>Dramatizações.</li></ul>
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Além das competências já mencionadas, o designer educacional/instrucional desempenha diversas atribuições essenciais para o sucesso de um curso online que abrangem todas as etapas do planejamento e desenvolvimento de cursos, garantindo coerência, qualidade e impacto pedagógico.
-                        </p>
-
-                        <img src="../assets/imgmod1/aula3/gr_aro.png" class="img-fluid aula3-cycle-image" alt="Atribuições do designer educacional/instrucional">
-
-                        <div class="aula3-icon-list">
-                            <p><img src="../assets/imgmod1/aula3/lupa.png" alt="" aria-hidden="true"><span><strong>Análise de necessidades:</strong> Realiza análise de necessidades para identificar lacunas de conhecimento e definir as habilidades que os estudantes devem desenvolver.</span></p>
-                            <p><img src="../assets/imgmod1/aula3/icon_alvo.png" alt="" aria-hidden="true"><span><strong>Objetivos de aprendizagem:</strong> Elabora objetivos de aprendizagem claros e mensuráveis.</span></p>
-                            <p><img src="../assets/imgmod1/aula3/laptop.png" alt="" aria-hidden="true"><span><strong>Seleção de tecnologias:</strong> Seleciona e integra recursos tecnológicos adequados, garantindo que plataformas e ferramentas sejam acessíveis e funcionais.</span></p>
-                            <p><img src="../assets/imgmod1/aula3/cora%C3%A7%C3%A3o.png" alt="" aria-hidden="true"><span><strong>Interação e colaboração:</strong> Cria estratégias para promover interação entre estudante-conteúdo e entre os próprios estudantes.</span></p>
-                            <p><img src="../assets/imgmod1/aula3/ensaio.png" alt="" aria-hidden="true"><span><strong>Validação e revisão:</strong> Valida materiais, revisa conteúdos e aperfeiçoa continuamente os métodos e objetos de aprendizagem.</span></p>
-                            <p><img src="../assets/imgmod1/aula3/atualixa%C3%A7%C3%A3o.png" alt="" aria-hidden="true"><span><strong>Atualização contínua:</strong> Garante que o curso permaneça relevante em um cenário de constante evolução tecnológica e educacional.</span></p>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Lembramos ainda da importância da relação entre o designer educacional e os produtores de conteúdo para cursos autoinstrucionais. Enquanto o conteudista possui expertise no tema abordado e é responsável por elaborar o conteúdo técnico, o designer educacional traz conhecimento sobre métodos pedagógicos, estratégias de ensino e a melhor forma de apresentar esse conteúdo de maneira acessível e engajadora.
-                        </p>
-                    </section>
-
-                    <section class="presentation col-lg-8 mx-auto">
-                        <h2 class="aula3-heading text-center">Relação entre o designer educacional<br>e os produtores de conteúdo</h2>
-                        <img src="../assets/imgmod1/aula3/gr_bolotas.png" class="img-fluid aula3-relation-image" alt="Relação entre o designer educacional e os produtores de conteúdo">
-
-                        <div class="quote-card aula3-example-card mx-auto">
-                            <div class="quote-body">
-                                <div class="quote-accent-line"></div>
-                                <div class="quote-icon-wrapper">
-                                    <img src="../assets/imgmod1/aula3/bx_exemplo.png" alt="" class="quote-img">
-                                </div>
-                                <div class="quote-content ps-1 ps-md-4 ps-lg-5">
-                                    <h3 class="quote-title">Exemplo</h3>
-                                    <p>Ao desenvolver um curso sobre saúde pública, por exemplo, o conteudista pode fornecer dados e teorias atualizadas, enquanto o designer educacional pode transformar esses elementos em uma narrativa coesa, utilizando recursos multimídia e atividades interativas que facilitam a aprendizagem.</p>
-                                    <p>Juntos, eles criam um ambiente educacional que não apenas transmite informações, mas também estimula a reflexão crítica, a interação e a prática, promovendo um aprendizado mais significativo e duradouro.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            A capacidade do designer de transformar conteúdo teórico em experiências práticas e envolventes é fundamental para manter a motivação dos estudantes e garantir que os objetivos de aprendizagem sejam alcançados.
-                        </p>
-                    </section>
-
-                    <section class="presentation col-lg-8 mx-auto">
-                        <h2 class="aula3-heading text-center">Transposição didática<br>e criação de storyboard</h2>
-
-                        <div class="row align-items-center g-4">
-                            <div class="col-md-6">
-                                <p class="paragrafo-conteudo w-100 mw-100">
-                                   A transposição didática é prática fundamen- 
-tal no campo da educação, especialmente 
-quando utilizada em áreas que lidam com 
-temas complexos, como saúde, por exemplo. 
-O processo de transposição envolve adaptar 
-conteúdos teóricos e técnicos para forma- 
-tos que sejam mais acessíveis e didáticos, 
-permitindo que os estudantes compreen- 
-dam e apliquem o conhecimento de forma 
-eficaz. O designer educacional desempe- 
-nha papel central nessa transformação, uti- 
-lizando princípios pedagógicos que garan- 
-tem clareza e eficácia ao material didático.
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <img src="../assets/imgmod1/aula3/icone_imagem1.png" class="img-fluid aula3-story-icon" alt="Transposição didática">
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            A transposição didática é um processo essencial na elaboração de cursos online autoinstrucionais, pois envolve adaptar conteúdos brutos, que frequentemente são teóricos e complexos, para formatos que sejam mais acessíveis e didáticos. Esse processo começa com a identificação do conteúdo central que precisa ser ensinado, que pode incluir teorias, dados, conceitos e práticas.
-                        </p>
-
-                        <div class="custom-card aula3-note-card text-white border-0 mx-auto d-block">
-                            <div class="card-body p-4 p-md-5 text-center">
-                                <p class="mb-0">
-                                    A transposição didática não se limita a simplesmente simplificar a linguagem ou dividir o conteúdo em seções pequenas, uma vez que exige que o designer educacional avalie quais aspectos do conteúdo são mais relevantes e significativos para os estudantes.
-                                </p>
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Essa escolha deve levar em consideração o público-alvo, seus níveis de conhecimento prévio e as habilidades que necessitam desenvolver. É nesse contexto que a transposição didática exige habilidades complexas, pois o profissional precisa transformar informações brutas em aprendizagens significativas, de modo a permitir que os estudantes não apenas absorvam o conhecimento, mas também que o apliquem em situações práticas. No módulo II você terá a oportunidade de aprofundar ainda mais as características do processo de transposição didática. Segue adiante um exemplo de como essa transposição pode ser realizada.
-                        </p>
-
-                        <figure class="aula3-figure aula3-laptop-figure">
-                            <div class="aula3-laptop-bg">
-                                <img src="../assets/imgmod1/aula3/laptop_150.png" class="img-fluid w-100" alt="Exemplo de transposição didática em laptop">
-                            </div>
-                            <figcaption class="textolegenda w-100 mw-100">Exemplo de transposição didática do DE.  A - Texto-base em formato Word (conteúdo de Saiba Mais);  
-B e C - Página final do livro multimídia, utilizando-se recurso interativo. Fonte: UNA-SUS/UFMA (2017).</figcaption>
-                        </figure>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Uma vez que o conteúdo foi cuidadosamente transformado, o próximo passo é organizá-lo em um storyboard que você verá a seguir.
-                        </p>
-
-                        <h2 class="subtitulo-secao w-100 mw-100">Criando storyboard</h2>
-                        <div class="row align-items-center g-4">
-                            <div class="col-md-5 text-center">
-                                <img src="../assets/imgmod1/aula3/icone_imagem2.png" class="img-fluid aula3-storyboard-icon" alt="Storyboard">
-                            </div>
-                            <div class="col-md-7">
-                                <p class="paragrafo-conteudo w-100 mw-100">
-                                    O storyboard funciona como um roteiro visual que orienta a estrutura do curso. Ele permite ao designer educacional planejar a sequência de exposições e atividades, organizando o conteúdo em módulos coesos e lógicos. Cada quadro do storyboard pode incluir não apenas o texto que será apresentado, mas também indicações quanto ao uso de elementos multimídia, interações e avaliações.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="quote-card aula3-example-card mx-auto">
-                            <div class="quote-body">
-                                <div class="quote-accent-line"></div>
-                                <div class="quote-icon-wrapper">
-                                    <img src="../assets/imgmod1/aula3/bx_exemplo.png" alt="" class="quote-img">
-                                </div>
-                                <div class="quote-content ps-1 ps-md-4 ps-lg-5">
-                                    <h3 class="quote-title">Exemplo</h3>
-                                    <p>Ao desenvolver um curso sobre práticas de primeiros socorros, um storyboard pode, por exemplo, descrever a introdução com um vídeo demonstrativo, seguido de uma atividade de reflexão, e então uma simulação interativa por meio da qual os estudantes praticam as habilidades aprendidas.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Essa organização visual facilita a visualização do fluxo do curso e serve como guia para o desenvolvimento de recursos didáticos específicos.
-                        </p>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Finalmente, a transposição didática para storyboards permite revisão contínua e aprimoramento do material pedagógico antes da implementação do curso. Durante essa etapa, o designer educacional pode solicitar feedback de outros especialistas e do próprio conteudista para garantir que o conteúdo esteja não apenas correto em termos técnicos, mas também otimizado para a aprendizagem. Esse processo colaborativo é essencial, pois ele ajuda a identificar áreas que podem estar sobrecarregadas de informações ou apresentando uma sequência de atividades pouco claras. Após as revisões, o storyboard pode ser usado como base para a produção de conteúdos, garantindo que todos os elementos abordados estejam alinhados com os objetivos de aprendizagem definidos. Dessa forma, a transposição didática não apenas enriquece o conteúdo bruto, mas também fornece uma estrutura didática que facilita a experiência de aprendizado em cursos online autoinstrucionais.
-                        </p>
-
-                        <figure class="aula3-figure aula3-storyboard-figure">
-                            <div class="aula3-storyboard-box" role="img" aria-label="Exemplo de storyboard com indicação de recurso saiba mais">
-                                <p class="aula3-tag-code">&lt;saibamais&gt;</p>
-                                <p>Assista ao vídeo sobre a <strong>História das Epidemias</strong> com Leandro Karnal.</p>
-                                <p class="aula3-tag-code">&lt;/saibamais&gt;</p>
-                            </div>
-                            <figcaption class="textolegenda w-100 mw-100">Exemplo de storyboard com indicação de recurso saiba mais. Fonte: Campus Virtual Fiocruz (2026).</figcaption>
-                        </figure>
-                    </section>
-
-                    <section class="presentation col-lg-8 mx-auto">
-                        <h2 class="subtitulo-secao w-100 mw-100">Linguagem e estrutura de um storyboard</h2>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            O storyboard é uma ferramenta fundamental no desenvolvimento de cursos online autoinstrucionais, servindo como um guia visual que organiza o conteúdo e define a sequência das atividades de aprendizagem.
-                        </p>
-
-                        <div class="custom-card aula3-note-card text-white border-0 mx-auto d-block">
-                            <div class="card-body p-4 p-md-5 text-center">
-                                <p class="mb-0">
-                                    A linguagem de um storyboard deve ser clara e objetiva, de modo a permitir que todos os envolvidos no projeto compreendam as intenções didáticas e os objetivos de aprendizagem de cada módulo.
-                                </p>
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Além disso, o storyboard deve conter uma descrição detalhada de cada componente do curso, incluindo o conteúdo a ser apresentado, as interações propostas e os recursos multimídia a serem utilizados. Essa linguagem deve ser acessível, focando na explicação das etapas sem jargões excessivos, para que tanto designers educacionais quanto conteudistas possam colaborar efetivamente.
-                        </p>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Na estrutura de um storyboard, cada quadro ou cena representa uma parte específica do curso. Geralmente, um quadro é dividido em seções que incluem:
-                        </p>
-
-                        <div class="aula3-structure-grid">
-                            <div class="aula3-structure-card">
-                                <img src="../assets/imgmod1/aula3/icon_book.png" alt="">
-                                <h3>Título<br>do módulo</h3>
-                            </div>
-                            <div class="aula3-structure-card">
-                                <img src="../assets/imgmod1/aula3/icon_alvo.png" alt="">
-                                <h3>Objetivos de<br>aprendizagem</h3>
-                            </div>
-                            <div class="aula3-structure-card">
-                                <img src="../assets/imgmod1/aula3/icon_page.png" alt="">
-                                <h3>Conteúdo a<br>ser abordado</h3>
-                            </div>
-                            <div class="aula3-structure-card">
-                                <img src="../assets/imgmod1/aula3/icon_link.png" alt="">
-                                <h3>Atividades<br>de interação<br>e as avaliações</h3>
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            A parte superior do quadro pode conter o título e objetivos, enquanto o meio deve focar no conteúdo informativo, com imagens, texto e gráficos que serão usados. Na parte inferior, é comum incluírem-se notas sobre como os estudantes irão interagir com o material, seja por meio de quizzes, discussões em fóruns ou exercícios práticos. Um glossário pode ser adicionado ao final de cada módulo, explicando termos técnicos ou conceitos-chave que surgem ao longo do conteúdo, facilitando a compreensão contínua dos estudantes. O uso desse recurso é especialmente importante em áreas complexas, como Saúde ou Tecnologia, pois a terminologia pode ser um obstáculo para a aprendizagem.
-                        </p>
-
-                        <div class="row align-items-center g-4 aula3-storyboard-media-row">
-                            <div class="col-md-7">
-                                <p class="paragrafo-conteudo w-100 mw-100">
-                                    Um dos principais recursos utilizados em um storyboard é a incorporação de elementos multimídia, que pode incluir vídeos explicativos, animações, infográficos e audioaulas que ajudam a ilustrar conceitos importantes e a manter os estudantes engajados. O storyboard deve especificar onde esses elementos serão inseridos, como em um determinado módulo, e qual será seu papel didático — se servirá para introduzir novos conceitos, exemplificar o conteúdo ou reforçar o aprendizado. Por exemplo, ao tratar de um conceito complexo, como Biologia Celular, o storyboard pode sugerir um vídeo animado que mostre a estrutura da célula, seguido de uma atividade interativa em que os estudantes arrastem e conectem partes da célula a suas funções, promovendo uma interação significativa.
-                                </p>
-                            </div>
-                            <div class="col-md-5 text-center">
-                                <img src="../assets/imgmod1/aula3/icone_imagem3.png" class="img-fluid aula3-storyboard-icon" alt="Recursos multimídia">
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Observe o exemplo a seguir: ele apresenta como um quadro de storyboard pode ser organizado na prática. Perceba como os elementos — título, objetivos, conteúdo, recursos multimídia e atividades — estão distribuídos de forma integrada. Note também como os recursos visuais e interativos são planejados para apoiar a compreensão do conteúdo e orientar a experiência do estudante ao longo do módulo.
-                        </p>
-
-                        <figure class="aula3-figure">
-                            <img src="../assets/imgmod1/aula3/gr_celula.png" class="img-fluid w-100" alt="Exemplo de storyboard sobre biologia celular">
-                        </figure>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Agora que você já viu como um storyboard é estruturado, vamos explorar um dos elementos que o torna ainda mais potente: os <strong>recursos multimídia.</strong>
-                        </p>
-
-                        <div class="aula3-media-grid">
-                            <div class="aula3-media-card">
-                                <img src="../assets/imgmod1/aula3/icon_video.png" alt="Ícone de vídeo">
-                                <p>Vídeos explicativos ajudam a demonstrar processos.</p>
-                            </div>
-                            <div class="aula3-media-card">
-                                <img src="../assets/imgmod1/aula3/icon_anima.png" alt="Ícone de animação">
-                                <p>Animações facilitam a compreensão de temas complexos.</p>
-                            </div>
-                            <div class="aula3-media-card">
-                                <img src="../assets/imgmod1/aula3/icon_infograf.png " alt="Ícone de infográfico">
-                                <p>Infográficos organizam informações de forma visual.</p>
-                            </div>
-                            <div class="aula3-media-card">
-                                <img src="../assets/imgmod1/aula3/icon_phone.png" alt="Ícone de áudio">
-                                <p>Áudios podem reforçar conceitos ou trazer explicações complementares.</p>
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Além disso, pode-se incluir uma seção “Saiba Mais” que leve os estudantes a recursos adicionais, como artigos, estudos de caso ou vídeos aprofundados, proporcionando espaço para a exploração mais profunda dos temas abordados.
-                        </p>
-
-                        <figure class="aula3-figure aula3-storyboard-figure aula3-pedido-figure">
-                            <div class="aula3-storyboard-box" role="img" aria-label="Exemplo de texto no storyboard">
-                                <p class="aula3-tag-code">&lt;saibamais&gt;</p>
-                                <p>Situação epidemiológica - óbitos por Febre maculosa. Brasil, Regiões e Unidades Federadas (Infecção) 2007-2023.</p>
-                                <p><strong>Inserir link:</strong> https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/f/febre-maculosa/situacao-epidemiologica</p>
-                                <p class="aula3-tag-code">&lt;/saibamais&gt;</p>
-                            </div>
-                            <figcaption class="textolegenda w-100 mw-100">Exemplo de texto no storyboard.</figcaption>
-                        </figure>
-
-                        <figure class="aula3-figure aula3-recorte-html-figure">
-                            <img src="../assets/imgmod1/aula3/recorte_2.png" class="img-fluid w-100" alt="Exemplo do recurso saiba mais no HTML do curso">
-                            <figcaption class="textolegenda w-100 mw-100">Exemplo do recurso saiba mais no html do curso. Fonte: Campus Virtual Fiocruz (2026).</figcaption>
-                        </figure>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Outro recurso importante que pode ser integrado ao storyboard é a inclusão de avaliações formativas e somativas.
-                        </p>
-
-                        <div class="custom-card aula3-note-card text-white border-0 mx-auto d-block">
-                            <div class="card-body p-4 p-md-5 text-center">
-                                <p class="mb-0">
-                                    É essencial que as avaliações sejam planejadas com antecedência e que estejam alinhadas aos objetivos de aprendizagem.
-                                </p>
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            O storyboard deve detalhar o tipo de avaliação (quiz de múltipla escolha, estudo de caso, reflexão escrita etc.), os critérios de avaliação e quando essas avaliações serão aplicadas no decorrer do curso. Caso a opção seja quiz de múltipla escolha, o material enviado deverá conter feedback das questões corretas e incorretas. Para enriquecer ainda mais a experiência de aprendizagem, boxes de reflexão podem ser utilizados ao longo do curso, incentivando os estudantes a pensar criticamente sobre o que aprendem e a conectar o conteúdo com suas próprias experiências.
-                        </p>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Por exemplo, após um módulo que aborda as bases da nutrição, o storyboard pode prever um quiz que permita aos estudantes testar seu entendimento sobre os princípios discutidos e um box de reflexão que os leve a pensar sobre como aplicar esse conhecimento em suas próprias vidas, facilitando, assim, a reflexão crítica e permitindo que identifiquem áreas que precisam de mais atenção.
-                        </p>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Em suma, a linguagem e a estrutura de um storyboard para cursos online autoinstrucionais são vitais para a organização e a clareza do material didático. A partir de quadros bem definidos, que incluem objetivos, conteúdo, interações e avaliações, o designer educacional consegue planejar uma experiência de aprendizagem coesa e envolvente. A utilização de recursos multimídia e atividades interativas é essencial, não apenas para enriquecer o conteúdo, mas igualmente para facilitar a retenção do conhecimento pelos estudantes.
-                        </p>
-                    </section>
-
-                    <section class="presentation col-lg-8 mx-auto">
-                        <h2 class="aula3-heading text-center">Validação do storyboard<br>e ajuste pós-lançamento</h2>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            A validação do storyboard e o ajuste pós-lançamento são processos essenciais que envolvem colaboração entre designers educacionais e conteudistas. Essa parceria é primordial para garantir que o conteúdo de aprendizagem não apenas esteja correto, mas também para que seja apresentado de maneira que maximize a eficácia educacional. O designer educacional traz sua experiência em metodologias de ensino e interações, enquanto o conteudista assegura a precisão e a relevância do conteúdo técnico.
-                        </p>
-
-                        <div class="quote-card aula3-example-card mx-auto">
-                            <div class="quote-body">
-                                <div class="quote-accent-line"></div>
-                                <div class="quote-icon-wrapper">
-                                    <img src="../assets/imgmod1/aula3/bx_exemplo.png" alt="" class="quote-img">
-                                </div>
-                                <div class="quote-content ps-1 ps-md-4 ps-lg-5">
-                                    <h3 class="quote-title">Exemplo</h3>
-                                    <p>Ao desenvolver um curso online sobre manejo de diabetes, o designer pode criar um storyboard que inicialmente descreve os módulos de aprendizagem, interações e avaliações, enquanto o conteudista deve revisar o material a fim de garantir que informações complexas, como os diferentes tipos de insulina e suas aplicações, estejam corretamente representadas.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Após a fase inicial de elaboração, a validação do storyboard se torna uma prática colaborativa crítica. Essa etapa pode envolver a realização de reuniões regulares entre designers e conteudistas, quando cada parte revisa o conteúdo apresentado, discute as estratégias de ensino e identifica áreas que necessitam de ajustes.
-                        </p>
-
-                        <div class="quote-card aula3-example-card mx-auto">
-                            <div class="quote-body">
-                                <div class="quote-accent-line"></div>
-                                <div class="quote-icon-wrapper">
-                                    <img src="../assets/imgmod1/aula3/bx_exemplo.png" alt="" class="quote-img">
-                                </div>
-                                <div class="quote-content ps-1 ps-md-4 ps-lg-5">
-                                    <h3 class="quote-title">Exemplo</h3>
-                                    <p>Ao criar um módulo sobre reanimação cardiopulmonar (RCP), o designer pode sugerir o uso de vídeos interativos e simulações, enquanto o conteudista pode trazer, por exemplo, sugestões sobre a inclusão de diretrizes atualizadas da American Heart Association. Essa interação garante que o storyboard não apenas atenda a padrões educacionais, mas que da mesma forma incorpore as melhores práticas e a pesquisa mais recente disponível na área a que se destina.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            O ajuste pós-lançamento ocorre após a implementação do curso, com o objetivo de avaliar sua eficácia prática. Nessa fase, são coletados dados sobre como os estudantes interagem com o conteúdo e quais estratégias de ensino funcionam melhor.
-                        </p>
-
-                        <div class="quote-card aula3-example-card mx-auto">
-                            <div class="quote-body">
-                                <div class="quote-accent-line"></div>
-                                <div class="quote-icon-wrapper">
-                                    <img src="../assets/imgmod1/aula3/bx_exemplo.png" alt="" class="quote-img">
-                                </div>
-                                <div class="quote-content ps-1 ps-md-4 ps-lg-5">
-                                    <h3 class="quote-title">Exemplo</h3>
-                                    <p>Um curso sobre anatomia humana pode ser testado em um pequeno grupo de estudantes, e suas reações a recursos como animações e quizzes podem ser analisadas em conjunto pelos designers e conteudistas. Com base no feedback, ajustes podem ser feitos no html para torná-lo mais alinhado com a experiência real dos estudantes. Isso não apenas melhora o curso em si, mas também fortalece a colaboração entre as duas partes, estabelecendo uma comunicação contínua sobre as necessidades pedagógicas. Essa é uma etapa opcional, dependendo do tempo e acesso ao campo que designers e conteudistas terão.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Por fim, o ajuste contínuo é essencial em um campo como a Saúde, em que novas informações e práticas estão sempre emergindo. Assim, designers educacionais e conteudistas devem manter um ciclo de feedback em andamento, revisitando os cursos regularmente para assegurar que o material esteja atualizado e em conformidade com novas evidências ou diretrizes.
-                        </p>
-
-                        <div class="quote-card aula3-example-card mx-auto">
-                            <div class="quote-body">
-                                <div class="quote-accent-line"></div>
-                                <div class="quote-icon-wrapper">
-                                    <img src="../assets/imgmod1/aula3/bx_exemplo.png" alt="" class="quote-img">
-                                </div>
-                                <div class="quote-content ps-1 ps-md-4 ps-lg-5">
-                                    <h3 class="quote-title">Exemplo</h3>
-                                    <p>Foram publicadas novas pesquisas sobre a eficácia de tratamentos para doenças cardiovasculares, de modo que a equipe pode revisar um curso sobre Farmacologia para incluir as novas informações. Essa prática não só enriquece a experiência de aprendizagem dos estudantes, mas também garante que o curso se mantenha relevante e alinhado com as necessidades da prática profissional, assegurando que profissionais da área estejam sempre bem preparados para atuar em sua área — lembrando que uma das principais características desses cursos é a qualificação em serviço.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Perceba o passo a passo do material do curso até o ajuste pós-lançamento.
-                        </p>
-
-                        <div class="aula3-timeline" aria-label="Passo a passo do material do curso até o ajuste pós-lançamento">
-                            <div class="aula3-timeline-item left"><span>Recebimento do<br>material bruto</span><strong>1</strong></div>
-                            <div class="aula3-timeline-item right"><span>Elaboração<br>do Storyboard</span><strong>2</strong></div>
-                            <div class="aula3-timeline-item left"><span>Validação<br>do Storyboard<br>pelo conteudista</span><strong>3</strong></div>
-                            <div class="aula3-timeline-item right"><span>Revisão do texto</span><strong>4</strong></div>
-                            <div class="aula3-timeline-item left"><span>Produção<br>designer gráfico</span><strong>5</strong></div>
-                            <div class="aula3-timeline-item right"><span>Webdesigner produz<br>o html do curso</span><strong>6</strong></div>
-                            <div class="aula3-timeline-item left"><span>Analista insere<br>o curso no Moodle</span><strong>7</strong></div>
-                            <div class="aula3-timeline-item right"><span>Lançamento<br>do curso</span><strong>8</strong></div>
-                            <div class="aula3-timeline-item left"><span>Ajuste<br>pós-lançamento</span><strong>9</strong></div>
-                        </div>
-                    </section>
-
-                    <section class="presentation col-lg-8 mx-auto aula3-final-section">
-                        <h2 class="aula3-heading text-center">Você chegou ao final da<br>terceira aula do Módulo 1</h2>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Nesta aula você reconheceu o trabalho do designer educacional, apropriou-se do conceito de transposição didática e identificou as principais características da linguagem utilizada na elaboração de um storyboard.
-                        </p>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            Ao longo deste módulo você construiu uma noção abrangente sobre a modalidade de ensino em EaD e as peculiaridades de cursos autoinstrucionais ambientados em plataformas online, passando pela estrutura do fluxo de produção, pela elaboração do conteúdo bruto até a elaboração de storyboard.
-                        </p>
-
-                        <p class="paragrafo-conteudo w-100 mw-100">
-                            No próximo módulo vamos aprofundar a discussão sobre a criação de material didático digital, seu histórico e sua aplicabilidade na modalidade EaD. Não perca!
-                        </p>
-
-                        <h2 class="subtitulo-secao w-100 mw-100">Conferindo a aprendizagem</h2>
-
-                        <section class="questionario-aprendizagem" aria-label="Questionário de aprendizagem">
-                        <article class="questao-card" data-correct="C">
-                            <div class="questao-cabecalho">
-                                <span class="questao-numero">Questão 1</span>
-                                <p class="questao-objetivo">
-                                    Objetivo: Reconhecer a importância trabalho de transposição didática realizado pelo designer educacional/instrucional.
-                                </p>
-                            </div>
-                            <p class="questao-enunciado">
-                                O designer educacional é importante na construção de cursos online, atuando na transposição didática e na criação de experiências significativas de aprendizagem. Sua parceria com o conteudista garante fluidez, acessibilidade e engajamento aos materiais desenvolvidos. Das alternativas a seguir, qual melhor descreve o papel do designer educacional em cursos autoinstrucionais?
-                            </p>
-
-                            <div class="questao-alternativas" role="group" aria-label="Alternativas da questão 1">
-                                <button type="button" class="questao-opcao" data-option="A" data-feedback="Incorreta. Essa função é administrativa e não representa o papel do designer educacional. O objetivo é criar experiências de aprendizagem.">
-                                    <strong>A)</strong> Organizar a logística das turmas e aplicar provas presenciais nos polos.
-                                </button>
-                                <button type="button" class="questao-opcao" data-option="B" data-feedback="Incorreta. Quem desenvolve o conteúdo técnico é o conteudista. O designer educacional atua na adaptação pedagógica e transposição didática desse conteúdo. O saber técnico vem do conteudista; o saber didático, do designer.">
-                                    <strong>B)</strong> Desenvolver conteúdos técnicos de áreas específicas, como Saúde ou Direito.
-                                </button>
-                                <button type="button" class="questao-opcao" data-option="C" data-feedback="Correta. Excelente! O designer educacional transforma o conteúdo em materiais envolventes e estruturados, garantindo acessibilidade e qualidade pedagógica. É esse trabalho conjunto que faz a aprendizagem se consolidar.">
-                                    <strong>C)</strong> Transformar conteúdos brutos em experiências didáticas acessíveis e envolventes, utilizando estratégias pedagógicas e recursos multimídia.
-                                </button>
-                                <button type="button" class="questao-opcao" data-option="D" data-feedback="Incorreta. O designer gráfico cuida da parte visual. Já o designer educacional atua na estrutura pedagógica e no planejamento da experiência de aprendizagem. Não confunda arte com didática, ambas são importantes, mas distintas.">
-                                    <strong>D)</strong> Criar apenas o design visual da plataforma, sem interferir na estrutura pedagógica do curso.
-                                </button>
-                            </div>
-
-                            <div class="questao-feedback" aria-live="polite"></div>
-                        </article>
-
-                        <article class="questao-card" data-correct="B">
-                            <div class="questao-cabecalho">
-                                <span class="questao-numero">Questão 2</span>
-                                <p class="questao-objetivo">
-                                    Objetivo: Reconhecer a linguagem e a estrutura de um storyboard.
-                                </p>
-                            </div>
-                            <p class="questao-enunciado">
-                                O storyboard é uma ferramenta que estrutura a sequência pedagógica de um curso. Ele orienta a criação de conteúdos, atividades, recursos multimídia e avaliações, sendo fundamental para transformar conteúdos brutos em experiências educacionais coesas. Assinale a alternativa que representa corretamente o papel do storyboard no processo de produção de cursos autoinstrucionais:
-                            </p>
-
-                            <div class="questao-alternativas" role="group" aria-label="Alternativas da questão 2">
-                                <button type="button" class="questao-opcao" data-option="A" data-feedback="Incorreta. O storyboard não trata apenas do visual, mas sim da organização pedagógica completa do curso. É a espinha dorsal da aprendizagem autoinstrucional.">
-                                    <strong>A)</strong> Documento técnico exclusivo para a equipe de design gráfico criar os layouts da plataforma.
-                                </button>
-                                <button type="button" class="questao-opcao" data-option="B" data-feedback="Correta. Isso mesmo! O storyboard planeja o percurso de aprendizagem, orientando o uso de conteúdos, interações e avaliações. Um bom roteiro garante uma grande experiência de aprendizado.">
-                                    <strong>B)</strong> Instrumento visual que organiza conteúdos, atividades e avaliações, orientando a experiência pedagógica do curso.
-                                </button>
-                                <button type="button" class="questao-opcao" data-option="C" data-feedback="Incorreta. O registro de frequência não é feito por meio do storyboard. Ele está relacionado ao ambiente virtual, e não ao planejamento pedagógico. Frequência importa, mas não é essa a função do storyboard.">
-                                    <strong>C)</strong> Material usado para registrar a frequência dos estudantes ao longo do curso.
-                                </button>
-                                <button type="button" class="questao-opcao" data-option="D" data-feedback="Incorreta. Embora possa haver inspiração, um storyboard exige adaptação didática específica para a modalidade online, com estrutura própria. Ambientes online exigem outro olhar e, consequentemente, outra forma de planejar.">
-                                    <strong>D)</strong> Plano de aula presencial que será adaptado diretamente para a plataforma online.
-                                </button>
-                            </div>
-
-                            <div class="questao-feedback" aria-live="polite"></div>
-                        </article>
-                        </section>
-                    </section>
-
-                    <div class="navegacao-aula col-lg-8 mx-auto">
-                        <a href="../modulo1/aula2.html" class="botao-aula botao-voltar" aria-label="Voltar">
-                            <img src="../assets/imgmod1/aula3/bt1_voltar_off.png" alt="Voltar">
-                        </a>
-
-                        <a href="../modulo1/aula4.html" class="botao-aula botao-proxima" aria-label="Próxima aula">
-                            <img src="../assets/imgmod1/aula3/bt_1 off.png" alt="Próxima">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto Fiocruz</title>
+
+        <!-- Bootstrap LOCAL -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <!-- Seu CSS (sempre depois do bootstrap) -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../assets/font/rawline-400.ttf">
+
+    </head>
+
+    <body><!-- Início da div banner -->
+        <div class="banner position-relative">
+            <!-- NAVBAR -->
+            <nav
+                class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0">
+                <div class="container-fluid">
+                    <div
+                        class="navbar-brand logo-right-wrap d-flex align-items-center">
+                        <button class="mobile-sidebar-toggle me-3"
+                            id="mobileSidebarToggle"
+                            aria-label="Abrir menu lateral"
+                            type="button" aria-expanded="false">
+                            <svg class="sidebar-arrow-icon" viewBox="0 0 24 24"
+                                aria-hidden="true" focusable="false">
+                                <path class="sidebar-arrow-stem"
+                                    d="M5 12H17"></path>
+                                <path class="sidebar-arrow-head"
+                                    d="M12 7L17 12L12 17"></path>
+                            </svg>
+                        </button>
+                        <a class="logo-home-link" href="../home/index.html">
+                            <img src="../assets/images/Logo_CVF.png" height="60"
+                                class="logo-move logo-right" alt="Logo"
+                                style="max-width: 59%">
                         </a>
                     </div>
-                </div>
-            </main>
-        </div>
-    </div>
 
-    <!-- FOOTER -->
-    <!-- Início do footer -->
-    <footer id="footer" class="py-4 mt-5">
-        <div class="container">
-            <div class="footer-logos row justify-content-center align-items-center text-center">
-                <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
-                    <img src="../assets/images/Logo_CVF.png" class="footer-logo w-100" alt="Campus Virtual Fiocruz">
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#menuTopo"
+                        aria-label="Abrir menu de navegação">
+                        <span class="top-menu-dots">&vellip;</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end"
+                        id="menuTopo">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../home/index.html">Início</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../home/index.html">Bibliografia</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../home/index.html">Crédito</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
-                    <img src="../assets/images/Logo_Fiocruz.png" class="footer-logo w-100" alt="Fiocruz">
-                </div>
-                <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
-                    <img src="../assets/images/Logos_Sus35_Ms_Gov.png" class="footer-logo w-100" alt="Sus">
-                </div>
-                <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
-                    <img src="../assets/images/Logos_Sus35_Ms_Gov2.png" class="footer-logo w-100" alt="Sus">
+            </nav>
+
+            <picture>
+                <source srcset="../assets/imgmod1/aula3/bg_mod1_3.png"
+                    media="(max-width: 768px)">
+                <img src="../assets/imgmod1/aula3/Bg_mod1_aul3.png"
+                    class="img-fluid w-100" alt="Banner">
+            </picture>
+
+            <!-- Fim da div banner -->
+        </div>
+
+        <!-- Overlay para fechar sidebar em mobile -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <div class="container-fluid p-0">
+            <div class="row g-0 row-full">
+
+                <!-- Início do aside sidebar -->
+                <aside class="col-12 col-md-2 sidebar">
+
+                    <div class="menu-item" onclick="toggleMenu('mod1')">
+                        <h3>Módulo 1</h3>
+                        <p> - A EAD e o desenvolvimento de<br> cursos
+                            autoinstrucionais</p>
+                    </div>
+                    <div class="submenu" id="mod1">
+                        <a href="../modulo1/aula1.html"
+                            class="submenu-aula-longa"><span
+                                class="submenu-aula-numero">Aula
+                                1.1</span><span class="submenu-aula-titulo">–
+                                Contextualização de<br>EAD (ensino
+                                híbrido,<br>ensino on-line,<br>ensino
+                                presencial) e a<br>produção de
+                                cursos<br>autoinstrucionais</span></a>
+                        <a href="../modulo1/aula2.html"><span
+                                class="submenu-aula-numero">Aula 1.2</span><span
+                                class="submenu-aula-titulo">– Elaboração
+                                de<br>conteúdo para
+                                curso<br>autoinstrucional</span></a>
+                        <a href="../modulo1/aula3.html"><span
+                                class="submenu-aula-numero">Aula 1.3</span><span
+                                class="submenu-aula-titulo">– A criação
+                                de<br>Storyboards e a<br>relação com
+                                a<br>Designer
+                                Educacional</span></a>
+                        <a href="../modulo1/aula4.html"><span
+                                class="submenu-aula-numero">Aula 1.4</span><span
+                                class="submenu-aula-titulo">– Publicações
+                                on-line:<br>Mooc, Moodle e<br>linguagem
+                                HTML</span></a>
+                    </div>
+
+                    <div class="menu-item" onclick="toggleMenu('mod2')">
+                        <h3>Módulo 2</h3>
+                        <p> - Criação do Material Didático Digital</p>
+                    </div>
+                    <div class="submenu" id="mod2">
+                        <a href="../modulo2/aula1.html"><span
+                                class="submenu-aula-numero">Aula 2.1</span><span
+                                class="submenu-aula-titulo">– O
+                                material<br>didático digital</span></a>
+                        <a href="../modulo2/aula2.html"><span
+                                class="submenu-aula-numero">Aula 2.2</span><span
+                                class="submenu-aula-titulo">– O
+                                processo de<br>planejamento do<br>material
+                                didático</span></a>
+                        <a href="../modulo2/aula3.html"><span
+                                class="submenu-aula-numero">Aula 2.3</span><span
+                                class="submenu-aula-titulo">– O
+                                processo de<br>produção textual<br>e
+                                acessibilidade</span></a>
+                        <a href="../modulo2/aula4.html"><span
+                                class="submenu-aula-numero">Aula 2.4</span><span
+                                class="submenu-aula-titulo">–
+                                Avaliação e<br>feedbacks no EAD</span></a>
+                    </div>
+
+                    <div class="menu-item menu-material-complementar">
+                        <h3>Material</h3>
+                        <h3>Complementar</h3>
+                    </div>
+
+                </aside>
+
+                <!-- CONTEÚDO -->
+                <!-- Início do main content -->
+                <main class="col-12 col-md-10 main-content">
+                    <div class="container introducao-aula aula3-content">
+                        <section class="objectives">
+                            <h1 class="titulo-secao mb-4">
+                                A criação de storyboards e a relação<br>
+                                com o Designer Educacional
+                            </h1>
+
+                            <p
+                                class="textoconteudo col-lg-8 mx-auto text-md-start">
+                                Seja bem-vindo e bem-vinda!<br>
+                                A seguir veja algumas informações importantes
+                                sobre esta aula.
+                            </p>
+                        </section>
+
+                        <section class="objectives">
+                            <h2
+                                class="text-start col-lg-8 mx-auto font-rawline-bold aula2-section-title">
+                                Objetivos de aprendizagem
+                            </h2>
+
+                            <p
+                                class="textoconteudo col-lg-8 mx-auto aula2-objectives-intro">
+                                Ao final desta aula você poderá:
+                            </p>
+
+                            <div class="col-lg-8 mx-auto">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img
+                                                src="../assets/imgmod1/aula3/check_1.png"
+                                                alt="Ícone de check"
+                                                class="aula2-check-icon">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="textoconteudo">Reconhecer
+                                                o trabalho de transposição
+                                                didática
+                                                realizado pelo Designer
+                                                Educacional/Instrucional.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img
+                                                src="../assets/imgmod1/aula3/check_1.png"
+                                                alt="Ícone de check"
+                                                class="aula2-check-icon">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="textoconteudo">Reconhecer
+                                                a linguagem e estrutura de um
+                                                storyboard.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img
+                                                src="../assets/imgmod1/aula3/check_1.png"
+                                                alt="Ícone de check"
+                                                class="aula2-check-icon">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="textoconteudo">Identificar
+                                                as etapas de
+                                                validação/revalidação da
+                                                arquitetura pedagógica das
+                                                aulas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="presentation">
+                            <h2 class="subtitulo-secao">Introdução</h2>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">
+                                Na aula anterior você conheceu mais
+                                detalhadamente as etapas de produção e todos os
+                                procedimentos que antecedem a entrega do
+                                material bruto de um curso autoinstrucional.
+                                Igualmente, reconheceu a importância de observar
+                                os prazos para seleção e entrega de
+                                conteúdo objetivando manter a fluidez do
+                                processo de formação.
+                            </p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">
+                                Nesta aula vamos conhecer um pouco mais sobre o
+                                trabalho do Designer
+                                Educacional/Instrucional. Assim, para
+                                compreender as habilidades envolvidas, entra em
+                                cena o
+                                processo de transposição didática que
+                                apresentaremos nesta aula e aprofundaremos na
+                                primeira
+                                aula do módulo II. Para finalizar, analisaremos
+                                como se dá essa construção das aulas na
+                                parceria entre conteudistas e designers com
+                                vistas a oferecer a melhor experiência de
+                                aprendizagem possível em cursos
+                                autoinstrucionais.
+                            </p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">
+                                Ao final da aula você será capaz de articular a
+                                sua produção de conteúdo com o trabalho de
+                                design educacional, fundamental para a formação
+                                e o engajamento dos estudantes.
+                            </p>
+                        </section>
+
+                        <section
+                            class="presentation aula3-split-section col-lg-8 mx-auto">
+                            <h2 class="titulo-secao mb-4">O trabalho de
+                                Design<br>Educacional/Instrucional</h2>
+
+                            <div class="row align-items-center g-4">
+                                <div class="col-md-6">
+                                    <p class="paragrafo-conteudo w-100 mw-100">
+                                        Nos últimos anos, sobretudo no período
+                                        pós-pandêmico de covid-19, a educação a
+                                        distância se tornou modalidade de ensino
+                                        essencial no cenário educacional. Com o
+                                        avanço da tecnologia, cursos online têm
+                                        se espalhado por várias plataformas,
+                                        oferecendo uma variedade de opções para
+                                        o aprendizado.
+                                    </p>
+                                    <p class="paragrafo-conteudo w-100 mw-100">
+                                        Nesse contexto, o designer educacional
+                                        ganha destaque como um profissional
+                                        indispensável para garantir que esse
+                                        processo de ensino-aprendizagem seja
+                                        bem-sucedido.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img
+                                        src="../assets/imgmod1/aula3/gr_curvas.png"
+                                        class="img-fluid aula3-diagram-small"
+                                        alt="Crescimento do EaD, diversas plataformas e cursos online acessíveis">
+                                </div>
+                            </div>
+
+                            <p class="paragrafo-conteudo w-100 mw-100 mt-3">
+                                Este profissional simplifica conteúdos complexos
+                                para tornar o aprendizado mais fácil e
+                                natural:
+                            </p>
+                        </section>
+
+                        <section class="aula3-purple-list col-lg-8 mx-auto">
+                            <div class="aula3-purple-item">
+                                <img src="../assets/imgmod1/aula3/tag.png" alt
+                                    class="aula3-purple-icon"
+                                    aria-hidden="true">
+                                <p>Na transposição didática dos conteúdos,
+                                    transformando informações técnicas em
+                                    material
+                                    compreensível e pedagógico.</p>
+                            </div>
+                            <div class="aula3-purple-item">
+                                <img src="../assets/imgmod1/aula3/tag.png" alt
+                                    class="aula3-purple-icon"
+                                    aria-hidden="true">
+                                <p>Na criação de storyboards e estruturação da
+                                    arquitetura pedagógica das aulas.</p>
+                            </div>
+                            <div class="aula3-purple-item">
+                                <img src="../assets/imgmod1/aula3/tag.png" alt
+                                    class="aula3-purple-icon"
+                                    aria-hidden="true">
+                                <p>No planejamento de experiências de
+                                    aprendizagem que promovam engajamento,
+                                    compreensão e
+                                    eficácia.</p>
+                            </div>
+                            <div class="aula3-purple-item">
+                                <img src="../assets/imgmod1/aula3/tag.png" alt
+                                    class="aula3-purple-icon"
+                                    aria-hidden="true">
+                                <p>Na integração da pedagogia, tecnologia e
+                                    design para a construção de ambientes de
+                                    aprendizagem interativos, acessíveis e
+                                    significativos.</p>
+                            </div>
+                        </section>
+
+                        <section class="presentation col-lg-8 mx-auto">
+                            <p class="paragrafo-conteudo w-100 mw-100">
+                                Ao desenvolver um curso online, o designer
+                                educacional não apenas organiza o conteúdo de
+                                forma lógica, mas também precisa reunir um
+                                conjunto diverso de habilidades que integram
+                                pedagogia, criatividade e domínio tecnológico.
+                            </p>
+
+                            <figure class="aula3-figure">
+                                <img
+                                    src="../assets/imgmod1/aula3/imagem_mulher.png"
+                                    class="img-fluid w-100"
+                                    alt="Mulher usando notebook">
+                                <figcaption
+                                    class="textolegenda w-100 mw-100 text-end">fonte:
+                                    Freepik.com</figcaption>
+                            </figure>
+
+                            <h2
+                                class="subtitulo-secao w-100 mw-100">Competências
+                                do Designer<br>Educacional/Instrucional
+                            </h2>
+                            <img src="../assets/imgmod1/aula3/gr_setas.png"
+                                class="img-fluid aula3-wide-image"
+                                alt="Competências do Designer Educacional/Instrucional">
+                        </section>
+
+                        <section class="presentation col-lg-8 mx-auto">
+                            <p class="paragrafo-conteudo w-100 mw-100">
+                                A seguir, apresentamos alguns dos principais
+                                recursos de aprendizagem utilizados em Design
+                                Educacional/Instrucional para potencializar a
+                                experiência de aprendizagem.
+                            </p>
+
+                            <div class="aula3-resource-card">
+                                <div class="aula3-resource-item">
+                                    <img
+                                        src="../assets/imgmod1/aula3/icone_19.png"
+                                        alt aria-hidden="true">
+                                    <h3>Recursos audiovisuais</h3>
+                                    <ul>
+                                        <li>Vídeos explicativos.</li>
+                                        <li>Videoaulas.</li>
+                                        <li>Vídeos animados.</li>
+                                        <li>Microvídeos (pílulas de
+                                            aprendizagem).</li>
+                                        <li>Vídeos demonstrativos.</li>
+                                    </ul>
+                                </div>
+                                <div class="aula3-resource-item">
+                                    <img
+                                        src="../assets/imgmod1/aula3/icone_20.png"
+                                        alt aria-hidden="true">
+                                    <h3>Recursos visuais e gráficos</h3>
+                                    <ul>
+                                        <li>Imagens ilustrativas.</li>
+                                        <li>Diagramas.</li>
+                                        <li>Gráficos.</li>
+                                        <li>Mapas conceituais.</li>
+                                        <li>Infográficos.</li>
+                                        <li>Linha do tempo visual.</li>
+                                    </ul>
+                                </div>
+                                <div class="aula3-resource-item">
+                                    <img
+                                        src="../assets/imgmod1/aula3/icone_21.png"
+                                        alt aria-hidden="true">
+                                    <h3>Recursos sonoros</h3>
+                                    <ul>
+                                        <li>Podcasts educativos.</li>
+                                        <li>Áudios explicativos.</li>
+                                        <li>Depoimentos em áudio.</li>
+                                        <li>Narrações guiadas.</li>
+                                    </ul>
+                                </div>
+                                <div class="aula3-resource-item">
+                                    <img
+                                        src="../assets/imgmod1/aula3/icone_22.png"
+                                        alt aria-hidden="true">
+                                    <h3>Recursos interativos e
+                                        experienciais</h3>
+                                    <ul>
+                                        <li>Simulações.</li>
+                                        <li>Estudos de caso interativos.</li>
+                                        <li>Cenários de tomada de decisão.</li>
+                                        <li>Laboratórios virtuais.</li>
+                                        <li>Ambientes simulados.</li>
+                                    </ul>
+                                </div>
+                                <div class="aula3-resource-item">
+                                    <img
+                                        src="../assets/imgmod1/aula3/icone_23.png"
+                                        alt aria-hidden="true">
+                                    <h3>Recursos avaliativos</h3>
+                                    <ul>
+                                        <li>Quizzes.</li>
+                                        <li>Questionários.</li>
+                                        <li>Exercícios práticos.</li>
+                                        <li>Atividades de fixação.</li>
+                                        <li>Avaliações diagnósticas.</li>
+                                        <li>Avaliações formativas.</li>
+                                    </ul>
+                                </div>
+                                <div class="aula3-resource-item">
+                                    <img
+                                        src="../assets/imgmod1/aula3/icone_24.png"
+                                        alt aria-hidden="true">
+                                    <h3>Recursos narrativos e culturais</h3>
+                                    <ul>
+                                        <li>Histórias em quadrinhos (HQs).</li>
+                                        <li>Storytelling educativo.</li>
+                                        <li>Narrativas baseadas em casos
+                                            reais.</li>
+                                        <li>Dramatizações.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <p class="paragrafo-conteudo w-100 mw-100">
+                                Além das competências já mencionadas, o designer
+                                educacional/instrucional desempenha
+                                diversas atribuições essenciais para o sucesso
+                                de um curso online que abrangem todas as
+                                etapas do planejamento e desenvolvimento de
+                                cursos, garantindo coerência, qualidade e
+                                impacto pedagógico.
+                            </p>
+
+                            <img src="../assets/imgmod1/aula3/gr_aro.png"
+                                class="img-fluid aula3-cycle-image"
+                                alt="Atribuições do designer educacional/instrucional">
+
+                            <div class="aula3-icon-list">
+                                <p><img src="../assets/imgmod1/aula3/lupa.png"
+                                        alt
+                                        aria-hidden="true"><span><strong>Análise
+                                            de necessidades:</strong> Realiza
+                                        análise
+                                        de necessidades para identificar lacunas
+                                        de conhecimento e definir as habilidades
+                                        que os estudantes devem
+                                        desenvolver.</span></p>
+                                <p><img
+                                        src="../assets/imgmod1/aula3/icon_alvo.png"
+                                        alt
+                                        aria-hidden="true"><span><strong>Objetivos
+                                            de aprendizagem:</strong> Elabora
+                                        objetivos de aprendizagem claros e
+                                        mensuráveis.</span></p>
+                                <p><img src="../assets/imgmod1/aula3/laptop.png"
+                                        alt
+                                        aria-hidden="true"><span><strong>Seleção
+                                            de tecnologias:</strong> Seleciona e
+                                        integra recursos tecnológicos adequados,
+                                        garantindo que plataformas e ferramentas
+                                        sejam acessíveis e
+                                        funcionais.</span></p>
+                                <p><img
+                                        src="../assets/imgmod1/aula3/cora%C3%A7%C3%A3o.png"
+                                        alt
+                                        aria-hidden="true"><span><strong>Interação
+                                            e colaboração:</strong> Cria
+                                        estratégias
+                                        para promover interação entre
+                                        estudante-conteúdo e entre os próprios
+                                        estudantes.</span></p>
+                                <p><img src="../assets/imgmod1/aula3/ensaio.png"
+                                        alt
+                                        aria-hidden="true"><span><strong>Validação
+                                            e revisão:</strong> Valida
+                                        materiais,
+                                        revisa conteúdos e aperfeiçoa
+                                        continuamente os métodos e objetos de
+                                        aprendizagem.</span></p>
+                                <p><img
+                                        src="../assets/imgmod1/aula3/atualixa%C3%A7%C3%A3o.png"
+                                        alt
+                                        aria-hidden="true"><span><strong>Atualização
+                                            contínua:</strong> Garante que o
+                                        curso
+                                        permaneça relevante em um cenário de
+                                        constante evolução tecnológica e
+                                        educacional.</span></p>
+                            </div>
+
+                            <p class="paragrafo-conteudo w-100 mw-100">
+                                Lembramos ainda da importância da relação entre
+                                o designer educacional e os produtores de
+                                conteúdo para cursos autoinstrucionais. Enquanto
+                                o conteudista possui expertise no tema
+                                abordado e é responsável por elaborar o conteúdo
+                                técnico, o designer educacional traz
+                                conhecimento sobre métodos pedagógicos,
+                                estratégias de ensino e a melhor forma de
+                                apresentar
+                                esse conteúdo de maneira acessível e engajadora.
+                            </p>
+                        </section>
+
+                        <section class="presentation col-lg-8 mx-auto">
+                            <h2 class="aula3-heading text-center">Relação entre
+                                o designer educacional<br>e os produtores de
+                                conteúdo</h2>
+                            <img src="../assets/imgmod1/aula3/gr_bolotas.png"
+                                class="img-fluid aula3-relation-image"
+                                alt="Relação entre o designer educacional e os produtores de conteúdo">
+
+                            <div class="quote-card aula3-example-card mx-auto">
+                                <div class="quote-body">
+                                    <div class="quote-accent-line"></div>
+                                    <div class="quote-icon-wrapper">
+                                        <img
+                                            src="../assets/imgmod1/aula3/bx_exemplo.png"
+                                            alt class="quote-img">
+                                    </div>
+                                    <div
+                                        class="quote-content ps-1 ps-md-4 ps-lg-5">
+                                        <h3 class="quote-title">Exemplo</h3>
+                                        <p>Ao desenvolver um curso sobre saúde
+                                            pública, por exemplo, o conteudista
+                                            pode
+                                            fornecer dados e teorias
+                                            atualizadas, enquanto o designer
+                                            educacional pode
+                                            transformar esses elementos em uma
+                                            narrativa coesa, utilizando recursos
+                                            multimídia e atividades interativas
+                                            que facilitam a aprendizagem.</p>
+                                        <p>Juntos, eles criam um ambiente
+                                            educacional que não apenas transmite
+                                            informações,
+                                            mas também estimula a reflexão
+                                            crítica, a interação e a prática,
+                                            promovendo um
+                                            aprendizado mais significativo e
+                                            duradouro.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="paragrafo-conteudo w-100 mw-100">
+                                A capacidade do designer de transformar conteúdo
+                                teórico em experiências práticas e
+                                envolventes é fundamental para manter a
+                                motivação dos estudantes e garantir que os
+                                objetivos
+                                de aprendizagem sejam alcançados.
+                            </p>
+                        </section>
+
+                        <section class="presentation col-lg-8 mx-auto">
+                            <h2 class="aula3-heading text-center">Transposição
+                                didática<br>e criação de storyboard</h2>
+
+                            <div class="row align-items-center g-4">
+                                <div class="col-md-6">
+                                    <p class="paragrafo-conteudo w-100 mw-100">
+                                        A transposição didática é prática
+                                        fundamen-
+                                        tal no campo da educação, especialmente
+                                        quando utilizada em áreas que lidam com
+                                        temas complexos, como saúde, por
+                                        exemplo.
+                                        O processo de transposição envolve
+                                        adaptar
+                                        conteúdos teóricos e técnicos para
+                                        forma-
+                                        tos que sejam mais acessíveis e
+                                        didáticos,
+                                        permitindo que os estudantes compreen-
+                                        dam e apliquem o conhecimento de forma
+                                        eficaz. O designer educacional desempe-
+                                        nha papel central nessa transformação,
+                                        uti-
+                                        lizando princípios pedagógicos que
+                                        garan-
+                                        tem clareza e eficácia ao material
+                                        didático.
+                                    </div>
+                                    <div class="col-md-6 text-center">
+                                        <img
+                                            src="../assets/imgmod1/aula3/icone_imagem1.png"
+                                            class="img-fluid aula3-story-icon"
+                                            alt="Transposição didática">
+                                    </div>
+                                </div>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    A transposição didática é um processo
+                                    essencial na elaboração de cursos online
+                                    autoinstrucionais, pois envolve adaptar
+                                    conteúdos brutos, que frequentemente são
+                                    teóricos e
+                                    complexos, para formatos que sejam mais
+                                    acessíveis e didáticos. Esse processo começa
+                                    com a
+                                    identificação do conteúdo central que
+                                    precisa ser ensinado, que pode incluir
+                                    teorias, dados,
+                                    conceitos e práticas.
+                                </p>
+
+                                <div
+                                    class="custom-card aula3-note-card text-white border-0 mx-auto d-block">
+                                    <div
+                                        class="card-body p-4 p-md-5 text-center">
+                                        <p class="mb-0">
+                                            A transposição didática não se
+                                            limita a simplesmente simplificar a
+                                            linguagem ou
+                                            dividir o conteúdo em seções
+                                            pequenas, uma vez que exige que o
+                                            designer educacional
+                                            avalie quais aspectos do conteúdo
+                                            são mais relevantes e significativos
+                                            para os
+                                            estudantes.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Essa escolha deve levar em consideração o
+                                    público-alvo, seus níveis de conhecimento
+                                    prévio e
+                                    as habilidades que necessitam desenvolver. É
+                                    nesse contexto que a transposição didática
+                                    exige habilidades complexas, pois o
+                                    profissional precisa transformar informações
+                                    brutas em
+                                    aprendizagens significativas, de modo a
+                                    permitir que os estudantes não apenas
+                                    absorvam o
+                                    conhecimento, mas também que o apliquem em
+                                    situações práticas. No módulo II você terá a
+                                    oportunidade de aprofundar ainda mais as
+                                    características do processo de transposição
+                                    didática. Segue adiante um exemplo de como
+                                    essa transposição pode ser realizada.
+                                </p>
+
+                                <figure
+                                    class="aula3-figure aula3-laptop-figure">
+                                    <div class="aula3-laptop-bg">
+                                        <img
+                                            src="../assets/imgmod1/aula3/laptop_150.png"
+                                            class="img-fluid w-100"
+                                            alt="Exemplo de transposição didática em laptop">
+                                    </div>
+                                    <figcaption
+                                        class="textolegenda w-100 mw-100">Exemplo
+                                        de transposição didática do DE. A -
+                                        Texto-base em formato Word (conteúdo de
+                                        Saiba Mais);
+                                        B e C - Página final do livro
+                                        multimídia, utilizando-se recurso
+                                        interativo. Fonte:
+                                        UNA-SUS/UFMA (2017).</figcaption>
+                                </figure>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Uma vez que o conteúdo foi cuidadosamente
+                                    transformado, o próximo passo é organizá-lo
+                                    em um
+                                    storyboard que você verá a seguir.
+                                </p>
+
+                                <h2 class="subtitulo-secao w-100 mw-100">Criando
+                                    storyboard</h2>
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-5 text-center">
+                                        <img
+                                            src="../assets/imgmod1/aula3/icone_imagem2.png"
+                                            class="img-fluid aula3-storyboard-icon"
+                                            alt="Storyboard">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p
+                                            class="paragrafo-conteudo w-100 mw-100">
+                                            O storyboard funciona como um
+                                            roteiro visual que orienta a
+                                            estrutura do curso. Ele
+                                            permite ao designer educacional
+                                            planejar a sequência de exposições e
+                                            atividades,
+                                            organizando o conteúdo em módulos
+                                            coesos e lógicos. Cada quadro do
+                                            storyboard pode
+                                            incluir não apenas o texto que será
+                                            apresentado, mas também indicações
+                                            quanto ao uso
+                                            de elementos multimídia, interações
+                                            e avaliações.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="quote-card aula3-example-card mx-auto">
+                                    <div class="quote-body">
+                                        <div class="quote-accent-line"></div>
+                                        <div class="quote-icon-wrapper">
+                                            <img
+                                                src="../assets/imgmod1/aula3/bx_exemplo.png"
+                                                alt class="quote-img">
+                                        </div>
+                                        <div
+                                            class="quote-content ps-1 ps-md-4 ps-lg-5">
+                                            <h3 class="quote-title">Exemplo</h3>
+                                            <p>Ao desenvolver um curso sobre
+                                                práticas de primeiros socorros,
+                                                um storyboard pode,
+                                                por exemplo, descrever a
+                                                introdução com um vídeo
+                                                demonstrativo, seguido de uma
+                                                atividade de reflexão, e então
+                                                uma simulação interativa por
+                                                meio da qual os
+                                                estudantes praticam as
+                                                habilidades aprendidas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Essa organização visual facilita a
+                                    visualização do fluxo do curso e serve como
+                                    guia para o
+                                    desenvolvimento de recursos didáticos
+                                    específicos.
+                                </p>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Finalmente, a transposição didática para
+                                    storyboards permite revisão contínua e
+                                    aprimoramento do material pedagógico antes
+                                    da implementação do curso. Durante essa
+                                    etapa, o
+                                    designer educacional pode solicitar feedback
+                                    de outros especialistas e do próprio
+                                    conteudista para garantir que o conteúdo
+                                    esteja não apenas correto em termos
+                                    técnicos, mas
+                                    também otimizado para a aprendizagem. Esse
+                                    processo colaborativo é essencial, pois ele
+                                    ajuda
+                                    a identificar áreas que podem estar
+                                    sobrecarregadas de informações ou
+                                    apresentando uma
+                                    sequência de atividades pouco claras. Após
+                                    as revisões, o storyboard pode ser usado
+                                    como
+                                    base para a produção de conteúdos,
+                                    garantindo que todos os elementos abordados
+                                    estejam
+                                    alinhados com os objetivos de aprendizagem
+                                    definidos. Dessa forma, a transposição
+                                    didática
+                                    não apenas enriquece o conteúdo bruto, mas
+                                    também fornece uma estrutura didática que
+                                    facilita a experiência de aprendizado em
+                                    cursos online autoinstrucionais.
+                                </p>
+
+                                <figure
+                                    class="aula3-figure aula3-storyboard-figure">
+                                    <div class="aula3-storyboard-box" role="img"
+                                        aria-label="Exemplo de storyboard com indicação de recurso saiba mais">
+                                        <p
+                                            class="aula3-tag-code">&lt;saibamais&gt;</p>
+                                        <p>Assista ao vídeo sobre a
+                                            <strong>História das
+                                                Epidemias</strong> com Leandro
+                                            Karnal.
+                                        </p>
+                                        <p
+                                            class="aula3-tag-code">&lt;/saibamais&gt;</p>
+                                    </div>
+                                    <figcaption
+                                        class="textolegenda w-100 mw-100">Exemplo
+                                        de storyboard com indicação de recurso
+                                        saiba mais. Fonte: Campus Virtual
+                                        Fiocruz (2026).</figcaption>
+                                </figure>
+                            </section>
+
+                            <section class="presentation col-lg-8 mx-auto">
+                                <h2
+                                    class="subtitulo-secao w-100 mw-100">Linguagem
+                                    e estrutura de um storyboard</h2>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    O storyboard é uma ferramenta fundamental no
+                                    desenvolvimento de cursos online
+                                    autoinstrucionais, servindo como um guia
+                                    visual que organiza o conteúdo e define a
+                                    sequência
+                                    das atividades de aprendizagem.
+                                </p>
+
+                                <div
+                                    class="custom-card aula3-note-card text-white border-0 mx-auto d-block">
+                                    <div
+                                        class="card-body p-4 p-md-5 text-center">
+                                        <p class="mb-0">
+                                            A linguagem de um storyboard deve
+                                            ser clara e objetiva, de modo a
+                                            permitir que todos
+                                            os envolvidos no projeto compreendam
+                                            as intenções didáticas e os
+                                            objetivos de
+                                            aprendizagem de cada módulo.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Além disso, o storyboard deve conter uma
+                                    descrição detalhada de cada componente do
+                                    curso,
+                                    incluindo o conteúdo a ser apresentado, as
+                                    interações propostas e os recursos
+                                    multimídia a
+                                    serem utilizados. Essa linguagem deve ser
+                                    acessível, focando na explicação das etapas
+                                    sem
+                                    jargões excessivos, para que tanto designers
+                                    educacionais quanto conteudistas possam
+                                    colaborar efetivamente.
+                                </p>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Na estrutura de um storyboard, cada quadro
+                                    ou cena representa uma parte específica do
+                                    curso.
+                                    Geralmente, um quadro é dividido em seções
+                                    que incluem:
+                                </p>
+
+                                <div class="aula3-structure-grid">
+                                    <div class="aula3-structure-card">
+                                        <img
+                                            src="../assets/imgmod1/aula3/icon_book.png"
+                                            alt>
+                                        <h3>Título<br>do módulo</h3>
+                                    </div>
+                                    <div class="aula3-structure-card">
+                                        <img
+                                            src="../assets/imgmod1/aula3/icon_alvo.png"
+                                            alt>
+                                        <h3>Objetivos de<br>aprendizagem</h3>
+                                    </div>
+                                    <div class="aula3-structure-card">
+                                        <img
+                                            src="../assets/imgmod1/aula3/icon_page.png"
+                                            alt>
+                                        <h3>Conteúdo a<br>ser abordado</h3>
+                                    </div>
+                                    <div class="aula3-structure-card">
+                                        <img
+                                            src="../assets/imgmod1/aula3/icon_link.png"
+                                            alt>
+                                        <h3>Atividades<br>de interação<br>e as
+                                            avaliações</h3>
+                                    </div>
+                                </div>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    A parte superior do quadro pode conter o
+                                    título e objetivos, enquanto o meio deve
+                                    focar no
+                                    conteúdo informativo, com imagens, texto e
+                                    gráficos que serão usados. Na parte
+                                    inferior, é
+                                    comum incluírem-se notas sobre como os
+                                    estudantes irão interagir com o material,
+                                    seja por
+                                    meio de quizzes, discussões em fóruns ou
+                                    exercícios práticos. Um glossário pode ser
+                                    adicionado ao final de cada módulo,
+                                    explicando termos técnicos ou
+                                    conceitos-chave que surgem
+                                    ao longo do conteúdo, facilitando a
+                                    compreensão contínua dos estudantes. O uso
+                                    desse recurso
+                                    é especialmente importante em áreas
+                                    complexas, como Saúde ou Tecnologia, pois a
+                                    terminologia
+                                    pode ser um obstáculo para a aprendizagem.
+                                </p>
+
+                                <div
+                                    class="row align-items-center g-4 aula3-storyboard-media-row">
+                                    <div class="col-md-7">
+                                        <p
+                                            class="paragrafo-conteudo w-100 mw-100">
+                                            Um dos principais recursos
+                                            utilizados em um storyboard é a
+                                            incorporação de elementos
+                                            multimídia, que pode incluir vídeos
+                                            explicativos, animações,
+                                            infográficos e
+                                            audioaulas que ajudam a ilustrar
+                                            conceitos importantes e a manter os
+                                            estudantes
+                                            engajados. O storyboard deve
+                                            especificar onde esses elementos
+                                            serão inseridos, como
+                                            em um determinado módulo, e qual
+                                            será seu papel didático — se servirá
+                                            para
+                                            introduzir novos conceitos,
+                                            exemplificar o conteúdo ou reforçar
+                                            o aprendizado. Por
+                                            exemplo, ao tratar de um conceito
+                                            complexo, como Biologia Celular, o
+                                            storyboard pode
+                                            sugerir um vídeo animado que mostre
+                                            a estrutura da célula, seguido de
+                                            uma atividade
+                                            interativa em que os estudantes
+                                            arrastem e conectem partes da célula
+                                            a suas funções,
+                                            promovendo uma interação
+                                            significativa.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5 text-center">
+                                        <img
+                                            src="../assets/imgmod1/aula3/icone_imagem3.png"
+                                            class="img-fluid aula3-storyboard-icon"
+                                            alt="Recursos multimídia">
+                                    </div>
+                                </div>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Observe o exemplo a seguir: ele apresenta
+                                    como um quadro de storyboard pode ser
+                                    organizado
+                                    na prática. Perceba como os elementos —
+                                    título, objetivos, conteúdo, recursos
+                                    multimídia e
+                                    atividades — estão distribuídos de forma
+                                    integrada. Note também como os recursos
+                                    visuais e
+                                    interativos são planejados para apoiar a
+                                    compreensão do conteúdo e orientar a
+                                    experiência do
+                                    estudante ao longo do módulo.
+                                </p>
+
+                                <figure class="aula3-figure">
+                                    <img
+                                        src="../assets/imgmod1/aula3/gr_celula.png"
+                                        class="img-fluid w-100"
+                                        alt="Exemplo de storyboard sobre biologia celular">
+                                </figure>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Agora que você já viu como um storyboard é
+                                    estruturado, vamos explorar um dos elementos
+                                    que
+                                    o torna ainda mais potente: os
+                                    <strong>recursos multimídia.</strong>
+                                </p>
+
+                                <div class="aula3-media-grid">
+                                    <div class="aula3-media-card">
+                                        <img
+                                            src="../assets/imgmod1/aula3/icon_video.png"
+                                            alt="Ícone de vídeo">
+                                        <p>Vídeos explicativos ajudam a
+                                            demonstrar processos.</p>
+                                    </div>
+                                    <div class="aula3-media-card">
+                                        <img
+                                            src="../assets/imgmod1/aula3/icon_anima.png"
+                                            alt="Ícone de animação">
+                                        <p>Animações facilitam a compreensão de
+                                            temas complexos.</p>
+                                    </div>
+                                    <div class="aula3-media-card">
+                                        <img
+                                            src="../assets/imgmod1/aula3/icon_infograf.png "
+                                            alt="Ícone de infográfico">
+                                        <p>Infográficos organizam informações de
+                                            forma visual.</p>
+                                    </div>
+                                    <div class="aula3-media-card">
+                                        <img
+                                            src="../assets/imgmod1/aula3/icon_phone.png"
+                                            alt="Ícone de áudio">
+                                        <p>Áudios podem reforçar conceitos ou
+                                            trazer explicações
+                                            complementares.</p>
+                                    </div>
+                                </div>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Além disso, pode-se incluir uma seção “Saiba
+                                    Mais” que leve os estudantes a recursos
+                                    adicionais, como artigos, estudos de caso ou
+                                    vídeos aprofundados, proporcionando espaço
+                                    para
+                                    a exploração mais profunda dos temas
+                                    abordados.
+                                </p>
+
+                                <figure
+                                    class="aula3-figure aula3-storyboard-figure aula3-pedido-figure">
+                                    <div class="aula3-storyboard-box" role="img"
+                                        aria-label="Exemplo de texto no storyboard">
+                                        <p
+                                            class="aula3-tag-code">&lt;saibamais&gt;</p>
+                                        <p>Situação epidemiológica - óbitos por
+                                            Febre maculosa. Brasil, Regiões e
+                                            Unidades
+                                            Federadas (Infecção) 2007-2023.</p>
+                                        <p><strong>Inserir link:</strong>
+                                            https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/f/febre-maculosa/situacao-epidemiologica
+                                        </p>
+                                        <p
+                                            class="aula3-tag-code">&lt;/saibamais&gt;</p>
+                                    </div>
+                                    <figcaption
+                                        class="textolegenda w-100 mw-100">Exemplo
+                                        de texto no storyboard.</figcaption>
+                                </figure>
+
+                                <figure
+                                    class="aula3-figure aula3-recorte-html-figure">
+                                    <img
+                                        src="../assets/imgmod1/aula3/recorte_2.png"
+                                        class="img-fluid w-100"
+                                        alt="Exemplo do recurso saiba mais no HTML do curso">
+                                    <figcaption
+                                        class="textolegenda w-100 mw-100">Exemplo
+                                        do recurso saiba mais no html do
+                                        curso. Fonte: Campus Virtual Fiocruz
+                                        (2026).</figcaption>
+                                </figure>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Outro recurso importante que pode ser
+                                    integrado ao storyboard é a inclusão de
+                                    avaliações
+                                    formativas e somativas.
+                                </p>
+
+                                <div
+                                    class="custom-card aula3-note-card text-white border-0 mx-auto d-block">
+                                    <div
+                                        class="card-body p-4 p-md-5 text-center">
+                                        <p class="mb-0">
+                                            É essencial que as avaliações sejam
+                                            planejadas com antecedência e que
+                                            estejam
+                                            alinhadas aos objetivos de
+                                            aprendizagem.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    O storyboard deve detalhar o tipo de
+                                    avaliação (quiz de múltipla escolha, estudo
+                                    de caso,
+                                    reflexão escrita etc.), os critérios de
+                                    avaliação e quando essas avaliações serão
+                                    aplicadas
+                                    no decorrer do curso. Caso a opção seja quiz
+                                    de múltipla escolha, o material enviado
+                                    deverá
+                                    conter feedback das questões corretas e
+                                    incorretas. Para enriquecer ainda mais a
+                                    experiência
+                                    de aprendizagem, boxes de reflexão podem ser
+                                    utilizados ao longo do curso, incentivando
+                                    os
+                                    estudantes a pensar criticamente sobre o que
+                                    aprendem e a conectar o conteúdo com suas
+                                    próprias experiências.
+                                </p>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Por exemplo, após um módulo que aborda as
+                                    bases da nutrição, o storyboard pode prever
+                                    um
+                                    quiz que permita aos estudantes testar seu
+                                    entendimento sobre os princípios discutidos
+                                    e um
+                                    box de reflexão que os leve a pensar sobre
+                                    como aplicar esse conhecimento em suas
+                                    próprias
+                                    vidas, facilitando, assim, a reflexão
+                                    crítica e permitindo que identifiquem áreas
+                                    que
+                                    precisam de mais atenção.
+                                </p>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Em suma, a linguagem e a estrutura de um
+                                    storyboard para cursos online
+                                    autoinstrucionais são
+                                    vitais para a organização e a clareza do
+                                    material didático. A partir de quadros bem
+                                    definidos, que incluem objetivos, conteúdo,
+                                    interações e avaliações, o designer
+                                    educacional
+                                    consegue planejar uma experiência de
+                                    aprendizagem coesa e envolvente. A
+                                    utilização de
+                                    recursos multimídia e atividades interativas
+                                    é essencial, não apenas para enriquecer o
+                                    conteúdo, mas igualmente para facilitar a
+                                    retenção do conhecimento pelos estudantes.
+                                </p>
+                            </section>
+
+                            <section class="presentation col-lg-8 mx-auto">
+                                <h2 class="aula3-heading text-center">Validação
+                                    do storyboard<br>e ajuste
+                                    pós-lançamento</h2>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    A validação do storyboard e o ajuste
+                                    pós-lançamento são processos essenciais que
+                                    envolvem
+                                    colaboração entre designers educacionais e
+                                    conteudistas. Essa parceria é primordial
+                                    para
+                                    garantir que o conteúdo de aprendizagem não
+                                    apenas esteja correto, mas também para que
+                                    seja
+                                    apresentado de maneira que maximize a
+                                    eficácia educacional. O designer educacional
+                                    traz sua
+                                    experiência em metodologias de ensino e
+                                    interações, enquanto o conteudista assegura
+                                    a
+                                    precisão e a relevância do conteúdo técnico.
+                                </p>
+
+                                <div
+                                    class="quote-card aula3-example-card mx-auto">
+                                    <div class="quote-body">
+                                        <div class="quote-accent-line"></div>
+                                        <div class="quote-icon-wrapper">
+                                            <img
+                                                src="../assets/imgmod1/aula3/bx_exemplo.png"
+                                                alt class="quote-img">
+                                        </div>
+                                        <div
+                                            class="quote-content ps-1 ps-md-4 ps-lg-5">
+                                            <h3 class="quote-title">Exemplo</h3>
+                                            <p>Ao desenvolver um curso online
+                                                sobre manejo de diabetes, o
+                                                designer pode criar um
+                                                storyboard que inicialmente
+                                                descreve os módulos de
+                                                aprendizagem, interações e
+                                                avaliações, enquanto o
+                                                conteudista deve revisar o
+                                                material a fim de garantir que
+                                                informações complexas, como os
+                                                diferentes tipos de insulina e
+                                                suas aplicações,
+                                                estejam corretamente
+                                                representadas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Após a fase inicial de elaboração, a
+                                    validação do storyboard se torna uma prática
+                                    colaborativa crítica. Essa etapa pode
+                                    envolver a realização de reuniões regulares
+                                    entre
+                                    designers e conteudistas, quando cada parte
+                                    revisa o conteúdo apresentado, discute as
+                                    estratégias de ensino e identifica áreas que
+                                    necessitam de ajustes.
+                                </p>
+
+                                <div
+                                    class="quote-card aula3-example-card mx-auto">
+                                    <div class="quote-body">
+                                        <div class="quote-accent-line"></div>
+                                        <div class="quote-icon-wrapper">
+                                            <img
+                                                src="../assets/imgmod1/aula3/bx_exemplo.png"
+                                                alt class="quote-img">
+                                        </div>
+                                        <div
+                                            class="quote-content ps-1 ps-md-4 ps-lg-5">
+                                            <h3 class="quote-title">Exemplo</h3>
+                                            <p>Ao criar um módulo sobre
+                                                reanimação cardiopulmonar (RCP),
+                                                o designer pode sugerir
+                                                o uso de vídeos interativos e
+                                                simulações, enquanto o
+                                                conteudista pode trazer,
+                                                por exemplo, sugestões sobre a
+                                                inclusão de diretrizes
+                                                atualizadas da American
+                                                Heart Association. Essa
+                                                interação garante que o
+                                                storyboard não apenas atenda a
+                                                padrões educacionais, mas que da
+                                                mesma forma incorpore as
+                                                melhores práticas e a
+                                                pesquisa mais recente disponível
+                                                na área a que se destina.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    O ajuste pós-lançamento ocorre após a
+                                    implementação do curso, com o objetivo de
+                                    avaliar sua
+                                    eficácia prática. Nessa fase, são coletados
+                                    dados sobre como os estudantes interagem com
+                                    o
+                                    conteúdo e quais estratégias de ensino
+                                    funcionam melhor.
+                                </p>
+
+                                <div
+                                    class="quote-card aula3-example-card mx-auto">
+                                    <div class="quote-body">
+                                        <div class="quote-accent-line"></div>
+                                        <div class="quote-icon-wrapper">
+                                            <img
+                                                src="../assets/imgmod1/aula3/bx_exemplo.png"
+                                                alt class="quote-img">
+                                        </div>
+                                        <div
+                                            class="quote-content ps-1 ps-md-4 ps-lg-5">
+                                            <h3 class="quote-title">Exemplo</h3>
+                                            <p>Um curso sobre anatomia humana
+                                                pode ser testado em um pequeno
+                                                grupo de
+                                                estudantes, e suas reações a
+                                                recursos como animações e
+                                                quizzes podem ser
+                                                analisadas em conjunto pelos
+                                                designers e conteudistas. Com
+                                                base no feedback,
+                                                ajustes podem ser feitos no html
+                                                para torná-lo mais alinhado com
+                                                a experiência
+                                                real dos estudantes. Isso não
+                                                apenas melhora o curso em si,
+                                                mas também fortalece
+                                                a colaboração entre as duas
+                                                partes, estabelecendo uma
+                                                comunicação contínua sobre
+                                                as necessidades pedagógicas.
+                                                Essa é uma etapa opcional,
+                                                dependendo do tempo e
+                                                acesso ao campo que designers e
+                                                conteudistas terão.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Por fim, o ajuste contínuo é essencial em um
+                                    campo como a Saúde, em que novas informações
+                                    e
+                                    práticas estão sempre emergindo. Assim,
+                                    designers educacionais e conteudistas devem
+                                    manter
+                                    um ciclo de feedback em andamento,
+                                    revisitando os cursos regularmente para
+                                    assegurar que o
+                                    material esteja atualizado e em conformidade
+                                    com novas evidências ou diretrizes.
+                                </p>
+
+                                <div
+                                    class="quote-card aula3-example-card mx-auto">
+                                    <div class="quote-body">
+                                        <div class="quote-accent-line"></div>
+                                        <div class="quote-icon-wrapper">
+                                            <img
+                                                src="../assets/imgmod1/aula3/bx_exemplo.png"
+                                                alt class="quote-img">
+                                        </div>
+                                        <div
+                                            class="quote-content ps-1 ps-md-4 ps-lg-5">
+                                            <h3 class="quote-title">Exemplo</h3>
+                                            <p>Foram publicadas novas pesquisas
+                                                sobre a eficácia de tratamentos
+                                                para doenças
+                                                cardiovasculares, de modo que a
+                                                equipe pode revisar um curso
+                                                sobre Farmacologia
+                                                para incluir as novas
+                                                informações. Essa prática não só
+                                                enriquece a experiência
+                                                de aprendizagem dos estudantes,
+                                                mas também garante que o curso
+                                                se mantenha
+                                                relevante e alinhado com as
+                                                necessidades da prática
+                                                profissional, assegurando
+                                                que profissionais da área
+                                                estejam sempre bem preparados
+                                                para atuar em sua área —
+                                                lembrando que uma das principais
+                                                características desses cursos é
+                                                a qualificação
+                                                em serviço.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Perceba o passo a passo do material do curso
+                                    até o ajuste pós-lançamento.
+                                </p>
+
+                                <div class="aula3-timeline"
+                                    aria-label="Passo a passo do material do curso até o ajuste pós-lançamento">
+                                    <div
+                                        class="aula3-timeline-item left"><span>Recebimento
+                                            do<br>material
+                                            bruto</span><strong>1</strong></div>
+                                    <div
+                                        class="aula3-timeline-item right"><span>Elaboração<br>do
+                                            Storyboard</span><strong>2</strong></div>
+                                    <div
+                                        class="aula3-timeline-item left"><span>Validação<br>do
+                                            Storyboard<br>pelo
+                                            conteudista</span><strong>3</strong></div>
+                                    <div
+                                        class="aula3-timeline-item right"><span>Revisão
+                                            do
+                                            texto</span><strong>4</strong></div>
+                                    <div
+                                        class="aula3-timeline-item left"><span>Produção<br>designer
+                                            gráfico</span><strong>5</strong></div>
+                                    <div
+                                        class="aula3-timeline-item right"><span>Webdesigner
+                                            produz<br>o html do
+                                            curso</span><strong>6</strong></div>
+                                    <div
+                                        class="aula3-timeline-item left"><span>Analista
+                                            insere<br>o curso no
+                                            Moodle</span><strong>7</strong></div>
+                                    <div
+                                        class="aula3-timeline-item right"><span>Lançamento<br>do
+                                            curso</span><strong>8</strong>
+                                    </div>
+                                    <div class="aula3-timeline-item left">
+                                        <span>Ajuste<br>pós-lançamento</span><strong>9</strong></div>
+                                </div>
+                            </section>
+
+                            <section
+                                class="presentation col-lg-8 mx-auto aula3-final-section">
+                                <h2 class="aula3-heading text-center">Você
+                                    chegou ao final da<br>terceira aula do
+                                    Módulo 1</h2>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Nesta aula você reconheceu o trabalho do
+                                    designer educacional, apropriou-se do
+                                    conceito de
+                                    transposição didática e identificou as
+                                    principais características da linguagem
+                                    utilizada na
+                                    elaboração de um storyboard.
+                                </p>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    Ao longo deste módulo você construiu uma
+                                    noção abrangente sobre a modalidade de
+                                    ensino em
+                                    EaD e as peculiaridades de cursos
+                                    autoinstrucionais ambientados em plataformas
+                                    online,
+                                    passando pela estrutura do fluxo de
+                                    produção, pela elaboração do conteúdo bruto
+                                    até a
+                                    elaboração de storyboard.
+                                </p>
+
+                                <p class="paragrafo-conteudo w-100 mw-100">
+                                    No próximo módulo vamos aprofundar a
+                                    discussão sobre a criação de material
+                                    didático digital,
+                                    seu histórico e sua aplicabilidade na
+                                    modalidade EaD. Não perca!
+                                </p>
+
+                                <h2
+                                    class="subtitulo-secao w-100 mw-100">Conferindo
+                                    a aprendizagem</h2>
+
+                                <section class="questionario-aprendizagem"
+                                    aria-label="Questionário de aprendizagem">
+                                    <article class="questao-card"
+                                        data-correct="C">
+                                        <div class="questao-cabecalho">
+                                            <span class="questao-numero">Questão
+                                                1</span>
+                                            <p class="questao-objetivo">
+                                                Objetivo: Reconhecer a
+                                                importância trabalho de
+                                                transposição didática realizado
+                                                pelo designer
+                                                educacional/instrucional.
+                                            </p>
+                                        </div>
+                                        <p class="questao-enunciado">
+                                            O designer educacional é importante
+                                            na construção de cursos online,
+                                            atuando na
+                                            transposição didática e na criação
+                                            de experiências significativas de
+                                            aprendizagem.
+                                            Sua parceria com o conteudista
+                                            garante fluidez, acessibilidade e
+                                            engajamento aos
+                                            materiais desenvolvidos. Das
+                                            alternativas a seguir, qual melhor
+                                            descreve o papel do
+                                            designer educacional em cursos
+                                            autoinstrucionais?
+                                        </p>
+
+                                        <div class="questao-alternativas"
+                                            role="group"
+                                            aria-label="Alternativas da questão 1">
+                                            <button type="button"
+                                                class="questao-opcao"
+                                                data-option="A"
+                                                data-feedback="Incorreta. Essa função é administrativa e não representa o papel do designer educacional. O objetivo é criar experiências de aprendizagem.">
+                                                <strong>A)</strong> Organizar a
+                                                logística das turmas e aplicar
+                                                provas
+                                                presenciais nos polos.
+                                            </button>
+                                            <button type="button"
+                                                class="questao-opcao"
+                                                data-option="B"
+                                                data-feedback="Incorreta. Quem desenvolve o conteúdo técnico é o conteudista. O designer educacional atua na adaptação pedagógica e transposição didática desse conteúdo. O saber técnico vem do conteudista; o saber didático, do designer.">
+                                                <strong>B)</strong> Desenvolver
+                                                conteúdos técnicos de áreas
+                                                específicas, como
+                                                Saúde ou Direito.
+                                            </button>
+                                            <button type="button"
+                                                class="questao-opcao"
+                                                data-option="C"
+                                                data-feedback="Correta. Excelente! O designer educacional transforma o conteúdo em materiais envolventes e estruturados, garantindo acessibilidade e qualidade pedagógica. É esse trabalho conjunto que faz a aprendizagem se consolidar.">
+                                                <strong>C)</strong> Transformar
+                                                conteúdos brutos em experiências
+                                                didáticas
+                                                acessíveis e envolventes,
+                                                utilizando estratégias
+                                                pedagógicas e recursos
+                                                multimídia.
+                                            </button>
+                                            <button type="button"
+                                                class="questao-opcao"
+                                                data-option="D"
+                                                data-feedback="Incorreta. O designer gráfico cuida da parte visual. Já o designer educacional atua na estrutura pedagógica e no planejamento da experiência de aprendizagem. Não confunda arte com didática, ambas são importantes, mas distintas.">
+                                                <strong>D)</strong> Criar apenas
+                                                o design visual da plataforma,
+                                                sem interferir
+                                                na estrutura pedagógica do
+                                                curso.
+                                            </button>
+                                        </div>
+
+                                        <div class="questao-feedback"
+                                            aria-live="polite"></div>
+                                    </article>
+
+                                    <article class="questao-card"
+                                        data-correct="B">
+                                        <div class="questao-cabecalho">
+                                            <span class="questao-numero">Questão
+                                                2</span>
+                                            <p class="questao-objetivo">
+                                                Objetivo: Reconhecer a linguagem
+                                                e a estrutura de um storyboard.
+                                            </p>
+                                        </div>
+                                        <p class="questao-enunciado">
+                                            O storyboard é uma ferramenta que
+                                            estrutura a sequência pedagógica de
+                                            um curso. Ele
+                                            orienta a criação de conteúdos,
+                                            atividades, recursos multimídia e
+                                            avaliações, sendo
+                                            fundamental para transformar
+                                            conteúdos brutos em experiências
+                                            educacionais coesas.
+                                            Assinale a alternativa que
+                                            representa corretamente o papel do
+                                            storyboard no processo
+                                            de produção de cursos
+                                            autoinstrucionais:
+                                        </p>
+
+                                        <div class="questao-alternativas"
+                                            role="group"
+                                            aria-label="Alternativas da questão 2">
+                                            <button type="button"
+                                                class="questao-opcao"
+                                                data-option="A"
+                                                data-feedback="Incorreta. O storyboard não trata apenas do visual, mas sim da organização pedagógica completa do curso. É a espinha dorsal da aprendizagem autoinstrucional.">
+                                                <strong>A)</strong> Documento
+                                                técnico exclusivo para a equipe
+                                                de design gráfico
+                                                criar os layouts da plataforma.
+                                            </button>
+                                            <button type="button"
+                                                class="questao-opcao"
+                                                data-option="B"
+                                                data-feedback="Correta. Isso mesmo! O storyboard planeja o percurso de aprendizagem, orientando o uso de conteúdos, interações e avaliações. Um bom roteiro garante uma grande experiência de aprendizado.">
+                                                <strong>B)</strong> Instrumento
+                                                visual que organiza conteúdos,
+                                                atividades e
+                                                avaliações, orientando a
+                                                experiência pedagógica do curso.
+                                            </button>
+                                            <button type="button"
+                                                class="questao-opcao"
+                                                data-option="C"
+                                                data-feedback="Incorreta. O registro de frequência não é feito por meio do storyboard. Ele está relacionado ao ambiente virtual, e não ao planejamento pedagógico. Frequência importa, mas não é essa a função do storyboard.">
+                                                <strong>C)</strong> Material
+                                                usado para registrar a
+                                                frequência dos estudantes ao
+                                                longo do curso.
+                                            </button>
+                                            <button type="button"
+                                                class="questao-opcao"
+                                                data-option="D"
+                                                data-feedback="Incorreta. Embora possa haver inspiração, um storyboard exige adaptação didática específica para a modalidade online, com estrutura própria. Ambientes online exigem outro olhar e, consequentemente, outra forma de planejar.">
+                                                <strong>D)</strong> Plano de
+                                                aula presencial que será
+                                                adaptado diretamente para
+                                                a plataforma online.
+                                            </button>
+                                        </div>
+
+                                        <div class="questao-feedback"
+                                            aria-live="polite"></div>
+                                    </article>
+                                </section>
+                            </section>
+
+                            <div class="navegacao-aula col-lg-8 mx-auto">
+                                <a href="../modulo1/aula2.html"
+                                    class="botao-aula botao-voltar"
+                                    aria-label="Voltar">
+                                    <img
+                                        src="../assets/imgmod1/aula3/bt1_voltar_off.png"
+                                        alt="Voltar">
+                                </a>
+
+                                <a href="../modulo1/aula4.html"
+                                    class="botao-aula botao-proxima"
+                                    aria-label="Próxima aula">
+                                    <img
+                                        src="../assets/imgmod1/aula3/bt_1 off.png"
+                                        alt="Próxima">
+                                </a>
+                            </div>
+                        </div>
+                    </main>
                 </div>
             </div>
-        </div>
-        <!-- Fim do footer -->
-    </footer>
-    <script>
+
+            <!-- FOOTER -->
+            <!-- Início do footer -->
+            <footer id="footer" class="py-4 mt-5">
+                <div class="container">
+                    <div
+                        class="footer-logos row justify-content-center align-items-center text-center">
+                        <div
+                            class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                            <img src="../assets/images/Logo_CVF.png"
+                                class="footer-logo w-100"
+                                alt="Campus Virtual Fiocruz">
+                        </div>
+                        <div
+                            class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                            <img src="../assets/images/Logo_Fiocruz.png"
+                                class="footer-logo w-100" alt="Fiocruz">
+                        </div>
+                        <div
+                            class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                            <img src="../assets/images/Logos_Sus35_Ms_Gov.png"
+                                class="footer-logo w-100" alt="Sus">
+                        </div>
+                   
+                    </div>
+                </div>
+                <!-- Fim do footer -->
+            </footer>
+            <script>
         function toggleMenu(id) {
             const menu = document.getElementById(id);
 
@@ -770,8 +1674,8 @@ B e C - Página final do livro multimídia, utilizando-se recurso interativo. Fo
         sidebarClose.type = 'button';
         sidebarClose.setAttribute('aria-label', 'Fechar menu lateral');
         sidebarClose.innerHTML = '&times;';
-            const sidebarCloseTarget = sidebar.querySelector('.sticky-sidebar') || sidebar;
-            sidebarCloseTarget.prepend(sidebarClose);
+        const sidebarCloseTarget = sidebar.querySelector('.sticky-sidebar') || sidebar;
+        sidebarCloseTarget.prepend(sidebarClose);
 
         if (mobileToggle) {
             mobileToggle.addEventListener('click', () => {
@@ -876,17 +1780,17 @@ B e C - Página final do livro multimídia, utilizando-se recurso interativo. Fo
         });
     </script>
 
+            <!-- TARJA FINAL -->
+            <div class="container-fluid p-0 text-center tarja-container">
+                <img src="../assets/images/tarja_1920.png"
+                    class="img-fluid w-100 traja-img" alt="Traja">
+            </div>
 
-    <!-- TARJA FINAL -->
-    <div class="container-fluid p-0 text-center tarja-container">
-        <img src="../assets/images/tarja_1920.png" class="img-fluid w-100 traja-img" alt="Traja">
-    </div>
+            <!-- JS LOCAL -->
+            <script src="../js/menu.js"></script>
+            <script src="../js/page-transitions.js"></script>
+            <script src="../js/bootstrap.bundle.min.js"></script>
 
-    <!-- JS LOCAL -->
-    <script src="../js/menu.js"></script>
-    <script src="../js/page-transitions.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+        </body>
 
-</body>
-
-</html>
+    </html>
