@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto Fiocruz</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../assets/font/rawline-400.ttf">
+    </head>
+
+    <body>
+        <div class="banner position-relative">
+            <nav
+                class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0">
+                <div class="container-fluid">
+                    <div
+                        class="navbar-brand logo-right-wrap d-flex align-items-center">
+                        <button class="mobile-sidebar-toggle me-3"
+                            id="mobileSidebarToggle"
+                            aria-label="Abrir menu lateral"
+                            type="button" aria-expanded="false">
+                            <svg class="sidebar-arrow-icon" viewBox="0 0 24 24"
+                                aria-hidden="true" focusable="false">
+                                <path class="sidebar-arrow-stem"
+                                    d="M5 12H17"></path>
+                                <path class="sidebar-arrow-head"
+                                    d="M12 7L17 12L12 17"></path>
+                            </svg>
+                        </button>
+                        <a class="logo-home-link" href="../home/index.html">
+
+                        </a><img src="../assets/images/Logo_CVF.png" height="60"
+                            class="logo-move logo-right" alt="Logo"
+                            style="max-width: 59%">
+                    </div>
+
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#menuTopo"
+                        aria-label="Abrir menu de navegação">
+                        <span class="top-menu-dots">&vellip;</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end"
+                        id="menuTopo">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../home/index.html">Início</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../home/index.html">Bibliografia</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../home/index.html">Crédito</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <picture>
+                <source srcset="../assets/imgmod2/aula1/bg_mod2_1.png"
+                    media="(max-width: 768px)">
+                <img src="../assets/imgmod2/aula1/Bg_mod2-Au1.png"
+                    class="img-fluid w-100" alt="Banner">
+            </picture>
+        </div>
+
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <div class="container-fluid p-0">
+            <div class="row g-0 row-full">
+                <aside class="col-12 col-md-2 sidebar">
+                    <div class="menu-item" onclick="toggleMenu('mod1')">
+                        <h3>Módulo 1</h3>
+                        <p> - A EAD e o desenvolvimento de<br> cursos
+                            autoinstrucionais</p>
+                    </div>
+                    <div class="submenu" id="mod1">
+                        <a href="../modulo1/aula1.html"
+                            class="submenu-aula-longa"><span
+                                class="submenu-aula-numero">Aula
+                                1.1</span><span class="submenu-aula-titulo">–
+                                Contextualização de<br>EAD (ensino
+                                híbrido,<br>ensino on-line,<br>ensino
+                                presencial) e a<br>produção de
+                                cursos<br>autoinstrucionais</span></a>
+                        <a href="../modulo1/aula2.html"><span
+                                class="submenu-aula-numero">Aula 1.2</span><span
+                                class="submenu-aula-titulo">– Elaboração
+                                de<br>conteúdo para
+                                curso<br>autoinstrucional</span></a>
+                        <a href="../modulo1/aula3.html"><span
+                                class="submenu-aula-numero">Aula 1.3</span><span
+                                class="submenu-aula-titulo">– A criação
+                                de<br>Storyboards e a<br>relação com
+                                a<br>Designer
+                                Educacional</span></a>
+                        <a href="../modulo1/aula4.html"><span
+                                class="submenu-aula-numero">Aula 1.4</span><span
+                                class="submenu-aula-titulo">– Publicações
+                                on-line:<br>Mooc, Moodle e<br>linguagem
+                                HTML</span></a>
+                    </div>
+
+                    <div class="menu-item" onclick="toggleMenu('mod2')">
+                        <h3>Módulo 2</h3>
+                        <p> - Criação do Material Didático Digital</p>
+                    </div>
+                    <div class="submenu" id="mod2">
+                        <a href="../modulo2/aula1.html"><span
+                                class="submenu-aula-numero">Aula 2.1</span><span
+                                class="submenu-aula-titulo">– O
+                                material<br>didático digital</span></a>
+                        <a href="../modulo2/aula2.html"><span
+                                class="submenu-aula-numero">Aula 2.2</span><span
+                                class="submenu-aula-titulo">– O processo
+                                de<br>planejamento do<br>material
+                                didático</span></a>
+                        <a href="../modulo2/aula3.html"><span
+                                class="submenu-aula-numero">Aula 2.3</span><span
+                                class="submenu-aula-titulo">– O processo
+                                de<br>produção textual<br>e
+                                acessibilidade</span></a>
+                        <a href="../modulo2/aula4.html"><span
+                                class="submenu-aula-numero">Aula 2.4</span><span
+                                class="submenu-aula-titulo">– Avaliação
+                                e<br>feedbacks no EAD</span></a>
+                    </div>
+
+                    <div class="menu-item menu-material-complementar">
+                        <h3>Material</h3>
+                        <h3>Complementar</h3>
+                    </div>
+                </aside>
+
+                <main class="col-12 col-md-10 main-content">
+                    <div
+                        class="container introducao-aula aula3-content modulo2-aula1-content">
+                        <section class="objectives">
+                            <h1 class="titulo-secao mb-4">O material didático
+                                digital</h1>
+                        </section>
+
+                        <section class="objectives">
+                            <h2
+                                class="text-start col-lg-8 mx-auto font-rawline-bold aula2-section-title">Objetivos
+                                de aprendizagem</h2>
+                            <p
+                                class="textoconteudo col-lg-8 mx-auto aula2-objectives-intro">Ao
+                                final desta aula você poderá:</p>
+                            <div class="col-lg-8 mx-auto">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula1/check_2.png"
+                                                alt="Ícone de check"
+                                                class="aula2-check-icon"></div>
+                                        <div class="flex-grow-1">
+                                            <p class="textoconteudo">Entender as
+                                                especificidades do conceito de
+                                                material didático para EaD.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula1/check_2.png"
+                                                alt="Ícone de check"
+                                                class="aula2-check-icon"></div>
+                                        <div class="flex-grow-1">
+                                            <p class="textoconteudo">Reconhecer
+                                                as funções do material didático
+                                                para EaD.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula1/check_2.png"
+                                                alt="Ícone de check"
+                                                class="aula2-check-icon"></div>
+                                        <div class="flex-grow-1">
+                                            <p class="textoconteudo">Reconhecer
+                                                as competências do conteudista
+                                                para elaboração de material
+                                                didático de qualidade.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="presentation col-lg-8 mx-auto modulo2-curadoria">
+                            <h2 class="font-rawline-bold">Curadoria</h2>
+                            <p>Andrea Dias da Silva<br>
+                                Núcleo Pedagógico e de Tecnologias
+                                Educacionais<br>
+                                do Instituto René Rachou - FIOCRUZ MINAS</p>
+                        </section>
+
+                        <section class="presentation">
+                            <h2 class="titulo-secao modulo2-aula1-heading">Introdução:
+                                um pouco de história</h2>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Antes
+                                de iniciar a discussão propriamente dita sobre a
+                                produção de materiais didáticos digitais, vamos
+                                refletir um pouco sobre alguns aspectos
+                                relacionados aos materiais didáticos para além
+                                da EaD.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">O
+                                uso de materiais didáticos remonta a tempos
+                                muito distantes, e é tão antigo quanto o próprio
+                                processo de ensino. Considera-se que o primeiro
+                                manual elaborado com a intencionalidade de
+                                facilitar didaticamente o processo de
+                                aprendizagem foi o Orbis Sensualium Pictus,
+                                (Figura 1), um livro com vocabulário ilustrado
+                                para ensinar latim e outras línguas (Figura 2),
+                                organizado por Comênio em 1658.</p>
+
+                            <figure
+                                class="aula3-figure modulo2-historia-figure col-lg-8 mx-auto">
+                                <img
+                                    src="../assets/imgmod2/aula1/imagem_historia.png"
+                                    class="img-fluid"
+                                    alt="Retrato de Comênio e página ilustrada do livro Orbis Sensualium Pictus.">
+                                <figcaption class="textolegenda">Fonte:
+                                    Wikipedia.org</figcaption>
+                            </figure>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Porém,
+                                somente quando — em face da necessidade de
+                                formar indivíduos com habilidades fundamentais
+                                exigidas pelo novo modelo de sociedade, por
+                                ocasião do processo desencadeado pela Revolução
+                                Industrial no século XIX — a educação se
+                                massificou, os sistemas de ensino passaram a
+                                fazer uso generalizado de manuais, livros-textos
+                                e outros materiais organizados especificamente
+                                para facilitar a aprendizagem.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Desde
+                                então, os meios didáticos passaram por
+                                significativa evolução, especialmente no que se
+                                refere a materiais impressos. Inicialmente, o
+                                livro constituía praticamente o único recurso
+                                pedagógico disponível. Com o avanço das
+                                tecnologias, contudo, os sistemas educacionais
+                                incorporaram novos suportes, como recursos
+                                visuais, sonoros, audiovisuais e, mais
+                                recentemente, ferramentas digitais.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Nesse
+                                contexto de evolução, a EaD, como uma
+                                modalidade de educação baseada no largo uso de
+                                tecnologias, incorpora esses avanços e passa a
+                                utilizar uma diversidade muito grande de
+                                materiais didáticos, que vão do impresso ao
+                                digital e virtual.</p>
+
+                            <aside
+                                class="aula4-saiba-mais quote-card modulo2-saiba-mais col-lg-8 mx-auto">
+                                <div class="quote-body">
+                                    <div class="quote-accent-line"></div>
+                                    <div class="quote-icon-wrapper d-flex">
+                                        <img
+                                            src="../assets/imgmod2/aula1/bx2_saibamais.png"
+                                            alt aria-hidden="true"
+                                            class="quote-img">
+                                    </div>
+                                    <div class="quote-content">
+                                        <h3 class="quote-title">Saiba mais</h3>
+                                        <p>A obra Orbis Sensualium Pictus
+                                            (1658), de <a
+                                                href="https://pt.wikipedia.org/wiki/Com%C3%A9nio"
+                                                target="_blank"
+                                                rel="noopener">Johann Amos
+                                                Comenius</a>, é considerada o
+                                            primeiro livro didático ilustrado da
+                                            história. Sua inovação foi integrar
+                                            texto e imagem para facilitar a
+                                            aprendizagem — algo que hoje
+                                            reconhecemos como princípio da
+                                            aprendizagem multimodal.</p>
+                                    </div>
+                                </div>
+                            </aside>
+
+                            <figure
+                                class="aula3-figure modulo2-recursos-figure col-lg-8 mx-auto">
+                                <img
+                                    src="../assets/imgmod2/aula1/imagem_recursos.png"
+                                    class="img-fluid"
+                                    alt="Infográfico sobre a evolução dos recursos didáticos do livro impresso aos ambientes virtuais.">
+                                <figcaption class="textolegenda">Fonte: Campus
+                                    virtual Fiocruz, por meio da ferramenta
+                                    Chatgpt.</figcaption>
+                            </figure>
+                        </section>
+
+                        <section class="presentation">
+                            <h2 class="titulo-secao modulo2-aula1-heading">O
+                                que define um material didático?</h2>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">De
+                                modo geral, consideramos material didático
+                                qualquer recurso que possa modificar a maneira
+                                de ver e entender determinado conteúdo e que
+                                auxilie e impulsione o processo de
+                                ensino-aprendizagem. Assim, os materiais
+                                didáticos podem ser entendidos:</p>
+
+                            <aside
+                                class="quote-card modulo2-citacao-card col-lg-8 mx-auto">
+                                <div class="quote-body">
+                                    <div class="quote-accent-line"></div>
+                                    <div class="quote-icon-wrapper d-flex">
+                                        <img
+                                            src="../assets/imgmod2/aula1/bx2_citacao.png"
+                                            alt aria-hidden="true"
+                                            class="quote-img">
+                                    </div>
+                                    <div class="quote-content">
+                                        <h3 class="quote-title">Citação</h3>
+                                        <blockquote>
+                                            <p>"[...] como produtos pedagógicos
+                                                utilizados na educação e,
+                                                especificamente, como material
+                                                instrucional que se elabora com
+                                                finalidade didática"</p>
+                                            <footer>Bandeira, 2009, p. 14</footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </aside>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">No
+                                entanto, o material didático digital possui
+                                singularidades a serem consideradas em sua
+                                produção, como o uso de diferentes mídias
+                                visando um adequado desenvolvimento
+                                pedagógico.</p>
+
+                            <div class="modulo2-callout col-lg-8 mx-auto">
+                                <p>É sobre a produção desses materiais didáticos
+                                    que falaremos a partir de agora. Vamos lá?</p>
+                            </div>
+
+                            <h2 class="titulo-secao modulo2-aula1-heading">A
+                                mediação pedagógica na EaD</h2>
+                            <div class="modulo2-mediacao-grid col-lg-8 mx-auto">
+                                <div>
+                                    <p class="paragrafo-conteudo text-md-start">Em
+                                        EaD, o material didático é um
+                                        instrumento de mediação pedagógica e
+                                        pressupõe uma preocupação sistemática
+                                        com sua elaboração e produção. Nesse
+                                        sentido, para que a base do processo de
+                                        mediação seja efetivada no
+                                        ensino-aprendizagem a distância,
+                                        torna-se necessário um cuidado especial
+                                        na elaboração dos materiais didáticos
+                                        que funcionam como instrumentos que
+                                        subsidiam o desenvolvimento de um curso
+                                        ou programa na EaD, pois estes
+                                        desempenham papel de extrema importância
+                                        na condução da aprendizagem do
+                                        estudante.</p>
+                                </div>
+                                <figure class="modulo2-mediacao-figure">
+                                    <img
+                                        src="../assets/imgmod2/aula1/imagem_livro.png"
+                                        alt="Ilustração de livros, folha de estudo e copo.">
+                                </figure>
+                            </div>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">No
+                                processo de produção de materiais didáticos, o
+                                centro das preocupações deve ser a adoção de uma
+                                abordagem pedagógica que privilegie a capacidade
+                                de reflexão do estudante, integrando teoria e
+                                prática relacionadas ao seu contexto imediato,
+                                de modo que proporcione uma mediação pedagógica
+                                voltada para a produção do conhecimento do
+                                estudante (Corrêa, 2007).</p>
+
+                            <div class="modulo2-tab-definitions col-lg-8 mx-auto"
+                                aria-label="Dimensões do material didático">
+                                <div class="modulo2-tab-card">
+                                    <div class="modulo2-tab-list" role="tablist"
+                                        aria-label="Dimensões do material didático">
+                                        <button type="button"
+                                            id="modulo2-tab-tema"
+                                            class="active"
+                                            role="tab"
+                                            aria-selected="true"
+                                            aria-controls="modulo2-panel-tema">tema</button>
+                                        <button type="button"
+                                            id="modulo2-tab-aprendizagem"
+                                            role="tab"
+                                            aria-selected="false"
+                                            aria-controls="modulo2-panel-aprendizagem">aprendizagem</button>
+                                        <button type="button"
+                                            id="modulo2-tab-forma"
+                                            role="tab"
+                                            aria-selected="false"
+                                            aria-controls="modulo2-panel-forma">forma</button>
+                                    </div>
+
+                                    <div class="modulo2-tab-panel active"
+                                        id="modulo2-panel-tema"
+                                        role="tabpanel"
+                                        aria-labelledby="modulo2-tab-tema">
+                                        <p>Leva em consideração a necessidade que
+                                            o estudante tem de ter uma visão
+                                            global do conteúdo a ser trabalhado,
+                                            seja através de objetivos
+                                            específicos para cada conteúdo, seja
+                                            através de um esquema introdutório de
+                                            cada unidade (Gutierrez; Prieto,
+                                            1994).</p>
+                                    </div>
+
+                                    <div class="modulo2-tab-panel"
+                                        id="modulo2-panel-aprendizagem"
+                                        role="tabpanel"
+                                        aria-labelledby="modulo2-tab-aprendizagem"
+                                        hidden>
+                                        <p>Diz respeito ao tipo específico de
+                                            aprendizagem que cada curso sugere,
+                                            de forma a trabalhar o material
+                                            voltado para o objetivo específico de
+                                            cada conteúdo.</p>
+                                    </div>
+
+                                    <div class="modulo2-tab-panel"
+                                        id="modulo2-panel-forma"
+                                        role="tabpanel"
+                                        aria-labelledby="modulo2-tab-forma"
+                                        hidden>
+                                        <p>Diz respeito ao leiaute do material,
+                                            que deve ser voltado para o estímulo
+                                            à autoaprendizagem.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">O
+                                material didático em EaD constitui um elemento
+                                mediador que deve trazer em seu bojo a concepção
+                                pedagógica que norteia o ensino-aprendizagem.
+                                Consciente ou inconscientemente, o planejamento
+                                e a elaboração do material didático estão
+                                intimamente relacionados com a proposta
+                                pedagógica da instituição e com a concepção de
+                                educação do produtor desse material.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">O
+                                material didático precisa ser o condutor de um
+                                conjunto de atividades que procure levar à
+                                construção do conhecimento. Em EaD, precisa,
+                                ainda, ser capaz de provocar e garantir a
+                                necessária interatividade do processo de
+                                ensino-aprendizagem e garantir autonomia ao
+                                aluno em seus estudos. Daí a necessidade de
+                                elaborar o material didático com linguagem
+                                dialógica, que, na ausência física do professor,
+                                reproduza, mesmo em alguns casos, uma conversa
+                                entre professor e aluno, tornando a leitura leve
+                                e motivadora (Belisário, 2003).</p>
+
+                            <figure
+                                class="aula3-figure modulo2-baloes-figure col-lg-8 mx-auto">
+                                <img
+                                    src="../assets/imgmod2/aula1/imagem_baloes.png"
+                                    class="img-fluid"
+                                    alt="Ilustração de balões de comunicação com ícones de aprendizagem e tecnologia.">
+                                <figcaption class="textolegenda">Fonte: Campus
+                                    virtual Fiocruz, por meio da ferramenta
+                                    Chatgpt.</figcaption>
+                            </figure>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                experiência em cursos presenciais não é
+                                suficiente para assegurar a qualidade de
+                                materiais educacionais que serão veiculados por
+                                diferentes meios de comunicação e informação.
+                                Cada recurso utilizado — material impresso,
+                                vídeos, programas televisivos, radiofônicos,
+                                videoconferências, páginas da web e outros —
+                                tem sua própria lógica de concepção, de
+                                produção, de linguagem, de uso do tempo, sendo,
+                                portanto, uma das grandes preocupações das
+                                instituições que os oferecem: o material
+                                didático a ser produzido para os cursos.</p>
+
+                            <h3
+                                class="modulo2-subpergunta col-lg-8 mx-auto">O
+                                que torna o material digital diferente?</h3>
+
+                            <div
+                                class="modulo2-comparativo-table-wrap col-lg-8 mx-auto">
+                                <table class="modulo2-comparativo-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Características</th>
+                                            <th>
+                                                <img
+                                                    src="../assets/imgmod2/aula1/icon_impresso.png"
+                                                    alt aria-hidden="true">
+                                                <span>Material Impresso</span>
+                                            </th>
+                                            <th>
+                                                <img
+                                                    src="../assets/imgmod2/aula1/icon_digital.png"
+                                                    alt aria-hidden="true">
+                                                <span>Material Digital</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>Navegação</th>
+                                            <td><strong>Linear:</strong><br>
+                                                Segue uma sequência lógica
+                                                (início, meio e fim).</td>
+                                            <td><strong>Não linear:</strong><br>
+                                                Navegação por hiperlinks; o
+                                                usuário escolhe o próprio
+                                                caminho.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Dinamismo</th>
+                                            <td><strong>Estático:</strong><br>
+                                                Uma vez impresso, o conteúdo é
+                                                imutável.</td>
+                                            <td><strong>Interativo:</strong><br>
+                                                Contém vídeos, animações e
+                                                elementos clicáveis.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Flexibilidade</th>
+                                            <td><strong>Pouca
+                                                    personalização:</strong><br>
+                                                É o mesmo conteúdo para todos os
+                                                leitores.</td>
+                                            <td><strong>Pode ser
+                                                    adaptativo:</strong><br>
+                                                O conteúdo pode mudar com base
+                                                nas preferências ou nível do
+                                                usuário.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Troca de Informação</th>
+                                            <td><strong>Comunicação
+                                                    unidirecional:</strong><br>
+                                                O autor fala e o leitor apenas
+                                                consome.</td>
+                                            <td><strong>Comunicação
+                                                    dialógica:</strong><br>
+                                                Permite feedback em tempo real,
+                                                comentários e colaboração.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h2 class="titulo-secao modulo2-aula1-heading">Funções
+                                do material didático digital</h2>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">O
+                                material didático para EaD tem funções
+                                indispensáveis que devem ser conhecidas pelo
+                                conteudista antes de começar a elaborar o
+                                referido conteúdo:</p>
+
+                            <div class="modulo2-funcoes-box col-lg-8 mx-auto">
+                                <ul>
+                                    <li>O material didático contribui para
+                                        desenvolver habilidades, competências e
+                                        atitudes dos estudantes.</li>
+                                    <li>Ele se propõe a prever dúvidas,
+                                        equívocos e erros.</li>
+                                    <li>Apresenta aos estudantes os novos
+                                        conhecimentos a partir dos
+                                        anteriores.</li>
+                                    <li>Busca estabelecer a relação
+                                        teoria-prática.</li>
+                                    <li>Favorece o desenvolvimento do estudo
+                                        autônomo.</li>
+                                    <li>Apresenta novas fontes de
+                                        informações.</li>
+                                    <li>Favorece a compreensão do conteúdo
+                                        estudado por meio de exemplos variados
+                                        de aplicação do conhecimento.</li>
+                                    <li>Apresenta problemas, analogias e
+                                        questões.</li>
+                                    <li>Propõe diferentes atividades de
+                                        aprendizagem e autoavaliação.</li>
+                                    <li>Favorece a realização de avaliação da
+                                        aprendizagem.</li>
+                                </ul>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Essas
+                                funções devem ser observadas para que os
+                                conteúdos não se apresentem distantes da
+                                realidade do estudante, sem sentido, e por
+                                consequência não ocorra aprendizagem
+                                significativa.</p>
+
+                            <h2 class="titulo-secao modulo2-aula1-heading">Competências
+                                do conteudista<br>de material didático para
+                                EaD</h2>
+                            <div class="modulo2-competencias-intro col-lg-8 mx-auto">
+                                <figure>
+                                    <img
+                                        src="../assets/imgmod2/aula1/imagem_lapis.png"
+                                        alt="Ilustração de conteudista com lápis.">
+                                </figure>
+                                <div>
+                                    <p>A qualidade de um curso a distância
+                                        depende da qualidade do material
+                                        didático, que, por sua vez, depende da
+                                        formação adequada de quem o produz,
+                                        mediante a aquisição de algumas
+                                        competências fundamentais.</p>
+                                    <p>Como forma de garantir o alcance dos
+                                        objetivos traçados, relacionamos algumas
+                                        competências do conteudista para a
+                                        produção do material didático para EaD
+                                        que incluem habilidades e conhecimentos
+                                        essenciais. Aqui estão algumas das
+                                        principais:</p>
+                                </div>
+                            </div>
+
+                            <div class="modulo2-competencias-slider col-lg-8 mx-auto"
+                                aria-label="Competências do conteudista">
+                                <button type="button"
+                                    class="modulo2-slider-control modulo2-slider-prev"
+                                    aria-label="Competência anterior">
+                                    <span aria-hidden="true">&lsaquo;</span>
+                                </button>
+
+                                <div class="modulo2-slider-track">
+                                    <article class="modulo2-slider-slide active"
+                                        aria-hidden="false">
+                                        <p><strong>Conhecimento
+                                                pedagógico:</strong> compreensão
+                                            dos princípios de ensino e
+                                            aprendizagem, adaptando o conteúdo
+                                            para diferentes estilos e ritmos de
+                                            aprendizagem.</p>
+                                    </article>
+                                    <article class="modulo2-slider-slide"
+                                        aria-hidden="true">
+                                        <p><strong>Curadoria:</strong>
+                                            selecionar os conteúdos de maneira
+                                            criteriosa, a partir da revisão de
+                                            literatura e publicações atuais como
+                                            referência.</p>
+                                    </article>
+                                    <article class="modulo2-slider-slide"
+                                        aria-hidden="true">
+                                        <p><strong>Linguagem
+                                                assertiva:</strong> utilizar uma
+                                            linguagem que facilite a leitura e a
+                                            compreensão do que é lido.</p>
+                                    </article>
+                                    <article class="modulo2-slider-slide"
+                                        aria-hidden="true">
+                                        <p><strong>Conexão com a realidade dos
+                                                estudantes:</strong> é muito
+                                            importante que o conteúdo seja
+                                            apresentado de forma que se conecte
+                                            com o cotidiano, contextualizando a
+                                            importância do conteúdo ainda nos
+                                            dias de hoje, para despertar o
+                                            interesse dos estudantes.</p>
+                                    </article>
+                                    <article class="modulo2-slider-slide"
+                                        aria-hidden="true">
+                                        <p><strong>Colaboração e trabalho em
+                                                equipe:</strong> preparação para
+                                            trabalhar com outros profissionais,
+                                            como pedagogos, designers e
+                                            especialistas em tecnologia
+                                            educacional, para desenvolver
+                                            materiais de qualidade.</p>
+                                    </article>
+                                    <article class="modulo2-slider-slide"
+                                        aria-hidden="true">
+                                        <p><strong>Pensamento crítico e criativo:</strong>
+                                            capacidade de desenvolver conteúdos
+                                            inovadores e relevantes, além de
+                                            avaliar criticamente as informações
+                                            para garantir qualidade e veracidade
+                                            ao material produzido.</p>
+                                    </article>
+                                    <article class="modulo2-slider-slide"
+                                        aria-hidden="true">
+                                        <p><strong>Avaliação e feedback:</strong>
+                                            capacidade de criar ferramentas de
+                                            avaliação que permitam medir a
+                                            eficácia do material didático e
+                                            estar aberto a feedbacks para
+                                            realizar melhorias contínuas.</p>
+                                    </article>
+                                    <article class="modulo2-slider-slide"
+                                        aria-hidden="true">
+                                        <p><strong>Atualização contínua:</strong>
+                                            compromisso com a formação contínua,
+                                            mantendo-se atualizado sobre novas
+                                            tendências, tecnologias e pesquisas
+                                            no campo da educação digital.</p>
+                                    </article>
+                                </div>
+
+                                <button type="button"
+                                    class="modulo2-slider-control modulo2-slider-next"
+                                    aria-label="Próxima competência">
+                                    <span aria-hidden="true">&rsaquo;</span>
+                                </button>
+
+                                <div class="modulo2-slider-dots"
+                                    aria-label="Selecionar competência">
+                                    <button type="button" class="active"
+                                        aria-label="Mostrar competência 1"
+                                        aria-current="true"></button>
+                                    <button type="button"
+                                        aria-label="Mostrar competência 2"></button>
+                                    <button type="button"
+                                        aria-label="Mostrar competência 3"></button>
+                                    <button type="button"
+                                        aria-label="Mostrar competência 4"></button>
+                                    <button type="button"
+                                        aria-label="Mostrar competência 5"></button>
+                                    <button type="button"
+                                        aria-label="Mostrar competência 6"></button>
+                                    <button type="button"
+                                        aria-label="Mostrar competência 7"></button>
+                                    <button type="button"
+                                        aria-label="Mostrar competência 8"></button>
+                                </div>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Essas
+                                competências garantem que o conteudista esteja
+                                apto a criar materiais didáticos que sejam não
+                                apenas informativos, mas também envolventes e
+                                eficazes para o processo de aprendizagem.</p>
+
+                            <h2 class="titulo-secao modulo2-final-title">Você
+                                chegou ao final da<br>primeira aula do Módulo
+                                2</h2>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Nesta
+                                aula você aprendeu que o material didático é um
+                                instrumento pedagógico que auxilia o aluno no
+                                processo de ensino e aprendizagem e que, na EaD,
+                                é o canal mais importante de comunicação com o
+                                estudante.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Aprendeu
+                                também que a construção do material didático
+                                digital tem especificidades, como o uso de
+                                diferentes mídias, visando um adequado
+                                desenvolvimento pedagógico. Que na construção do
+                                material didático digital deve-se atentar ao
+                                atendimento de funções como desenvolvimento de
+                                habilidades, competências e atitudes dos
+                                estudantes.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Por
+                                fim, que aquele que se propõe a ser um
+                                conteudista deve buscar adquirir as competências
+                                necessárias para criar materiais didáticos que
+                                sejam não apenas informativos, mas também
+                                envolventes e eficazes para o processo de
+                                aprendizagem.</p>
+
+                            <h2
+                                class="modulo2-check-heading col-lg-8 mx-auto">Conferindo
+                                a aprendizagem</h2>
+
+                            <section
+                                class="questionario-aprendizagem col-lg-8 mx-auto"
+                                aria-label="Questionário de aprendizagem">
+                                <article class="questao-card" data-correct="B">
+                                    <div class="questao-cabecalho">
+                                        <span class="questao-numero">Questão
+                                            1</span>
+                                        <p class="questao-objetivo">Objetivo:
+                                            Entender as especificidades do
+                                            conceito de material didático
+                                            digital.</p>
+                                    </div>
+                                    <p class="questao-enunciado">Qual das
+                                        alternativas a seguir melhor descreve a
+                                        função do material didático digital na
+                                        Educação a Distância (EaD)?</p>
+                                    <div class="questao-alternativas"
+                                        role="group"
+                                        aria-label="Alternativas da questão 1">
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="A"
+                                            data-feedback="Incorreta. Embora o material didático contenha informações teóricas, sua função vai além disso, pois ele deve promover mediação, interação e autonomia ao estudante."><strong>A)</strong>
+                                            Servir como única fonte de
+                                            informação teórica para os
+                                            alunos.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="B"
+                                            data-feedback="Correta! O material didático digital na EaD atua como mediador pedagógico, promovendo reflexão, autonomia, linguagem dialógica e conexão com o contexto do aluno."><strong>B)</strong>
+                                            Atuar como instrumento de mediação
+                                            pedagógica, promovendo autonomia,
+                                            reflexão e interatividade.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="C"
+                                            data-feedback="Incorreta. O material não deve apenas replicar o conteúdo presencial, mas ser adaptado com base em diferentes mídias e formas de aprendizagem, respeitando as especificidades da EaD."><strong>C)</strong>
+                                            Reproduzir fielmente o conteúdo das
+                                            aulas presenciais, sem
+                                            adaptações.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="D"
+                                            data-feedback="Incorreta. A produção de material didático na EaD envolve uma equipe multidisciplinar e não é de responsabilidade exclusiva do professor."><strong>D)</strong>
+                                            Ser desenvolvido exclusivamente pelo
+                                            professor responsável pela
+                                            disciplina.</button>
+                                    </div>
+                                    <div class="questao-feedback"
+                                        aria-live="polite"></div>
+                                </article>
+
+                                <article class="questao-card" data-correct="C">
+                                    <div class="questao-cabecalho">
+                                        <span class="questao-numero">Questão
+                                            2</span>
+                                        <p class="questao-objetivo">Objetivo:
+                                            Reconhecer as competências do
+                                            conteudista para elaboração de
+                                            material didático de qualidade.</p>
+                                    </div>
+                                    <p class="questao-enunciado">Entre as
+                                        competências a seguir, qual representa
+                                        uma habilidade fundamental do
+                                        conteudista para garantir que o material
+                                        didático seja adequado ao
+                                        ensino-aprendizagem na EaD?</p>
+                                    <div class="questao-alternativas"
+                                        role="group"
+                                        aria-label="Alternativas da questão 2">
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="A"
+                                            data-feedback="Incorreta. A experiência docente é valiosa, mas o conteudista precisa basear-se em referências atualizadas, pesquisas e curadoria de conteúdos, e não apenas em vivências pessoais."><strong>A)</strong>
+                                            Redigir conteúdos com base
+                                            exclusivamente em sua experiência
+                                            pessoal como docente.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="B"
+                                            data-feedback="Incorreta. A qualidade do material exige planejamento, revisão e validação pedagógica. A agilidade não deve comprometer a clareza e a eficácia didática."><strong>B)</strong>
+                                            Elaborar conteúdos sem a necessidade
+                                            de revisão, priorizando agilidade na
+                                            produção.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="C"
+                                            data-feedback="Correta! A linguagem clara, dialógica e contextualizada é essencial na EaD, pois substitui, em parte, a presença física do professor e promove o engajamento do aluno."><strong>C)</strong>
+                                            Utilizar linguagem acessível e
+                                            contextualizada, favorecendo a
+                                            compreensão e a motivação do
+                                            aluno.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="D"
+                                            data-feedback="Incorreta. A produção de materiais na EaD é um processo colaborativo e multidisciplinar, envolvendo pedagogos, designers, revisores e especialistas em tecnologia educacional."><strong>D)</strong>
+                                            Centralizar a produção de todo o
+                                            material didático, evitando
+                                            colaboração com outros
+                                            profissionais.</button>
+                                    </div>
+                                    <div class="questao-feedback"
+                                        aria-live="polite"></div>
+                                </article>
+                            </section>
+                        </section>
+
+                        <nav class="navegacao-aula col-lg-8 mx-auto"
+                            aria-label="Navegação da aula">
+                            <a href="../modulo1/aula4.html"
+                                class="botao-aula botao-voltar"
+                                aria-label="Voltar">
+                                <img
+                                    src="../assets/imgmod2/aula1/bt2_voltar_off.png"
+                                    alt="Voltar">
+                            </a>
+                            <a href="../modulo2/aula2.html"
+                                class="botao-aula botao-proxima"
+                                aria-label="Próxima aula">
+                                <img src="../assets/imgmod2/aula1/bt_2 off.png"
+                                    alt="Próxima">
+                            </a>
+                        </nav>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <footer id="footer" class="py-4 mt-5">
+            <div class="container">
+                <div
+                    class="footer-logos row justify-content-center align-items-center text-center">
+                    <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                        <img src="../assets/images/Logo_CVF.png"
+                            class="footer-logo w-100"
+                            alt="Campus Virtual Fiocruz">
+                    </div>
+                    <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                        <img src="../assets/images/Logo_Fiocruz.png"
+                            class="footer-logo w-100" alt="Fiocruz">
+                    </div>
+                    <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                        <img src="../assets/images/Logos_Sus35_Ms_Gov.png"
+                            class="footer-logo w-100" alt="Sus">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+        function toggleMenu(id) {
+            const menu = document.getElementById(id);
+            document.querySelectorAll('.submenu').forEach(el => {
+                if (el.id !== id) el.classList.remove('open');
+            });
+            if (menu) menu.classList.toggle('open');
+        }
+
+        const mobileToggle = document.getElementById('mobileSidebarToggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+        const sidebarClose = document.createElement('button');
+        sidebarClose.className = 'sidebar-close';
+        sidebarClose.type = 'button';
+        sidebarClose.setAttribute('aria-label', 'Fechar menu lateral');
+        sidebarClose.innerHTML = '&times;';
+
+        if (sidebar) {
+            const sidebarCloseTarget = sidebar.querySelector('.sticky-sidebar') || sidebar;
+            sidebarCloseTarget.prepend(sidebarClose);
+        }
+
+        if (mobileToggle && sidebar && overlay) {
+            mobileToggle.addEventListener('click', () => {
+                const isOpen = sidebar.classList.toggle('mobile-open');
+                overlay.classList.toggle('active', isOpen);
+                mobileToggle.classList.toggle('is-open', isOpen);
+                mobileToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
+
+        if (overlay && sidebar && mobileToggle) {
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('mobile-open');
+                overlay.classList.remove('active');
+                mobileToggle.classList.remove('is-open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        sidebarClose.addEventListener('click', () => {
+            if (!sidebar || !overlay || !mobileToggle) return;
+            sidebar.classList.remove('mobile-open');
+            overlay.classList.remove('active');
+            mobileToggle.classList.remove('is-open');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabGroup = document.querySelector('.modulo2-tab-definitions');
+            if (tabGroup) {
+                const tabs = tabGroup.querySelectorAll('[role="tab"]');
+                const panels = tabGroup.querySelectorAll('[role="tabpanel"]');
+
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const panelId = tab.getAttribute('aria-controls');
+
+                        tabs.forEach(item => {
+                            const isActive = item === tab;
+                            item.classList.toggle('active', isActive);
+                            item.setAttribute('aria-selected', String(isActive));
+                        });
+
+                        panels.forEach(panel => {
+                            const isActive = panel.id === panelId;
+                            panel.hidden = !isActive;
+                            panel.classList.toggle('active', isActive);
+                        });
+                    });
+                });
+            }
+
+            const slider = document.querySelector('.modulo2-competencias-slider');
+            if (slider) {
+                const slides = slider.querySelectorAll('.modulo2-slider-slide');
+                const dots = slider.querySelectorAll('.modulo2-slider-dots button');
+                const previous = slider.querySelector('.modulo2-slider-prev');
+                const next = slider.querySelector('.modulo2-slider-next');
+                let currentSlide = 0;
+
+                const showSlide = index => {
+                    currentSlide = (index + slides.length) % slides.length;
+
+                    slides.forEach((slide, slideIndex) => {
+                        const isActive = slideIndex === currentSlide;
+                        slide.classList.toggle('active', isActive);
+                        slide.setAttribute('aria-hidden', String(!isActive));
+                    });
+
+                    dots.forEach((dot, dotIndex) => {
+                        const isActive = dotIndex === currentSlide;
+                        dot.classList.toggle('active', isActive);
+                        if (isActive) {
+                            dot.setAttribute('aria-current', 'true');
+                        } else {
+                            dot.removeAttribute('aria-current');
+                        }
+                    });
+                };
+
+                previous.addEventListener('click', () => showSlide(currentSlide - 1));
+                next.addEventListener('click', () => showSlide(currentSlide + 1));
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => showSlide(index));
+                });
+            }
+
+            document.querySelectorAll('.questao-card').forEach(questao => {
+                const respostaCorreta = questao.dataset.correct;
+                const feedback = questao.querySelector('.questao-feedback');
+
+                questao.querySelectorAll('.questao-opcao').forEach(opcao => {
+                    opcao.addEventListener('click', () => {
+                        const acertou = opcao.dataset.option === respostaCorreta;
+
+                        questao.querySelectorAll('.questao-opcao').forEach(item => {
+                            item.classList.remove('selecionada', 'correta', 'incorreta');
+                        });
+
+                        opcao.classList.add('selecionada', acertou ? 'correta' : 'incorreta');
+                        feedback.textContent = opcao.dataset.feedback;
+                        feedback.classList.remove('correto', 'incorreto');
+                        feedback.classList.add(acertou ? 'correto' : 'incorreto');
+                    });
+                });
+            });
+        });
+    </script>
+
+        <div class="container-fluid p-0 text-center tarja-container">
+            <img src="../assets/imgmod2/aula1/tarja_1920.png"
+                class="img-fluid w-100 traja-img" alt="Tarja">
+        </div>
+
+        <script src="../js/menu.js"></script>
+        <script src="../js/page-transitions.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
