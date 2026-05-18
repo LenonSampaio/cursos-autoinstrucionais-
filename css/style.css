@@ -2765,6 +2765,159 @@ em {
     height: auto;
 }
 
+@media (max-width: 767.98px) {
+    .modulo2-aula2-content {
+        width: 100%;
+        overflow-x: hidden;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .modulo2-aula2-content .col-lg-8,
+    .modulo2-aula2-content .paragrafo-conteudo,
+    .modulo2-aula2-content .textoconteudo,
+    .modulo2-aula2-content .textolegenda,
+    .modulo2-aula2-content .questionario-aprendizagem,
+    .modulo2-aula2-content .navegacao-aula {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .modulo2-aula2-content .paragrafo-conteudo,
+    .modulo2-aula2-content .textoconteudo {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        font-size: 0.95rem;
+        line-height: 1.55;
+        text-align: left !important;
+    }
+
+    .modulo2-aula2-content .titulo-secao,
+    .modulo2-aula2-content .aula2-section-title {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .modulo2-aula2-transposicao {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        width: calc(100% - 24px) !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .modulo2-aula2-transposicao .paragrafo-conteudo {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .modulo2-aula2-transposicao figure {
+        order: -1;
+        width: 100%;
+        margin: 0 auto 4px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .modulo2-aula2-transposicao img {
+        width: min(100%, 220px);
+    }
+
+    .modulo2-aula2-processo {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .modulo2-aula2-processo h3 {
+        width: calc(100% - 24px);
+        padding: 16px 18px;
+        font-size: 0.98rem;
+        line-height: 1.35;
+    }
+
+    .modulo2-aula2-step {
+        grid-template-columns: 64px minmax(0, 1fr);
+        gap: 12px;
+        padding: 14px 14px;
+        border-radius: 12px;
+    }
+
+    .modulo2-aula2-step img {
+        width: 58px;
+    }
+
+    .modulo2-aula2-step h4 {
+        font-size: 0.98rem;
+        line-height: 1.25;
+    }
+
+    .modulo2-aula2-step p {
+        font-size: 0.92rem;
+        line-height: 1.35;
+    }
+
+    .modulo2-aula2-accordion,
+    .modulo2-aula2-componentes,
+    .modulo2-aula2-exemplo-accordion,
+    .modulo2-aula2-quadro-accordion,
+    .modulo2-aula2-quadro-figure,
+    .modulo2-aula2-eventos-box,
+    .modulo2-aula2-pontos-box {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .modulo2-aula2-accordion-trigger {
+        grid-template-columns: minmax(0, 1fr) 28px !important;
+        gap: 10px !important;
+        padding: 10px 8px !important;
+        font-size: 0.95rem !important;
+    }
+
+    .modulo2-aula2-accordion-panel {
+        padding: 16px 18px 18px !important;
+    }
+
+    .modulo2-aula2-componente-trigger {
+        grid-template-columns: minmax(0, 1fr) 30px !important;
+        padding: 10px 10px 10px 14px !important;
+        font-size: 0.95rem !important;
+    }
+
+    .modulo2-aula2-componente-panel {
+        padding: 12px 16px 8px !important;
+    }
+
+    .modulo2-aula2-quadro-table {
+        grid-template-columns: repeat(3, minmax(170px, 1fr)) !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .modulo2-aula2-quadro-toggle {
+        min-width: 170px !important;
+        font-size: 0.84rem !important;
+    }
+
+    .modulo2-aula2-quadro-cell {
+        min-width: 170px !important;
+        padding: 14px 12px !important;
+        font-size: 0.88rem !important;
+        line-height: 1.35 !important;
+    }
+}
+
 .modulo2-aula2-accordion {
     margin-top: 22px;
     margin-bottom: 52px;
@@ -3132,6 +3285,24 @@ em {
     color: #a33b9f;
 }
 
+.modulo2-aula3-content {
+    overflow-x: hidden;
+}
+
+.modulo2-aula3-content .paragrafo-conteudo,
+.modulo2-aula3-content .textoconteudo {
+    text-align: left;
+}
+
+.modulo2-aula3-content .col-lg-8,
+.modulo2-aula3-content .paragrafo-conteudo,
+.modulo2-aula3-content .textoconteudo,
+.modulo2-aula3-content .textolegenda,
+.modulo2-aula3-content .questionario-aprendizagem,
+.modulo2-aula3-content .navegacao-aula {
+    min-width: 0;
+}
+
 .modulo2-aula3-section {
     margin-top: 34px;
 }
@@ -3184,8 +3355,10 @@ em {
 }
 
 .modulo2-aula3-table-wrap {
+    width: min(100%, 760px);
     margin-top: 30px;
     margin-bottom: 54px;
+    overflow-x: auto;
 }
 
 .modulo2-aula3-table {
@@ -3281,27 +3454,31 @@ em {
 }
 
 .modulo2-aula3-access-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 390px) 250px;
-    gap: 28px;
-    align-items: start;
-    justify-content: center;
+    display: flow-root;
     width: min(100%, 690px);
     margin-top: 22px;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
 }
 
 .modulo2-aula3-access-grid img {
+    float: right;
     display: block;
-    width: 100%;
-    max-width: 250px;
-    justify-self: center;
-    margin-top: 0;
+    width: 230px;
+    max-width: 38%;
+    margin: -10px 24px 14px 34px;
 }
 
 .modulo2-aula3-access-grid .paragrafo-conteudo {
-    max-width: 390px;
-    margin-bottom: 24px;
+    max-width: none;
+    margin-bottom: 18px;
+}
+
+.modulo2-aula3-access-fiocruz {
+    max-width: 100% !important;
+}
+
+.modulo2-aula3-access-wide {
+    max-width: 100% !important;
 }
 
 .modulo2-aula3-access-final {
@@ -3314,12 +3491,36 @@ em {
     margin-bottom: 20px;
 }
 
+.modulo2-aula3-access-recommendations {
+    width: min(100%, 620px);
+    margin-top: 18px;
+    margin-bottom: 34px;
+    opacity: 1;
+    transform: none;
+}
+
+.modulo2-aula3-access-recommendations img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .modulo2-aula3-access-notes {
     position: relative;
     width: min(100%, 760px);
     margin-top: 14px;
     margin-bottom: 58px;
     padding-bottom: 92px;
+}
+
+.modulo2-aula3-access-notes::before {
+    content: "";
+    position: absolute;
+    right: -18px;
+    bottom: 64px;
+    height: 286px;
+    border-right: 2px dotted #a33b9f;
+    pointer-events: none;
 }
 
 .modulo2-aula3-access-list {
@@ -3330,6 +3531,15 @@ em {
 
 .modulo2-aula3-access-list li {
     line-height: 1.42;
+}
+
+.modulo2-aula3-abbr-connector-start {
+    display: inline-block;
+    width: 104px;
+    margin-left: 6px;
+    margin-bottom: 0.18em;
+    border-top: 2px dotted #a33b9f;
+    vertical-align: middle;
 }
 
 .modulo2-aula3-abbr-note {
@@ -3354,10 +3564,12 @@ em {
 .modulo2-aula3-abbr-note::after {
     content: "";
     position: absolute;
-    right: -18px;
-    bottom: 28px;
-    height: 286px;
-    border-right: 2px dotted #a33b9f;
+    right: -4px;
+    bottom: 25px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #a33b9f;
 }
 
 .modulo2-aula3-abbr-note p {
@@ -3400,7 +3612,468 @@ em {
     padding-left: 0;
 }
 
+.modulo2-aula4-content .titulo-secao {
+    color: #a33b9f;
+}
+
+.modulo2-aula4-content {
+    overflow-x: hidden;
+}
+
+.modulo2-aula4-section {
+    margin-top: 32px;
+}
+
+.modulo2-aula4-function-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 28px;
+    margin-bottom: 46px;
+}
+
+.modulo2-aula4-function-grid article {
+    position: relative;
+    overflow: visible;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.modulo2-aula4-function-grid article > img:first-child {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.modulo2-aula4-function-grid article > img:nth-child(2) {
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    width: 116px;
+    transform: translateX(-50%);
+}
+
+.modulo2-aula4-function-grid strong {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 46px;
+    color: #ffffff;
+    font-size: 1.35rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.modulo2-aula4-modalidades {
+    width: min(100%, 520px);
+    margin-top: 26px;
+    margin-bottom: 46px;
+}
+
+.modulo2-aula4-modalidades img {
+    display: block;
+    width: 100%;
+    border-radius: 28px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.modulo2-aula4-callout {
+    margin-top: 34px;
+    margin-bottom: 42px;
+}
+
+.modulo2-aula4-icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 42px 34px;
+    margin-top: 26px;
+    margin-bottom: 44px;
+    padding: 56px 50px;
+    border-radius: 28px;
+    background: #ffffff;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.modulo2-aula4-icon-grid article,
+.modulo2-aula4-card-grid article {
+    display: grid;
+    justify-items: center;
+    align-content: start;
+    gap: 10px;
+    color: #a33b9f;
+    font-weight: 800;
+    line-height: 1.12;
+    text-align: center;
+}
+
+.modulo2-aula4-icon-grid img {
+    width: 112px;
+    height: 112px;
+    object-fit: contain;
+}
+
+.modulo2-aula4-list-box {
+    margin-top: 24px;
+    margin-bottom: 52px;
+    box-shadow: none;
+}
+
+.modulo2-aula4-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 28px;
+    margin-bottom: 48px;
+}
+
+.modulo2-aula4-card-grid article {
+    min-height: 250px;
+    padding: 34px 26px 28px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.18);
+    color: #222222;
+    font-size: 1.35rem;
+}
+
+.modulo2-aula4-card-grid img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.modulo2-aula4-feedback-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 34px;
+    align-items: start;
+    margin-top: 14px;
+    margin-bottom: 42px;
+}
+
+.modulo2-aula4-feedback-grid p {
+    margin: 0;
+    color: #333333;
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
+.modulo2-aula4-feedback-grid img {
+    width: 220px;
+    max-width: 100%;
+}
+
+.modulo2-aula4-prof-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+    gap: 28px;
+    align-items: start;
+    margin-top: 16px;
+    margin-bottom: 26px;
+}
+
+.modulo2-aula4-prof-grid p {
+    margin: 0;
+    color: #333333;
+    font-size: 1rem;
+    line-height: 1.55;
+    text-align: left;
+}
+
+.modulo2-aula4-prof-grid figure {
+    margin: 0;
+}
+
+.modulo2-aula4-prof-grid img {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+}
+
+.modulo2-aula4-prof-grid figcaption {
+    margin-top: 4px;
+    color: #555555;
+    font-size: 0.75rem;
+    text-align: right;
+}
+
+.modulo2-aula4-slider-label {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #222222;
+    font-family: 'Rawline', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.35;
+    text-align: left;
+}
+
+.modulo2-aula4-feedback-slider {
+    margin-top: 10px;
+    margin-bottom: 42px;
+}
+
+.modulo2-aula4-feedback-slider .modulo2-slider-track {
+    min-height: 130px;
+}
+
+.modulo2-aula4-feedback-slider .modulo2-slider-slide p {
+    color: #2a0932;
+}
+
+.modulo2-aula4-feedback-slider .modulo2-slider-slide strong {
+    display: inline-block;
+    margin-bottom: 2px;
+    font-size: 1.45rem;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .modulo2-aula3-content .col-lg-8,
+    .modulo2-aula3-content .paragrafo-conteudo,
+    .modulo2-aula3-content .textoconteudo,
+    .modulo2-aula3-content .textolegenda,
+    .modulo2-aula3-content .questionario-aprendizagem,
+    .modulo2-aula3-content .navegacao-aula {
+        width: min(100%, 760px);
+        max-width: 100%;
+    }
+
+    .modulo2-aula3-access-card.quote-card,
+    .modulo2-aula3-access-notes,
+    .modulo2-aula3-final-strip {
+        width: min(100%, 760px);
+    }
+}
+
 @media (max-width: 767.98px) {
+    .modulo2-aula4-content {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .modulo2-aula4-content .col-lg-8,
+    .modulo2-aula4-content .paragrafo-conteudo,
+    .modulo2-aula4-content .textoconteudo,
+    .modulo2-aula4-content .textolegenda,
+    .modulo2-aula4-content .navegacao-aula {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .modulo2-aula4-content .paragrafo-conteudo,
+    .modulo2-aula4-content .textoconteudo {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        font-size: 0.95rem;
+        line-height: 1.55;
+        text-align: left !important;
+    }
+
+    .modulo2-aula4-content .titulo-secao,
+    .modulo2-aula4-content .aula2-section-title {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .modulo2-aula4-function-grid,
+    .modulo2-aula4-icon-grid,
+    .modulo2-aula4-card-grid,
+    .modulo2-aula4-feedback-grid {
+        grid-template-columns: 1fr;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .modulo2-aula4-prof-grid {
+        grid-template-columns: 1fr;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .modulo2-aula4-prof-grid figure {
+        width: min(100%, 320px);
+        margin: 0 auto;
+    }
+
+    .modulo2-aula4-function-grid {
+        gap: 18px;
+    }
+
+    .modulo2-aula4-function-grid article {
+        border-radius: 0;
+    }
+
+    .modulo2-aula4-function-grid article > img:nth-child(2) {
+        top: 42px;
+        width: 96px;
+    }
+
+    .modulo2-aula4-function-grid strong {
+        bottom: 34px;
+    }
+
+    .modulo2-aula4-icon-grid {
+        gap: 28px;
+        padding: 30px 18px;
+        border-radius: 20px;
+    }
+
+    .modulo2-aula4-icon-grid img,
+    .modulo2-aula4-card-grid img {
+        width: 92px;
+        height: 92px;
+    }
+
+    .modulo2-aula4-card-grid {
+        gap: 18px;
+    }
+
+    .modulo2-aula4-card-grid article {
+        min-height: 190px;
+        font-size: 1.15rem;
+    }
+
+    .modulo2-aula4-feedback-grid {
+        gap: 18px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .modulo2-aula4-feedback-grid img {
+        width: min(100%, 190px);
+        margin: 0 auto;
+    }
+
+    .modulo2-aula4-prof-grid {
+        gap: 16px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .modulo2-aula4-prof-grid figcaption {
+        text-align: center;
+    }
+
+    .modulo2-aula4-slider-label {
+        width: calc(100% - 24px) !important;
+        max-width: calc(100% - 24px) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .modulo2-aula4-feedback-slider .modulo2-slider-track {
+        min-height: 190px;
+    }
+
+    .modulo2-aula4-feedback-slider .modulo2-slider-slide strong {
+        font-size: 1.22rem;
+    }
+
+    .modulo2-aula4-list-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 24px 18px;
+        border-radius: 18px;
+    }
+
+    .modulo2-aula3-content {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .modulo2-aula3-content .col-lg-8,
+    .modulo2-aula3-content .paragrafo-conteudo,
+    .modulo2-aula3-content .textoconteudo,
+    .modulo2-aula3-content .textolegenda,
+    .modulo2-aula3-content .questionario-aprendizagem,
+    .modulo2-aula3-content .navegacao-aula {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .modulo2-aula3-content .paragrafo-conteudo,
+    .modulo2-aula3-content .textoconteudo {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        font-size: 0.95rem;
+        line-height: 1.55;
+        text-align: left !important;
+    }
+
+    .modulo2-aula3-content .titulo-secao,
+    .modulo2-aula3-content .aula2-section-title {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .modulo2-aula3-content .aula2-objectives-intro {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .modulo2-aula3-figure,
+    .modulo2-aula3-table-wrap,
+    .modulo2-aula3-card.quote-card,
+    .modulo2-aula3-list-box,
+    .modulo2-aula3-access-card.quote-card,
+    .modulo2-aula3-access-tools,
+    .modulo2-aula3-access-notes,
+    .modulo2-aula3-final-strip {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .modulo2-aula3-card.quote-card {
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 18px;
+        padding: 22px 16px 26px;
+        min-height: 0;
+    }
+
+    .modulo2-aula3-card .quote-accent-line {
+        left: 18px;
+        right: 18px;
+        top: 24px;
+        bottom: 24px;
+        border-width: 3px;
+        border-radius: 18px;
+    }
+
+    .modulo2-aula3-card .quote-icon-wrapper {
+        left: -4px;
+        top: -16px;
+        width: 78px;
+    }
+
+    .modulo2-aula3-card .quote-img {
+        width: 78px;
+        flex-basis: 78px;
+    }
+
+    .modulo2-aula3-card .quote-content {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+        padding-top: 52px;
+        max-width: 100%;
+    }
+
+    .modulo2-aula3-card .quote-title {
+        font-size: 1.55rem;
+        line-height: 1.1;
+        margin-bottom: 12px;
+    }
+
+    .modulo2-aula3-card .quote-content p {
+        font-size: 0.94rem;
+        line-height: 1.5;
+    }
+
     .modulo2-aula3-list-box {
         border-radius: 18px;
         padding: 24px 18px;
@@ -3422,6 +4095,7 @@ em {
     .modulo2-aula3-table th {
         padding: 22px 16px;
         font-size: 1rem;
+        text-align: left;
     }
 
     .modulo2-aula3-table td {
@@ -3443,14 +4117,16 @@ em {
     }
 
     .modulo2-aula3-access-grid {
-        grid-template-columns: 1fr;
-        gap: 22px;
+        display: block;
         width: 100%;
     }
 
     .modulo2-aula3-access-grid img {
+        float: none;
+        display: block;
         max-width: 240px;
-        margin: 0 auto;
+        width: min(100%, 240px);
+        margin: 0 auto 18px;
     }
 
     .modulo2-aula3-access-grid .paragrafo-conteudo {
@@ -3467,6 +4143,11 @@ em {
         padding: 24px 18px;
     }
 
+    .modulo2-aula3-access-list li {
+        font-size: 0.94rem;
+        line-height: 1.45;
+    }
+
     .modulo2-aula3-abbr-note {
         position: relative;
         right: auto;
@@ -3476,8 +4157,11 @@ em {
     }
 
     .modulo2-aula3-abbr-note::before,
-    .modulo2-aula3-abbr-note::after {
+    .modulo2-aula3-abbr-note::after,
+    .modulo2-aula3-access-notes::before,
+    .modulo2-aula3-abbr-connector-start {
         content: none;
+        display: none;
     }
 
     .modulo2-aula3-final-strip > div {
@@ -3574,6 +4258,17 @@ em {
 
 .modulo2-citacao-card.quote-card {
     min-height: 286px;
+}
+
+.modulo2-citacao-card .quote-accent-line {
+    top: 48px;
+    left: 34px;
+    right: 40px;
+    bottom: 28px;
+    border: 0;
+    border-left: 4px solid #a33b9f;
+    border-bottom: 4px solid #a33b9f;
+    border-radius: 0 0 0 24px;
 }
 
 .modulo2-citacao-card .quote-title {
@@ -3733,14 +4428,19 @@ em {
     width: 33.333%;
     padding: 16px 14px;
     border: 4px solid #ffffff;
-    background: #eadbea;
+    background: #f0deec;
     vertical-align: middle;
     line-height: 1.25;
 }
 
-.modulo2-comparativo-table tbody th,
-.modulo2-comparativo-table tbody td:nth-child(2) {
-    background: #d7cde2;
+.modulo2-comparativo-table tbody tr:nth-child(odd) th,
+.modulo2-comparativo-table tbody tr:nth-child(odd) td {
+    background: #d8cfe3;
+}
+
+.modulo2-comparativo-table tbody tr:nth-child(even) th,
+.modulo2-comparativo-table tbody tr:nth-child(even) td {
+    background: #f0deec;
 }
 
 .modulo2-comparativo-table thead th {
@@ -6785,6 +7485,17 @@ iframe {
         border-radius: 16px;
     }
 
+    .modulo2-citacao-card .quote-accent-line {
+        left: 22px;
+        right: 18px;
+        top: 58px;
+        bottom: 20px;
+        border: 0;
+        border-left: 3px solid #a33b9f;
+        border-bottom: 3px solid #a33b9f;
+        border-radius: 0 0 0 18px;
+    }
+
     .modulo2-saiba-mais .quote-content,
     .modulo2-citacao-card .quote-content {
         padding: 46px 18px 4px 18px !important;
@@ -7171,5 +7882,51 @@ iframe {
     .navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) .logo-move.logo-right,
     .navbar-brand>.logo-right-wrap .logo-move.logo-right {
         max-width: 130px;
+    }
+}
+
+/* Modulo 1 keeps its original sidebar tone. Modulo 2 remains #7a0058. */
+body.modulo1-page .sidebar,
+body.modulo1-page .sidebar-wrapper {
+    background: #590063 !important;
+}
+
+@media (min-width: 1200px) {
+    body.modulo1-page:not(:has(.home-main)) {
+        background: linear-gradient(to right, #590063 0 220px, transparent 220px 100%) !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body.modulo1-page:not(:has(.home-main)) {
+        background: linear-gradient(to right, #590063 0 210px, transparent 210px 100%) !important;
+    }
+}
+
+/* Citation cards: L-shaped line with rounded corner. */
+.modulo1-citacao-card .quote-accent-line,
+.modulo2-citacao-card .quote-accent-line {
+    top: 48px;
+    left: 34px;
+    right: 40px;
+    bottom: 28px;
+    border: 0 !important;
+    border-left: 4px solid #a33b9f !important;
+    border-bottom: 4px solid #a33b9f !important;
+    border-radius: 0 0 0 24px !important;
+}
+
+@media (max-width: 767.98px) {
+
+    .modulo1-citacao-card .quote-accent-line,
+    .modulo2-citacao-card .quote-accent-line {
+        left: 22px;
+        right: 18px;
+        top: 58px;
+        bottom: 20px;
+        border: 0 !important;
+        border-left: 3px solid #a33b9f !important;
+        border-bottom: 3px solid #a33b9f !important;
+        border-radius: 0 0 0 18px !important;
     }
 }
