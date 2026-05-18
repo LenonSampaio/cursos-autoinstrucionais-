@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto Fiocruz</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../assets/font/rawline-400.ttf">
+    </head>
+
+    <body>
+        <div class="banner position-relative">
+            <nav
+                class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0">
+                <div class="container-fluid">
+                    <div
+                        class="navbar-brand logo-right-wrap d-flex align-items-center">
+                        <button class="mobile-sidebar-toggle me-3"
+                            id="mobileSidebarToggle"
+                            aria-label="Abrir menu lateral"
+                            type="button" aria-expanded="false">
+                            <svg class="sidebar-arrow-icon" viewBox="0 0 24 24"
+                                aria-hidden="true" focusable="false">
+                                <path class="sidebar-arrow-stem"
+                                    d="M5 12H17"></path>
+                                <path class="sidebar-arrow-head"
+                                    d="M12 7L17 12L12 17"></path>
+                            </svg>
+                        </button>
+                        <a class="logo-home-link" href="../home/index.html">
+
+                        </a><img src="../assets/images/Logo_CVF.png" height="60"
+                            class="logo-move logo-right" alt="Logo"
+                            style="max-width: 59%">
+                    </div>
+
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#menuTopo"
+                        aria-label="Abrir menu de navegação">
+                        <span class="top-menu-dots">&vellip;</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end"
+                        id="menuTopo">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../home/index.html">Início</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../home/index.html">Bibliografia</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../home/index.html">Crédito</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <picture>
+                <source srcset="../assets/imgmod2/aula2/bg_mod2_2.png"
+                    media="(max-width: 768px)">
+                <img src="../assets/imgmod2/aula2/Bg_mod2-Au2.png"
+                    class="img-fluid w-100" alt="Banner">
+            </picture>
+        </div>
+
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <div class="container-fluid p-0">
+            <div class="row g-0 row-full">
+                <aside class="col-12 col-md-2 sidebar">
+                    <div class="menu-item" onclick="toggleMenu('mod1')">
+                        <h3>Módulo 1</h3>
+                        <p> - A EAD e o desenvolvimento de<br> cursos
+                            autoinstrucionais</p>
+                    </div>
+                    <div class="submenu" id="mod1">
+                        <a href="../modulo1/aula1.html"
+                            class="submenu-aula-longa"><span
+                                class="submenu-aula-numero">Aula
+                                1.1</span><span class="submenu-aula-titulo">–
+                                Contextualização de<br>EAD (ensino
+                                híbrido,<br>ensino on-line,<br>ensino
+                                presencial) e a<br>produção de
+                                cursos<br>autoinstrucionais</span></a>
+                        <a href="../modulo1/aula2.html"><span
+                                class="submenu-aula-numero">Aula 1.2</span><span
+                                class="submenu-aula-titulo">– Elaboração
+                                de<br>conteúdo para
+                                curso<br>autoinstrucional</span></a>
+                        <a href="../modulo1/aula3.html"><span
+                                class="submenu-aula-numero">Aula 1.3</span><span
+                                class="submenu-aula-titulo">– A criação
+                                de<br>Storyboards e a<br>relação com
+                                a<br>Designer
+                                Educacional</span></a>
+                        <a href="../modulo1/aula4.html"><span
+                                class="submenu-aula-numero">Aula 1.4</span><span
+                                class="submenu-aula-titulo">– Publicações
+                                on-line:<br>Mooc, Moodle e<br>linguagem
+                                HTML</span></a>
+                    </div>
+
+                    <div class="menu-item" onclick="toggleMenu('mod2')">
+                        <h3>Módulo 2</h3>
+                        <p> - Criação do Material Didático Digital</p>
+                    </div>
+                    <div class="submenu" id="mod2">
+                        <a href="../modulo2/aula1.html"><span
+                                class="submenu-aula-numero">Aula 2.1</span><span
+                                class="submenu-aula-titulo">– O
+                                material<br>didático digital</span></a>
+                        <a href="../modulo2/aula2.html"><span
+                                class="submenu-aula-numero">Aula 2.2</span><span
+                                class="submenu-aula-titulo">– O processo
+                                de<br>planejamento do<br>material
+                                didático</span></a>
+                        <a href="../modulo2/aula3.html"><span
+                                class="submenu-aula-numero">Aula 2.3</span><span
+                                class="submenu-aula-titulo">– O processo
+                                de<br>produção textual<br>e
+                                acessibilidade</span></a>
+                        <a href="../modulo2/aula4.html"><span
+                                class="submenu-aula-numero">Aula 2.4</span><span
+                                class="submenu-aula-titulo">– Avaliação
+                                e<br>feedbacks no EAD</span></a>
+                    </div>
+
+                    <div class="menu-item menu-material-complementar">
+                        <h3>Material</h3>
+                        <h3>Complementar</h3>
+                    </div>
+                </aside>
+
+                <main class="col-12 col-md-10 main-content">
+                    <div
+                        class="container introducao-aula aula3-content modulo2-aula2-content">
+                        <section class="objectives">
+                            <h1 class="titulo-secao mb-4">O processo de
+                                planejamento<br>do material didático</h1>
+                        </section>
+
+                        <section class="objectives">
+                            <h2
+                                class="text-start col-lg-8 mx-auto font-rawline-bold aula2-section-title">Objetivos
+                                de aprendizagem</h2>
+                            <p
+                                class="textoconteudo col-lg-8 mx-auto aula2-objectives-intro">Ao
+                                final desta aula você poderá:</p>
+                            <div class="col-lg-8 mx-auto">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula2/check_2.png"
+                                                alt="Ícone de check"
+                                                class="aula2-check-icon"></div>
+                                        <div class="flex-grow-1">
+                                            <p class="textoconteudo">Conhecer a
+                                                importância e as etapas do
+                                                planejamento na produção do
+                                                material didático para cursos
+                                                EaD.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula2/check_2.png"
+                                                alt="Ícone de check"
+                                                class="aula2-check-icon"></div>
+                                        <div class="flex-grow-1">
+                                            <p class="textoconteudo">Definir o
+                                                que é uma sequência didática,
+                                                identificando seus principais
+                                                componentes e a importância
+                                                desse conceito no planejamento
+                                                educacional.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula2/check_2.png"
+                                                alt="Ícone de check"
+                                                class="aula2-check-icon"></div>
+                                        <div class="flex-grow-1">
+                                            <p class="textoconteudo">Definir o
+                                                conceito e conhecer as etapas da
+                                                transposição didática.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula2/check_2.png"
+                                                alt="Ícone de check"
+                                                class="aula2-check-icon"></div>
+                                        <div class="flex-grow-1">
+                                            <p class="textoconteudo">Conhecer a
+                                                hierarquia de aprendizado de
+                                                Gagné e como pode influenciar a
+                                                organização de conteúdos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula2/check_2.png"
+                                                alt="Ícone de check"
+                                                class="aula2-check-icon"></div>
+                                        <div class="flex-grow-1">
+                                            <p class="textoconteudo">Conhecer
+                                                modelos de sequência didática
+                                                para material digital.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="presentation">
+                            <h2
+                                class="subtitulo-secao col-lg-8 mx-auto modulo2-aula2-section-title">O
+                                planejamento educacional</h2>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Ao
+                                pensarmos na elaboração de materiais didáticos
+                                para um curso a distância, devemos compreender o
+                                conceito de EaD. Pelo Decreto <a
+                                    href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/D12456.htm"
+                                    target="_blank"
+                                    rel="noopener">nº 12.456/2025</a>,
+                                considera-se Educação a Distância a modalidade
+                                educacional na qual a mediação didático-pedagógica
+                                nos processos de ensino e aprendizagem ocorre
+                                com a utilização de meios e tecnologias de
+                                informação e comunicação, com pessoal
+                                qualificado, com políticas de acesso, com
+                                acompanhamento e avaliação compatíveis, entre
+                                outros. Igualmente, desenvolve atividades
+                                educativas por estudantes e profissionais da
+                                educação que estejam em lugares e tempos
+                                diversos. (Brasil, 2017) e por isso tem
+                                peculiaridades próprias.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Devemos,
+                                também, saber quais são as características do
+                                estudante que opta por realizar um curso na
+                                modalidade EaD. Geralmente, são estudantes
+                                adultos que já desempenham vários papéis na
+                                sociedade. Eles procuram um curso a distância
+                                por questões de flexibilidade do tempo, por
+                                terem experiências de estudo que facilitem o
+                                alcance de objetivos profissionais e pessoais.
+                                Para esses estudantes, os cursos em EaD devem
+                                oferecer possuir conteúdos e recursos de apoio
+                                que sejam compatíveis e adequados às rotinas de
+                                trabalho, entre outras características.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start"><strong>O
+                                    planejamento educacional é realizado em dois
+                                    momentos:</strong></p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Primeiro,
+                                a análise das necessidades de aprendizagem
+                                acontece com o preenchimento do Projeto
+                                Pedagógico do Curso (PPC) por parte da
+                                coordenação.</p>
+
+                            <div
+                                class="modulo2-aula2-processo col-lg-8 mx-auto">
+                                <h3>Análise das necessidades<br>de aprendizagem</h3>
+                                <div class="modulo2-aula2-step-list">
+                                    <article class="modulo2-aula2-step">
+                                        <img
+                                            src="../assets/imgmod2/aula2/icone_01.png"
+                                            alt aria-hidden="true">
+                                        <div>
+                                            <h4>Perfil dos estudantes</h4>
+                                            <p>Analisar as características e o
+                                                contexto dos alunos.</p>
+                                        </div>
+                                    </article>
+                                    <article class="modulo2-aula2-step">
+                                        <img
+                                            src="../assets/imgmod2/aula2/icone_02.png"
+                                            alt aria-hidden="true">
+                                        <div>
+                                            <h4>Ementa da
+                                                disciplina/unidade/módulo</h4>
+                                            <p>Revisar a ementa para alinhar os
+                                                conteúdos com os objetivos do
+                                                curso.</p>
+                                        </div>
+                                    </article>
+                                    <article class="modulo2-aula2-step">
+                                        <img
+                                            src="../assets/imgmod2/aula2/icone_03.png"
+                                            alt aria-hidden="true">
+                                        <div>
+                                            <h4>Habilidades e competências
+                                                previstas na
+                                                disciplina/unidade/módulo</h4>
+                                            <p>Definir as habilidades e
+                                                competências que devem ser
+                                                desenvolvidas.</p>
+                                        </div>
+                                    </article>
+                                    <article class="modulo2-aula2-step">
+                                        <img
+                                            src="../assets/imgmod2/aula2/icone_04.png"
+                                            alt aria-hidden="true">
+                                        <div>
+                                            <h4>Bibliografia básica da
+                                                disciplina/unidade/módulo</h4>
+                                            <p>Referências bibliográficas
+                                                essenciais e confiáveis para o
+                                                aprendizado do aluno, e, quando
+                                                possível, de acesso aberto.</p>
+                                        </div>
+                                    </article>
+                                    <article class="modulo2-aula2-step">
+                                        <img
+                                            src="../assets/imgmod2/aula2/icone_05.png"
+                                            alt aria-hidden="true">
+                                        <div>
+                                            <h4>Carga horária da
+                                                disciplina/unidade/módulo
+                                                Modalidade(EaD, híbrido,
+                                                presencial).</h4>
+                                            <p>Determinar a quantidade de horas
+                                                necessárias para cumprir o
+                                                conteúdo.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Depois,
+                                a estruturação do plano instrucional é
+                                realizada pelo conteudista ao preencher o Guia
+                                da Disciplina.</p>
+
+                            <div
+                                class="modulo2-aula2-processo col-lg-8 mx-auto">
+                                <h3>Estruturação do plano instrucional</h3>
+                                <div class="modulo2-aula2-step-list">
+                                    <article class="modulo2-aula2-step">
+                                        <img
+                                            src="../assets/imgmod2/aula2/icone_06.png"
+                                            alt aria-hidden="true">
+                                        <div>
+                                            <h4>Unidades de estudo</h4>
+                                            <p>Organizar o conteúdo em unidades
+                                                ou módulos de estudo.</p>
+                                        </div>
+                                    </article>
+                                    <article class="modulo2-aula2-step">
+                                        <img
+                                            src="../assets/imgmod2/aula2/icone_07.png"
+                                            alt aria-hidden="true">
+                                        <div>
+                                            <h4>Objetivos</h4>
+                                            <p>Definir os objetivos de
+                                                aprendizagem a serem
+                                                alcançados.</p>
+                                        </div>
+                                    </article>
+                                    <article class="modulo2-aula2-step">
+                                        <img
+                                            src="../assets/imgmod2/aula2/icone_08.png"
+                                            alt aria-hidden="true">
+                                        <div>
+                                            <h4>Conteúdos a serem abordados</h4>
+                                            <p>Determinar os conteúdos que serão
+                                                abordados em cada unidade.</p>
+                                        </div>
+                                    </article>
+                                    <article class="modulo2-aula2-step">
+                                        <img
+                                            src="../assets/imgmod2/aula2/icone_09.png"
+                                            alt aria-hidden="true">
+                                        <div>
+                                            <h4>Atividades avaliativas</h4>
+                                            <p>Criar atividades e avaliações
+                                                para verificar a aprendizagem
+                                                dos alunos.</p>
+                                        </div>
+                                    </article>
+                                    <article class="modulo2-aula2-step">
+                                        <img
+                                            src="../assets/imgmod2/aula2/icone_10.png"
+                                            alt aria-hidden="true">
+                                        <div>
+                                            <h4>Objetos de aprendizado</h4>
+                                            <p>Selecionar vídeos, textos,
+                                                áudios, animações, podcasts,
+                                                infográficos, flashcards, fóruns
+                                                online, e-books, simuladores,
+                                                entre outros recursos.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <aside
+                                class="quote-card modulo2-citacao-card modulo2-aula2-citacao col-lg-8 mx-auto">
+                                <div class="quote-body">
+                                    <div class="quote-accent-line"></div>
+                                    <div class="quote-icon-wrapper d-flex">
+                                        <img
+                                            src="../assets/imgmod2/aula2/bx2_citacao.png"
+                                            alt aria-hidden="true"
+                                            class="quote-img">
+                                    </div>
+                                    <div class="quote-content">
+                                        <h3 class="quote-title">Citação</h3>
+                                        <blockquote>
+                                            <p>"Os cursos são desenvolvidos
+                                                basEADos em microlearning, o que
+                                                implica aprender em pequenas
+                                                etapas. São montadas atividades
+                                                rápidas dentro de um
+                                                planejamento conciso e eficaz,
+                                                que poderá ser facilmente
+                                                entendido pelo profissional/aluno.
+                                                Esse modelo de aprendizagem se
+                                                baseia em uma característica
+                                                intrínseca do cérebro humano,
+                                                que é a capacidade de manter a
+                                                concentração durante curtos
+                                                períodos de tempo com mais
+                                                facilidade do que por períodos
+                                                longos"</p>
+                                            <footer>(Campos et al., 2017, p.
+                                                72).</footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </aside>
+
+                            <h2 class="titulo-secao modulo2-aula2-heading">Transposição
+                                didática</h2>
+                            <div class="modulo2-aula2-transposicao col-lg-8 mx-auto">
+                                <div>
+                                    <p class="paragrafo-conteudo text-md-start">As
+                                        habilidades e conhecimentos essenciais
+                                        do conteudista dependem de outro que é
+                                        fundamental em qualquer processo de
+                                        ensino: boa transposição didática dos
+                                        conhecimentos, capaz de garantir a
+                                        aprendizagem.</p>
+                                    <p class="paragrafo-conteudo text-md-start">Entre
+                                        os inúmeros desafios que se apresentam
+                                        nos processos de ensino e aprendizagem,
+                                        talvez o maior deles seja realizar de
+                                        maneira eficaz a transposição didática
+                                        dos conhecimentos científicos para
+                                        situações reais de ensino, na
+                                        perspectiva de garantir que os objetivos
+                                        traçados para o curso, sejam plenamente
+                                        alcançados.</p>
+                                </div>
+                                <figure>
+                                    <img
+                                        src="../assets/imgmod2/aula2/icone_imagem1.png"
+                                        alt="Ilustração sobre adaptação de conteúdo para aprendizagem.">
+                                </figure>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">No
+                                ensino presencial, a transposição didática
+                                ocorre pela elaboração, pelo uso de materiais e
+                                pelo emprego de instrumentos e técnicas
+                                (textos, estudos dirigidos, vídeos, roteiros de
+                                ensino, proposição de dinâmicas etc.) que apoiam
+                                o trabalho do professor em situações de
+                                interação quase sempre de maneira síncrona.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                transposição didática é a conversão de
+                                conhecimentos científicos historicamente
+                                construídos em objetos "ensináveis", isto é, em
+                                condições de serem entendidos, aprendidos e
+                                ressignificados pelos estudantes.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                transposição didática compreende algumas etapas,
+                                como:</p>
+
+                            <div
+                                class="modulo2-aula2-accordion col-lg-8 mx-auto"
+                                aria-label="Etapas da transposição didática">
+                                <article class="modulo2-aula2-accordion-item active">
+                                    <button type="button"
+                                        class="modulo2-aula2-accordion-trigger"
+                                        aria-expanded="true">
+                                        <span>Planejamento: define os objetivos
+                                            e estratégias</span>
+                                        <span class="modulo2-aula2-accordion-icon"
+                                            aria-hidden="true">−</span>
+                                    </button>
+                                    <div class="modulo2-aula2-accordion-panel">
+                                        <ul>
+                                            <li>Definição de objetivos: em
+                                                consonância com o projeto
+                                                pedagógico do curso, identificar
+                                                o que se espera ensinar e quais
+                                                são os resultados de
+                                                aprendizagem desejados.</li>
+                                            <li>Análise do público-alvo:
+                                                compreender as características
+                                                dos alunos, como idade, nível de
+                                                conhecimento e interesses.</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                                <article class="modulo2-aula2-accordion-item">
+                                    <button type="button"
+                                        class="modulo2-aula2-accordion-trigger"
+                                        aria-expanded="false">
+                                        <span>Pesquisa e coleta de conteúdo:
+                                            seleção e organização do
+                                            conhecimento</span>
+                                        <span class="modulo2-aula2-accordion-icon"
+                                            aria-hidden="true">+</span>
+                                    </button>
+                                    <div class="modulo2-aula2-accordion-panel"
+                                        hidden>
+                                        <ul>
+                                            <li>Revisão de literatura: pesquisar
+                                                sobre o tema a ser abordado,
+                                                utilizando fontes confiáveis.</li>
+                                            <li>Seleção ou recorte dos conteúdos
+                                                que o professor considera
+                                                significativos para que atinja
+                                                os objetivos traçados.</li>
+                                            <li>Ênfase em alguns aspectos que se
+                                                consideram mais relevantes em
+                                                determinados conteúdos e que
+                                                facilitam o entendimento de
+                                                alguns conceitos e categorias
+                                                importantes.</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                                <article class="modulo2-aula2-accordion-item">
+                                    <button type="button"
+                                        class="modulo2-aula2-accordion-trigger"
+                                        aria-expanded="false">
+                                        <span>Desenvolvimento do conteúdo:
+                                            adapta o conhecimento para o
+                                            contexto educacional</span>
+                                        <span class="modulo2-aula2-accordion-icon"
+                                            aria-hidden="true">+</span>
+                                    </button>
+                                    <div class="modulo2-aula2-accordion-panel"
+                                        hidden>
+                                        <ul>
+                                            <li>Divisão didática do
+                                                conhecimento, visando facilitar
+                                                sua compreensão por etapas e sua
+                                                retomada, restabelecendo as
+                                                relações entre as partes.</li>
+                                            <li>Ordenamento do conhecimento, que
+                                                pode ser linear ou não
+                                                linear.</li>
+                                            <li>Definição da forma de organizar
+                                                e apresentar o conhecimento.</li>
+                                            <li>Elaboração de roteiros: criar um
+                                                esboço ou script para orientar a
+                                                produção do material.</li>
+                                            <li>Criação de textos: redigir
+                                                explicações, exercícios e
+                                                atividades de maneira clara e
+                                                acessível.</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Esses
+                                pressupostos da transposição didática são
+                                potencializados quando as situações de ensino e
+                                aprendizagem se efetivam por meio da educação a
+                                distância, uma vez que, no modo presencial,
+                                alguns dos aspectos são efetivados com mediação
+                                presencial do professor e só podem se
+                                materializar no ensino e aprendizagem a
+                                distância por meio do material didático.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Por
+                                causa desses aspectos, a elaboração de material
+                                didático para EaD converge para alguns
+                                pontos:</p>
+
+                            <div
+                                class="modulo2-funcoes-box modulo2-aula2-pontos-box col-lg-8 mx-auto">
+                                <ul>
+                                    <li>Qualidade didática desse material.</li>
+                                    <li>Uso de diferentes mídias como imagens,
+                                        vídeos, áudios etc.</li>
+                                    <li>Suporte ao texto a partir de
+                                        ilustrações, gráficos, ícones etc.</li>
+                                    <li>Desenvolvimento de uma linguagem que
+                                        estabeleça diálogo com os educandos.</li>
+                                    <li>Organização do trabalho em pequenos
+                                        blocos de conhecimento sempre retomados
+                                        e conteúdo em constante processo de
+                                        testagem.</li>
+                                </ul>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Não
+                                importa apenas o conteúdo em si, mas a forma
+                                como é mediado pedagogicamente dentro de uma
+                                proposta pedagógica que vislumbre potencializar
+                                a transformação da informação em conhecimento e
+                                “[...] o desenvolvimento de habilidades e
+                                competências específicas, recorrendo a um
+                                conjunto de mídias compatíveis com a proposta e
+                                com o contexto socioeconômico do público a ser
+                                atendido” (Brasil, 2007, p. 13).</p>
+
+                            <h2 class="titulo-secao modulo2-aula2-heading">Sequência
+                                didática:<br>conceito e principais componentes</h2>
+
+                            <div
+                                class="modulo2-callout modulo2-aula2-callout col-lg-8 mx-auto">
+                                <p>Planejamento é essencial para organizar o
+                                    conteúdo EaD!</p>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Ao
+                                escrever o conteúdo de uma
+                                disciplina/unidade/curso, é preciso pensar em
+                                mecanismos que promovam aprendizagem
+                                significativa. A escrita do conteúdo precisa
+                                acontecer de forma lógica, organizada e
+                                atrativa para proporcionar maior entendimento e
+                                motivação do estudante. É nessa perspectiva que
+                                aparece a sequência didática, um termo da
+                                educação que define um procedimento encadeando
+                                etapas ligadas entre si, com o objetivo de
+                                tornar mais eficiente o processo de aprendizado
+                                (Zabala, 1998).</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Para
+                                Guedes (2019), “a sequência didática nada mais é
+                                que um conjunto de atividades atrelado ao
+                                conteúdo, que busca favorecer a aprendizagem dos
+                                estudantes, sempre com o foco nos objetivos já
+                                estipulados em seu planejamento”.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Já
+                                para Gagné (1974, p. 156), “[...] a importância
+                                de se esquematizar a sequência da aprendizagem
+                                reside no fato de que esse procedimento nos
+                                capacita a evitar erros que originam da omissão
+                                de etapas essenciais a um determinado campo do
+                                conhecimento”.</p>
+
+                            <div
+                                class="modulo2-callout modulo2-aula2-callout col-lg-8 mx-auto">
+                                <p>Uma vez selecionados criteriosamente os
+                                    conteúdos, compete ao professor conteudista
+                                    organizá-los sequencialmente.</p>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Os
+                                principais componentes de uma sequência didática
+                                são:</p>
+
+                            <div
+                                class="modulo2-aula2-componentes col-lg-8 mx-auto"
+                                aria-label="Componentes de uma sequência didática">
+                                <article class="modulo2-aula2-componente">
+                                    <button type="button"
+                                        class="modulo2-aula2-componente-trigger"
+                                        aria-expanded="false">
+                                        <span>Identificação da sequência</span>
+                                        <img
+                                            src="../assets/imgmod2/aula2/tag_2.png"
+                                            alt aria-hidden="true">
+                                    </button>
+                                    <div class="modulo2-aula2-componente-panel"
+                                        hidden>
+                                        <p>A elaboração do material didático deve
+                                            ser concebida em concordância com a
+                                            proposta pedagógica do curso. É
+                                            preciso determinar como o conteúdo
+                                            será organizado (módulos, blocos
+                                            e/ou unidades).</p>
+                                    </div>
+                                </article>
+
+                                <article class="modulo2-aula2-componente">
+                                    <button type="button"
+                                        class="modulo2-aula2-componente-trigger"
+                                        aria-expanded="false">
+                                        <span>Definir os objetivos e resultados
+                                            de aprendizagem</span>
+                                        <img
+                                            src="../assets/imgmod2/aula2/tag_2.png"
+                                            alt aria-hidden="true">
+                                    </button>
+                                    <div class="modulo2-aula2-componente-panel"
+                                        hidden>
+                                        <p>Identificar claramente os objetivos
+                                            educacionais da disciplina e os
+                                            resultados de aprendizagem
+                                            esperados. Isso ajudará a orientar o
+                                            desenvolvimento do conteúdo e das
+                                            atividades.</p>
+                                    </div>
+                                </article>
+
+                                <article class="modulo2-aula2-componente">
+                                    <button type="button"
+                                        class="modulo2-aula2-componente-trigger"
+                                        aria-expanded="false">
+                                        <span>Organizar o conteúdo</span>
+                                        <img
+                                            src="../assets/imgmod2/aula2/tag_2.png"
+                                            alt aria-hidden="true">
+                                    </button>
+                                    <div class="modulo2-aula2-componente-panel"
+                                        hidden>
+                                        <p>Estruturar o conteúdo do curso de
+                                            forma lógica e sequencial. Dividir o
+                                            conteúdo em tópicos (módulos ou
+                                            unidades de acordo com o curso),
+                                            determinando o que será abordado em
+                                            cada parte e como esses elementos se
+                                            relacionam entre si.</p>
+                                    </div>
+                                </article>
+
+                                <article class="modulo2-aula2-componente">
+                                    <button type="button"
+                                        class="modulo2-aula2-componente-trigger"
+                                        aria-expanded="false">
+                                        <span>Metodologia de ensino</span>
+                                        <img
+                                            src="../assets/imgmod2/aula2/tag_2.png"
+                                            alt aria-hidden="true">
+                                    </button>
+                                    <div class="modulo2-aula2-componente-panel"
+                                        hidden>
+                                        <p>Escolher as estratégias de ensino
+                                            apropriadas para a EaD, como vídeos,
+                                            textos, atividades interativas,
+                                            fóruns de discussão, estudos de
+                                            caso, projetos colaborativos, entre
+                                            outros. É importante promover
+                                            interação e participação ativa dos
+                                            estudantes.</p>
+                                    </div>
+                                </article>
+
+                                <article class="modulo2-aula2-componente">
+                                    <button type="button"
+                                        class="modulo2-aula2-componente-trigger"
+                                        aria-expanded="false">
+                                        <span>Selecionar e desenvolver materiais
+                                            didáticos</span>
+                                        <img
+                                            src="../assets/imgmod2/aula2/tag_2.png"
+                                            alt aria-hidden="true">
+                                    </button>
+                                    <div class="modulo2-aula2-componente-panel"
+                                        hidden>
+                                        <p>Escolher materiais didáticos
+                                            adequados, como textos, vídeos,
+                                            áudios, infográficos, atividades
+                                            interativas, entre outros. Além
+                                            disso, criar ou adaptar recursos de
+                                            aprendizagem que atendam aos
+                                            objetivos da disciplina. A
+                                            elaboração de material autoral é uma
+                                            das opções mais adequadas, para se
+                                            disponibilizar aos estudantes
+                                            (folders, cartazes, textos, guias,
+                                            slides, mapas conceituais/mentais,
+                                            livretos, esquemas, modelos,
+                                            gráficos, infográficos, gravuras,
+                                            desenhos, entre outros). O material
+                                            didático autoral precisa ser
+                                            considerado, principalmente, quando o
+                                            material de um determinado
+                                            conhecimento for muito extenso.</p>
+                                    </div>
+                                </article>
+
+                                <article class="modulo2-aula2-componente">
+                                    <button type="button"
+                                        class="modulo2-aula2-componente-trigger"
+                                        aria-expanded="false">
+                                        <span>Planejar atividades e
+                                            avaliações</span>
+                                        <img
+                                            src="../assets/imgmod2/aula2/tag_2.png"
+                                            alt aria-hidden="true">
+                                    </button>
+                                    <div class="modulo2-aula2-componente-panel"
+                                        hidden>
+                                        <p>Definir atividades que engajem os
+                                            estudantes, promovam interação e
+                                            apliquem o conhecimento adquirido.
+                                            Considerar diferentes formatos de
+                                            avaliação, como testes, trabalhos
+                                            individuais, projetos práticos,
+                                            participação em fóruns de discussão,
+                                            entre outros.</p>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <h2 class="titulo-secao modulo2-aula2-heading">Hierarquia
+                                de aprendizado e<br>estruturação do conteúdo<br>
+                                dentro de uma sequência didática</h2>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                aprendizagem é definida por Robert Gagné como
+                                uma mudança de estado interior que se manifesta
+                                por meio de mudança de comportamento e na
+                                persistência dessa mudança. A instrução, por sua
+                                vez, é a atividade de planejamento e execução de
+                                eventos externos com a finalidade de influenciar
+                                os processos internos de aprendizagem.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Nessa
+                                perspectiva o professor torna-se um “gerente”
+                                promotor da aprendizagem por meio da instrução
+                                cuja tarefa é planejar, selecionar, delinear e
+                                supervisionar a organização de eventos externos
+                                com o objetivo de influenciar os processos
+                                internos do aprendiz (Moreira, 1999, p. 34).</p>
+
+                            <div
+                                class="modulo2-callout modulo2-aula2-callout col-lg-8 mx-auto">
+                                <p>Gagné sugeriu que as tarefas de aprendizagem
+                                    para habilidades intelectuais podem ser
+                                    organizadas em hierarquia, de acordo com a
+                                    complexidade.</p>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                hierarquia é importante para identificar os
+                                pré-requisitos, que devem ser completados para
+                                facilitar o aprendizado em cada um dos níveis.
+                                As hierarquias de aprendizado fornecem uma base
+                                para a sequência de instrução.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Para
+                                Gagné, o princípio da aprendizagem está no
+                                estímulo para aprender. As tarefas de
+                                aprendizagem podem ser organizadas em torno de
+                                nove eventos de instrução:</p>
+
+                            <div
+                                class="modulo2-funcoes-box modulo2-aula2-eventos-box col-lg-8 mx-auto">
+                                <ul>
+                                    <li>Obter atenção.</li>
+                                    <li>Informar o objetivo.</li>
+                                    <li>Estimular a lembrança do aprendizado
+                                        anterior.</li>
+                                    <li>Apresentar o estímulo.</li>
+                                    <li>Fornecer orientação de aprendizado.</li>
+                                    <li>Fornecer feedback.</li>
+                                    <li>Avaliar o desempenho.</li>
+                                    <li>Aumentar a retenção e a
+                                        transferência.</li>
+                                </ul>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Os
+                                quadros a seguir apresentam estruturas de
+                                sequência didática, basEaDa nas hierarquias de
+                                aprendizado sugeridas por Gagné (1974).</p>
+
+                            <div
+                                class="modulo2-aula2-quadro-accordion col-lg-8 mx-auto show-etapas show-itens show-desenvolvimento"
+                                aria-label="Quadro de estrutura de sequência didática">
+                                <div class="modulo2-aula2-quadro-table">
+                                    <div class="modulo2-aula2-quadro-header">
+                                        <button type="button"
+                                            class="modulo2-aula2-quadro-toggle active"
+                                            data-column="etapas"
+                                            aria-expanded="true">
+                                            <span>Etapas</span>
+                                            <img
+                                                src="../assets/imgmod2/aula2/tag_2.png"
+                                                alt aria-hidden="true">
+                                        </button>
+                                        <button type="button"
+                                            class="modulo2-aula2-quadro-toggle active"
+                                            data-column="itens"
+                                            aria-expanded="true">
+                                            <span>Itens</span>
+                                            <img
+                                                src="../assets/imgmod2/aula2/tag_2.png"
+                                                alt aria-hidden="true">
+                                        </button>
+                                        <button type="button"
+                                            class="modulo2-aula2-quadro-toggle active"
+                                            data-column="desenvolvimento"
+                                            aria-expanded="true">
+                                            <span>Desenvolvimento</span>
+                                            <img
+                                                src="../assets/imgmod2/aula2/tag_2.png"
+                                                alt aria-hidden="true">
+                                        </button>
+                                    </div>
+
+                                    <div class="modulo2-aula2-quadro-row">
+                                        <div class="modulo2-aula2-quadro-cell col-etapas row-span-3">
+                                            <strong>Introdução</strong>
+                                            Conversando sobre o tema do
+                                            módulo/unidade
+                                        </div>
+                                        <div class="modulo2-aula2-quadro-cell col-itens">
+                                            Chamando a atenção.
+                                        </div>
+                                        <div class="modulo2-aula2-quadro-cell col-desenvolvimento">
+                                            Uma imagem, vídeo ou charge chamando
+                                            a atenção para o assunto que será
+                                            abordado no módulo.
+                                        </div>
+                                    </div>
+                                    <div class="modulo2-aula2-quadro-row">
+                                        <div class="modulo2-aula2-quadro-cell col-itens">
+                                            Estimulando o interesse e a
+                                            motivação.
+                                        </div>
+                                        <div class="modulo2-aula2-quadro-cell col-desenvolvimento">
+                                            Algo impactante (imagem, charge,
+                                            situação-problema, relato real
+                                            etc.).
+                                        </div>
+                                    </div>
+                                    <div class="modulo2-aula2-quadro-row">
+                                        <div class="modulo2-aula2-quadro-cell col-itens">
+                                            Definindo o propósito do módulo.
+                                        </div>
+                                        <div class="modulo2-aula2-quadro-cell col-desenvolvimento">
+                                            Este módulo pretende... Objetivos,
+                                            metodologia e avaliação (indicar a
+                                            metodologia e avaliação específica
+                                            do módulo).
+                                        </div>
+                                    </div>
+
+                                    <div class="modulo2-aula2-quadro-row">
+                                        <div class="modulo2-aula2-quadro-cell col-etapas row-span-1">
+                                            <strong>Corpo</strong>
+                                            Conceituando e Praticando
+                                        </div>
+                                        <div class="modulo2-aula2-quadro-cell col-itens">
+                                            Relembrando conhecimentos prévios.
+                                            Processando informações. Aplicando
+                                            estratégias de aprendizagem.
+                                            Exercitando habilidades e
+                                            conhecimentos. Avaliação e
+                                            feedback.
+                                        </div>
+                                        <div class="modulo2-aula2-quadro-cell col-desenvolvimento">
+                                            Desenvolvimento dos conteúdos e das
+                                            atividades.
+                                        </div>
+                                    </div>
+
+                                    <div class="modulo2-aula2-quadro-row">
+                                        <div class="modulo2-aula2-quadro-cell col-etapas row-span-1">
+                                            <strong>Conclusão</strong>
+                                            Finalizando o módulo/unidade
+                                        </div>
+                                        <div class="modulo2-aula2-quadro-cell col-itens">
+                                            Revisão dos conteúdos. Remotivação.
+                                        </div>
+                                        <div class="modulo2-aula2-quadro-cell col-desenvolvimento">
+                                            Finalizar com a revisão do que foi
+                                            visto no módulo e fazer a
+                                            “remotivação” para o próximo.
+                                            Parabéns! Você concluiu o Módulo
+                                            1...
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="textolegenda">Quadro 1: Estrutura de
+                                    sequência didática.<br>Fonte: Adaptado de
+                                    Gagné (1974).</p>
+                            </div>
+
+                            <figure
+                                class="aula3-figure modulo2-aula2-quadro-figure col-lg-8 mx-auto">
+                                <img
+                                    src="../assets/imgmod2/aula2/quadro_figs2.png"
+                                    alt="Exemplo de sequência didática com preparação, desempenho e transferência de conhecimento.">
+                                <figcaption class="textolegenda">Quadro 2:
+                                    Exemplo de sequência didática.</figcaption>
+                            </figure>
+
+                            <h2 class="titulo-secao mt-5">Exemplo de sequência
+                                didática</h2>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Como
+                                estudamos anteriormente, podemos dizer que a
+                                sequência didática é uma ferramenta fundamental
+                                para você que está participando e/ou criando
+                                conteúdo para um curso autoinstrucional online.
+                                Ela proporciona uma organização lógica e
+                                coerente do conteúdo que o estudante irá
+                                aprender, facilitando sua jornada de
+                                aprendizado. Ao seguir etapas sequenciais em seu
+                                planejamento, você terá a oportunidade de
+                                avançar gradualmente, desde o diagnóstico de uma
+                                situação até a avaliação de uma intervenção.
+                                Essa estrutura não apenas melhora a retenção das
+                                informações, mas também permite que o estudante
+                                desenvolva habilidades práticas essenciais para
+                                aplicar o que aprendeu em contextos reais.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Além
+                                disso, a sequência didática oferece a você uma
+                                visão clara sobre os objetivos e os resultados
+                                que se espera alcançar em cada fase do
+                                aprendizado. Em um ambiente online, no qual a
+                                interação pode ser mais desafiadora, ter essa
+                                organização ajuda a manter engajamento e foco
+                                nas atividades de todos os envolvidos. Você
+                                poderá aproveitar diferentes métodos e recursos
+                                didáticos em cada etapa, como leituras, vídeos,
+                                fóruns de discussão e atividades práticas,
+                                tornando a experiência ainda mais
+                                enriquecedora.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start"><strong>Sequência
+                                    Didática - Módulo 1: Educação Financeira
+                                    para Jovens e Adultos.</strong><br>
+                                <strong>Modalidade:</strong> Curso a distância
+                                autoinstrucional.<br>
+                                <strong>Público-alvo:</strong> Jovens e adultos
+                                (Ensino Médio, EJA ou formação profissional).<br>
+                                <strong>Carga horária estimada:</strong> 6
+                                horas.</p>
+
+                            <div
+                                class="modulo2-aula2-componentes modulo2-aula2-exemplo-accordion col-lg-8 mx-auto"
+                                aria-label="Exemplo de sequência didática">
+                                <article class="modulo2-aula2-componente active">
+                                    <button type="button"
+                                        class="modulo2-aula2-componente-trigger"
+                                        aria-expanded="true">
+                                        <span>Introdução <small>(Conversando
+                                                sobre o tema do
+                                                módulo/unidade)</small></span>
+                                        <img
+                                            src="../assets/imgmod2/aula2/tag_2.png"
+                                            alt aria-hidden="true">
+                                    </button>
+                                    <div
+                                        class="modulo2-aula2-componente-panel">
+                                        <p><strong>Itens:</strong></p>
+                                        <p>Chamando atenção: imagem ou vídeo
+                                            curto mostrando situações reais de
+                                            endividamento e planejamento
+                                            financeiro. Definindo o propósito do
+                                            módulo: objetivos, metodologia e
+                                            avaliação.</p>
+                                        <p><strong>Desenvolvimento:</strong></p>
+                                        <p><strong>Boas-vindas ao módulo</strong></p>
+                                        <p>Olá! Seja bem-vindo(a) ao Módulo 1 -
+                                            Educação Financeira para Jovens e
+                                            Adultos. Neste módulo você vai:</p>
+                                        <ul>
+                                            <li>Compreender conceitos básicos de
+                                                finanças pessoais.</li>
+                                            <li>Identificar hábitos
+                                                financeiros.</li>
+                                            <li>Elaborar um planejamento
+                                                financeiro simples.</li>
+                                            <li>Refletir sobre consumo
+                                                consciente.</li>
+                                        </ul>
+                                        <p><strong>Vídeo de abertura</strong></p>
+                                        <p><strong>Recurso sugerido:</strong>
+                                            vídeo educativo sobre organização
+                                            financeira pessoal.</p>
+                                        <p><strong>Objetivo:</strong> aplicar
+                                            conceitos de educação financeira na
+                                            organização do orçamento pessoal.</p>
+                                        <p><strong>Orientação ao aluno:</strong>
+                                            Assista ao vídeo e reflita: quais
+                                            hábitos financeiros você já
+                                            pratica?</p>
+                                        <p><strong>Situação-problema:</strong>
+                                            Mariana trabalha, mas nunca consegue
+                                            economizar. No final do mês, o
+                                            dinheiro "some" e ela não sabe
+                                            explicar para onde foi.</p>
+                                        <p><strong>Pergunta disparadora:</strong>
+                                            Você sabe exatamente como distribui
+                                            a sua renda mensal?</p>
+                                        <p><strong>Objetivos do módulo</strong></p>
+                                        <p><strong>Objetivo geral:</strong>
+                                            Aplicar conceitos de educação
+                                            financeira na organização do
+                                            orçamento pessoal.</p>
+                                        <p><strong>Objetivos
+                                                específicos:</strong></p>
+                                        <ul>
+                                            <li>Conceituar receita, despesa e
+                                                orçamento.</li>
+                                            <li>Analisar hábitos de consumo.</li>
+                                            <li>Elaborar planilha simples de
+                                                controle financeiro.</li>
+                                            <li>Avaliar decisões de consumo.</li>
+                                        </ul>
+                                        <p><strong>Metodologia do Módulo:</strong></p>
+                                        <p>Este é um curso autoinstrucional, o
+                                            que significa que você irá estudar no
+                                            seu ritmo, com o apoio de materiais
+                                            autoexplicativos e recursos
+                                            interativos.</p>
+                                        <p><strong>Metodologia:</strong></p>
+                                        <ul>
+                                            <li>Leitura de textos-base com
+                                                linguagem acessível.</li>
+                                            <li>Vídeos explicativos.</li>
+                                            <li>Atividades interativas.</li>
+                                            <li>Autoavaliação.</li>
+                                        </ul>
+                                        <p><strong>Avaliação:</strong></p>
+                                        <ul>
+                                            <li>Participação nas atividades com
+                                                feedback automático.</li>
+                                            <li>Produção de uma campanha
+                                                educativa digital.</li>
+                                            <li>Autoavaliação final.</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                                <article class="modulo2-aula2-componente">
+                                    <button type="button"
+                                        class="modulo2-aula2-componente-trigger"
+                                        aria-expanded="false">
+                                        <span>Corpo <small>(Conceituando e
+                                                praticando)</small></span>
+                                        <img
+                                            src="../assets/imgmod2/aula2/tag_2.png"
+                                            alt aria-hidden="true">
+                                    </button>
+                                    <div
+                                        class="modulo2-aula2-componente-panel"
+                                        hidden>
+                                        <p><strong>Itens:</strong></p>
+                                        <p>Relembrando conhecimentos prévios.
+                                            Processando informações: perguntas
+                                            objetivas sobre hábitos financeiros.
+                                            Exercitando habilidades e
+                                            conhecimentos. Avaliação e
+                                            feedback.</p>
+                                        <p><strong>Desenvolvimento:</strong></p>
+                                        <p><strong>Quiz Diagnóstico: o que você
+                                                já sabe?</strong><br>Quiz
+                                            interativo com feedback automático
+                                            para ativar conhecimentos prévios e
+                                            gerar curiosidade sobre o conteúdo.</p>
+                                        <p><strong>Conceituando: Fundamentos da
+                                                Educação Financeira</strong><br>
+                                            Texto autoexplicativo com exemplos
+                                            práticos.</p>
+                                        <p><strong>Conteúdos abordados:</strong></p>
+                                        <ul>
+                                            <li>Receita fixa e variável.</li>
+                                            <li>Despesas fixas e variáveis.</li>
+                                            <li>Consumo consciente.</li>
+                                            <li>Reserva de emergência.</li>
+                                        </ul>
+                                        <p><strong>Estudo de caso
+                                                interativo</strong><br>Caso real:
+                                            João recebe R$ 2.500 por mês e gasta
+                                            R$ 2.800. Usa cartão de crédito para
+                                            cobrir diferenças.</p>
+                                        <p><strong>Perguntas
+                                                orientadoras:</strong></p>
+                                        <ul>
+                                            <li>Onde está o principal problema?</li>
+                                            <li>Que ajustes podem ser feitos?</li>
+                                            <li>Qual estratégia de controle
+                                                seria adequada?</li>
+                                        </ul>
+                                        <p><strong>Mãos à obra: desafio
+                                                prático</strong></p>
+                                        <p>Elaborar um Planejamento Financeiro
+                                            Pessoal Simplificado, contendo lista
+                                            de receitas, lista de despesas, meta
+                                            financeira e estratégias de
+                                            economia.</p>
+                                        <p><strong>Formato:</strong> planilha,
+                                            documento digital ou print de
+                                            aplicativo.</p>
+                                        <p><strong>Autoavaliação Reflexiva</strong></p>
+                                        <p>Formulário com perguntas abertas e
+                                            fechadas:</p>
+                                        <ul>
+                                            <li>O que você descobriu sobre seus
+                                                hábitos financeiros?</li>
+                                            <li>Quais mudanças pretende
+                                                implementar?</li>
+                                            <li>Qual foi o maior aprendizado do
+                                                módulo?</li>
+                                        </ul>
+                                        <p><strong>Quiz Final</strong><br>5
+                                            questões objetivas com feedback
+                                            automático.</p>
+                                    </div>
+                                </article>
+
+                                <article class="modulo2-aula2-componente">
+                                    <button type="button"
+                                        class="modulo2-aula2-componente-trigger"
+                                        aria-expanded="false">
+                                        <span>Conclusão <small>(Finalizando o
+                                                módulo/unidade)</small></span>
+                                        <img
+                                            src="../assets/imgmod2/aula2/tag_2.png"
+                                            alt aria-hidden="true">
+                                    </button>
+                                    <div
+                                        class="modulo2-aula2-componente-panel"
+                                        hidden>
+                                        <p><strong>Itens:</strong></p>
+                                        <p>Revisão dos conteúdos. Remotivação:
+                                            finalizar com a revisão do que foi
+                                            visto no módulo e fazer a
+                                            "remotivação" para o próximo.
+                                            Parabéns! Você concluiu o Módulo
+                                            1...</p>
+                                        <p><strong>Desenvolvimento:</strong></p>
+                                        <p><strong>Revisando Juntos</strong><br>
+                                            Vídeo resumo com os principais
+                                            conceitos. Mapa mental final
+                                            downloadável.</p>
+                                        <p><strong>Encerramento e
+                                                Remotivação</strong><br>
+                                            Parabéns! Você concluiu o Módulo 1 -
+                                            Educação Financeira para Jovens e
+                                            Adultos. Continue sua jornada e
+                                            prepare-se para o Módulo 2:
+                                            Investimentos básicos e estratégias
+                                            para construção de patrimônio.</p>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <h2 class="titulo-secao mt-5">Você chegou ao final
+                                da<br class="d-none d-md-block"> segunda aula do
+                                Módulo 2</h2>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Nesta
+                                aula você aprendeu que o planejamento
+                                educacional é uma etapa fundamental na produção
+                                do material didático para cursos a distância
+                                (EaD). Ele ajuda a organizar o material didático
+                                e a garantir a qualidade do ensino. A
+                                transposição didática é o processo de
+                                transformar o conhecimento científico para que
+                                seja transmitido de forma acessível aos
+                                alunos.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                sequência didática tem papel importante na
+                                produção do material didático, pois a escrita do
+                                conteúdo precisa acontecer de forma lógica,
+                                organizada e atrativa para proporcionar maior
+                                entendimento e motivação do estudante.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">No
+                                ensino a distância (EaD), a sequência didática
+                                pode ser construída com o uso de objetos
+                                digitais de aprendizagem (e-books, imagens
+                                digitais, podcasts, vídeos on-line, portais de
+                                conteúdo, simulações, softwares, jogos digitais,
+                                infográficos, flashcards), tornando a
+                                experiência de aprendizagem mais atrativa e
+                                engajante.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Por
+                                fim, a hierarquia de aprendizagem de Gagné é
+                                importante porque ajuda a identificar os
+                                pré-requisitos necessários a fim de que o
+                                aprendizado seja mais fácil. Ela também serve
+                                como base para a sequência de ensino.</p>
+
+                            <h2
+                                class="modulo2-check-heading col-lg-8 mx-auto">Conferindo
+                                a aprendizagem</h2>
+
+                            <section
+                                class="questionario-aprendizagem col-lg-8 mx-auto"
+                                aria-label="Questionário de aprendizagem">
+                                <article class="questao-card" data-correct="B">
+                                    <div class="questao-cabecalho">
+                                        <span class="questao-numero">Questão
+                                            1</span>
+                                        <p class="questao-objetivo">Objetivo:
+                                            Definir o conceito de transposição
+                                            didática.</p>
+                                    </div>
+                                    <p class="questao-enunciado">Qual das
+                                        alternativas melhor representa a
+                                        transposição didática no contexto da
+                                        produção de material didático para
+                                        EaD?</p>
+                                    <div class="questao-alternativas"
+                                        role="group"
+                                        aria-label="Alternativas da questão 1">
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="A"
+                                            data-feedback="Incorreta. Transposição não significa reduzir, mas sim adaptar com intencionalidade pedagógica."><strong>A)</strong>
+                                            Reduzir o conteúdo acadêmico ao
+                                            mínimo necessário para caber no
+                                            cronograma do curso.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="B"
+                                            data-feedback="Correta! Transpor didaticamente é tornar o conteúdo ensinável e significativo, considerando o contexto do aluno."><strong>B)</strong>
+                                            Adaptar o conhecimento científico
+                                            para torná-lo compreensível,
+                                            significativo e aplicável ao
+                                            aluno.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="C"
+                                            data-feedback="Incorreta. Exemplos são úteis, mas não devem substituir o conteúdo conceitual, e sim complementar sua compreensão."><strong>C)</strong>
+                                            Substituir conteúdos científicos por
+                                            exemplos cotidianos, sem preservar a
+                                            base conceitual.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="D"
+                                            data-feedback="Incorreta. Ignorar o contexto do aluno compromete a mediação pedagógica e a aprendizagem significativa."><strong>D)</strong>
+                                            Apresentar os conteúdos de maneira
+                                            neutra, sem levar em conta o
+                                            contexto dos alunos.</button>
+                                    </div>
+                                    <div class="questao-feedback"
+                                        aria-live="polite"></div>
+                                </article>
+
+                                <article class="questao-card" data-correct="C">
+                                    <div class="questao-cabecalho">
+                                        <span class="questao-numero">Questão
+                                            2</span>
+                                        <p class="questao-objetivo">Objetivo:
+                                            Identificar os principais
+                                            componentes de sequência didática e
+                                            a importância desse conceito no
+                                            planejamento educacional.</p>
+                                    </div>
+                                    <p class="questao-enunciado">Assinale a
+                                        alternativa que corresponde corretamente
+                                        a um componente fundamental da sequência
+                                        didática na EaD:</p>
+                                    <div class="questao-alternativas"
+                                        role="group"
+                                        aria-label="Alternativas da questão 2">
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="A"
+                                            data-feedback="Incorreta. Os objetivos devem estar sempre articulados com a metodologia e os recursos."><strong>A)</strong>
+                                            Definir os objetivos de aprendizagem
+                                            sem relação com a metodologia
+                                            adotada.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="B"
+                                            data-feedback="Incorreta. A escolha dos recursos didáticos deve ocorrer durante o planejamento, antes das avaliações."><strong>B)</strong>
+                                            Escolher os recursos didáticos após
+                                            a aplicação das avaliações.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="C"
+                                            data-feedback="Correta! A organização lógica e sequencial do conteúdo é essencial para promover aprendizagem significativa."><strong>C)</strong>
+                                            Organizar o conteúdo de forma lógica
+                                            e sequencial, favorecendo a
+                                            construção do conhecimento.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="D"
+                                            data-feedback="Incorreta. Conteúdos extensos devem ser adaptados à linguagem e ao formato da EaD para garantir clareza e engajamento."><strong>D)</strong>
+                                            Priorizar conteúdos extensos e
+                                            densos, sem necessidade de adaptação
+                                            ao formato EaD.</button>
+                                    </div>
+                                    <div class="questao-feedback"
+                                        aria-live="polite"></div>
+                                </article>
+                            </section>
+                        </section>
+
+                        <nav class="navegacao-aula col-lg-8 mx-auto"
+                            aria-label="Navegação da aula">
+                            <a href="../modulo2/aula1.html"
+                                class="botao-aula botao-voltar"
+                                aria-label="Voltar">
+                                <img
+                                    src="../assets/imgmod2/aula2/bt2_voltar_off.png"
+                                    alt="Voltar">
+                            </a>
+                            <a href="../modulo2/aula3.html"
+                                class="botao-aula botao-proxima"
+                                aria-label="Próxima aula">
+                                <img src="../assets/imgmod2/aula2/bt_2 off.png"
+                                    alt="Próxima">
+                            </a>
+                        </nav>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <footer id="footer" class="py-4 mt-5">
+            <div class="container">
+                <div
+                    class="footer-logos row justify-content-center align-items-center text-center">
+                    <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                        <img src="../assets/images/Logo_CVF.png"
+                            class="footer-logo w-100"
+                            alt="Campus Virtual Fiocruz">
+                    </div>
+                    <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                        <img src="../assets/images/Logo_Fiocruz.png"
+                            class="footer-logo w-100" alt="Fiocruz">
+                    </div>
+                    <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                        <img src="../assets/images/Logos_Sus35_Ms_Gov.png"
+                            class="footer-logo w-100" alt="Sus">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+        function toggleMenu(id) {
+            const menu = document.getElementById(id);
+            document.querySelectorAll('.submenu').forEach(el => {
+                if (el.id !== id) el.classList.remove('open');
+            });
+            if (menu) menu.classList.toggle('open');
+        }
+
+        const mobileToggle = document.getElementById('mobileSidebarToggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+        const sidebarClose = document.createElement('button');
+        sidebarClose.className = 'sidebar-close';
+        sidebarClose.type = 'button';
+        sidebarClose.setAttribute('aria-label', 'Fechar menu lateral');
+        sidebarClose.innerHTML = '&times;';
+
+        if (sidebar) {
+            const sidebarCloseTarget = sidebar.querySelector('.sticky-sidebar') || sidebar;
+            sidebarCloseTarget.prepend(sidebarClose);
+        }
+
+        if (mobileToggle && sidebar && overlay) {
+            mobileToggle.addEventListener('click', () => {
+                const isOpen = sidebar.classList.toggle('mobile-open');
+                overlay.classList.toggle('active', isOpen);
+                mobileToggle.classList.toggle('is-open', isOpen);
+                mobileToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
+
+        if (overlay && sidebar && mobileToggle) {
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('mobile-open');
+                overlay.classList.remove('active');
+                mobileToggle.classList.remove('is-open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        sidebarClose.addEventListener('click', () => {
+            if (!sidebar || !overlay || !mobileToggle) return;
+            sidebar.classList.remove('mobile-open');
+            overlay.classList.remove('active');
+            mobileToggle.classList.remove('is-open');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordion = document.querySelector('.modulo2-aula2-accordion');
+            if (accordion) {
+                accordion.querySelectorAll('.modulo2-aula2-accordion-trigger').forEach(trigger => {
+                    trigger.addEventListener('click', () => {
+                        const item = trigger.closest('.modulo2-aula2-accordion-item');
+
+                        accordion.querySelectorAll('.modulo2-aula2-accordion-item').forEach(currentItem => {
+                            const currentTrigger = currentItem.querySelector('.modulo2-aula2-accordion-trigger');
+                            const currentPanel = currentItem.querySelector('.modulo2-aula2-accordion-panel');
+                            const currentIcon = currentItem.querySelector('.modulo2-aula2-accordion-icon');
+                            const isActive = currentItem === item && !currentItem.classList.contains('active');
+
+                            currentItem.classList.toggle('active', isActive);
+                            currentTrigger.setAttribute('aria-expanded', String(isActive));
+                            currentPanel.hidden = !isActive;
+                            currentIcon.textContent = isActive ? '−' : '+';
+                        });
+                    });
+                });
+            }
+
+            document.querySelectorAll('.modulo2-aula2-componente-trigger').forEach(trigger => {
+                trigger.addEventListener('click', () => {
+                    const item = trigger.closest('.modulo2-aula2-componente');
+                    const panel = item.querySelector('.modulo2-aula2-componente-panel');
+                    const isActive = item.classList.toggle('active');
+
+                    trigger.setAttribute('aria-expanded', String(isActive));
+                    panel.hidden = !isActive;
+                });
+            });
+
+            const quadroAccordion = document.querySelector('.modulo2-aula2-quadro-accordion');
+            if (quadroAccordion) {
+                quadroAccordion.querySelectorAll('.modulo2-aula2-quadro-toggle').forEach(toggle => {
+                    toggle.addEventListener('click', () => {
+                        const column = toggle.dataset.column;
+                        const isActive = toggle.classList.toggle('active');
+
+                        toggle.setAttribute('aria-expanded', String(isActive));
+                        quadroAccordion.querySelectorAll(`.col-${column}`).forEach(cell => {
+                            window.clearTimeout(Number(cell.dataset.quadroTimer || 0));
+                            cell.classList.remove('is-revealing', 'is-collapsing');
+
+                            if (isActive) {
+                                cell.classList.remove('is-hidden');
+                                requestAnimationFrame(() => {
+                                    cell.classList.add('is-revealing');
+                                });
+                                cell.dataset.quadroTimer = window.setTimeout(() => {
+                                    cell.classList.remove('is-revealing');
+                                }, 340);
+                                return;
+                            }
+
+                            cell.classList.add('is-collapsing');
+                            cell.dataset.quadroTimer = window.setTimeout(() => {
+                                cell.classList.add('is-hidden');
+                                cell.classList.remove('is-collapsing');
+                            }, 260);
+                        });
+                    });
+                });
+            }
+
+            document.querySelectorAll('.questao-card').forEach(questao => {
+                const respostaCorreta = questao.dataset.correct;
+                const feedback = questao.querySelector('.questao-feedback');
+
+                questao.querySelectorAll('.questao-opcao').forEach(opcao => {
+                    opcao.addEventListener('click', () => {
+                        const acertou = opcao.dataset.option === respostaCorreta;
+
+                        questao.querySelectorAll('.questao-opcao').forEach(item => {
+                            item.classList.remove('selecionada', 'correta', 'incorreta');
+                        });
+
+                        opcao.classList.add('selecionada', acertou ? 'correta' : 'incorreta');
+                        feedback.textContent = opcao.dataset.feedback;
+                        feedback.classList.remove('correto', 'incorreto');
+                        feedback.classList.add(acertou ? 'correto' : 'incorreto');
+                    });
+                });
+            });
+        });
+    </script>
+
+        <div class="container-fluid p-0 text-center tarja-container">
+            <img src="../assets/imgmod2/aula2/tarja_1920.png"
+                class="img-fluid w-100 traja-img" alt="Tarja">
+        </div>
+
+        <script src="../js/menu.js"></script>
+        <script src="../js/page-transitions.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
