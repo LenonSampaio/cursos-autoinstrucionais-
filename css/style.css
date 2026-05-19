@@ -5492,6 +5492,25 @@ em {
     transform: rotate(45deg);
 }
 
+.aula4-rea-highlight--tag {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding-left: 0;
+}
+
+.aula4-rea-highlight--tag::before,
+.aula4-rea-highlight--tag::after {
+    content: none;
+}
+
+.aula4-rea-highlight-icon {
+    flex: 0 0 18px;
+    width: 18px;
+    height: auto;
+    margin-top: 1px;
+}
+
 .aula4-rea-card img {
     width: 150px;
     height: 150px;
@@ -5673,7 +5692,7 @@ em {
 
 .aula4-purple-list li {
     position: relative;
-    padding-left: 18px;
+    padding-left: 22px;
     font-size: 1rem;
     font-weight: 800;
     line-height: 1.22;
@@ -5683,23 +5702,14 @@ em {
     content: "";
     position: absolute;
     left: 0;
-    top: 0.12em;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background: #4b2f91;
+    top: 0.05em;
+    width: 16px;
+    height: 16px;
+    background: url("../assets/imgmod1/aula4/tag.png") center / contain no-repeat;
 }
 
 .aula4-purple-list li::after {
-    content: "";
-    position: absolute;
-    left: 4px;
-    top: calc(0.12em + 3px);
-    width: 5px;
-    height: 5px;
-    border-top: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-    transform: rotate(45deg);
+    content: none;
 }
 
 .aula4-context-section,
