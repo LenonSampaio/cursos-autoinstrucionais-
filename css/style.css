@@ -8130,7 +8130,7 @@ figure figcaption {
 }
 
 .creditos-content {
-    width: min(100%, 720px);
+    width: min(100%, 820px);
 }
 
 .creditos-list {
@@ -8138,7 +8138,7 @@ figure figcaption {
 }
 
 .creditos-group {
-    margin-top: 26px;
+    margin-top: 32px;
 }
 
 .creditos-group:first-child {
@@ -8149,6 +8149,7 @@ figure figcaption {
     color: #4c1d95;
     font-size: 1.18rem;
     font-weight: 800;
+    line-height: 1.12;
     margin: 0 0 12px;
 }
 
@@ -8165,6 +8166,21 @@ figure figcaption {
 .creditos-group em {
     color: #333333;
     font-size: 0.96rem;
+}
+
+.creditos-group:nth-child(-n + 3) h2 {
+    font-size: clamp(1.55rem, 2.4vw, 1.9rem);
+    margin-bottom: 14px;
+}
+
+.creditos-group:nth-child(-n + 3) p {
+    margin-bottom: 22px;
+    font-size: clamp(1.05rem, 1.45vw, 1.18rem);
+    line-height: 1.32;
+}
+
+.creditos-group:nth-child(-n + 3) em {
+    font-size: clamp(0.98rem, 1.3vw, 1.08rem);
 }
 
 .bibliografia-content {
