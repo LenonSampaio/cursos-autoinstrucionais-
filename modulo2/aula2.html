@@ -48,7 +48,7 @@
                             <li class="nav-item"><a class="nav-link"
                                     href="../index.html">Início</a></li>
                             <li class="nav-item"><a class="nav-link"
-                                    href="../bibliografia/bibliografia.html">Bibliografia</a></li>
+                                    href="../bibliografia/bibliografia.html">Material Complementar</a></li>
                             <li class="nav-item"><a class="nav-link"
                                     href="../glossario/glossario.html">Glossário</a></li>
                             <li class="nav-item"><a class="nav-link"
@@ -892,33 +892,21 @@
                                 aria-label="Quadro de estrutura de sequência didática">
                                 <div class="modulo2-aula2-quadro-table">
                                     <div class="modulo2-aula2-quadro-header">
-                                        <button type="button"
-                                            class="modulo2-aula2-quadro-toggle active"
-                                            data-column="etapas"
-                                            aria-expanded="true">
+                                        <div
+                                            class="modulo2-aula2-quadro-toggle"
+                                            data-column="etapas">
                                             <span>Etapas</span>
-                                            <img
-                                                src="../assets/imgmod2/aula2/tag_2.png"
-                                                alt="" aria-hidden="true">
-                                        </button>
-                                        <button type="button"
-                                            class="modulo2-aula2-quadro-toggle active"
-                                            data-column="itens"
-                                            aria-expanded="true">
+                                        </div>
+                                        <div
+                                            class="modulo2-aula2-quadro-toggle"
+                                            data-column="itens">
                                             <span>Itens</span>
-                                            <img
-                                                src="../assets/imgmod2/aula2/tag_2.png"
-                                                alt="" aria-hidden="true">
-                                        </button>
-                                        <button type="button"
-                                            class="modulo2-aula2-quadro-toggle active"
-                                            data-column="desenvolvimento"
-                                            aria-expanded="true">
+                                        </div>
+                                        <div
+                                            class="modulo2-aula2-quadro-toggle"
+                                            data-column="desenvolvimento">
                                             <span>Desenvolvimento</span>
-                                            <img
-                                                src="../assets/imgmod2/aula2/tag_2.png"
-                                                alt="" aria-hidden="true">
-                                        </button>
+                                        </div>
                                     </div>
 
                                     <div class="modulo2-aula2-quadro-row">
@@ -1224,9 +1212,9 @@
                                             <li>Qual foi o maior aprendizado do
                                                 módulo?</li>
                                         </ul>
-                                        <p><strong>Quiz Final</strong><br>5
-                                            questões objetivas com feedback
-                                            automático.</p>
+                                        <p><strong>Quiz Final</strong><br>
+                                           5 questões objetivas com feedback automático. (Ex.: múltipla escolha, associação,
+verdadeiro ou falso).</p>
                                     </div>
                                 </article>
 
@@ -1252,9 +1240,7 @@
                                             1...</p>
                                         <p><strong>Desenvolvimento:</strong></p>
                                         <p><strong>Revisando Juntos</strong><br>
-                                            Vídeo resumo com os principais
-                                            conceitos. Mapa mental final
-                                            downloadável.</p>
+                                            Vídeo resumo com os principais conceitos. Mapa mental final (com download).</p>
                                         <p><strong>Encerramento e
                                                 Remotivação</strong><br>
                                             Parabéns! Você concluiu o Módulo 1 -
@@ -1541,39 +1527,6 @@
                     panel.hidden = !isActive;
                 });
             });
-
-            const quadroAccordion = document.querySelector('.modulo2-aula2-quadro-accordion');
-            if (quadroAccordion) {
-                quadroAccordion.querySelectorAll('.modulo2-aula2-quadro-toggle').forEach(toggle => {
-                    toggle.addEventListener('click', () => {
-                        const column = toggle.dataset.column;
-                        const isActive = toggle.classList.toggle('active');
-
-                        toggle.setAttribute('aria-expanded', String(isActive));
-                        quadroAccordion.querySelectorAll(`.col-${column}`).forEach(cell => {
-                            window.clearTimeout(Number(cell.dataset.quadroTimer || 0));
-                            cell.classList.remove('is-revealing', 'is-collapsing');
-
-                            if (isActive) {
-                                cell.classList.remove('is-hidden');
-                                requestAnimationFrame(() => {
-                                    cell.classList.add('is-revealing');
-                                });
-                                cell.dataset.quadroTimer = window.setTimeout(() => {
-                                    cell.classList.remove('is-revealing');
-                                }, 340);
-                                return;
-                            }
-
-                            cell.classList.add('is-collapsing');
-                            cell.dataset.quadroTimer = window.setTimeout(() => {
-                                cell.classList.add('is-hidden');
-                                cell.classList.remove('is-collapsing');
-                            }, 260);
-                        });
-                    });
-                });
-            }
 
             document.querySelectorAll('.questao-card').forEach(questao => {
                 const respostaCorreta = questao.dataset.correct;
