@@ -79,7 +79,7 @@ Você **DEVE** incluir estes três containers na página:
 
 #### Navbar
 - Logo da Fiocruz
-- Menu superior (Bibliografia, Crédito)
+- Menu superior (Bibliografia, Créditos)
 - Botão hamburger para mobile (aparece automaticamente)
 
 #### Sidebar

@@ -3319,6 +3319,13 @@ em {
     width: 100%;
 }
 
+.modulo2-aula3-resources-figure .textolegenda {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+}
+
 .modulo2-aula3-card.quote-card {
     min-height: 240px;
     opacity: 1;
@@ -3334,8 +3341,13 @@ em {
 }
 
 .modulo2-aula3-card a {
-    color: #2f63ad;
+    color: #a33b9f;
     text-decoration: underline;
+}
+
+.modulo2-aula3-card a:hover,
+.modulo2-aula3-card a:focus {
+    color: #a33b9f;
 }
 
 .modulo2-aula3-list-box {
@@ -3677,6 +3689,10 @@ em {
     width: 100%;
     border-radius: 28px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.modulo2-aula4-modalidades .textolegenda {
+    margin-top: 12px;
 }
 
 .modulo2-aula4-callout {
@@ -4914,6 +4930,15 @@ em {
     display: block;
 }
 
+.aula4-opinion-link {
+    color: rgb(76 29 149);
+}
+
+.aula4-opinion-link:hover,
+.aula4-opinion-link:focus {
+    color: rgb(76 29 149);
+}
+
 .aula4-pyramid-figure {
     max-width: 760px;
 }
@@ -5939,6 +5964,14 @@ em {
     max-width: 320px;
 }
 
+.aula3-storyboard-intro-row {
+    justify-content: center;
+}
+
+.aula3-storyboard-intro-row .paragrafo-conteudo {
+    min-width: 0;
+}
+
 .aula3-storyboard-media-row {
     margin-left: 0;
     margin-right: 0;
@@ -6098,6 +6131,18 @@ em {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px 24px;
         padding: 34px 28px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .aula3-storyboard-intro-row>[class*="col-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .aula3-storyboard-intro-row .aula3-storyboard-icon {
+        width: min(320px, 82vw);
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -7939,4 +7984,15 @@ body.modulo1-page .sidebar-wrapper {
         border-bottom: 3px solid #a33b9f !important;
         border-radius: 0 0 0 18px !important;
     }
+}
+
+/* Fonte captions align to the start of their visual/table block. */
+.textolegenda,
+figure figcaption {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: left !important;
 }
