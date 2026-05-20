@@ -48,7 +48,7 @@
                             <li class="nav-item"><a class="nav-link"
                                     href="../index.html">Início</a></li>
                             <li class="nav-item"><a class="nav-link"
-                                    href="../bibliografia/bibliografia.html">Bibliografia</a></li>
+                                    href="../bibliografia/bibliografia.html">Material Complementar</a></li>
                             <li class="nav-item"><a class="nav-link"
                                     href="../glossario/glossario.html">Glossário</a></li>
                             <li class="nav-item"><a class="nav-link"
@@ -547,13 +547,13 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Destaque</td>
+                                            <td class="col-intencao">Destaque</td>
                                             <td>Atenção</td>
                                             <td>Destaque para algum aspecto ou
                                                 ponto do texto principal.</td>
                                         </tr>
                                         <tr>
-                                            <td>Reflexão</td>
+                                            <td class="col-intencao">Reflexão</td>
                                             <td>Reflita</td>
                                             <td>Provocação para que o leitor se
                                                 sinta instigado a refletir sob
@@ -561,7 +561,7 @@
                                                 estudo.</td>
                                         </tr>
                                         <tr>
-                                            <td rowspan="3">Informação
+                                            <td class="col-intencao" rowspan="3">Informação
                                                 Complementar</td>
                                             <td>Saiba Mais</td>
                                             <td>Informações complementares ou
@@ -581,7 +581,7 @@
                                                 em discussão.</td>
                                         </tr>
                                         <tr>
-                                            <td>Pesquisa</td>
+                                            <td class="col-intencao">Pesquisa</td>
                                             <td>Pesquise</td>
                                             <td>Comentários com alguma indicação
                                                 sobre como o tema estudado pode
@@ -614,8 +614,11 @@
                                     <div>
                                         <h3 class="quote-title">Saiba mais</h3>
                                         <p>A Lei Brasileira de Inclusão da
-                                            Pessoa com Deficiência (Lei nº
-                                            13.146/2015), a LBI, Art. 27. A
+                                            Pessoa com Deficiência (<a
+                                                href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm"
+                                                target="_blank"
+                                                rel="noopener noreferrer">Lei nº
+                                                13.146/2015</a>), a LBI, Art. 27. A
                                             educação constitui direito da pessoa
                                             com deficiência, assegurados sistema
                                             educacional inclusivo em todos os
@@ -681,12 +684,22 @@
                                     (ChatGPT).</figcaption>
                             </figure>
 
-                            <figure
-                                class="aula3-figure modulo2-aula3-figure modulo2-aula3-access-recommendations mx-auto">
-                                <img
-                                    src="../assets/imgmod2/aula3/pont.png"
-                                    alt="Recomendações de acessibilidade para materiais didáticos, incluindo descrição de imagens, transcrição de áudio, legendas, tecnologias assistivas, contraste, explicação de siglas com o elemento abbr e descrição clara de links.">
-                            </figure>
+                            <div
+                                class="modulo2-aula3-access-notes mx-auto"
+                                aria-label="Recomendações de acessibilidade para materiais didáticos">
+                                <ul class="modulo2-aula3-access-list">
+                                    <li>As imagens devem ter descrição, falada ou escrita, garantindo a acessibilidade aos estudantes.</li>
+                                    <li>Os arquivos de áudio devem conter uma transcrição descritiva para quem possui dificuldades para ouvir;</li>
+                                    <li>Os vídeos devem ter legendas e/ou tradução em Libras.</li>
+                                    <li>Devem ser utilizadas tecnologias assistivas, como leitores de tela, versão acessível (Word, bloco de notas e PDF acessível), entre outras.</li>
+                                    <li>Deve ser promovido o contraste adequado entre o texto e o fundo da tela, para estudantes com baixa visão, além redimensionamento de textos e imagens para melhoria da leitura;</li>
+                                    <li>Disponibilizar uma explicação para siglas, abreviaturas e palavras incomuns: Ao menos na primeira ocorrência de siglas, abreviaturas ou palavras incomuns (ambíguas, desconhecidas ou utilizadas de forma muito específica), deve ser disponibilizada sua explicação ou forma completa. Essa explicação pode estar expressa no próprio texto, pode estar presente em um glossário ou, então, através da utilização do elemento <span class="modulo2-aula3-abbr-trigger" tabindex="0" role="button" aria-describedby="abbr-tooltip">abbr<span class="modulo2-aula3-abbr-note" role="tooltip">O elemento &lt;abbr&gt; é uma tag do HTML usada para marcar abreviações ou siglas dentro de um texto.</span></span>.</li>
+                                    <li>Descrever links clara e sucintamente: Deve-se identificar claramente o destino de cada link, informando, inclusive, se o link remete a outro sítio. Além disso, é preciso que o texto do link faça sentido mesmo quando isolado do contexto da página.</li>
+                                </ul>
+                                <div id="abbr-tooltip"
+                                    class="modulo2-aula3-abbr-note-mobile"
+                                    role="tooltip" hidden>O elemento &lt;abbr&gt; é uma tag do HTML usada para marcar abreviações ou siglas dentro de um texto.</div>
+                            </div>
 
                             <figure
                                 class="modulo2-aula3-final-strip mx-auto">
@@ -963,6 +976,42 @@
                     feedback.classList.add(acertou ? 'correto' : 'incorreto');
                 });
             });
+        });
+
+        document.querySelectorAll('.modulo2-aula3-abbr-trigger').forEach(trigger => {
+            let tooltipTimer;
+            const mobileTooltip = document.getElementById('abbr-tooltip');
+            const isMobileTooltip = () => window.matchMedia('(max-width: 767.98px)').matches;
+            const hideMobileTooltip = () => {
+                if (mobileTooltip) mobileTooltip.hidden = true;
+            };
+
+            trigger.addEventListener('click', () => {
+                window.clearTimeout(tooltipTimer);
+
+                if (isMobileTooltip() && mobileTooltip) {
+                    mobileTooltip.hidden = false;
+                    mobileTooltip.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+                    tooltipTimer = window.setTimeout(hideMobileTooltip, 5200);
+                    return;
+                }
+
+                trigger.focus();
+                tooltipTimer = window.setTimeout(() => trigger.blur(), 4200);
+            });
+
+            trigger.addEventListener('keydown', event => {
+                if (event.key !== 'Enter' && event.key !== ' ') return;
+                event.preventDefault();
+                trigger.click();
+            });
+
+            trigger.addEventListener('mouseleave', () => {
+                window.clearTimeout(tooltipTimer);
+                trigger.blur();
+            });
+
+            window.addEventListener('resize', hideMobileTooltip);
         });
     </script>
 
