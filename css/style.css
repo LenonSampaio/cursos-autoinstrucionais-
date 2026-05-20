@@ -1452,6 +1452,14 @@ em {
     padding-bottom: 28px;
 }
 
+.sidebar-material-link,
+.sidebar-material-link:hover,
+.sidebar-material-link:focus {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
 /* submenu animado */
 .submenu {
     max-height: 0;
@@ -5337,6 +5345,15 @@ em {
     font-style: normal;
 }
 
+.aula4-saiba-mais .quote-content a {
+    color: #5a2d82;
+}
+
+.aula4-saiba-mais .quote-content a:hover,
+.aula4-saiba-mais .quote-content a:focus {
+    color: #5a2d82;
+}
+
 .aula4-saiba-mais .quote-content p:last-child {
     margin-bottom: 0;
 }
@@ -7995,4 +8012,311 @@ figure figcaption {
     padding-left: 0 !important;
     padding-right: 0 !important;
     text-align: left !important;
+}
+
+.aula1-modern-figure .textolegenda {
+    width: 66.666667%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Glossario */
+.glossario-navbar {
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.glossario-navbar > .container-fluid {
+    min-height: 88px;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.glossario-navbar .navbar-brand {
+    margin-left: 0;
+}
+
+.glossario-navbar .navbar-collapse {
+    transform: none;
+}
+
+.glossario-navbar .navbar-nav {
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0;
+}
+
+.glossario-navbar .nav-item {
+    flex: 0 0 auto;
+}
+
+.glossario-navbar .nav-link {
+    color: #4c1d95 !important;
+    font-weight: 700;
+    width: 136px;
+    min-height: 44px;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    white-space: nowrap;
+}
+
+.glossario-page {
+    background: #ffffff;
+    min-height: 100vh;
+    padding: clamp(28px, 5vw, 54px) 18px 72px;
+}
+
+.glossario-content {
+    width: min(100%, 900px);
+    margin: 0 auto;
+}
+
+.glossario-content h1 {
+    color: #4c1d95;
+    font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+    font-weight: 800;
+    margin-bottom: 34px;
+}
+
+.glossario-list {
+    margin: 0;
+}
+
+.glossario-list dt {
+    color: #4c1d95;
+    font-weight: 800;
+    margin-top: 22px;
+    line-height: 1.2;
+}
+
+.glossario-list dt:first-child {
+    margin-top: 0;
+}
+
+.glossario-list dd {
+    margin: 2px 0 0;
+    color: #333333;
+    font-size: 0.96rem;
+    line-height: 1.28;
+}
+
+.creditos-content {
+    width: min(100%, 720px);
+}
+
+.creditos-list {
+    color: #111111;
+}
+
+.creditos-group {
+    margin-top: 26px;
+}
+
+.creditos-group:first-child {
+    margin-top: 0;
+}
+
+.creditos-group h2 {
+    color: #4c1d95;
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin: 0 0 9px;
+}
+
+.creditos-group p {
+    margin: 0 0 17px;
+    font-size: 0.92rem;
+    line-height: 1.22;
+}
+
+.creditos-group strong {
+    font-weight: 700;
+}
+
+.creditos-group em {
+    color: #333333;
+    font-size: 0.88rem;
+}
+
+.bibliografia-content {
+    width: min(100%, 980px);
+    margin: 0 auto;
+}
+
+.bibliografia-content h1 {
+    color: #222222;
+    font-size: clamp(1.35rem, 2vw, 1.85rem);
+    font-weight: 800;
+    margin-bottom: 34px;
+    text-transform: uppercase;
+}
+
+.bibliografia-list p {
+    color: #222222;
+    font-size: clamp(1rem, 1.35vw, 1.2rem);
+    line-height: 1.25;
+    margin: 0 0 30px;
+}
+
+.bibliografia-list a {
+    color: inherit;
+    overflow-wrap: anywhere;
+    text-decoration: none;
+}
+
+.bibliografia-list a:hover,
+.bibliografia-list a:focus {
+    color: #4c1d95;
+    text-decoration: underline;
+}
+
+@media (max-width: 991.98px) {
+    .glossario-navbar {
+        padding: 10px 0 !important;
+    }
+
+    .glossario-navbar > .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-height: 72px;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .glossario-navbar .navbar-brand,
+    .glossario-navbar .navbar-brand.logo-right-wrap {
+        flex: 0 1 auto;
+        max-width: calc(100% - 64px);
+    }
+
+    .glossario-navbar .logo-move.logo-right {
+        max-width: 160px;
+    }
+
+    .glossario-navbar .navbar-toggler {
+        position: absolute;
+        top: 21px;
+        right: 16px;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 46px;
+        width: 46px;
+        height: 46px;
+        margin-left: auto;
+        border: 0;
+        border-radius: 12px;
+        background: #4c1d95;
+        box-shadow: 0 12px 28px rgba(76, 29, 149, 0.28);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .glossario-navbar .navbar-toggler-icon {
+        filter: invert(1);
+    }
+
+    .glossario-navbar .navbar-collapse {
+        position: static;
+        flex-basis: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .glossario-navbar .navbar-nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    .glossario-navbar .nav-item,
+    .glossario-navbar .nav-link {
+        width: min(210px, 100%);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .glossario-navbar {
+        padding: 10px 0 !important;
+    }
+
+    .glossario-navbar > .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-height: 72px;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .glossario-navbar .navbar-brand,
+    .glossario-navbar .navbar-brand.logo-right-wrap {
+        flex: 0 1 auto;
+        max-width: calc(100% - 64px);
+    }
+
+    .glossario-navbar .logo-move.logo-right {
+        max-width: 160px;
+    }
+
+    .glossario-navbar .navbar-toggler {
+        position: absolute;
+        top: 21px;
+        right: 16px;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 46px;
+        width: 46px;
+        height: 46px;
+        margin-left: auto;
+        border: 0;
+        border-radius: 12px;
+        background: #4c1d95;
+        box-shadow: 0 12px 28px rgba(76, 29, 149, 0.28);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .glossario-navbar .navbar-toggler-icon {
+        filter: invert(1);
+    }
+
+    .glossario-navbar .navbar-collapse {
+        position: static;
+        flex-basis: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .glossario-navbar .navbar-nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    .glossario-navbar .nav-item,
+    .glossario-navbar .nav-link {
+        width: min(210px, 100%);
+    }
+
+    .glossario-page {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .glossario-list dd {
+        font-size: 0.92rem;
+        line-height: 1.35;
+    }
+
+    .creditos-group p {
+        font-size: 0.9rem;
+    }
 }
