@@ -729,6 +729,10 @@ em {
     --navbar-sidebar-space: 10px;
 }
 
+body:has(.home-main) {
+    --banner-text-left: 6.7vw;
+}
+
 .logo-move {
     margin-left: 0;
 }
