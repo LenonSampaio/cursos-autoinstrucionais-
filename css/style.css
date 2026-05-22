@@ -257,7 +257,6 @@ button,
 .card-modulo,
 .menu-item,
 .submenu a,
-.footer-logo,
 .imgicon {
     transition:
         color var(--motion-fast),
@@ -589,11 +588,6 @@ em {
     max-width: min(28vw, 330px);
 }
 
-.footer-logo:hover {
-    transform: translateY(-3px) scale(1.04);
-    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.16));
-}
-
 @media (max-width: 768px) {
     .footer-logos {
         gap: 18px 24px;
@@ -730,7 +724,7 @@ em {
 
 /* Alinha a logo CVF com o texto do banner */
 :root {
-    --banner-text-left: 6.7vw;
+    --banner-text-left: 8.65vw;
     --navbar-side-padding: 12px;
     --navbar-sidebar-space: 10px;
 }
@@ -752,8 +746,7 @@ em {
 
 .navbar-brand>.logo-right-wrap .logo-move.logo-right,
 .navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) .logo-move.logo-right {
-    margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding) - var(--navbar-sidebar-space));
-     margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding) + -4px);
+    margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding) + -4px);
 }
 
 .logo-move.logo-right {
@@ -1341,7 +1334,7 @@ em {
 
 
 .sidebar {
-    background: #7a0058;
+    background: #710678;
     color: white;
     min-height: 100%;
     max-width: 220px;
@@ -2443,7 +2436,7 @@ em {
 @media (max-width: 991.98px) {
     .navbar .navbar-collapse {
         margin: 12px 12px 0;
-        padding: 12px;
+        padding: 16px;
         border: 1px solid rgba(76, 29, 149, 0.14);
         border-radius: 18px;
         background: rgba(255, 255, 255, 0.96);
@@ -2464,7 +2457,7 @@ em {
         justify-content: flex-start;
         width: 100%;
         min-height: 44px;
-        padding: 0.75rem 0.95rem !important;
+        padding: 0.75rem 1rem !important;
         border-color: rgba(76, 29, 149, 0.12);
         border-radius: 12px;
         color: #3b245c !important;
@@ -7949,21 +7942,50 @@ iframe {
     }
 }
 
+@media (max-width: 991.98px) {
+    .navbar .navbar-collapse,
+    .glossario-navbar .navbar-collapse {
+        left: 50% !important;
+        right: auto !important;
+        width: calc(100vw - 24px) !important;
+        max-width: 420px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .navbar .navbar-nav,
+    .glossario-navbar .navbar-nav {
+        gap: 8px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    .navbar .nav-item,
+    .navbar .nav-link,
+    .glossario-navbar .nav-item,
+    .glossario-navbar .nav-link {
+        width: 100% !important;
+    }
+
+}
+
 /* Modulo 1 keeps its original sidebar tone. Modulo 2 remains #7a0058. */
 body.modulo1-page .sidebar,
 body.modulo1-page .sidebar-wrapper {
-    background: #590063 !important;
+    background: #57056d !important;
 }
 
 @media (min-width: 1200px) {
     body.modulo1-page:not(:has(.home-main)) {
-        background: linear-gradient(to right, #590063 0 220px, transparent 220px 100%) !important;
+        background: linear-gradient(to right, #57056d 0 220px, transparent 220px 100%) !important;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     body.modulo1-page:not(:has(.home-main)) {
-        background: linear-gradient(to right, #590063 0 210px, transparent 210px 100%) !important;
+        background: linear-gradient(to right, #57056d 0 210px, transparent 210px 100%) !important;
     }
 }
 
@@ -8039,12 +8061,6 @@ figure figcaption {
     padding-left: 0 !important;
     padding-right: 0 !important;
     text-align: left !important;
-}
-
-.aula1-modern-figure .textolegenda {
-    width: 66.666667%;
-    margin-left: auto !important;
-    margin-right: auto !important;
 }
 
 /* Glossario */
@@ -8384,3 +8400,38 @@ figure figcaption {
         font-size: 0.9rem;
     }
 }
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-collapse,
+    .glossario-navbar .navbar-collapse {
+        left: 50% !important;
+        right: auto !important;
+        width: calc(100vw - 24px) !important;
+        max-width: 420px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .navbar .navbar-nav,
+    .glossario-navbar .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar .nav-item,
+    .navbar .nav-link,
+    .glossario-navbar .nav-item,
+    .glossario-navbar .nav-link {
+        width: 100% !important;
+    }
+
+    .navbar .nav-link,
+    .glossario-navbar .nav-link {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+
+
+
