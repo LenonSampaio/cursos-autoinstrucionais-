@@ -274,6 +274,22 @@ button:focus-visible {
     outline-offset: 4px;
 }
 
+.skip-link {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 2000;
+    padding: 0.65rem 1rem;
+    color: #ffffff;
+    background: #073b7a;
+    border-radius: 4px;
+    transform: translateY(-140%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
 .visually-hidden {
     position: absolute !important;
     width: 1px !important;
@@ -1502,9 +1518,17 @@ body:has(.home-main) {
 
 /* itens */
 .menu-item {
+    display: block;
+    width: 100%;
     padding: 15px;
     cursor: pointer;
     border-bottom: 2px solid #ffffff;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    color: inherit;
+    text-align: left;
+    background: transparent;
 }
 
 .menu-item:hover {
@@ -1516,9 +1540,12 @@ body:has(.home-main) {
     border-bottom: none;
 }
 
-.menu-item h3 {
+.menu-item h3,
+.menu-item-title {
+    display: block;
     margin: 0 0 6px;
     font-size: 16px;
+    font-weight: 700;
 }
 
 .menu-item p {
@@ -1629,7 +1656,8 @@ body:has(.home-main) {
         font-size: 1.8rem;
     }
 
-    .menu-item h3 {
+    .menu-item h3,
+    .menu-item-title {
         font-size: 16px;
     }
 
@@ -1664,7 +1692,8 @@ body:has(.home-main) {
         padding: 12px;
     }
 
-    .menu-item h3 {
+    .menu-item h3,
+    .menu-item-title {
         font-size: 15px;
     }
 
@@ -1707,7 +1736,8 @@ body:has(.home-main) {
         padding: 12px;
     }
 
-    .menu-item h3 {
+    .menu-item h3,
+    .menu-item-title {
         font-size: 14px;
         margin-bottom: 4px;
     }

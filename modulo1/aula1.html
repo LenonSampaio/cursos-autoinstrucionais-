@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -45,6 +45,7 @@
 </head>
 
 <body class="modulo1-page"><!-- Início da div banner -->
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo principal</a>
     <div class="banner lesson-banner position-relative">
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0">
@@ -103,11 +104,12 @@
             <!-- Início do aside sidebar -->
             <aside class="col-12 col-md-2 sidebar">
 
-                <div class="menu-item" onclick="toggleMenu('mod1')">
-                    <h3>Módulo 1</h3>
+                <button class="menu-item" type="button" onclick="toggleMenu('mod1')" aria-controls="mod1"
+                    aria-expanded="false">
+                    <span class="menu-item-title">Módulo 1</span>
                     <p> - A EAD e o desenvolvimento de<br> cursos
                         autoinstrucionais</p>
-                </div>
+                </button>
                 <div class="submenu" id="mod1">
                     <a href="../modulo1/aula1.html" class="submenu-aula-longa"><span class="submenu-aula-numero">Aula
                             1.1</span><span class="submenu-aula-titulo">– Contextualização
@@ -128,10 +130,11 @@
                             HTML</span></a>
                 </div>
 
-                <div class="menu-item" onclick="toggleMenu('mod2')">
-                    <h3>Módulo 2</h3>
+                <button class="menu-item" type="button" onclick="toggleMenu('mod2')" aria-controls="mod2"
+                    aria-expanded="false">
+                    <span class="menu-item-title">Módulo 2</span>
                     <p> - Criação do Material Didático Digital</p>
-                </div>
+                </button>
                 <div class="submenu" id="mod2">
                     <a href="../modulo2/aula1.html"><span class="submenu-aula-numero">Aula 2.1</span><span
                             class="submenu-aula-titulo">– O
@@ -151,23 +154,23 @@
 
                 <a href="../material/materialcomplementar.html"
                     class="menu-item menu-material-complementar sidebar-material-link">
-                    <h3>Material Complementar</h3>
+                    <span class="menu-item-title">Material Complementar</span>
                 </a>
 
             </aside>
 
             <!-- CONTEÚDO -->
             <!-- Início do main content -->
-            <main class="col-12 col-md-10 main-content">
+            <main class="col-12 col-md-10 main-content" id="conteudo-principal" tabindex="-1">
 
                 <div class="container introducao-aula">
                     <section class="objectives">
                         <!-- Título Principal -->
-                        <h1 class="text-center mb-4">
+                        <h2 class="text-center mb-4">
                             Contextualização de EaD, ensino híbrido,<br>
                             ensino on-line, ensino presencial<br>
                             e produção de cursos autoinstrucionais
-                        </h1>
+                        </h2>
 
                         <!-- Boas-vindas -->
                         <p class="textoconteudo col-lg-8 mx-auto text-center text-md-start">
@@ -336,9 +339,9 @@
                             Pedagoga do Campus Virtual Fiocruz
                         </p>
 
-                        <h1 class="titulo-secao">
+                        <h2 class="titulo-secao">
                             Introdução
-                        </h1>
+                        </h2>
 
                         <p class="paragrafo-conteudo">
                             Nesta aula convidamos você a pensar conosco
@@ -356,10 +359,10 @@
                             atividades síncronas e atividades assíncronas.
                         </p>
 
-                        <h1 class="titulo-secao">
+                        <h2 class="titulo-secao">
                             Como vamos trabalhar?
 
-                        </h1>
+                        </h2>
                         <p class="paragrafo-conteudo">
                             Pretendemos desenvolver o curso utilizando
                             metalinguagem, ou seja, à medida
@@ -484,10 +487,10 @@
                             </div>
                         </div>
 
-                        <h1 class="titulo-secao">
+                        <h2 class="titulo-secao">
                             A importância
                             do planejamento
-                        </h1>
+                        </h2>
                         <h2 class="subtitulo-secao">
                             Desenho da produção
                         </h2>
@@ -768,10 +771,10 @@
                             as funções envolvidas em
                             cada etapa que delineamos acima. </p>
 
-                        <h1 class="titulo-secao">
+                        <h2 class="titulo-secao">
                             Você chegou ao final da<br>
                             primeira aula do Módulo 1
-                        </h1>
+                        </h2>
 
                         <p class="paragrafo-conteudo">
                             Nesta aula você conheceu como acontecerá a dinâmica do seu curso, os
@@ -956,8 +959,15 @@
             document.querySelectorAll('.submenu').forEach(el => {
                 if (el.id !== id) el.classList.remove('open');
             });
+            document.querySelectorAll('.menu-item[aria-controls]').forEach(button => {
+                if (button.getAttribute('aria-controls') !== id) {
+                    button.setAttribute('aria-expanded', 'false');
+                }
+            });
 
-            menu.classList.toggle('open');
+            const isOpen = menu.classList.toggle('open');
+            const trigger = document.querySelector(`.menu-item[aria-controls="${id}"]`);
+            if (trigger) trigger.setAttribute('aria-expanded', String(isOpen));
         }
 
         // Mobile sidebar toggle
