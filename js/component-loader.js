@@ -82,6 +82,7 @@ function loadComponent(componentPath, targetElement, componentType, root = getPr
             targetElement.innerHTML = '';
             targetElement.appendChild(componentElement);
             initializeComponent(componentType);
+            document.dispatchEvent(new CustomEvent('components:loaded', { detail: { componentType } }));
         })
         .catch(error => {
             console.error('Erro ao carregar componente:', error);
