@@ -1826,7 +1826,7 @@ body:has(.home-main) {
 .video-card {
     border-radius: 35px !important;
     cursor: pointer;
-    background-color: #000;
+    background-color: #ffffff5b;
     transition: transform 0.3s ease;
 }
 
