@@ -8059,21 +8059,21 @@ iframe {
 
 }
 
-/* Modulo 1 keeps its original sidebar tone. Modulo 2 remains #730675. */
+/* Modulo 1 uses #6f007f. Modulo 2 remains #730675. */
 body.modulo1-page .sidebar,
 body.modulo1-page .sidebar-wrapper {
-    background: #57056d !important;
+    background: #6f007f !important;
 }
 
 @media (min-width: 1200px) {
     body.modulo1-page:not(:has(.home-main)) {
-        background: linear-gradient(to right, #57056d 0 220px, transparent 220px 100%) !important;
+        background: linear-gradient(to right, #6f007f 0 220px, transparent 220px 100%) !important;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     body.modulo1-page:not(:has(.home-main)) {
-        background: linear-gradient(to right, #57056d 0 210px, transparent 210px 100%) !important;
+        background: linear-gradient(to right, #6f007f 0 210px, transparent 210px 100%) !important;
     }
 }
 
