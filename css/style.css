@@ -938,7 +938,7 @@ body:has(.home-main) {
 /* ------------------------------ */
 /* Estilo do painel lateral principal */
 .sidebar-wrapper {
-    background: #7a0058;
+    background: #730675;
     min-height: 100vh;
     padding: 0;
     z-index: 100;
@@ -1277,7 +1277,7 @@ body:has(.home-main) {
 ===================================================== */
 
 .sidebar {
-    background: #7a0058;
+    background: #730675;
     color: white;
     align-self: flex-start;
 }
@@ -1420,7 +1420,7 @@ body:has(.home-main) {
 
 
 .sidebar {
-    background: #7a0058;
+    background: #730675;
     color: white;
     min-height: 100%;
     max-width: 220px;
@@ -1429,7 +1429,7 @@ body:has(.home-main) {
 
 @media (min-width: 768px) {
     body {
-        background: linear-gradient(to right, #7a0058 0 256px, #ffffff00 250px 100%);
+        background: linear-gradient(to right, #730675 0 256px, #ffffff00 250px 100%);
     }
 
     .sidebar {
@@ -1480,7 +1480,7 @@ body:has(.home-main) {
         transform: translateX(-100%);
         transition: transform 0.3s ease;
         z-index: 1000;
-        background: #7a0058;
+        background: #730675;
     }
 
     .sidebar.mobile-open {
@@ -7863,7 +7863,7 @@ iframe {
 /* Footer/sidebar alignment */
 @media (min-width: 1200px) {
     body:not(:has(.home-main)) {
-        background: linear-gradient(to right, #7a0058 0 220px, transparent 220px 100%) !important;
+        background: linear-gradient(to right, #730675 0 220px, transparent 220px 100%) !important;
     }
 
     body:not(:has(.home-main)) #footer,
@@ -7876,7 +7876,7 @@ iframe {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     body:not(:has(.home-main)) {
-        background: linear-gradient(to right, #7a0058 0 210px, transparent 210px 100%) !important;
+        background: linear-gradient(to right, #730675 0 210px, transparent 210px 100%) !important;
     }
 
     body:not(:has(.home-main)) #footer,
@@ -8059,7 +8059,7 @@ iframe {
 
 }
 
-/* Modulo 1 keeps its original sidebar tone. Modulo 2 remains #7a0058. */
+/* Modulo 1 keeps its original sidebar tone. Modulo 2 remains #730675. */
 body.modulo1-page .sidebar,
 body.modulo1-page .sidebar-wrapper {
     background: #57056d !important;
