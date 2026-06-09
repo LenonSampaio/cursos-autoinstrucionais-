@@ -1,3 +1,4 @@
+// Accessibility helpers for active navigation state and keyboard access.
 (() => {
     function normalizePath(pathname) {
         const normalized = pathname.replace(/\\/g, '/').replace(/\/index\.html$/, '/');
