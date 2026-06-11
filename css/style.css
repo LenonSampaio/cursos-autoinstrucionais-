@@ -1704,6 +1704,16 @@ body:has(.home-main) {
     transform: translateX(4px);
 }
 
+.sidebar > .menu-item:first-of-type {
+    padding: 16px 18px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.sidebar > .menu-item:first-of-type:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: none;
+}
+
 .menu-item:last-child {
     border-bottom: none;
 }
