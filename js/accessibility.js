@@ -24,6 +24,12 @@
         document.querySelectorAll('.submenu').forEach(submenu => {
             if (submenu.querySelector('a[aria-current="page"]')) {
                 submenu.classList.add('open');
+                const moduleTrigger = submenu.previousElementSibling;
+
+                if (moduleTrigger && moduleTrigger.classList.contains('menu-item')) {
+                    moduleTrigger.classList.add('active');
+                    moduleTrigger.setAttribute('aria-expanded', 'true');
+                }
             }
         });
     }

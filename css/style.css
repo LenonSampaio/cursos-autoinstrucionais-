@@ -8790,6 +8790,18 @@ figure figcaption {
     box-shadow: inset 5px 0 0 #ffbf47;
 }
 
+.submenu a.active .submenu-aula-numero,
+.submenu a.active .submenu-aula-titulo,
+.submenu a[aria-current="page"] .submenu-aula-numero,
+.submenu a[aria-current="page"] .submenu-aula-titulo {
+    color: inherit !important;
+}
+
+.menu-item.active {
+    background: rgba(255, 255, 255, 0.12);
+    transform: none;
+}
+
 .menu-item:focus-visible {
     outline: 3px solid #ffbf47;
     outline-offset: -3px;
