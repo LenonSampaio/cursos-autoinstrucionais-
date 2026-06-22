@@ -1,4 +1,4 @@
-﻿.home-main {
+.home-main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@
     margin-right: auto;
 }
 
-body:has(.home-main) {
+body.home-page {
     background: #ffffff;
 }
 
@@ -154,7 +154,7 @@ body:has(.home-main) {
     transition-delay: 0.12s;
 }
 
-body:has(.home-main) #footer {
+body.home-page #footer {
     margin-left: 0;
     width: 100%;
     transform: translateX(-32px);
@@ -302,18 +302,6 @@ button:focus-visible {
     border: 0 !important;
 }
 
-@view-transition {
-    navigation: auto;
-}
-
-::view-transition-old(root) {
-    animation: pageOut 0.18s ease both;
-}
-
-::view-transition-new(root) {
-    animation: pageIn 0.28s ease both;
-}
-
 @keyframes pageOut {
     from {
         opacity: 1;
@@ -355,11 +343,6 @@ button:focus-visible {
         animation-iteration-count: 1 !important;
     }
 
-    ::view-transition-old(root),
-    ::view-transition-new(root) {
-        animation: none;
-    }
-
     .page-is-leaving {
         opacity: 1;
         transform: none;
@@ -393,7 +376,6 @@ button:focus-visible {
     color: #ffffff;
     font-family: 'Rawline', sans-serif;
     transform: translateY(-4%);
-    pointer-events: none;
 }
 
 .home-banner-title p,
@@ -442,7 +424,6 @@ button:focus-visible {
     z-index: 1;
     width: 51%;
     background: linear-gradient(90deg, #6d007f 0%, #b1008d 72%, rgba(177, 0, 141, 0.86) 100%);
-    pointer-events: none;
 }
 
 .lesson-banner .banner-title-wrap {
@@ -566,8 +547,8 @@ body.modulo2-page .home-lesson-banner .logo-move.logo-right {
     max-width: 59% !important;
 }
 
-body.modulo2-page:has(.home-main) .navbar-brand.logo-right-wrap {
-    margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding) + -4px);
+body.modulo2-page.home-page .navbar-brand.logo-right-wrap {
+    margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding) - 4px);
 }
 
     body.modulo2-page .home-lesson-banner .banner-title-wrap {
@@ -1041,20 +1022,20 @@ em {
     --navbar-sidebar-space: 10px;
 }
 
-body:has(.home-main) {
+body.home-page {
     --banner-text-left: 6.7vw;
 }
 
-body.modulo2-page:has(.home-main) {
+body.modulo2-page.home-page {
     --banner-text-left: 8.65vw;
 }
 
 @media (max-width: 991.98px) {
-    body:has(.home-main) {
+    body.home-page {
         --banner-text-left: 43px;
     }
 
-    body.modulo2-page:has(.home-main) {
+    body.modulo2-page.home-page {
         --banner-text-left: 11.4vw;
     }
 }
@@ -1065,18 +1046,18 @@ body.modulo2-page:has(.home-main) {
 
 .logo-right-wrap,
 .navbar-brand.logo-right-wrap {
-    margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding) + -4px);
+    margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding) - 4px);
 }
 
 
 .navbar-brand>.logo-right-wrap,
-.navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) {
+.navbar-brand.logo-right-wrap.has-sidebar-toggle {
     margin-left: 0;
 }
 
 .navbar-brand>.logo-right-wrap .logo-move.logo-right,
-.navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) .logo-move.logo-right {
-    margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding) + -4px);
+.navbar-brand.logo-right-wrap.has-sidebar-toggle .logo-move.logo-right {
+    margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding) - 4px);
 }
 
 .logo-move.logo-right {
@@ -1088,7 +1069,7 @@ body.modulo2-page:has(.home-main) {
         --banner-text-left: 11.4vw;
     }
 
-    body:has(.home-main) {
+    body.home-page {
         --banner-text-left: 43px;
     }
 
@@ -1101,11 +1082,11 @@ body.modulo2-page:has(.home-main) {
         margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding));
     }
 
-    .navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) {
+    .navbar-brand.logo-right-wrap.has-sidebar-toggle {
         margin-left: calc(var(--banner-text-left) - var(--navbar-side-padding));
     }
 
-    .navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) .logo-move.logo-right {
+    .navbar-brand.logo-right-wrap.has-sidebar-toggle .logo-move.logo-right {
         margin-left: 0;
     }
 }
@@ -2219,7 +2200,6 @@ body.modulo2-page:has(.home-main) {
     bottom: 30px;
     border: 5px solid #5a2d82;
     border-radius: 24px;
-    pointer-events: none;
 }
 
 .quote-accent-line::after {
@@ -2875,7 +2855,6 @@ body.modulo2-page:has(.home-main) {
     inset: 6px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.16);
-    pointer-events: none;
 }
 
 .mobile-sidebar-toggle:hover,
@@ -2902,11 +2881,6 @@ body.modulo2-page:has(.home-main) {
 }
 
 .mobile-sidebar-toggle .hamburger-line {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
     transform-origin: center;
     transition:
         opacity var(--motion-fast),
@@ -2915,12 +2889,10 @@ body.modulo2-page:has(.home-main) {
 }
 
 .mobile-sidebar-toggle .hamburger-line-middle {
-    stroke-dasharray: 12 20;
 }
 
 .mobile-sidebar-toggle:hover .hamburger-line-middle,
 .mobile-sidebar-toggle:focus-visible .hamburger-line-middle {
-    stroke-dasharray: 16 20;
 }
 
 .mobile-sidebar-toggle.is-open,
@@ -2958,11 +2930,6 @@ body.modulo2-page:has(.home-main) {
 
 .mobile-sidebar-toggle .sidebar-arrow-stem,
 .mobile-sidebar-toggle .sidebar-arrow-head {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2.25;
-    stroke-linecap: round;
-    stroke-linejoin: round;
     transition:
         transform var(--motion-base),
         stroke-width var(--motion-fast);
@@ -2981,7 +2948,6 @@ body.modulo2-page:has(.home-main) {
 .mobile-sidebar-toggle:focus-visible .sidebar-arrow-stem,
 .mobile-sidebar-toggle:hover .sidebar-arrow-head,
 .mobile-sidebar-toggle:focus-visible .sidebar-arrow-head {
-    stroke-width: 2.6;
 }
 
 .mobile-sidebar-toggle.is-open .sidebar-arrow-icon,
@@ -3938,7 +3904,6 @@ body.modulo2-page:has(.home-main) {
     line-height: 1.35;
     text-decoration: none;
     opacity: 0;
-    pointer-events: none;
     transform: translate(-50%, 8px);
     transition: opacity 180ms ease, transform 180ms ease;
 }
@@ -5565,7 +5530,6 @@ body.modulo2-page:has(.home-main) {
     object-fit: contain;
     filter: drop-shadow(0 3px 5px rgba(80, 28, 138, 0.2));
     transform: translateX(-50%);
-    pointer-events: none;
 }
 
 .aula4-flip-back {
@@ -8127,13 +8091,11 @@ iframe {
     .sidebar:not(.mobile-open),
     .sidebar-wrapper:not(.mobile-open) {
         transform: translateX(calc(-100% - 12px)) !important;
-        pointer-events: none;
     }
 
     .sidebar.mobile-open,
     .sidebar-wrapper.mobile-open {
         transform: translateX(0) !important;
-        pointer-events: auto;
     }
 
     .sidebar,
@@ -8161,12 +8123,12 @@ iframe {
 
 /* Footer/sidebar alignment */
 @media (min-width: 1200px) {
-    body:not(:has(.home-main)) {
+    body:not(.home-page) {
         background: linear-gradient(to right, #730675 0 220px, transparent 220px 100%) !important;
     }
 
-    body:not(:has(.home-main)) #footer,
-    body:not(:has(.home-main)) .tarja-container {
+    body:not(.home-page) #footer,
+    body:not(.home-page) .tarja-container {
         margin-left: 220px !important;
         width: calc(100% - 220px) !important;
         max-width: calc(100% - 220px) !important;
@@ -8174,12 +8136,12 @@ iframe {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    body:not(:has(.home-main)) {
+    body:not(.home-page) {
         background: linear-gradient(to right, #730675 0 210px, transparent 210px 100%) !important;
     }
 
-    body:not(:has(.home-main)) #footer,
-    body:not(:has(.home-main)) .tarja-container {
+    body:not(.home-page) #footer,
+    body:not(.home-page) .tarja-container {
         margin-left: 210px !important;
         width: calc(100% - 210px) !important;
         max-width: calc(100% - 210px) !important;
@@ -8221,7 +8183,7 @@ iframe {
 
     .navbar-brand,
     .navbar-brand.logo-right-wrap,
-    .navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) {
+    .navbar-brand.logo-right-wrap.has-sidebar-toggle {
         flex: 1 1 auto;
         width: auto !important;
         max-width: calc(100% - 64px);
@@ -8245,7 +8207,7 @@ iframe {
     }
 
     .logo-move.logo-right,
-    .navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) .logo-move.logo-right,
+    .navbar-brand.logo-right-wrap.has-sidebar-toggle .logo-move.logo-right,
     .navbar-brand>.logo-right-wrap .logo-move.logo-right {
         width: auto !important;
         height: clamp(40px, 11vw, 54px) !important;
@@ -8323,7 +8285,7 @@ iframe {
 @media (max-width: 380px) {
 
     .logo-move.logo-right,
-    .navbar-brand.logo-right-wrap:has(.mobile-sidebar-toggle) .logo-move.logo-right,
+    .navbar-brand.logo-right-wrap.has-sidebar-toggle .logo-move.logo-right,
     .navbar-brand>.logo-right-wrap .logo-move.logo-right {
         max-width: 130px;
     }
@@ -8365,13 +8327,13 @@ body.modulo1-page .sidebar-wrapper {
 }
 
 @media (min-width: 1200px) {
-    body.modulo1-page:not(:has(.home-main)) {
+    body.modulo1-page:not(.home-page) {
         background: linear-gradient(to right, #6f007f 0 220px, transparent 220px 100%) !important;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    body.modulo1-page:not(:has(.home-main)) {
+    body.modulo1-page:not(.home-page) {
         background: linear-gradient(to right, #6f007f 0 210px, transparent 210px 100%) !important;
     }
 }
@@ -8698,7 +8660,7 @@ figure figcaption {
     background: #ffffff !important;
 }
 
-body.encerramento-page-body:not(:has(.home-main)) {
+body.encerramento-page-body:not(.home-page) {
     background: #ffffff !important;
 }
 
@@ -8709,8 +8671,8 @@ body.encerramento-page-body:not(:has(.home-main)) {
     max-width: 100% !important;
 }
 
-body.encerramento-page-body:not(:has(.home-main)) #footer,
-body.encerramento-page-body:not(:has(.home-main)) .tarja-container {
+body.encerramento-page-body:not(.home-page) #footer,
+body.encerramento-page-body:not(.home-page) .tarja-container {
     margin-left: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
@@ -8725,17 +8687,14 @@ body.encerramento-page-body:not(:has(.home-main)) .tarja-container {
 }
 
 .encerramento-logo-wrap {
-    pointer-events: auto;
 }
 
 .encerramento-sidebar-spacer {
     display: none !important;
-    pointer-events: none;
 }
 
 .home-sidebar-spacer {
     display: none !important;
-    pointer-events: none;
 }
 
 .encerramento-banner picture,
