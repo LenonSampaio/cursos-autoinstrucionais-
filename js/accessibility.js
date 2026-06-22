@@ -1,8 +1,16 @@
 // Accessibility helpers for active navigation state and keyboard access.
 (() => {
     function normalizePath(pathname) {
-        const normalized = pathname.replace(/\\/g, '/').replace(/\/index\.html$/, '/');
-        return normalized.endsWith('/') ? normalized : normalized.replace(/\/$/, '');
+        const normalized = pathname
+            .replace(/\\/g, '/')
+            .replace(/\/index\.html$/i, '/')
+            .replace(/\.html$/i, '');
+
+        const withoutTrailingSlash = normalized.endsWith('/') && normalized !== '/'
+            ? normalized.slice(0, -1)
+            : normalized;
+
+        return withoutTrailingSlash.toLowerCase();
     }
 
     function markCurrentLinks() {
