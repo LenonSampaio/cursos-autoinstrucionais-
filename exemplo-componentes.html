@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo - PÃ¡gina com Componentes ReutilizÃ¡veis</title>
+
+    <!-- Bootstrap LOCAL -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Seu CSS (sempre depois do bootstrap) -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/font/rawline-400.ttf">
+</head>
+
+<body>
+
+    <div class="banner position-relative">
+        <!-- CONTAINER PARA A NAVBAR (CARREGADO VIA JAVASCRIPT) -->
+        <!-- Este container serÃ¡ preenchido automaticamente pelo component-loader.js -->
+        <div id="navbar-container"></div>
+
+        <picture>
+            <source srcset="../assets/images/bg_mobile.png" media="(max-width: 768px)">
+            <img src="../assets/images/bg_home.png" class="img-fluid w-100" alt="Banner">
+        </picture>
+    </div>
+
+    <!-- ESTRUTURA COM SIDEBAR -->
+    <div class="container-fluid p-0">
+        <!-- CONTAINER PARA O OVERLAY DA SIDEBAR (CARREGADO VIA JAVASCRIPT) -->
+        <div id="sidebar-overlay-container"></div>
+
+        <div class="row g-0 row-full">
+            <!-- CONTAINER PARA A SIDEBAR (CARREGADO VIA JAVASCRIPT) -->
+            <div id="sidebar-container"></div>
+
+            <!-- CONTEÃšDO PRINCIPAL DA PÃGINA -->
+            <main class="col-md-9 col-lg-10 main-content">
+                <div class="container my-5">
+                    <h1 class="text-center mb-4">PÃ¡gina de Exemplo</h1>
+                    <p class="textoconteudo col-lg-8 mx-auto">
+                        Esta Ã© uma pÃ¡gina de exemplo que demonstra como reutilizar os componentes
+                        de navegaÃ§Ã£o (navbar e sidebar) em qualquer pÃ¡gina do projeto.
+                    </p>
+                    <p class="textoconteudo col-lg-8 mx-auto">
+                        Os componentes sÃ£o carregados automaticamente via JavaScript, mantendo
+                        consistÃªncia e facilitando a manutenÃ§Ã£o do layout em todo o site.
+                    </p>
+                </div>
+
+                <!-- CONTEÃšDO ESPECÃFICO DA PÃGINA -->
+                <div class="container my-5">
+                    <h2>Como Usar os Componentes</h2>
+                    <ol>
+                        <li>Adicione os containers HTML nos locais apropriados</li>
+                        <li>Inclua o script component-loader.js no final do body</li>
+                        <li>Os componentes serÃ£o carregados automaticamente</li>
+                    </ol>
+                </div>
+
+                <!-- FOOTER -->
+                <footer class="py-4 mt-5">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center text-center">
+                            <div class="col-6 col-md-3 mb-3 mb-md-0">
+                                <img src="../assets/images/Logo_CVF.png" class="img-fluid footer-logo" alt="Logo 1">
+                            </div>
+                            <div class="col-6 col-md-3 mb-3 mb-md-0">
+                                <img src="../assets/images/Logo_Fiocruz.png" class="img-fluid footer-logo" alt="Logo 2">
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <!-- TARJA FINAL -->
+    <div class="container-fluid p-0 text-center tarja-container">
+        <img src="../assets/images/tarja_1920.png" class="img-fluid w-100 traja-img" alt="Traja">
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="../js/menu.js"></script>
+    <script src="../js/page-transitions.js"></script>
+    <script src="../js/accessibility.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- COMPONENT LOADER: Carrega navbar e sidebar reutilizÃ¡veis -->
+    <script src="../js/component-loader.js"></script>
+
+</body>
+</html>

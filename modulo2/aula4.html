@@ -1,0 +1,1239 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto Fiocruz</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../assets/font/rawline-400.ttf">
+    </head>
+
+    <body class="modulo2-page">
+        <div class="banner lesson-banner position-relative">
+            <nav
+                class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0">
+                <div class="container-fluid">
+                    <div
+                        class="navbar-brand logo-right-wrap d-flex align-items-center">
+                        <button class="mobile-sidebar-toggle me-3"
+                            id="mobileSidebarToggle"
+                            aria-label="Abrir menu lateral"
+                            type="button" aria-expanded="false">
+                            <svg class="sidebar-arrow-icon" viewBox="0 0 24 24"
+                                aria-hidden="true" focusable="false">
+                                <path class="sidebar-arrow-stem"
+                                    d="M5 12H17"></path>
+                                <path class="sidebar-arrow-head"
+                                    d="M12 7L17 12L12 17"></path>
+                            </svg>
+                        </button>
+                        <a class="logo-home-link" href="../index.html"></a>
+                        <img src="../assets/images/Logo_CVF.png" height="60"
+                            class="logo-move logo-right"
+                            alt="Campus Virtual Fiocruz"
+                            style="max-width: 59%">
+                    </div>
+
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#menuTopo"
+                        aria-label="Abrir menu de navegação">
+                        <span class="top-menu-dots">&vellip;</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end"
+                        id="menuTopo">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../index.html">Início</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../bibliografia/bibliografia.html">Refer&ecirc;ncias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../material/materialcomplementar.html">Material Complementar</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../glossario/glossario.html">Glossário</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../creditos/creditos.html">Créditos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="banner-title-wrap">
+                <p class="banner-module">Módulo 2<br>Aula 4</p>
+                <h1 class="banner-title">Avaliação e feedbacks na Educação a Distância</h1>
+            </div>
+
+            <picture aria-hidden="true">
+                <source srcset="../assets/imgmod2/banner_mod_2_mobile.png"
+                    media="(max-width: 768px)">
+                <img src="../assets/imgmod2/banner_mod_2.png"
+                    class="img-fluid w-100" alt="">
+            </picture>
+        </div>
+
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <div class="container-fluid p-0">
+            <div class="row g-0 row-full">
+                <aside class="col-12 col-md-2 sidebar">
+                    <div class="menu-item" onclick="toggleMenu('mod1')">
+                        <h3>Módulo 1</h3>
+                        <p> - A EAD e o desenvolvimento de<br> cursos
+                            autoinstrucionais</p>
+                    </div>
+                    <div class="submenu" id="mod1">
+                        <a href="../modulo1/aula1.html"
+                            class="submenu-aula-longa"><span
+                                class="submenu-aula-numero">Aula
+                                1.1</span><span class="submenu-aula-titulo">–
+                                Contextualização de<br>EAD (ensino
+                                híbrido,<br>ensino on-line,<br>ensino
+                                presencial) e a<br>produção de
+                                cursos<br>autoinstrucionais</span></a>
+                        <a href="../modulo1/aula2.html"><span
+                                class="submenu-aula-numero">Aula 1.2</span><span
+                                class="submenu-aula-titulo">– Elaboração
+                                de<br>conteúdo para
+                                curso<br>autoinstrucional</span></a>
+                        <a href="../modulo1/aula3.html"><span
+                                class="submenu-aula-numero">Aula 1.3</span><span
+                                class="submenu-aula-titulo">– A criação
+                                de<br>Storyboards e a<br>relação com
+                                a<br>Designer Educacional</span></a>
+                        <a href="../modulo1/aula4.html"><span
+                                class="submenu-aula-numero">Aula 1.4</span><span
+                                class="submenu-aula-titulo">– Publicações
+                                on-line:<br>Mooc, Moodle e<br>linguagem
+                                HTML</span></a>
+                    </div>
+
+                    <div class="menu-item" onclick="toggleMenu('mod2')">
+                        <h3>Módulo 2</h3>
+                        <p> - Criação do Material Didático Digital</p>
+                    </div>
+                    <div class="submenu open" id="mod2">
+                        <a href="../modulo2/aula1.html"><span
+                                class="submenu-aula-numero">Aula 2.1</span><span
+                                class="submenu-aula-titulo">– O
+                                material<br>didático digital</span></a>
+                        <a href="../modulo2/aula2.html"><span
+                                class="submenu-aula-numero">Aula 2.2</span><span
+                                class="submenu-aula-titulo">– O processo
+                                de<br>planejamento do<br>material
+                                didático</span></a>
+                        <a href="../modulo2/aula3.html"><span
+                                class="submenu-aula-numero">Aula 2.3</span><span
+                                class="submenu-aula-titulo">– O processo
+                                de<br>produção textual<br>e
+                                acessibilidade</span></a>
+                        <a href="../modulo2/aula4.html"><span
+                                class="submenu-aula-numero">Aula 2.4</span><span
+                                class="submenu-aula-titulo">– Avaliação
+                                e<br>feedbacks no EAD</span></a>
+                    </div>
+
+                    <a href="../material/materialcomplementar.html" class="menu-item menu-material-complementar sidebar-material-link">
+                        <h3>Material Complementar</h3>
+                    </a>
+                </aside>
+
+                <main class="col-12 col-md-10 main-content">
+                    <div
+                        class="container introducao-aula aula3-content modulo2-aula4-content">
+                        <section class="objectives">
+                            <h1 class="titulo-secao mb-4">Avaliação e feedbacks
+                                no EaD</h1>
+                        </section>
+
+                        <section class="objectives">
+                            <h2
+                                class="text-start col-lg-8 mx-auto font-rawline-bold aula2-section-title">Objetivos
+                                de aprendizagem</h2>
+                            <p
+                                class="textoconteudo col-lg-8 mx-auto aula2-objectives-intro">Ao
+                                final desta aula você poderá:</p>
+                            <div class="col-lg-8 mx-auto">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula4/check_2.png"
+                                                alt="Ícone de check"
+                                                class="aula2-check-icon"></div>
+                                        <p class="textoconteudo">Compreender o
+                                            conceito de avaliação da
+                                            aprendizagem e as modalidades
+                                            aplicadas em EaD.</p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula4/check_2.png"
+                                                alt="Ícone de check"
+                                                class="aula2-check-icon"></div>
+                                        <p class="textoconteudo">Reconhecer a
+                                            importância e os tipos de Feedbacks
+                                            na aprendizagem em EaD.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="modulo2-aula4-section">
+                            <h2
+                                class="text-start col-lg-8 mx-auto font-rawline-bold aula2-section-title">Conceito
+                                e modalidades de avaliação no EaD</h2>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Quando
+                                questionamos gestores, professores e estudantes
+                                sobre sua concepção ou entendimento de
+                                avaliação, a maioria deles associa o termo a
+                                notas, testes, provas, exames, aprovação,
+                                reprovação e outros conceitos relacionados.
+                                Essas ideias refletem a forma como, no dia a
+                                dia, compreendemos a avaliação no contexto do
+                                ensino presencial.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Tradicionalmente,
+                                no meio educacional “avaliar” significa utilizar
+                                instrumentos e ferramentas para mensurar o
+                                conhecimento dos estudantes de um curso,
+                                verificando o grau de conformidade com alguns
+                                objetivos traçados em um determinado espaço de
+                                tempo.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Sendo
+                                assim, estamos diante de um imenso desafio: como
+                                avaliar os alunos na modalidade a distância e
+                                ainda romper com a cultura tradicional que
+                                permeia o processo avaliativo?</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Na
+                                modalidade de EaD, a avaliação ganha
+                                configurações diferentes, tendo em vista a
+                                distância física entre educador e educando. Por
+                                esse motivo, avaliar no ensino online requer
+                                constante interação entre os sujeitos envolvidos
+                                no processo, para que assim os indivíduos sejam
+                                integralmente formados.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                avaliação da aprendizagem em educação a
+                                distância (EaD) deve estar vinculada a um
+                                processo contínuo de acompanhamento dos
+                                estudantes. O objetivo é que eles possam
+                                desenvolver competências, habilidades e
+                                atitudes, e que consigam alcançar os objetivos
+                                propostos no Projeto Pedagógico do Curso.</p>
+
+                            <h2
+                                class="text-start col-lg-8 mx-auto font-rawline-bold aula2-section-title">Modalidades
+                                de avaliação: diagnóstica, formativa e
+                                somativa</h2>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Para
+                                Haydt (2008), a avaliação apresenta basicamente
+                                três funções:</p>
+
+                            <div
+                                class="modulo2-aula4-function-grid col-lg-8 mx-auto">
+                                <article>
+                                    <img
+                                        src="../assets/imgmod2/aula4/Card_Hover_1.png"
+                                        alt="Diagnosticar">
+                                </article>
+                                <article>
+                                    <img
+                                        src="../assets/imgmod2/aula4/Card_Hover_2.png"
+                                        alt="Controlar">
+                                </article>
+                                <article>
+                                    <img
+                                        src="../assets/imgmod2/aula4/Card_Hover_3.png"
+                                        alt="Classificar">
+                                </article>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Relacionadas
+                                a essas três funções, existem três modalidades
+                                de avaliação.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Agora,
+                                vamos entender como esse processo acontece na
+                                prática. A seguir, apresentamos uma
+                                representação do processo avaliativo, que pode
+                                ser aplicado tanto no ensino presencial quanto
+                                na educação a distância.</p>
+
+                            <figure
+                                class="modulo2-aula4-modalidades mx-auto">
+                                <img
+                                    src="../assets/imgmod2/aula4/modalidades.png"
+                                    alt="Modalidades de avaliação: diagnóstica, formativa e somativa.">
+                                <figcaption class="textolegenda">Fonte: Campus
+                                    virtual Fiocruz, gerado por meio da
+                                    ferramenta OpenAI (ChatGPT).</figcaption>
+                            </figure>
+
+                            <h2 class="titulo-secao">Avaliação diagnóstica</h2>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                avaliação diagnóstica é aquela realizada no
+                                início de uma série ou conteúdo para verificar
+                                os conhecimentos de cada estudante e se ele
+                                possui ou não conhecimentos e habilidades
+                                imprescindíveis para as novas aprendizagens. Ela
+                                subsidia o (re)planejamento e a organização de
+                                sequências didáticas e de ações e permite
+                                estabelecer o nível de necessidades iniciais
+                                para a realização de um planejamento adequado,
+                                que deverá ser discutido e constantemente
+                                analisado.</p>
+
+                            <div
+                                class="modulo2-callout modulo2-aula4-callout col-lg-8 mx-auto">
+                                <p>A avaliação diagnóstica é importante porque
+                                    permite que o professor identifique
+                                    dificuldades de aprendizagem e adapte o
+                                    plano pedagógico. Com isso, o estudante pode
+                                    ter um aprendizado mais eficaz e atingir
+                                    novos patamares de competência.</p>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                avaliação diagnóstica em educação a distância
+                                (EaD) pode ser feita por meio de:</p>
+
+                            <div
+                                class="modulo2-aula4-icon-grid col-lg-8 mx-auto">
+                                <article><img
+                                        src="../assets/imgmod2/aula4/icon_questi.png"
+                                        alt="Questionários"><span>Questionários</span></article>
+                                <article><img
+                                        src="../assets/imgmod2/aula4/icon_exerc.png"
+                                        alt="Exercícios"><span>Exercícios</span></article>
+                                <article><img
+                                        src="../assets/imgmod2/aula4/icon_simula.png"
+                                        alt="Simulações"><span>Simulações</span></article>
+                                <article><img
+                                        src="../assets/imgmod2/aula4/icon_redacao.png"
+                                        alt="Redações"><span>Redações</span></article>
+                                <article><img
+                                        src="../assets/imgmod2/aula4/icon_debates.png"
+                                        alt="Debates"><span>Debates</span></article>
+                                <article><img
+                                        src="../assets/imgmod2/aula4/icon_entrevista.png"
+                                        alt="Entrevistas com estudantes"><span>Entrevistas
+                                        com<br>estudantes</span></article>
+                                <article><img
+                                        src="../assets/imgmod2/aula4/icon_historico.png"
+                                        alt="Análise do histórico escolar"><span>Análise
+                                        do<br>histórico escolar</span></article>
+                                <article><img
+                                        src="../assets/imgmod2/aula4/icon_grupo.png"
+                                        alt="Dinâmica de grupos"><span>Dinâmica<br>de
+                                        grupos</span></article>
+                                <article><img
+                                        src="../assets/imgmod2/aula4/icon_projet.png"
+                                        alt="Projetos práticos"><span>Projetos<br>práticos</span></article>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Nessa
+                                perspectiva, tais instrumentos avaliativos têm
+                                por objetivo:</p>
+                            <div
+                                class="modulo2-funcoes-box modulo2-aula4-list-box col-lg-8 mx-auto">
+                                <ul>
+                                    <li>Obter informações sobre as necessidades
+                                        e possibilidades de aprendizagem dos
+                                        estudantes sobre o conteúdo.</li>
+                                    <li>Obter informações sobre as
+                                        características individuais dos
+                                        alunos.</li>
+                                    <li>Verificar suas expectativas sobre o
+                                        curso.</li>
+                                    <li>Conhecer as razões para se matricularem
+                                        no curso.</li>
+                                    <li>Verificar as experiências e os
+                                        conhecimentos prévios adquiridos nos
+                                        assuntos que serão tratados no
+                                        curso.</li>
+                                    <li>Buscar informações em relação à fluência
+                                        no uso do computador e da internet.</li>
+                                    <li>Verificar o conhecimento e a experiência
+                                        com a plataforma por meio da qual o
+                                        curso
+                                        será desenvolvido.</li>
+                                    <li>Obter os dados sobre as características
+                                        sociodemográficas dos alunos.</li>
+                                    <li>Obter informações sobre o nível de
+                                        escolaridade ou acadêmico dos
+                                        estudantes, entre outros.</li>
+                                </ul>
+                            </div>
+
+                            <h2 class="titulo-secao">Avaliação formativa</h2>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                avaliação formativa é um processo contínuo que
+                                fornece feedback aos alunos para que eles possam
+                                melhorar o aprendizado.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Esse
+                                tipo de avaliação tem caráter essencialmente
+                                orientador, pois direciona tanto o percurso de
+                                aprendizagem do estudante quanto as estratégias
+                                pedagógicas adotadas pelo professor. Além disso,
+                                fornece dados para criar condições de melhoria
+                                do ensino, visando à aprendizagem, pois o
+                                processo não está finalizado.</p>
+                            <div
+                                class="modulo2-callout modulo2-aula4-callout col-lg-8 mx-auto">
+                                <p>A avaliação formativa é a mais significativa
+                                    em cursos ofertados na modalidade a
+                                    distância, uma vez que possibilita o
+                                    acompanhamento e a análise do aprendizado do
+                                    aluno, mediando seu percurso formativo em
+                                    busca do conhecimento.</p>
+                            </div>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                avaliação formativa possui as características a
+                                seguir, entre outras:</p>
+                            <div
+                                class="modulo2-funcoes-box modulo2-aula4-list-box col-lg-8 mx-auto">
+                                <ul>
+                                    <li>Tem como objetivo possibilitar que o
+                                        professor compreenda como o estudante
+                                        elabora e constrói seu próprio
+                                        conhecimento.</li>
+                                    <li>Pode ser feita com base em vários
+                                        instrumentos, conforme as aulas são
+                                        ministradas.</li>
+                                    <li>Os registros não podem ser
+                                        exclusivamente quantitativos,
+                                        com notas ou mesmo conceitos, mas em
+                                        forma de relatório e
+                                        anotações que definirão estratégias
+                                        posteriores e serão
+                                        socializadas nas reuniões do corpo
+                                        docente.</li>
+                                    <li>Não tem como objetivo principal a
+                                        definição de um conceito ou nota, mas o
+                                        desenvolvimento do aluno verificado
+                                        durante o processo.</li>
+                                    <li>Prevê que os estudantes têm ritmos e
+                                        processos de aquisição
+                                        de conhecimento diferentes, que permitem
+                                        tornar a progressão
+                                        da aprendizagem a partir das
+                                        necessidades e possibilidades
+                                        de cada estudante. </li>
+                                    <li>Propõe a necessidade de investigação do
+                                        conhecimento prévio
+                                        do estudante, para o (re)planejamento do
+                                        trabalho como um todo.</li>
+                                    <li>Permite a diversificação de formas de
+                                        agrupamento dos estudantes,
+                                        que atendem aos diferentes objetivos de
+                                        aprendizagem.</li>
+                                </ul>
+                            </div>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                avaliação formativa pode ser realizada por meio
+                                de:</p>
+                            <div
+                                class="modulo2-aula4-card-grid col-lg-8 mx-auto">
+                                <article><img
+                                        src="../assets/imgmod2/aula4/icon_testes.png"
+                                        alt
+                                        aria-hidden="true"><strong>Testes</strong></article>
+                                <article><img
+                                        src="../assets/imgmod2/aula4/icon_projects.png"
+                                        alt
+                                        aria-hidden="true"><strong>Projetos</strong></article>
+                                <article><img
+                                        src="../assets/imgmod2/aula4/icon_trab.png"
+                                        alt
+                                        aria-hidden="true"><strong>Trabalhos<br>em
+                                        grupo</strong></article>
+                                <article><img
+                                        src="../assets/imgmod2/aula4/icon_aula.png"
+                                        alt
+                                        aria-hidden="true"><strong>Discussões
+                                        em<br>sala de aula</strong></article>
+                            </div>
+
+                            <h2 class="titulo-secao">Avaliação somativa</h2>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                avaliação somativa tem por objetivo avaliar o
+                                desempenho dos estudantes ao final de um período
+                                de ensino. O principal aspecto enfatizado nesse
+                                tipo de avaliação é classificá-los de acordo com
+                                seu nível de aproveitamento.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Como
+                                podemos utilizar a avaliação somativa em
+                                educação a distância, não focando exclusivamente
+                                em sua função classificatória e de mensuração,
+                                buscando utilizá-la para desenvolver habilidades
+                                cognitivas mais complexas nos alunos?</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Para
+                                (re)significar a utilização da avaliação
+                                somativa,
+                                seja no ensino presencial ou
+                                a distância, é preciso que o professor considere
+                                a avaliação em seu verdadeiro
+                                sentido, ou seja, o de fazer parte do processo
+                                de ensino e aprendizagem, porque não
+                                podemos propiciar a aprendizagem se não
+                                estivermos constantemente avaliando
+                                as condições de interação com os estudantes e a
+                                concepção de ensinar e aprender
+                                que permeia a organização da prática pedagógica,
+                                especialmente na educação a
+                                distância.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Concebendo
+                                a avaliação como parte integrante do processo de
+                                ensinar e de aprender,
+                                a avaliação deixa de ser um momento final para
+                                se tornar uma busca visando à
+                                compreensão do educando e oportunizando a
+                                construção do conhecimento,
+                                levando-o a desenvolver estruturas cognitivas
+                                mais complexas durante seu percurso
+                                formativo.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">No
+                                entanto, essas estruturas devem ser
+                                desenvolvidas com a intervenção do professor,
+                                que, a partir da mediação, estimula e propicia
+                                condições para que o estudante elabore ou
+                                aperfeiçoe seu conhecimento.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Exemplos
+                                de avaliação somativa em educação a distância
+                                (EaD) incluem:</p>
+                            <div
+                                class="modulo2-funcoes-box modulo2-aula4-list-box col-lg-8 mx-auto">
+                                <ul>
+                                    <li>Questionários.</li>
+                                    <li>Avaliações bimestrais.</li>
+                                    <li>Avaliações semestrais.</li>
+                                    <li>Avaliação final.</li>
+                                    <li>Trabalhos finais.</li>
+                                    <li>Fóruns de discussão.</li>
+                                    <li>Produção de textos.</li>
+                                    <li>Lista de exercícios.</li>
+                                </ul>
+                            </div>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Para
+                                elaborar uma avaliação para um curso
+                                autoinstrucional no ensino a distância (EaD), é
+                                preciso considerar os objetivos educacionais do
+                                curso e as estratégias de avaliação recomendadas
+                                no Projeto pedagógico do curso.</p>
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Algumas
+                                dicas para elaborar uma avaliação em EaD
+                                são:</p>
+                            <div
+                                class="modulo2-funcoes-box modulo2-aula4-list-box col-lg-8 mx-auto">
+                                <ul>
+                                    <li>Considerar o ciclo de aprendizagem do
+                                        estudante.</li>
+                                    <li>Priorizar avaliações formativas e
+                                        diagnósticas.</li>
+                                    <li>Dividir as entregas avaliativas em
+                                        etapas.</li>
+                                    <li>Diversificar os instrumentos de
+                                        avaliação.</li>
+                                    <li>Considerar as diferentes formas de
+                                        construção do conhecimento.</li>
+                                    <li>Acompanhar o progresso dos
+                                        estudantes.</li>
+                                    <li>Identificar dificuldades de aprendizagem
+                                        e saná-las.</li>
+                                    <li>Estimular os estudantes a serem ativos
+                                        na construção do conhecimento.</li>
+                                </ul>
+                            </div>
+
+                            <h2 class="titulo-secao">A importância dos
+                                feedbacks<br>nas avaliações</h2>
+                            <div
+                                class="modulo2-aula4-feedback-grid col-lg-8 mx-auto">
+                                <p>As avaliações no processo educativo são de
+                                    suma importância, pois contribuem para que o
+                                    professor consiga ter um diagnóstico da
+                                    aprendizagem do estudante. Nesse sentido, a
+                                    resposta que o aluno dá ao professor é uma
+                                    percepção daquilo que ele aprendeu ou
+                                    aprenderá em sala de aula ou em outros
+                                    ambientes de aprendizagem.</p>
+                                <img
+                                    src="../assets/imgmod2/aula4/imagem_quali.png"
+                                    alt="Prancheta com estrelas e símbolo de avaliação.">
+                            </div>
+                            <div
+                                class="modulo2-callout modulo2-aula4-callout col-lg-8 mx-auto">
+                                <p>No processo de aprendizagem da educação à
+                                    distância, é incluído o feedback, termo
+                                    utilizado para designar uma ação do
+                                    estudante ao expressar sua motivação no
+                                    momento de aprendizagem ou algo que venha a
+                                    incomodar e que esteja impedindo uma boa
+                                    interação e percepção dos conteúdos
+                                    aprendidos.</p>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Segundo
+                                Flores (2009), todos que emitem uma mensagem
+                                sentem necessidade de feedback, seja acerca dos
+                                aspectos positivos ou da necessidade de
+                                melhorias. Nos modelos de educação a distância
+                                (EaD) que utilizam a internet como tecnologia
+                                principal ou de apoio, o professor que está no
+                                Ambiente Virtual de Aprendizagem diretamente em
+                                contato com os estudantes, pode utilizar o
+                                feedback para responder dúvidas, avaliar e
+                                desenvolver outras atividades inerentes à
+                                docência.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">De
+                                acordo com Flores (2009), o feedback é uma
+                                forma de comunicação entre as pessoas envolvidas
+                                nesse processo educacional, sendo um elemento
+                                essencial e transformador. Sendo assim, os
+                                elementos básicos da comunicação são: “a
+                                realidade ou situação em que ela se realiza e
+                                sobre a qual tem um efeito transformador; os
+                                interlocutores que dela participam; os conteúdos
+                                ou mensagens que elas compartilham; os signos
+                                que elas utilizam para representá-los; os meios
+                                que empregam para transmiti-lo.”</p>
+
+                            <div
+                                class="modulo2-aula4-prof-grid col-lg-8 mx-auto">
+                                <p>O feedback começou a ser utilizado na década
+                                    de 1940 pelo matemático estadunidense
+                                    Norbert Wiener para informar sobre os
+                                    processos eletrônicos em linguagem militar
+                                    e, desde então, se tornou um mecanismo de
+                                    grande importância nos espaços de trabalho,
+                                    bem como para o aprimoramento da formação
+                                    acadêmica, pois o retorno dado ao estudante
+                                    pode resultar positivamente em seu
+                                    aprendizado (Archer; Crispim; Cruz, 2016).
+                                    Segundo Padilha (2019), feedback é uma
+                                    palavra inglesa que significa “realimentar”
+                                    ou “dar resposta” a um determinado pedido ou
+                                    acontecimento.</p>
+                                <figure>
+                                    <img
+                                        src="../assets/imgmod2/aula4/imagem_prof.png"
+                                        alt="Norbert Wiener diante de um quadro.">
+                                    <figcaption>fonte:
+                                        Wikipedia.org</figcaption>
+                                </figure>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Reiterando,
+                                o feedback se constitui em um retorno dado pelo
+                                professor ao estudante no intuito de estabelecer
+                                não apenas uma comunicação, mas de contribuir
+                                para o melhoramento do desempenho do acadêmico
+                                durante seu processo de estudo e isso envolve,
+                                também, na qualidade de sua formação
+                                profissional. Em alguns contextos pode ser
+                                apresentado um retorno que contém uma mensagem
+                                positiva, sendo denominado de feedback positivo
+                                ou uma mensagem de teor negativo; nesse caso,
+                                considerado como feedback negativo. (Padilha,
+                                2019).</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Em
+                                educação à distância o feedback deve ser
+                                frequente, informando ao estudante sobre seu
+                                desempenho. Esse retorno se configura em algo
+                                indispensável no processo de avaliação a
+                                distância. Quando é utilizado de forma
+                                inadequada compromete o desempenho do estudante,
+                                que obterá um desempenho limitado, afetando sua
+                                atuação enquanto profissional. Desse modo, o
+                                feedback é importante porque contribui para
+                                identificar ao estudante como está seu
+                                desempenho em um curso ou disciplina.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">O
+                                bom desempenho do estudante estará relacionado
+                                ao tipo de informação e ao momento em que o
+                                feedback lhe será apresentado. O retorno pode
+                                ser imediato, por exemplo, assim que o estudante
+                                tenha realizado uma avaliação — o que chamamos
+                                de feedback imediato. Não necessariamente o
+                                retorno precisa ser imediato, podendo ser
+                                enviado após alguns dias ou semanas.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Nas
+                                páginas seguintes veremos alguns tipos de
+                                feedback.</p>
+
+                            <h2 class="titulo-secao">Tipos de feedback</h2>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">No
+                                contexto educacional, o feedback é um recurso
+                                fundamental para orientar o estudante em seu
+                                processo de aprendizagem. Para que esse retorno
+                                cumpra sua função formativa, é essencial
+                                compreender quais tipos de feedback são
+                                adequados e quais devem ser evitados,
+                                considerando-se suas características e impactos
+                                no desenvolvimento do estudante.</p>
+
+                            <p
+                                class="modulo2-aula4-slider-label col-lg-8 mx-auto">Feedbacks
+                                recomendados no processo educativo:</p>
+
+                            <div
+                                class="modulo2-competencias-slider modulo2-aula4-feedback-slider col-lg-8 mx-auto">
+                                <button type="button"
+                                    class="modulo2-slider-control modulo2-slider-prev"
+                                    aria-label="Feedback recomendado anterior">
+                                    <span aria-hidden="true">&lsaquo;</span>
+                                </button>
+
+                                <div class="modulo2-slider-track">
+                                    <article class="modulo2-slider-slide active"
+                                        aria-hidden="false">
+                                        <p><strong>Facilitador</strong><br>
+                                            Apresenta o erro identificado e
+                                            oferece comentários e orientações
+                                            sobre o que precisa ser revisto.
+                                            Ajuda o estudante a entender como
+                                            melhorar sua atividade e avançar em
+                                            seu aprendizado.</p>
+                                    </article>
+                                    <article class="modulo2-slider-slide"
+                                        aria-hidden="true">
+                                        <p><strong>Diretivo</strong><br>
+                                            Indica de forma objetiva o erro que
+                                            deve ser corrigido. É claro e
+                                            direto, comum na comunicação entre
+                                            professor e estudante, e eficiente
+                                            quando a orientação precisa ser
+                                            pontual.</p>
+                                    </article>
+                                    <article class="modulo2-slider-slide"
+                                        aria-hidden="true">
+                                        <p><strong>Formativo</strong><br>
+                                            É um recurso pedagógico essencial,
+                                            pois comunica informações que ajudam
+                                            o estudante a compreender seu
+                                            desempenho e ajustar seu
+                                            comportamento para melhorar a
+                                            aprendizagem (Archer; Crispim; Cruz,
+                                            2016). Dessa forma, contribui para
+                                            que o estudante compreenda seu
+                                            desempenho e identifique
+                                            possibilidades de aprimoramento.</p>
+                                    </article>
+                                </div>
+
+                                <button type="button"
+                                    class="modulo2-slider-control modulo2-slider-next"
+                                    aria-label="Próximo feedback recomendado">
+                                    <span aria-hidden="true">&rsaquo;</span>
+                                </button>
+
+                                <div class="modulo2-slider-dots"
+                                    aria-label="Selecionar feedback recomendado">
+                                    <button type="button" class="active"
+                                        aria-label="Mostrar feedback recomendado 1"
+                                        aria-current="true"></button>
+                                    <button type="button"
+                                        aria-label="Mostrar feedback recomendado 2"></button>
+                                    <button type="button"
+                                        aria-label="Mostrar feedback recomendado 3"></button>
+                                </div>
+                            </div>
+
+                            <p
+                                class="modulo2-aula4-slider-label col-lg-8 mx-auto">Feedbacks
+                                que não devem ser utilizados:</p>
+
+                            <div
+                                class="modulo2-competencias-slider modulo2-aula4-feedback-slider col-lg-8 mx-auto">
+                                <button type="button"
+                                    class="modulo2-slider-control modulo2-slider-prev"
+                                    aria-label="Feedback não recomendado anterior">
+                                    <span aria-hidden="true">&lsaquo;</span>
+                                </button>
+
+                                <div class="modulo2-slider-track">
+                                    <article class="modulo2-slider-slide active"
+                                        aria-hidden="false">
+                                        <p><strong>Insignificante</strong><br>
+                                            Não acrescenta informações
+                                            relevantes ao estudante. Geralmente
+                                            ocorre quando o retorno é usado para
+                                            desabafos ou comentários
+                                            irrelevantes, sem orientar ou
+                                            contribuir para o aprimoramento da
+                                            atividade, prejudicando o processo
+                                            de
+                                            aprendizagem e desviando o foco
+                                            pedagógico.</p>
+                                    </article>
+                                    <article class="modulo2-slider-slide"
+                                        aria-hidden="true">
+                                        <p><strong>Ofensivo</strong><br>
+                                            Traz características negativas e
+                                            inadequadas ao ambiente educacional.
+                                            Pode gerar constrangimento, afetar a
+                                            autoestima do aluno e comprometer
+                                            sua
+                                            aprendizagem. Não contribui para o
+                                            desenvolvimento acadêmico e não deve
+                                            ser utilizado em contextos
+                                            formativos.</p>
+                                    </article>
+                                </div>
+
+                                <button type="button"
+                                    class="modulo2-slider-control modulo2-slider-next"
+                                    aria-label="Próximo feedback não recomendado">
+                                    <span aria-hidden="true">&rsaquo;</span>
+                                </button>
+
+                                <div class="modulo2-slider-dots"
+                                    aria-label="Selecionar feedback não recomendado">
+                                    <button type="button" class="active"
+                                        aria-label="Mostrar feedback não recomendado 1"
+                                        aria-current="true"></button>
+                                    <button type="button"
+                                        aria-label="Mostrar feedback não recomendado 2"></button>
+                                </div>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">É
+                                importante que o estudante compreenda as
+                                observações do feedback. Para que isso ocorra
+                                ele deve ser claro, objetivo e de caráter
+                                incentivador a fim de que possam ser feitas as
+                                correções solicitadas. Outro fator importante a
+                                ser ponderado é a disponibilidade do estudante
+                                em realizar as correções. Caso contrário, o
+                                feedback não terá resultado satisfatório.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Vale
+                                ressaltar que, em educação a distância, o
+                                feedback se faz necessário, pois se trata de um
+                                recurso que possibilita a interação entre
+                                tutor/professor e estudante. No processo de
+                                avaliação a distância não é suficiente apenas o
+                                registro de uma avaliação. Por isso, o feedback
+                                se torna indispensável para uma finalização
+                                satisfatória do processo avaliativo, pois,
+                                enquanto futuro profissional, o estudante
+                                precisa saber como e em que poderá melhorar, de
+                                modo que o “feedback é um meio de
+                                aperfeiçoamento do desempenho” (Archer;
+                                Crispim; Cruz, 2016).</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Conforme
+                                Bianca Consoni, o feedback jamais pode ser
+                                expresso como uma opinião. Caso sejam utilizadas
+                                expressões como “não gostei” e “não é assim”,
+                                sempre deverão ser esclarecidas. O professor ou
+                                tutor precisa informar ao acadêmico os motivos
+                                dessas negativas. Por exemplo: “não gostei
+                                disso porque...” ou “não é assim, pois...” e
+                                assim sucessivamente. O emissor da mensagem deve
+                                esclarecer ao receptor em que ele errou e
+                                orientá-lo sobre qual é a melhor forma a ser
+                                empregada. Dessa forma, é importante que a
+                                mensagem promova uma comunicação esclarecedora e
+                                construtiva para o estudante. (Consoni,
+                                2010).</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Como
+                                o feedback precisa de objetividade e clareza, o
+                                tutor precisa sempre estar atento à
+                                sua escrita.
+                                Textos longos e rebuscados não são
+                                aconselháveis, o ideal é que o estudante possa
+                                receber uma mensagem com frases curtas e de
+                                fácil compreensão (Archer; Crispim; Cruz,
+                                2016).</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">O
+                                feedback deve ser constante, pois o desempenho
+                                positivo do ensino EaD está interligado à
+                                dinâmica dos retornos entre professor e
+                                estudante. Sendo assim, cabe ao emissor o papel
+                                de transmitir mensagens de orientação. Para
+                                isso, deve-se enviar ao acadêmico um feedback
+                                orientador, uma vez que não basta apenas um
+                                texto claro e objetivo.</p>
+
+                            <div
+                                class="modulo2-callout modulo2-aula4-callout col-lg-8 mx-auto">
+                                <p>Os cursos autoinstrucionais muitas vezes
+                                    incluem questionários, exercícios práticos e
+                                    avaliações para verificar a compreensão do
+                                    conteúdo. O feedback é imediato, pois as
+                                    atividades possuem correção
+                                    automatizada.</p>
+                            </div>
+
+                            <h2 class="titulo-secao modulo2-final-title">Você
+                                chegou ao final da<br>quarta aula do Módulo
+                                2</h2>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Nesta
+                                aula você aprendeu que a avaliação de
+                                aprendizagem em Educação a Distância (EaD) é
+                                uma ferramenta pedagógica que tem como função
+                                mensurar o desempenho e o progresso dos
+                                estudantes, fornecer feedback e ajudar os
+                                profissionais a adaptarem o conteúdo do curso às
+                                necessidades dos participantes.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                avaliação de aprendizagem na EaD ter papel
+                                semelhante ao de cursos presenciais, podendo ter
+                                configurações diferentes devido à distância
+                                entre o professor e o estudante. O processo deve
+                                ser contínuo e interativo para que os alunos
+                                sejam formados de forma integral.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Conheceu
+                                as modalidades de avaliação diagnóstica,
+                                formativa e somativa que podem ser aplicadas no
+                                ensino a distância (EaD). Cada uma delas tem uma
+                                função específica e é aplicada em um momento
+                                diferente do processo de
+                                ensino-aprendizagem.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Conheceu
+                                também os instrumentos que podem ser utilizados
+                                para avaliar o aprendizado dos alunos em cada
+                                uma das modalidades no ensino a distância
+                                (EaD).</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Além
+                                disso, é possível utilizar ferramentas
+                                tecnológicas para corrigir automaticamente as
+                                atividades e dar feedback aos estudantes.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Aprendeu
+                                também que o feedback é um retorno dado pelo
+                                professor para que os estudantes possam
+                                identificar seus pontos fortes e fracos e
+                                redirecionar o processo de aprendizagem.</p>
+
+                            <h2
+                                class="modulo2-check-heading col-lg-8 mx-auto">Conferindo
+                                a aprendizagem</h2>
+
+                            <section
+                                class="questionario-aprendizagem col-lg-8 mx-auto"
+                                aria-label="Questionário de aprendizagem">
+                                <article class="questao-card" data-correct="B">
+                                    <div class="questao-cabecalho">
+                                        <span class="questao-numero">Questão
+                                            1</span>
+                                        <p class="questao-objetivo">Objetivo:
+                                            Compreender o papel e as
+                                            características da avaliação
+                                            formativa em cursos
+                                            autoinstrucionais e mediados por
+                                            tecnologias.</p>
+                                    </div>
+                                    <p class="questao-enunciado">Qual das
+                                        alternativas a seguir melhor representa
+                                        a avaliação formativa no contexto da
+                                        Educação a Distância?</p>
+                                    <div class="questao-alternativas">
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="A"
+                                            data-feedback="Incorreta. Avaliação final com atribuição de nota corresponde à avaliação somativa."><strong>A)</strong>
+                                            É aplicada apenas ao final de um
+                                            módulo, sendo utilizada para
+                                            atribuir nota ou conceito
+                                            final.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="B"
+                                            data-feedback="Correta! A avaliação formativa é contínua, mediadora e tem função orientadora, sendo essencial em EaD."><strong>B)</strong>
+                                            É orientadora, contínua e busca
+                                            fornecer feedback para promover a
+                                            aprendizagem durante o
+                                            processo.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="C"
+                                            data-feedback="Incorreta. Essa é uma característica da avaliação diagnóstica e não da formativa."><strong>C)</strong>
+                                            É utilizada exclusivamente no início
+                                            do curso para mapear os
+                                            conhecimentos prévios dos
+                                            alunos.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="D"
+                                            data-feedback="Incorreta. A avaliação formativa prevê feedbacks frequentes e não pontuais ou únicos."><strong>D)</strong>
+                                            Consiste em uma única devolutiva do
+                                            professor ao aluno após a entrega de
+                                            um trabalho.</button>
+                                    </div>
+                                    <div class="questao-feedback"
+                                        aria-live="polite"></div>
+                                </article>
+
+                                <article class="questao-card" data-correct="C">
+                                    <div class="questao-cabecalho">
+                                        <span class="questao-numero">Questão
+                                            2</span>
+                                        <p class="questao-objetivo">Objetivo:
+                                            Reconhecer a importância e os tipos
+                                            de Feedbacks na aprendizagem em
+                                            EaD.</p>
+                                    </div>
+                                    <p class="questao-enunciado">Qual das
+                                        alternativas a seguir apresenta
+                                        corretamente um tipo de feedback
+                                        adequado ao contexto educacional e
+                                        voltado à formação do estudante?</p>
+                                    <div class="questao-alternativas">
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="A"
+                                            data-feedback="Incorreta. O feedback ofensivo é inadequado no ambiente educacional, pois gera constrangimento e não contribui para o desenvolvimento do aluno."><strong>A)</strong>
+                                            Feedback ofensivo, pois é direto e
+                                            impõe respeito ao professor diante
+                                            dos erros cometidos pelo
+                                            estudante.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="B"
+                                            data-feedback="Incorreta. O feedback insignificante desvia o foco do processo de aprendizagem, tornando-se irrelevante e prejudicando a comunicação formativa."><strong>B)</strong>
+                                            Feedback insignificante, porque
+                                            permite que o professor compartilhe
+                                            seus sentimentos e desabafos com os
+                                            estudantes.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="C"
+                                            data-feedback="Correta! O feedback diretivo é um tipo válido e comum no contexto educacional, pois orienta o aluno de forma clara sobre um ponto que deve ser corrigido."><strong>C)</strong>
+                                            Feedback diretivo, por apontar de
+                                            forma objetiva o erro que precisa
+                                            ser
+                                            corrigido.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="D"
+                                            data-feedback="Incorreta. Ainda que impactante, o feedback ofensivo é prejudicial e não tem lugar em ambientes de formação, porque pode humilhar o estudante e comprometer seu processo de aprendizagem."><strong>D)</strong>
+                                            Feedback ofensivo, porque corrige o
+                                            comportamento do estudante de forma
+                                            impactante e definitiva.</button>
+                                    </div>
+                                    <div class="questao-feedback"
+                                        aria-live="polite"></div>
+                                </article>
+                            </section>
+                        </section>
+
+                        <nav class="navegacao-aula col-lg-8 mx-auto"
+                            aria-label="Navegação da aula">
+                            <a href="../modulo2/aula3.html"
+                                class="botao-aula botao-voltar"
+                                aria-label="Voltar">
+                                <img
+                                    src="../assets/imgmod2/aula4/bt2_voltar_off.png"
+                                    alt aria-hidden="true">
+                            </a>
+                            <a href="../encerramento/encerramento.html"
+                                class="botao-aula botao-encerramento"
+                                aria-label="Encerramento">
+                                <img src="../assets/imgmod2/aula4/bt_5 off.png"
+                                    alt="Encerramento">
+                            </a>
+                        </nav>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <footer id="footer" class="py-4 mt-5">
+            <div class="container">
+                <div
+                    class="footer-logos row justify-content-center align-items-center text-center">
+                    <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                        <img src="../assets/images/Logo_CVF.png"
+                            class="footer-logo w-100"
+                            alt="Campus Virtual Fiocruz">
+                    </div>
+                    <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                        <img src="../assets/images/Logo_Fiocruz.png"
+                            class="footer-logo w-100"
+                            alt="Fundação Oswaldo Cruz">
+                    </div>
+                    <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                        <img src="../assets/images/Logos_Sus35_Ms_Gov.png"
+                            class="footer-logo w-100"
+                            alt="Logos do SUS, Ministério da Saúde e Governo Federal">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+        function toggleMenu(id) {
+            const menu = document.getElementById(id);
+            document.querySelectorAll('.submenu').forEach(el => {
+                if (el.id !== id) el.classList.remove('open');
+            });
+            if (menu) menu.classList.toggle('open');
+        }
+
+        const mobileToggle = document.getElementById('mobileSidebarToggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+        const sidebarClose = document.createElement('button');
+        sidebarClose.className = 'sidebar-close';
+        sidebarClose.type = 'button';
+        sidebarClose.setAttribute('aria-label', 'Fechar menu lateral');
+        sidebarClose.innerHTML = '&times;';
+
+        if (sidebar) {
+            const sidebarCloseTarget = sidebar.querySelector('.sticky-sidebar') || sidebar;
+            sidebarCloseTarget.prepend(sidebarClose);
+        }
+
+        if (mobileToggle && sidebar && overlay) {
+            mobileToggle.addEventListener('click', () => {
+                const isOpen = sidebar.classList.toggle('mobile-open');
+                overlay.classList.toggle('active', isOpen);
+                mobileToggle.classList.toggle('is-open', isOpen);
+                mobileToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
+
+        if (overlay && sidebar && mobileToggle) {
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('mobile-open');
+                overlay.classList.remove('active');
+                mobileToggle.classList.remove('is-open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        if (sidebarClose && sidebar && overlay && mobileToggle) {
+            sidebarClose.addEventListener('click', () => {
+                sidebar.classList.remove('mobile-open');
+                overlay.classList.remove('active');
+                mobileToggle.classList.remove('is-open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        document.querySelectorAll('.modulo2-competencias-slider').forEach(slider => {
+            const slides = slider.querySelectorAll('.modulo2-slider-slide');
+            const dots = slider.querySelectorAll('.modulo2-slider-dots button');
+            const previous = slider.querySelector('.modulo2-slider-prev');
+            const next = slider.querySelector('.modulo2-slider-next');
+            let currentSlide = 0;
+
+            if (!slides.length || !previous || !next) return;
+
+            const showSlide = index => {
+                currentSlide = (index + slides.length) % slides.length;
+
+                slides.forEach((slide, slideIndex) => {
+                    const isActive = slideIndex === currentSlide;
+                    slide.classList.toggle('active', isActive);
+                    slide.setAttribute('aria-hidden', String(!isActive));
+                });
+
+                dots.forEach((dot, dotIndex) => {
+                    const isActive = dotIndex === currentSlide;
+                    dot.classList.toggle('active', isActive);
+                    if (isActive) {
+                        dot.setAttribute('aria-current', 'true');
+                    } else {
+                        dot.removeAttribute('aria-current');
+                    }
+                });
+            };
+
+            previous.addEventListener('click', () => showSlide(currentSlide - 1));
+            next.addEventListener('click', () => showSlide(currentSlide + 1));
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => showSlide(index));
+            });
+        });
+
+        document.querySelectorAll('.questao-card').forEach(questao => {
+            const respostaCorreta = questao.dataset.correct;
+            const feedback = questao.querySelector('.questao-feedback');
+
+            questao.querySelectorAll('.questao-opcao').forEach(opcao => {
+                opcao.addEventListener('click', () => {
+                    const acertou = opcao.dataset.option === respostaCorreta;
+
+                    questao.querySelectorAll('.questao-opcao').forEach(item => {
+                        item.classList.remove('selecionada', 'correta', 'incorreta');
+                    });
+
+                    opcao.classList.add('selecionada', acertou ? 'correta' : 'incorreta');
+                    feedback.textContent = opcao.dataset.feedback;
+                    feedback.classList.remove('correto', 'incorreto');
+                    feedback.classList.add(acertou ? 'correto' : 'incorreto');
+                });
+            });
+        });
+    </script>
+
+        <div class="container-fluid p-0 text-center tarja-container">
+            <img src="../assets/imgmod2/aula4/tarja_1920.png"
+                class="img-fluid w-100 traja-img" alt aria-hidden="true">
+        </div>
+
+        <script src="../js/accessibility.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
