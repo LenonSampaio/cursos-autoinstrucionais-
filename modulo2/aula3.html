@@ -1,0 +1,1033 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto Fiocruz</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../assets/font/rawline-400.ttf">
+    </head>
+
+    <body class="modulo2-page">
+        <div class="banner lesson-banner position-relative">
+            <nav
+                class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0">
+                <div class="container-fluid">
+                    <div
+                        class="navbar-brand logo-right-wrap d-flex align-items-center">
+                        <button class="mobile-sidebar-toggle me-3"
+                            id="mobileSidebarToggle"
+                            aria-label="Abrir menu lateral"
+                            type="button" aria-expanded="false">
+                            <svg class="sidebar-arrow-icon" viewBox="0 0 24 24"
+                                aria-hidden="true" focusable="false">
+                                <path class="sidebar-arrow-stem"
+                                    d="M5 12H17"></path>
+                                <path class="sidebar-arrow-head"
+                                    d="M12 7L17 12L12 17"></path>
+                            </svg>
+                        </button>
+                        <a class="logo-home-link" href="../index.html"></a>
+                        <img src="../assets/images/Logo_CVF.png" height="60"
+                            class="logo-move logo-right"
+                            alt="Campus Virtual Fiocruz"
+                            style="max-width: 59%">
+                    </div>
+
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#menuTopo"
+                        aria-label="Abrir menu de navegação">
+                        <span class="top-menu-dots">&vellip;</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end"
+                        id="menuTopo">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../index.html">Início</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../bibliografia/bibliografia.html">Refer&ecirc;ncias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../material/materialcomplementar.html">Material Complementar</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../glossario/glossario.html">Glossário</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="../creditos/creditos.html">Créditos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="banner-title-wrap">
+                <p class="banner-module">Módulo 2<br>Aula 3</p>
+                <h1 class="banner-title">O processo de produção textual e acessibilidade</h1>
+            </div>
+
+            <picture aria-hidden="true">
+                <source srcset="../assets/imgmod2/banner_mod_2_mobile.png"
+                    media="(max-width: 768px)">
+                <img src="../assets/imgmod2/banner_mod_2.png"
+                    class="img-fluid w-100" alt="">
+            </picture>
+        </div>
+
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <div class="container-fluid p-0">
+            <div class="row g-0 row-full">
+                <aside class="col-12 col-md-2 sidebar">
+                    <div class="menu-item" onclick="toggleMenu('mod1')">
+                        <h3>Módulo 1</h3>
+                        <p> - A EAD e o desenvolvimento de<br> cursos
+                            autoinstrucionais</p>
+                    </div>
+                    <div class="submenu" id="mod1">
+                        <a href="../modulo1/aula1.html"
+                            class="submenu-aula-longa"><span
+                                class="submenu-aula-numero">Aula
+                                1.1</span><span class="submenu-aula-titulo">–
+                                Contextualização de<br>EAD (ensino
+                                híbrido,<br>ensino on-line,<br>ensino
+                                presencial) e a<br>produção de
+                                cursos<br>autoinstrucionais</span></a>
+                        <a href="../modulo1/aula2.html"><span
+                                class="submenu-aula-numero">Aula 1.2</span><span
+                                class="submenu-aula-titulo">– Elaboração
+                                de<br>conteúdo para
+                                curso<br>autoinstrucional</span></a>
+                        <a href="../modulo1/aula3.html"><span
+                                class="submenu-aula-numero">Aula 1.3</span><span
+                                class="submenu-aula-titulo">– A criação
+                                de<br>Storyboards e a<br>relação com
+                                a<br>Designer
+                                Educacional</span></a>
+                        <a href="../modulo1/aula4.html"><span
+                                class="submenu-aula-numero">Aula 1.4</span><span
+                                class="submenu-aula-titulo">– Publicações
+                                on-line:<br>Mooc, Moodle e<br>linguagem
+                                HTML</span></a>
+                    </div>
+
+                    <div class="menu-item" onclick="toggleMenu('mod2')">
+                        <h3>Módulo 2</h3>
+                        <p> - Criação do Material Didático Digital</p>
+                    </div>
+                    <div class="submenu open" id="mod2">
+                        <a href="../modulo2/aula1.html"><span
+                                class="submenu-aula-numero">Aula 2.1</span><span
+                                class="submenu-aula-titulo">– O
+                                material<br>didático digital</span></a>
+                        <a href="../modulo2/aula2.html"><span
+                                class="submenu-aula-numero">Aula 2.2</span><span
+                                class="submenu-aula-titulo">– O processo
+                                de<br>planejamento do<br>material
+                                didático</span></a>
+                        <a href="../modulo2/aula3.html"><span
+                                class="submenu-aula-numero">Aula 2.3</span><span
+                                class="submenu-aula-titulo">– O processo
+                                de<br>produção textual<br>e
+                                acessibilidade</span></a>
+                        <a href="../modulo2/aula4.html"><span
+                                class="submenu-aula-numero">Aula 2.4</span><span
+                                class="submenu-aula-titulo">– Avaliação
+                                e<br>feedbacks no EAD</span></a>
+                    </div>
+
+                    <a href="../material/materialcomplementar.html" class="menu-item menu-material-complementar sidebar-material-link">
+                        <h3>Material Complementar</h3>
+                    </a>
+                </aside>
+
+                <main class="col-12 col-md-10 main-content">
+                    <div
+                        class="container introducao-aula aula3-content modulo2-aula3-content">
+                        <section class="objectives">
+                            <h1 class="titulo-secao mb-4">O processo de
+                                produção<br>textual e acessibilidade</h1>
+                        </section>
+
+                        <section class="objectives">
+                            <h2
+                                class="text-start col-lg-8 mx-auto font-rawline-bold aula2-section-title">Objetivos
+                                de aprendizagem</h2>
+                            <p
+                                class="textoconteudo col-lg-8 mx-auto aula2-objectives-intro">Ao
+                                final desta aula você poderá:</p>
+                            <div class="col-lg-8 mx-auto">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula3/check_2.png"
+                                                alt="" aria-hidden="true"
+                                                class="aula2-check-icon"></div>
+                                        <p class="textoconteudo">Compreender a
+                                            importância da acessibilidade nos
+                                            recursos em EaD.</p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula3/check_2.png"
+                                                alt="" aria-hidden="true"
+                                                class="aula2-check-icon"></div>
+                                        <p class="textoconteudo">Reconhecer a
+                                            linguagem utilizada na produção de
+                                            textos para EaD.</p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula3/check_2.png"
+                                                alt="" aria-hidden="true"
+                                                class="aula2-check-icon"></div>
+                                        <p class="textoconteudo">Conhecer os
+                                            elementos mediadores do material
+                                            didático na produção de textos para
+                                            EaD.</p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula3/check_2.png"
+                                                alt="" aria-hidden="true"
+                                                class="aula2-check-icon"></div>
+                                        <p class="textoconteudo">Apresentar
+                                            exemplos de recursos instrucionais
+                                            que ajudam no processo de ensino e
+                                            aprendizagem.</p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3"><img
+                                                src="../assets/imgmod2/aula3/check_2.png"
+                                                alt="" aria-hidden="true"
+                                                class="aula2-check-icon"></div>
+                                        <p class="textoconteudo">Conhecer os
+                                            recursos que podem ser aplicados na
+                                            produção do material didático para
+                                            EaD.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="modulo2-aula3-section">
+                            <h2 class="titulo-secao">A linguagem utilizada no
+                                EaD</h2>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">O
+                                que fez você se sentir mais engajado: o conteúdo
+                                ou a forma como ele foi apresentado?</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Como
+                                já vimos, o conteúdo na Educação a Distância
+                                (EaD) é fundamental para a construção do
+                                conhecimento e para a comunicação com o aluno;
+                                no entanto, o material deve ser produzido
+                                considerando-se mais do que apenas o currículo
+                                de um curso.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Afinal,
+                                as informações são de fato compreendidas pelos
+                                estudantes somente quando a comunicação é
+                                adequada ao meio de transmissão e ao
+                                público-alvo. É por isso que seguir a linguagem
+                                dialógica é regra em EaD.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">E
+                                o que é essa linguagem dialógica?</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Vamos
+                                pensar juntos?<br>A linguagem dialógica — seja
+                                escrita, visual ou audiovisual — é uma forma de
+                                comunicação muito usada em EaD. Ela nasce da
+                                união entre o conceito de linguagem, entendida
+                                como a capacidade humana de expressar
+                                sentimentos, desejos, opiniões e informações em
+                                diferentes culturas, e o conceito de
+                                dialogicidade, que envolve construir e refletir
+                                por meio do diálogo. Nessa perspectiva, a
+                                interação é o caminho pelo qual o conhecimento é
+                                construído, já que a linguagem funciona como um
+                                meio que aproxima o sujeito do objeto de estudo.</p>
+
+                            <figure
+                                class="aula3-figure col-lg-8 mx-auto modulo2-aula3-figure">
+                                <img src="../assets/imgmod2/aula3/imagem_132.png"
+                                    alt="Ilustração de uma professora conversando com um estudante em ambiente virtual de aprendizagem, com balões de diálogo que estimulam interação e reflexão.">
+                                <figcaption class="textolegenda">Fonte: Gerada
+                                    por inteligência artificial - DALL-E
+                                    (2026).</figcaption>
+                            </figure>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Na
+                                produção de materiais didáticos, utiliza-se a
+                                chamada Linguagem Dialógica Instrucional. Por
+                                meio dela, os professores conteudistas organizam
+                                o conteúdo como se estivessem conversando
+                                continuamente com o aluno, mantendo um tom
+                                acolhedor e motivador. Esse diálogo inclui
+                                orientações sobre o que fazer e busca sempre
+                                incentivar, fortalecer e apoiar o estudante
+                                (Laaser, 1997).</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Agora
+                                reflita: o seu material atual conversa com o
+                                estudante ou apenas informa?</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Ao
+                                reconhecer que a linguagem é um elemento que
+                                motiva e sensibiliza o aluno, o professor que
+                                elabora o material deve priorizar um modo de
+                                escrever claro e direto. Pode usar verbos no
+                                imperativo, desde que isso não soe como
+                                imposição ou agressividade.</p>
+
+                            <div
+                                class="quote-card modulo2-saiba-mais modulo2-aula3-card col-lg-8 mx-auto">
+                                <div class="quote-accent-line"></div>
+                                <div class="quote-icon-wrapper d-flex">
+                                    <img
+                                        src="../assets/imgmod2/aula3/bx2_importante.png"
+                                        alt="" aria-hidden="true"
+                                        class="quote-img">
+                                </div>
+                                <div class="quote-content">
+                                    <h3 class="quote-title">Importante</h3>
+                                    <p>A linguagem dialógica é o elemento que
+                                        cria a interação direta entre o professor
+                                        (ou qualquer outro docente que utilizar
+                                        o mesmo material) e o estudante,
+                                        aproximando o aluno tanto do conteúdo
+                                        quanto do responsável pelo componente
+                                        curricular.</p>
+                                </div>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Então,
+                                como inserir a linguagem dialógica no conteúdo
+                                para EaD?</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                linguagem dialógica usa palavras que indicam
+                                interação. Por exemplo, em vez de escrever
+                                “Semiótica e suas aplicações” em um material
+                                didático ou ambiente virtual de aprendizagem
+                                (AVA), os autores podem optar pela seguinte
+                                alternativa:</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">“Olá!
+                                Meu nome é Irene. Durante esta atividade eu vou
+                                explicar para você o conceito de semiótica e em
+                                quais situações do dia a dia ela pode ser usada.
+                                Vamos lá? Clique no botão Seguir para começar.”</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Também
+                                é possível usar frases como:</p>
+
+                            <div
+                                class="modulo2-funcoes-box modulo2-aula3-list-box col-lg-8 mx-auto">
+                                <ul>
+                                    <li>“Você deve estar se perguntando: e o que
+                                        eu faço com isso?”</li>
+                                    <li>“Não se preocupe, vou te ajudar a
+                                        entender.”</li>
+                                    <li>No artigo “Linguagem Dialógica
+                                        Instrucional: a (re)construção da
+                                        linguagem para cursos online”, os
+                                        autores dão dicas sobre a produção de
+                                        conteúdos escritos e falados usando a
+                                        linguagem dialógica.</li>
+                                    <li>Usar sentenças curtas e evitar as
+                                        compostas.</li>
+                                    <li>Evitar excesso de informações em cada
+                                        frase.</li>
+                                    <li>Usar voz ativa e pronomes pessoais.</li>
+                                    <li>Manter itens iguais ou equivalentes em
+                                        paralelo e listar as condições
+                                        separadamente.</li>
+                                    <li>Usar exemplos familiares ao
+                                        público-alvo.</li>
+                                    <li>Escrever de forma similar à linguagem
+                                        falada.</li>
+                                    <li>Evitar jargões e palavras difíceis e
+                                        desnecessárias.</li>
+                                    <li>Utilizar termos técnicos somente quando
+                                        necessário e, se possível, acompanhados
+                                        de explicações.</li>
+                                    <li>Colocar as sentenças e parágrafos em uma
+                                        sequência lógica: primeiro as coisas que
+                                        sensibilizam ou são contextualizadas por
+                                        muitos e depois as que contam com baixa
+                                        sensibilização e contextualização;
+                                        primeiro o geral, depois o específico;
+                                        primeiro os conceitos permanentes,
+                                        depois os temporários.</li>
+                                </ul>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Outro
+                                material útil para aprender a inserir a
+                                linguagem dialógica e o dialogismo nos conteúdos
+                                do ensino a distância é o Manual do Dialogismo
+                                sobre o tema elaborado pela Uniasselvi em 2019.
+                                O documento instrui os autores a:</p>
+
+                            <div
+                                class="modulo2-funcoes-box modulo2-aula3-list-box modulo2-aula3-list-box-small col-lg-8 mx-auto">
+                                <ul>
+                                    <li>Escrever textos simples e sem
+                                        complexidade, porém não simplórios.</li>
+                                    <li>Usar citações, alusões e desenvolver a
+                                        estilização, mas sem perder a essência e
+                                        a sua personalidade de produtor textual.</li>
+                                    <li>Inserir nas referências somente as
+                                        fontes efetivamente usadas.</li>
+                                </ul>
+                            </div>
+
+                            <div
+                                class="quote-card modulo2-saiba-mais modulo2-aula3-card col-lg-8 mx-auto">
+                                <div class="quote-accent-line"></div>
+                                <div class="quote-icon-wrapper d-flex">
+                                    <img
+                                        src="../assets/imgmod2/aula3/bx2_saibamais.png"
+                                        alt="" aria-hidden="true"
+                                        class="quote-img">
+                                </div>
+                                <div class="quote-content">
+                                    <h3 class="quote-title">Saiba mais</h3>
+                                    <p>Consulte o <a href="https://conteudos.uniasselvi.com.br/edtech/docs/manual_dialogismo.pdf" target="_blank"
+                                            rel="noopener">Manual do
+                                            Dialogismo</a> nas páginas 10 a 14
+                                        para conferir exemplos de como aplicar
+                                        dialogismo na produção de textos.</p>
+                                </div>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Sem
+                                interações presenciais, a linguagem dialógica é
+                                a principal ferramenta de interação entre o
+                                professor e os alunos em boa parte dos cursos.
+                                Por meio dela é que o fio condutor da explicação
+                                do conteúdo se desenrola, por isso ela deve
+                                estar em profunda sintonia com as realidades
+                                vividas pelos estudantes, incluindo a forma de
+                                apresentação do conteúdo.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">No
+                                artigo “A utilização da linguagem na elaboração
+                                do material didático para a EaD” as autoras
+                                Percilio e Oliveira (2018) chamam a atenção para
+                                a utilização de alguns elementos mediadores
+                                entre o estudante e o conhecimento a ser
+                                transmitido, conforme tabela a seguir.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">A
+                                linguagem, portanto, exerce esse papel mediador
+                                e deve ser objeto de atenção na produção do
+                                material didático. Ao produzir o seu texto, você
+                                considera apenas o conteúdo ou também a forma
+                                como ele mobiliza o pensamento do estudante?
+                                Observe os elementos a seguir e avalie o seu
+                                próprio material.</p>
+
+                            <div
+                                class="modulo2-aula3-table-wrap col-lg-8 mx-auto">
+                                <table class="modulo2-aula3-table">
+                                    <caption>Elementos mediadores do material didático a serem observados na produção do texto</caption>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2" scope="colgroup">Elementos mediadores
+                                                do material didático<br>a serem
+                                                observados na produção do texto</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Elementos de linguagem e
+                                                compreensão</th>
+                                            <td>O estilo do texto deve ser
+                                                dialógico, com linguagem
+                                                adequada ao seu público-alvo, no
+                                                que diz respeito à idade e nível
+                                                de escolaridade, e que permita
+                                                clara percepção de seu objetivo.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Elementos estruturantes</th>
+                                            <td>O texto deve guardar coerência e
+                                                coesão entre seções e conteúdos.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Elementos motivadores e
+                                                problematizadores</th>
+                                            <td>O texto deve ser um incentivador
+                                                ao processo metacognitivo,
+                                                estimulando pensamento e
+                                                questionamento. É nesse processo
+                                                que a aprendizagem pode ser
+                                                concretizada de forma
+                                                significativa.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Elementos de hipertextualidade e
+                                                contextualização</th>
+                                            <td>Textos não lineares que propõem
+                                                explicação dos termos aos quais
+                                                se referem.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Elementos reforçadores da
+                                                aprendizagem</th>
+                                            <td>Devem ser utilizados exemplos,
+                                                metáforas e analogias que
+                                                viabilizem uma melhor
+                                                compreensão do tema abordado. A
+                                                escrita deve ser dinâmica, com
+                                                utilização de mapas, charges,
+                                                tabelas, sempre relacionadas ao
+                                                texto, bem como conter indicação
+                                                de bibliografias, sites, vídeos.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="textolegenda">Fonte: UFPR (2020).</p>
+                            </div>
+
+                            <h2 class="titulo-secao">Os recursos
+                                instrucionais</h2>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Os
+                                recursos instrucionais são todas as ferramentas
+                                passíveis de serem utilizadas para complementar
+                                e ampliar o processo de ensino-aprendizagem e
+                                dar suporte à autonomia do estudante. Para
+                                compor o material didático de um curso EaD, é
+                                importante utilizarmos esses recursos, tendo em
+                                vista que chamam a atenção dos estudantes aos
+                                tópicos principais e destacam assuntos que podem
+                                ser explorados para além do material didático.</p>
+
+                            <figure
+                                class="aula3-figure col-lg-8 mx-auto modulo2-aula3-figure modulo2-aula3-resources-figure">
+                                <img src="../assets/imgmod2/aula3/imagem_232.png"
+                                    alt="Ilustração de recursos instrucionais usados em materiais didáticos digitais: atenção, saiba mais, assista, glossário, pesquise e mensagens de incentivo ao estudante.">
+                                <figcaption class="textolegenda">Fonte: Gerada
+                                    por inteligência artificial - DALL-E
+                                    (2026).</figcaption>
+                            </figure>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Com
+                                o objetivo de incentivar o aluno a buscar o
+                                conhecimento de maneira autônoma, sugerimos
+                                alguns recursos instrucionais entre os vários
+                                existentes.</p>
+
+                            <div
+                                class="modulo2-aula3-table-wrap col-lg-8 mx-auto">
+                                <table
+                                    class="modulo2-aula3-table modulo2-aula3-recursos-table">
+                                    <caption>Recursos instrucionais sugeridos para materiais didáticos em EaD</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Intenção</th>
+                                            <th scope="col">Recurso instrucional</th>
+                                            <th scope="col">Descrição</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-intencao">Destaque</td>
+                                            <td>Atenção</td>
+                                            <td>Destaque para algum aspecto ou
+                                                ponto do texto principal.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-intencao">Reflexão</td>
+                                            <td>Reflita</td>
+                                            <td>Provocação para que o leitor se
+                                                sinta instigado a refletir sob
+                                                um outro prisma o tema em
+                                                estudo.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-intencao" rowspan="3">Informação
+                                                Complementar</td>
+                                            <td>Saiba Mais</td>
+                                            <td>Informações complementares ou
+                                                curiosidades a respeito do tema
+                                                em estudo.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Glossário</td>
+                                            <td>Esclarecimento de termos e
+                                                conceitos.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Assista</td>
+                                            <td>Indicação de vídeos
+                                                explicativos, entrevistas,
+                                                palestras que aprofundem o tema
+                                                em discussão.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-intencao">Pesquisa</td>
+                                            <td>Pesquise</td>
+                                            <td>Comentários com alguma indicação
+                                                sobre como o tema estudado pode
+                                                se desdobrar em outros
+                                                caminhos.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="textolegenda">Fonte: UFPR (2020).</p>
+                            </div>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Qual
+                                desses recursos você utiliza com mais
+                                frequência?</p>
+
+                            <h2 class="titulo-secao">Acessibilidade dos
+                                materiais didáticos</h2>
+
+                            <div
+                                class="quote-card modulo2-saiba-mais modulo2-aula3-card modulo2-aula3-access-card mx-auto">
+                                <div class="quote-accent-line"></div>
+                                <div class="quote-icon-wrapper d-flex">
+                                    <img
+                                        src="../assets/imgmod2/aula3/bx2_saibamais.png"
+                                        alt="" aria-hidden="true"
+                                        class="quote-img">
+                                </div>
+                                <div class="quote-content">
+                                    <div>
+                                        <h3 class="quote-title">Saiba mais</h3>
+                                        <p>A Lei Brasileira de Inclusão da
+                                            Pessoa com Deficiência (<a
+                                                href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm"
+                                                target="_blank"
+                                                rel="noopener noreferrer">Lei nº
+                                                13.146/2015</a>), a LBI, Art. 27. A
+                                            educação constitui direito da pessoa
+                                            com deficiência, assegurados sistema
+                                            educacional inclusivo em todos os
+                                            níveis e aprendizado ao longo de toda
+                                            a vida, de forma a alcançar o máximo
+                                            desenvolvimento possível de seus
+                                            talentos e habilidades físicas,
+                                            sensoriais, intelectuais e sociais,
+                                            segundo suas características,
+                                            interesses e necessidades de
+                                            aprendizagem (BRASIL, 2015).</p>
+                                    </div>
+                                    <img
+                                        src="../assets/imgmod2/aula3/imagem_332.png"
+                                        alt="Conjunto de símbolos de acessibilidade, incluindo pessoa com deficiência física, Libras, deficiência auditiva, pessoa idosa e deficiência visual."
+                                        class="modulo2-aula3-access-symbols">
+                                </div>
+                            </div>
+
+                            <div class="modulo2-aula3-access-grid mx-auto">
+                                <img
+                                    src="../assets/imgmod2/aula3/imagem_phone.png"
+                                    alt="Ilustração de uma pessoa em atendimento remoto por computador, usando fones de ouvido e balões de conversa na tela.">
+                                <p
+                                    class="paragrafo-conteudo text-md-start modulo2-aula3-access-intro">Seja
+                                    qual for a escolha do docente sobre a
+                                    linguagem ou o modo de utilização para
+                                    dinamizar suas aulas, comunicação
+                                    interpessoal, comunicação escrita ou
+                                    comunicação virtual, é preciso que haja
+                                    acessibilidade comunicacional, isto é, que
+                                    não existam barreiras para a boa comunicação.</p>
+                                <p
+                                    class="paragrafo-conteudo text-md-start modulo2-aula3-access-fiocruz">A
+                                    Fiocruz lançou em 2023, o Guia de
+                                    Acessibilidade para as Ações Educativas da
+                                    Fiocruz, que tem o objetivo de subsidiar as
+                                    unidades técnico-científicas da instituição
+                                    na implementação de uma política interna de
+                                    promoção da acessibilidade em seus cursos e
+                                    iniciativas de educação.</p>
+                                <p
+                                    class="paragrafo-conteudo text-md-start modulo2-aula3-access-wide">De
+                                    modo geral, sempre que possível e/ou quando
+                                    necessário, todos os materiais e atividades
+                                    dos componentes curriculares de um curso com
+                                    carga horária — parcial ou integral — em EaD
+                                    devem ser acessíveis, a fim de atender a
+                                    diversos públicos, favorecendo e gerando
+                                    oportunidades para todos.</p>
+                                <p
+                                    class="paragrafo-conteudo text-md-start modulo2-aula3-access-wide">As
+                                    recomendações para atender a essas
+                                    diversidades são:</p>
+                            </div>
+
+                            <figure
+                                class="aula3-figure modulo2-aula3-figure modulo2-aula3-access-tools mx-auto">
+                                <img src="../assets/imgmod2/aula3/imagem_432.png"
+                                    alt="Ícones de recomendações de acessibilidade: leitor de tela, teclado adaptado, alto contraste e tamanho de fonte, Libras e legendas, e transcrição de áudio.">
+                                <figcaption class="textolegenda">Campus Virtual
+                                    Fiocruz, gerado por meio da ferramenta OpenAI
+                                    (ChatGPT).</figcaption>
+                            </figure>
+
+                            <div
+                                class="modulo2-aula3-access-notes mx-auto"
+                                aria-label="Recomendações de acessibilidade para materiais didáticos">
+                                <ul class="modulo2-aula3-access-list">
+                                    <li>As imagens devem ter descrição, falada ou escrita, garantindo a acessibilidade aos estudantes.</li>
+                                    <li>Os arquivos de áudio devem conter uma transcrição descritiva para quem possui dificuldades para ouvir;</li>
+                                    <li>Os vídeos devem ter legendas e/ou tradução em Libras.</li>
+                                    <li>Devem ser utilizadas tecnologias assistivas, como leitores de tela, versão acessível (Word, bloco de notas e PDF acessível), entre outras.</li>
+                                    <li>Deve ser promovido o contraste adequado entre o texto e o fundo da tela, para estudantes com baixa visão, além redimensionamento de textos e imagens para melhoria da leitura;</li>
+                                    <li>Disponibilizar uma explicação para siglas, abreviaturas e palavras incomuns: Ao menos na primeira ocorrência de siglas, abreviaturas ou palavras incomuns (ambíguas, desconhecidas ou utilizadas de forma muito específica), deve ser disponibilizada sua explicação ou forma completa. Essa explicação pode estar expressa no próprio texto, pode estar presente em um glossário ou, então, através da utilização do elemento <span class="modulo2-aula3-abbr-trigger" tabindex="0" role="button" aria-describedby="abbr-tooltip">abbr<span class="modulo2-aula3-abbr-note" role="tooltip">O elemento &lt;abbr&gt; é uma tag do HTML usada para marcar abreviações ou siglas dentro de um texto.</span></span>.</li>
+                                    <li>Descrever links clara e sucintamente: Deve-se identificar claramente o destino de cada link, informando, inclusive, se o link remete a outro sítio. Além disso, é preciso que o texto do link faça sentido mesmo quando isolado do contexto da página.</li>
+                                </ul>
+                                <div id="abbr-tooltip"
+                                    class="modulo2-aula3-abbr-note-mobile"
+                                    role="tooltip" hidden>O elemento &lt;abbr&gt; é uma tag do HTML usada para marcar abreviações ou siglas dentro de um texto.</div>
+                            </div>
+
+                            <figure
+                                class="modulo2-aula3-final-strip mx-auto">
+                                <div>
+                                    <img
+                                        src="../assets/imgmod2/aula3/lado_1.png"
+                                        alt="Tela de vídeo com descrição de imagem e recurso de áudio para acessibilidade.">
+                                    <img
+                                        src="../assets/imgmod2/aula3/lado_2.png"
+                                        alt="Pessoa com deficiência visual usando computador com leitor de telas.">
+                                    <img
+                                        src="../assets/imgmod2/aula3/lado_3.png"
+                                        alt="Interface com texto grande, alto contraste e controles de ajuste visual.">
+                                </div>
+                                <figcaption class="textolegenda">Fonte: Gerada
+                                    por inteligência artificial - DALL-E
+                                    (2026).</figcaption>
+                            </figure>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Revise
+                                seu último material produzido: ele atende a
+                                esses critérios?</p>
+
+                            <h2 class="titulo-secao mt-5">Você chegou ao final
+                                da<br class="d-none d-md-block"> terceira aula do
+                                Módulo 2</h2>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Nesta
+                                aula você compreendeu que a linguagem dialógica
+                                é um princípio essencial em Educação a Distância
+                                (EaD). Ao valorizar a comunicação e a interação
+                                entre estudante e conteúdo, essa abordagem
+                                favorece o engajamento, estimula a reflexão e
+                                contribui para o sucesso dos cursos online.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Entendeu
+                                que, na linguagem dialógica, o conteudista
+                                constrói o material como um diálogo com o aluno,
+                                utilizando uma escrita clara, acolhedora e
+                                encorajadora, que aproxima o estudante do
+                                conhecimento.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Também
+                                conheceu recursos instrucionais que auxiliam na
+                                organização do conteúdo de forma lógica,
+                                atrativa e coerente, incentivando a
+                                aprendizagem autônoma.</p>
+
+                            <p
+                                class="paragrafo-conteudo col-lg-8 mx-auto text-md-start">Além
+                                disso, reconheceu a importância da
+                                acessibilidade em materiais didáticos para EaD,
+                                garantindo que todos os estudantes tenham acesso
+                                equitativo às oportunidades de aprendizagem.
+                                Entre os recursos de acessibilidade que podem
+                                ser utilizados em plataformas digitais,
+                                destacam-se: legendas, audiodescrição,
+                                contraste adequado de texto, ajuste de tamanho
+                                de fonte e compatibilidade com leitores de tela.</p>
+
+                            <h2
+                                class="modulo2-check-heading col-lg-8 mx-auto">Conferindo
+                                a aprendizagem</h2>
+
+                            <section
+                                class="questionario-aprendizagem col-lg-8 mx-auto"
+                                aria-label="Questionário de aprendizagem">
+                                <article class="questao-card" data-correct="C">
+                                    <div class="questao-cabecalho">
+                                        <span class="questao-numero">Questão
+                                            1</span>
+                                        <p class="questao-objetivo">Objetivo:
+                                            Reconhecer a linguagem utilizada na
+                                            produção de textos para Educação a
+                                            Distância.</p>
+                                    </div>
+                                    <p class="questao-enunciado">A linguagem
+                                        dialógica em EaD é essencial porque:</p>
+                                    <div class="questao-alternativas"
+                                        role="group"
+                                        aria-label="Alternativas da questão 1">
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="A"
+                                            data-feedback="Incorreta. A linguagem dialógica visa reduzir o distanciamento, criando um ambiente de proximidade com o aluno."><strong>A)</strong>
+                                            Reforça o distanciamento entre aluno
+                                            e professor, mantendo uma postura
+                                            mais formal e objetiva.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="B"
+                                            data-feedback="Incorreta. O uso de termos difíceis prejudica a compreensão. A linguagem deve ser acessível, clara e motivadora."><strong>B)</strong>
+                                            Utiliza jargões técnicos e termos
+                                            rebuscados para valorizar o conteúdo
+                                            apresentado.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="C"
+                                            data-feedback="Correta! A linguagem dialógica aproxima o estudante do conteúdo e do docente, promovendo interação e engajamento."><strong>C)</strong>
+                                            Aproxima o aluno do conteúdo,
+                                            favorecendo a interação e o processo
+                                            de aprendizagem.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="D"
+                                            data-feedback="Incorreta. A EaD valoriza o uso de recursos variados e a linguagem dialógica não substitui, mas sim complementa esses recursos."><strong>D)</strong>
+                                            Substitui o uso de recursos visuais
+                                            e audiovisuais por textos mais densos
+                                            e complexos.</button>
+                                    </div>
+                                    <div class="questao-feedback"
+                                        aria-live="polite"></div>
+                                </article>
+
+                                <article class="questao-card" data-correct="C">
+                                    <div class="questao-cabecalho">
+                                        <span class="questao-numero">Questão
+                                            2</span>
+                                        <p class="questao-objetivo">Objetivo:
+                                            Conhecer os elementos mediadores do
+                                            material didático na produção de
+                                            texto para EaD.</p>
+                                    </div>
+                                    <p class="questao-enunciado">Qual dos itens
+                                        a seguir é um exemplo de elemento
+                                        mediador do texto didático que visa
+                                        estimular o pensamento crítico e a
+                                        metacognição?</p>
+                                    <div class="questao-alternativas"
+                                        role="group"
+                                        aria-label="Alternativas da questão 2">
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="A"
+                                            data-feedback="Incorreta. Glossários são importantes para a compreensão de termos, mas não necessariamente estimulam o pensamento crítico."><strong>A)</strong>
+                                            Utilização de glossário com termos
+                                            técnicos.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="B"
+                                            data-feedback="Incorreta. Essa é uma característica da linguagem acessível, mas o foco da pergunta é metacognição."><strong>B)</strong>
+                                            Frases curtas e uso de linguagem
+                                            próxima da oralidade.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="C"
+                                            data-feedback="Correta! Problematizações incentivam o pensamento crítico e a reflexão ativa, fundamentais para a aprendizagem significativa."><strong>C)</strong>
+                                            Inclusão de perguntas provocativas e
+                                            problematizações.</button>
+                                        <button type="button"
+                                            class="questao-opcao"
+                                            data-option="D"
+                                            data-feedback="Incorreta. Esse é um recurso de acessibilidade, não um elemento motivador ou problematizador."><strong>D)</strong>
+                                            Descrição textual das imagens para
+                                            leitores de tela.</button>
+                                    </div>
+                                    <div class="questao-feedback"
+                                        aria-live="polite"></div>
+                                </article>
+                            </section>
+                        </section>
+
+                        <nav class="navegacao-aula col-lg-8 mx-auto"
+                            aria-label="Navegação da aula">
+                            <a href="../modulo2/aula2.html"
+                                class="botao-aula botao-voltar"
+                                aria-label="Voltar">
+                                <img
+                                    src="../assets/imgmod2/aula3/bt2_voltar_off.png"
+                                    alt="" aria-hidden="true">
+                            </a>
+                            <a href="../modulo2/aula4.html"
+                                class="botao-aula botao-proxima"
+                                aria-label="Próxima aula">
+                                <img src="../assets/imgmod2/aula3/bt_2 off.png"
+                                    alt="Próxima">
+                            </a>
+                        </nav>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <footer id="footer" class="py-4 mt-5">
+            <div class="container">
+                <div
+                    class="footer-logos row justify-content-center align-items-center text-center">
+                    <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                        <img src="../assets/images/Logo_CVF.png"
+                            class="footer-logo w-100"
+                            alt="Campus Virtual Fiocruz">
+                    </div>
+                    <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                        <img src="../assets/images/Logo_Fiocruz.png"
+                            class="footer-logo w-100" alt="Fundação Oswaldo Cruz">
+                    </div>
+                    <div class="footer-logo-col col-6 col-md-auto mb-3 mb-md-0">
+                        <img src="../assets/images/Logos_Sus35_Ms_Gov.png"
+                            class="footer-logo w-100" alt="Logos do SUS, Ministério da Saúde e Governo Federal">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+        function toggleMenu(id) {
+            const menu = document.getElementById(id);
+            document.querySelectorAll('.submenu').forEach(el => {
+                if (el.id !== id) el.classList.remove('open');
+            });
+            if (menu) menu.classList.toggle('open');
+        }
+
+        const mobileToggle = document.getElementById('mobileSidebarToggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+        const sidebarClose = document.createElement('button');
+        sidebarClose.className = 'sidebar-close';
+        sidebarClose.type = 'button';
+        sidebarClose.setAttribute('aria-label', 'Fechar menu lateral');
+        sidebarClose.innerHTML = '&times;';
+
+        if (sidebar) {
+            const sidebarCloseTarget = sidebar.querySelector('.sticky-sidebar') || sidebar;
+            sidebarCloseTarget.prepend(sidebarClose);
+        }
+
+        if (mobileToggle && sidebar && overlay) {
+            mobileToggle.addEventListener('click', () => {
+                const isOpen = sidebar.classList.toggle('mobile-open');
+                overlay.classList.toggle('active', isOpen);
+                mobileToggle.classList.toggle('is-open', isOpen);
+                mobileToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
+
+        if (overlay && sidebar && mobileToggle) {
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('mobile-open');
+                overlay.classList.remove('active');
+                mobileToggle.classList.remove('is-open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        if (sidebarClose && sidebar && overlay && mobileToggle) {
+            sidebarClose.addEventListener('click', () => {
+                sidebar.classList.remove('mobile-open');
+                overlay.classList.remove('active');
+                mobileToggle.classList.remove('is-open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        document.querySelectorAll('.questao-card').forEach(questao => {
+            const respostaCorreta = questao.dataset.correct;
+            const feedback = questao.querySelector('.questao-feedback');
+
+            questao.querySelectorAll('.questao-opcao').forEach(opcao => {
+                opcao.addEventListener('click', () => {
+                    const acertou = opcao.dataset.option === respostaCorreta;
+
+                    questao.querySelectorAll('.questao-opcao').forEach(item => {
+                        item.classList.remove('selecionada', 'correta', 'incorreta');
+                    });
+
+                    opcao.classList.add('selecionada', acertou ? 'correta' : 'incorreta');
+                    feedback.textContent = opcao.dataset.feedback;
+                    feedback.classList.remove('correto', 'incorreto');
+                    feedback.classList.add(acertou ? 'correto' : 'incorreto');
+                });
+            });
+        });
+
+        document.querySelectorAll('.modulo2-aula3-abbr-trigger').forEach(trigger => {
+            let tooltipTimer;
+            const mobileTooltip = document.getElementById('abbr-tooltip');
+            const isMobileTooltip = () => window.matchMedia('(max-width: 767.98px)').matches;
+            const hideMobileTooltip = () => {
+                if (mobileTooltip) mobileTooltip.hidden = true;
+            };
+
+            trigger.addEventListener('click', () => {
+                window.clearTimeout(tooltipTimer);
+
+                if (isMobileTooltip() && mobileTooltip) {
+                    mobileTooltip.hidden = false;
+                    mobileTooltip.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+                    tooltipTimer = window.setTimeout(hideMobileTooltip, 5200);
+                    return;
+                }
+
+                trigger.focus();
+                tooltipTimer = window.setTimeout(() => trigger.blur(), 4200);
+            });
+
+            trigger.addEventListener('keydown', event => {
+                if (event.key !== 'Enter' && event.key !== ' ') return;
+                event.preventDefault();
+                trigger.click();
+            });
+
+            trigger.addEventListener('mouseleave', () => {
+                window.clearTimeout(tooltipTimer);
+                trigger.blur();
+            });
+
+            window.addEventListener('resize', hideMobileTooltip);
+        });
+    </script>
+
+        <div class="container-fluid p-0 text-center tarja-container">
+            <img src="../assets/imgmod2/aula3/tarja_1920.png"
+                class="img-fluid w-100 traja-img" alt="" aria-hidden="true">
+        </div>
+
+        <script src="../js/accessibility.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
