@@ -2265,6 +2265,10 @@ body.modulo2-page.home-page {
     content: "";
 }
 
+.video-frame-card > .video-transcricao:not(.video-descricao) summary {
+    right: 138px;
+}
+
 .video-transcricao-painel {
     position: absolute;
     inset: 0;
@@ -2298,6 +2302,10 @@ body.modulo2-page.home-page {
         min-height: 34px;
         padding: 7px 10px;
         font-size: 0.86rem;
+    }
+
+    .video-frame-card > .video-transcricao:not(.video-descricao) summary {
+        right: 112px;
     }
 
     .video-transcricao-painel {
