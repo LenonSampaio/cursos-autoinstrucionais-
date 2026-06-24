@@ -2250,6 +2250,7 @@ body.modulo2-page.home-page {
     border-radius: 4px;
     background: rgba(116, 112, 139, 0.92);
     color: #ffffff;
+    font-family: 'Rawline', sans-serif;
     font-weight: 800;
     line-height: 1;
     list-style: none;
@@ -2288,6 +2289,7 @@ body.modulo2-page.home-page {
     padding: 86px 28px 28px;
     background: #09071d;
     color: #ffffff;
+    font-family: 'Rawline', sans-serif;
     font-size: clamp(1rem, 2.1vw, 1.38rem);
     line-height: 1.6;
     pointer-events: auto;
