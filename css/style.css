@@ -2255,6 +2255,17 @@ body.modulo2-page.home-page {
     list-style: none;
     cursor: pointer;
     pointer-events: auto;
+    transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.video-transcricao summary:hover,
+.video-transcricao summary:focus-visible {
+    background: rgba(92, 87, 124, 0.98);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.28);
+}
+
+.video-transcricao summary:active {
+    transform: translateY(1px) scale(0.98);
 }
 
 .video-transcricao summary::-webkit-details-marker {
@@ -2282,6 +2293,10 @@ body.modulo2-page.home-page {
     pointer-events: auto;
 }
 
+.video-transcricao[open] .video-transcricao-painel {
+    animation: videoPanelIn 260ms ease both;
+}
+
 .video-transcricao-painel p {
     margin: 0 0 1.15rem;
 }
@@ -2293,6 +2308,18 @@ body.modulo2-page.home-page {
 
 .video-transcricao[open] .video-transcricao-fechar {
     display: inline;
+}
+
+@keyframes videoPanelIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -2311,6 +2338,16 @@ body.modulo2-page.home-page {
     .video-transcricao-painel {
         padding: 62px 18px 20px;
         font-size: 0.98rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .video-transcricao summary {
+        transition: none;
+    }
+
+    .video-transcricao[open] .video-transcricao-painel {
+        animation: none;
     }
 }
 
