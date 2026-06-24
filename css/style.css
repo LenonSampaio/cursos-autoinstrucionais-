@@ -927,6 +927,10 @@ em {
     max-width: min(28vw, 330px);
 }
 
+.index-footer .footer-logos {
+    transform: translateX(12px);
+}
+
 @media (max-width: 768px) {
     .footer-logos {
         gap: 18px 24px;
@@ -943,6 +947,10 @@ em {
         height: 56px;
         max-width: 28vw;
         width: auto !important;
+    }
+
+    .index-footer .footer-logos {
+        transform: translateX(14px);
     }
 
 }
