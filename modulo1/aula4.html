@@ -75,11 +75,12 @@
         <div class="container-fluid p-0">
             <div class="row g-0 row-full">
                 <aside class="col-12 col-md-2 sidebar">
-                    <div class="menu-item" onclick="toggleMenu('mod1')">
-                        <h3>Módulo 1</h3>
-                        <p> - A EAD e o desenvolvimento de<br> cursos
-                            autoinstrucionais</p>
-                    </div>
+                    <button class="menu-item" type="button" onclick="toggleMenu('mod1')" aria-controls="mod1"
+                        aria-expanded="false">
+                        <span class="menu-item-title">Módulo 1</span>
+                        <span class="menu-item-description"> - A EAD e o desenvolvimento de<br> cursos
+                            autoinstrucionais</span>
+                    </button>
                     <div class="submenu" id="mod1">
                         <a href="../modulo1/aula1.html"
                             class="submenu-aula-longa"><span
@@ -107,10 +108,11 @@
                                 HTML</span></a>
                     </div>
 
-                    <div class="menu-item" onclick="toggleMenu('mod2')">
-                        <h3>Módulo 2</h3>
-                        <p> - Criação do Material Didático Digital</p>
-                    </div>
+                    <button class="menu-item" type="button" onclick="toggleMenu('mod2')" aria-controls="mod2"
+                        aria-expanded="false">
+                        <span class="menu-item-title">Módulo 2</span>
+                        <span class="menu-item-description"> - Criação do Material Didático Digital</span>
+                    </button>
                     <div class="submenu" id="mod2">
                         <a href="../modulo2/aula1.html"><span
                                 class="submenu-aula-numero">Aula 2.1</span><span
@@ -133,7 +135,7 @@
                     </div>
 
                     <a href="../material/materialcomplementar.html" class="menu-item menu-material-complementar sidebar-material-link">
-                        <h3>Material Complementar</h3>
+                        <span class="menu-item-title">Material Complementar</span>
                     </a>
                 </aside>
 
@@ -296,7 +298,7 @@
                                 interativas.</p>
                         </section>
 
-                        <section class="presentation col-lg-8 mx-auto">
+                        <section class="presentation col-lg-8 mx-auto" aria-label="Comparação entre Moodle e MOOC">
                             <div class="aula4-compare-grid">
                                 <article
                                     class="aula4-compare-card aula4-flip-card">
@@ -516,7 +518,7 @@
                                         data-tab="html">HTML</button>
                                 </div>
                                 <div class="aula4-tab-content">
-                                    <article class="aula4-tab-panel active"
+                                    <div class="aula4-tab-panel active"
                                         id="aula4-tab-moocs" role="tabpanel"
                                         aria-labelledby="aula4-tab-btn-moocs">
                                         <figure
@@ -569,8 +571,8 @@ que amplia a acessibilidade do conteúdo e atinge um público mais diversificado
                                             tornando a experiência de
                                             aprendizado mais inclusiva e eficaz
                                             para todos.</p>
-                                    </article>
-                                    <article class="aula4-tab-panel"
+                                    </div>
+                                    <div class="aula4-tab-panel"
                                         id="aula4-tab-moodle" role="tabpanel"
                                         aria-labelledby="aula4-tab-btn-moodle"
                                         hidden>
@@ -617,8 +619,8 @@ pois eles se tornam agentes ativos na criação de experiências de
 aprendizado interativas e atraentes, que não apenas informam, mas também
 engajam e motivam os estudantes a explorar o conhecimento de forma
 profunda e significativa.</p>
-                                    </article>
-                                    <article class="aula4-tab-panel"
+                                    </div>
+                                    <div class="aula4-tab-panel"
                                         id="aula4-tab-html" role="tabpanel"
                                         aria-labelledby="aula4-tab-btn-html"
                                         hidden>
@@ -664,7 +666,7 @@ autoinstrucional. Esse aprofundamento das ferramentas, sobretudo no que
 diz respeito à interatividade entre os estudantes, só é possível atualmente
 no Moodle. Daí a importância de utilizar os formatos MOOC e Moodle
 simultaneamente para garantir as melhores funcionalidades dos dois modelos.</p>
-                                    </article>
+                                    </div>
                                 </div>
                             </section>
 
@@ -974,7 +976,7 @@ simultaneamente para garantir as melhores funcionalidades dos dois modelos.</p>
                                             id="aula4-repo-btn-arca">ARCA</button>
                                     </div>
                                     <div class="aula4-repo-tab-content">
-                                        <article
+                                        <div
                                             class="aula4-repo-tab-panel active"
                                             id="aula4-repo-educare"
                                             role="tabpanel"
@@ -1009,8 +1011,8 @@ simultaneamente para garantir as melhores funcionalidades dos dois modelos.</p>
                                                 continuada e o desenvolvimento
                                                 profissional na área
                                                 da saúde.</p>
-                                        </article>
-                                        <article class="aula4-repo-tab-panel"
+                                        </div>
+                                        <div class="aula4-repo-tab-panel"
                                             id="aula4-repo-arca" role="tabpanel"
                                             aria-labelledby="aula4-repo-btn-arca"
                                             hidden>
@@ -1050,7 +1052,7 @@ simultaneamente para garantir as melhores funcionalidades dos dois modelos.</p>
                                                 atualizado e enriquecido por
                                                 diferentes perspectivas e
                                                 experiências.</p>
-                                        </article>
+                                        </div>
                                     </div>
                                 </section>
 
@@ -1385,6 +1387,7 @@ simultaneamente para garantir as melhores funcionalidades dos dois modelos.</p>
                                 class="questionario-aprendizagem col-lg-8 mx-auto"
                                 aria-label="Questionário de aprendizagem">
                                 <article class="questao-card" data-correct="D">
+                                    <h3 class="visually-hidden">Questão 1</h3>
                                     <div class="questao-cabecalho">
                                         <span class="questao-numero">Questão
                                             1</span>
@@ -1455,6 +1458,7 @@ simultaneamente para garantir as melhores funcionalidades dos dois modelos.</p>
                                 </article>
 
                                 <article class="questao-card" data-correct="B">
+                                    <h3 class="visually-hidden">Questão 2</h3>
                                     <div class="questao-cabecalho">
                                         <span class="questao-numero">Questão
                                             2</span>
@@ -1533,7 +1537,7 @@ simultaneamente para garantir as melhores funcionalidades dos dois modelos.</p>
                             <a href="../modulo2/aula1.html"
                                 class="botao-aula botao-proxima"
                                 aria-label="Próxima aula">
-                                <img src="../assets/imgmod1/aula4/bt_1 off.png"
+                                <img src="../assets/imgmod1/aula4/bt_1%20off.png"
                                     alt="" aria-hidden="true">
                             </a>
                         </nav>
@@ -1734,4 +1738,3 @@ simultaneamente para garantir as melhores funcionalidades dos dois modelos.</p>
     </body>
 
 </html>
-
