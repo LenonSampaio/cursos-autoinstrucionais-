@@ -30,11 +30,6 @@
     width: 150px;
 }
 
-.home-footer {
-    transform: none;
-    width: 100%;
-}
-
 .home-page .logo-home-link .logo-move.logo-right {
     max-width: 59%;
 }
@@ -950,32 +945,6 @@ em {
         width: auto !important;
     }
 
-    .home-page .footer-logos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center !important;
-        align-items: center;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        gap: 18px 26px;
-    }
-
-    .home-page .footer-logo-col {
-        flex: 0 0 auto;
-        width: auto;
-        max-width: none;
-        display: flex;
-        justify-content: center;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .home-page .footer-logo-col .footer-logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 
