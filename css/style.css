@@ -2257,6 +2257,7 @@ body.modulo2-page.home-page {
     background: rgba(116, 112, 139, 0.92);
     color: #ffffff;
     font-family: 'Rawline', sans-serif;
+    font-size: 0.95rem;
     font-weight: 800;
     line-height: 1;
     list-style: none;
@@ -2296,8 +2297,8 @@ body.modulo2-page.home-page {
     background: #09071d;
     color: #ffffff;
     font-family: 'Rawline', sans-serif;
-    font-size: clamp(1rem, 2.1vw, 1.38rem);
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.5;
     pointer-events: auto;
 }
 
@@ -2345,7 +2346,7 @@ body.modulo2-page.home-page {
 
     .video-transcricao-painel {
         padding: 62px 18px 20px;
-        font-size: 0.98rem;
+        font-size: 0.95rem;
     }
 }
 
