@@ -5502,6 +5502,8 @@ body.modulo2-page.home-page {
 }
 
 .aula3-tag-code {
+    display: block;
+    margin: 0 0 1rem;
     color: #ff0000;
     font-weight: 700;
     text-decoration-line: underline;
