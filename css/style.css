@@ -7398,7 +7398,9 @@ body.modulo2-page.home-page {
     text-align: left;
 }
 
-.organizacao-card-back p {
+.organizacao-card-back p,
+.organizacao-card-back-text {
+    display: block;
     margin: 0;
 }
 
