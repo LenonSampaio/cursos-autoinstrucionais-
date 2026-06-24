@@ -75,11 +75,12 @@
         <div class="container-fluid p-0">
             <div class="row g-0 row-full">
                 <aside class="col-12 col-md-2 sidebar">
-                    <div class="menu-item" onclick="toggleMenu('mod1')">
-                        <h3>Módulo 1</h3>
-                        <p> - A EAD e o desenvolvimento de<br> cursos
-                            autoinstrucionais</p>
-                    </div>
+                    <button class="menu-item" type="button" onclick="toggleMenu('mod1')" aria-controls="mod1"
+                        aria-expanded="false">
+                        <span class="menu-item-title">Módulo 1</span>
+                        <span class="menu-item-description"> - A EAD e o desenvolvimento de<br> cursos
+                            autoinstrucionais</span>
+                    </button>
                     <div class="submenu" id="mod1">
                         <a href="../modulo1/aula1.html"
                             class="submenu-aula-longa"><span
@@ -107,10 +108,11 @@
                                 HTML</span></a>
                     </div>
 
-                    <div class="menu-item" onclick="toggleMenu('mod2')">
-                        <h3>Módulo 2</h3>
-                        <p> - Criação do Material Didático Digital</p>
-                    </div>
+                    <button class="menu-item" type="button" onclick="toggleMenu('mod2')" aria-controls="mod2"
+                        aria-expanded="false">
+                        <span class="menu-item-title">Módulo 2</span>
+                        <span class="menu-item-description"> - Criação do Material Didático Digital</span>
+                    </button>
                     <div class="submenu" id="mod2">
                         <a href="../modulo2/aula1.html"><span
                                 class="submenu-aula-numero">Aula 2.1</span><span
@@ -133,7 +135,7 @@
                     </div>
 
                     <a href="../material/materialcomplementar.html" class="menu-item menu-material-complementar sidebar-material-link">
-                        <h3>Material Complementar</h3>
+                        <span class="menu-item-title">Material Complementar</span>
                     </a>
                 </aside>
 
@@ -492,9 +494,10 @@
                                 como:</p>
 
                             <div
-                                class="modulo2-aula2-accordion col-lg-8 mx-auto"
+                                class="modulo2-aula2-accordion col-lg-8 mx-auto" role="group"
                                 aria-label="Etapas da transposição didática">
                                 <article class="modulo2-aula2-accordion-item active">
+                                    <h3 class="visually-hidden">Planejamento</h3>
                                     <button type="button"
                                         class="modulo2-aula2-accordion-trigger"
                                         aria-expanded="true">
@@ -520,6 +523,7 @@
                                 </article>
 
                                 <article class="modulo2-aula2-accordion-item">
+                                    <h3 class="visually-hidden">Pesquisa e coleta de conteúdo</h3>
                                     <button type="button"
                                         class="modulo2-aula2-accordion-trigger"
                                         aria-expanded="false">
@@ -550,6 +554,7 @@
                                 </article>
 
                                 <article class="modulo2-aula2-accordion-item">
+                                    <h3 class="visually-hidden">Desenvolvimento do conteúdo</h3>
                                     <button type="button"
                                         class="modulo2-aula2-accordion-trigger"
                                         aria-expanded="false">
@@ -681,9 +686,10 @@
                                 são:</p>
 
                             <div
-                                class="modulo2-aula2-componentes col-lg-8 mx-auto"
+                                class="modulo2-aula2-componentes col-lg-8 mx-auto" role="group"
                                 aria-label="Componentes de uma sequência didática">
                                 <article class="modulo2-aula2-componente">
+                                    <h3 class="visually-hidden">Identificação da sequência</h3>
                                     <button type="button"
                                         class="modulo2-aula2-componente-trigger"
                                         aria-expanded="false">
@@ -704,6 +710,7 @@
                                 </article>
 
                                 <article class="modulo2-aula2-componente">
+                                    <h3 class="visually-hidden">Definir os objetivos e resultados de aprendizagem</h3>
                                     <button type="button"
                                         class="modulo2-aula2-componente-trigger"
                                         aria-expanded="false">
@@ -725,6 +732,7 @@
                                 </article>
 
                                 <article class="modulo2-aula2-componente">
+                                    <h3 class="visually-hidden">Organizar o conteúdo</h3>
                                     <button type="button"
                                         class="modulo2-aula2-componente-trigger"
                                         aria-expanded="false">
@@ -746,6 +754,7 @@
                                 </article>
 
                                 <article class="modulo2-aula2-componente">
+                                    <h3 class="visually-hidden">Metodologia de ensino</h3>
                                     <button type="button"
                                         class="modulo2-aula2-componente-trigger"
                                         aria-expanded="false">
@@ -768,6 +777,7 @@
                                 </article>
 
                                 <article class="modulo2-aula2-componente">
+                                    <h3 class="visually-hidden">Selecionar e desenvolver materiais didáticos</h3>
                                     <button type="button"
                                         class="modulo2-aula2-componente-trigger"
                                         aria-expanded="false">
@@ -802,6 +812,7 @@
                                 </article>
 
                                 <article class="modulo2-aula2-componente">
+                                    <h3 class="visually-hidden">Planejar atividades e avaliações</h3>
                                     <button type="button"
                                         class="modulo2-aula2-componente-trigger"
                                         aria-expanded="false">
@@ -891,7 +902,7 @@
                                 aprendizado sugeridas por Gagné (1974).</p>
 
                             <div
-                                class="modulo2-aula2-quadro-accordion col-lg-8 mx-auto show-etapas show-itens show-desenvolvimento"
+                                class="modulo2-aula2-quadro-accordion col-lg-8 mx-auto show-etapas show-itens show-desenvolvimento" role="group"
                                 aria-label="Quadro de estrutura de sequência didática">
                                 <div class="modulo2-aula2-quadro-table">
                                     <div class="modulo2-aula2-quadro-header">
@@ -1048,9 +1059,10 @@
                                 horas.</p>
 
                             <div
-                                class="modulo2-aula2-componentes modulo2-aula2-exemplo-accordion col-lg-8 mx-auto"
+                                class="modulo2-aula2-componentes modulo2-aula2-exemplo-accordion col-lg-8 mx-auto" role="group"
                                 aria-label="Exemplo de sequência didática">
                                 <article class="modulo2-aula2-componente active">
+                                    <h3 class="visually-hidden">Introdução</h3>
                                     <button type="button"
                                         class="modulo2-aula2-componente-trigger"
                                         aria-expanded="true">
@@ -1145,6 +1157,7 @@
                                 </article>
 
                                 <article class="modulo2-aula2-componente">
+                                    <h3 class="visually-hidden">Corpo</h3>
                                     <button type="button"
                                         class="modulo2-aula2-componente-trigger"
                                         aria-expanded="false">
@@ -1222,6 +1235,7 @@ verdadeiro ou falso).</p>
                                 </article>
 
                                 <article class="modulo2-aula2-componente">
+                                    <h3 class="visually-hidden">Conclusão</h3>
                                     <button type="button"
                                         class="modulo2-aula2-componente-trigger"
                                         aria-expanded="false">
@@ -1307,6 +1321,7 @@ verdadeiro ou falso).</p>
                                 class="questionario-aprendizagem col-lg-8 mx-auto"
                                 aria-label="Questionário de aprendizagem">
                                 <article class="questao-card" data-correct="B">
+                                    <h3 class="visually-hidden">Questão 1</h3>
                                     <div class="questao-cabecalho">
                                         <span class="questao-numero">Questão
                                             1</span>
@@ -1357,6 +1372,7 @@ verdadeiro ou falso).</p>
                                 </article>
 
                                 <article class="questao-card" data-correct="C">
+                                    <h3 class="visually-hidden">Questão 2</h3>
                                     <div class="questao-cabecalho">
                                         <span class="questao-numero">Questão
                                             2</span>
@@ -1419,7 +1435,7 @@ verdadeiro ou falso).</p>
                             <a href="../modulo2/aula3.html"
                                 class="botao-aula botao-proxima"
                                 aria-label="Próxima aula">
-                                <img src="../assets/imgmod2/aula2/bt_2 off.png"
+                                <img src="../assets/imgmod2/aula2/bt_2%20off.png"
                                     alt="Próxima">
                             </a>
                         </nav>
