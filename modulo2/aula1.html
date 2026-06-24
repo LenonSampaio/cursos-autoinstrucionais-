@@ -75,11 +75,12 @@
         <div class="container-fluid p-0">
             <div class="row g-0 row-full">
                 <aside class="col-12 col-md-2 sidebar">
-                    <div class="menu-item" onclick="toggleMenu('mod1')">
-                        <h3>Módulo 1</h3>
-                        <p> - A EAD e o desenvolvimento de<br> cursos
-                            autoinstrucionais</p>
-                    </div>
+                    <button class="menu-item" type="button" onclick="toggleMenu('mod1')" aria-controls="mod1"
+                        aria-expanded="false">
+                        <span class="menu-item-title">Módulo 1</span>
+                        <span class="menu-item-description"> - A EAD e o desenvolvimento de<br> cursos
+                            autoinstrucionais</span>
+                    </button>
                     <div class="submenu" id="mod1">
                         <a href="../modulo1/aula1.html"
                             class="submenu-aula-longa"><span
@@ -107,10 +108,11 @@
                                 HTML</span></a>
                     </div>
 
-                    <div class="menu-item" onclick="toggleMenu('mod2')">
-                        <h3>Módulo 2</h3>
-                        <p> - Criação do Material Didático Digital</p>
-                    </div>
+                    <button class="menu-item" type="button" onclick="toggleMenu('mod2')" aria-controls="mod2"
+                        aria-expanded="false">
+                        <span class="menu-item-title">Módulo 2</span>
+                        <span class="menu-item-description"> - Criação do Material Didático Digital</span>
+                    </button>
                     <div class="submenu" id="mod2">
                         <a href="../modulo2/aula1.html"><span
                                 class="submenu-aula-numero">Aula 2.1</span><span
@@ -133,7 +135,7 @@
                     </div>
 
                     <a href="../material/materialcomplementar.html" class="menu-item menu-material-complementar sidebar-material-link">
-                        <h3>Material Complementar</h3>
+                        <span class="menu-item-title">Material Complementar</span>
                     </a>
                 </aside>
 
@@ -390,7 +392,7 @@
                                 voltada para a produção do conhecimento do
                                 estudante (Corrêa, 2007).</p>
 
-                            <div class="modulo2-tab-definitions col-lg-8 mx-auto"
+                            <div class="modulo2-tab-definitions col-lg-8 mx-auto" role="group"
                                 aria-label="Dimensões do material didático">
                                 <div class="modulo2-tab-card">
                                     <div class="modulo2-tab-list" role="tablist"
@@ -644,7 +646,7 @@
                                 </div>
                             </div>
 
-                            <div class="modulo2-competencias-slider col-lg-8 mx-auto"
+                            <div class="modulo2-competencias-slider col-lg-8 mx-auto" role="group"
                                 aria-label="Competências do conteudista">
                                 <button type="button"
                                     class="modulo2-slider-control modulo2-slider-prev"
@@ -655,6 +657,7 @@
                                 <div class="modulo2-slider-track">
                                     <article class="modulo2-slider-slide active"
                                         aria-hidden="false">
+                                        <h3 class="visually-hidden">Conhecimento pedagógico</h3>
                                         <p><strong>Conhecimento
                                                 pedagógico:</strong> compreensão
                                             dos princípios de ensino e
@@ -664,6 +667,7 @@
                                     </article>
                                     <article class="modulo2-slider-slide"
                                         aria-hidden="true">
+                                        <h3 class="visually-hidden">Curadoria</h3>
                                         <p><strong>Curadoria:</strong>
                                             selecionar os conteúdos de maneira
                                             criteriosa, a partir da revisão de
@@ -672,6 +676,7 @@
                                     </article>
                                     <article class="modulo2-slider-slide"
                                         aria-hidden="true">
+                                        <h3 class="visually-hidden">Linguagem assertiva</h3>
                                         <p><strong>Linguagem
                                                 assertiva:</strong> utilizar uma
                                             linguagem que facilite a leitura e a
@@ -679,6 +684,7 @@
                                     </article>
                                     <article class="modulo2-slider-slide"
                                         aria-hidden="true">
+                                        <h3 class="visually-hidden">Conexão com a realidade dos estudantes</h3>
                                         <p><strong>Conexão com a realidade dos
                                                 estudantes:</strong> é muito
                                             importante que o conteúdo seja
@@ -690,6 +696,7 @@
                                     </article>
                                     <article class="modulo2-slider-slide"
                                         aria-hidden="true">
+                                        <h3 class="visually-hidden">Colaboração e trabalho em equipe</h3>
                                         <p><strong>Colaboração e trabalho em
                                                 equipe:</strong> preparação para
                                             trabalhar com outros profissionais,
@@ -700,6 +707,7 @@
                                     </article>
                                     <article class="modulo2-slider-slide"
                                         aria-hidden="true">
+                                        <h3 class="visually-hidden">Pensamento crítico e criativo</h3>
                                         <p><strong>Pensamento crítico e criativo:</strong>
                                             capacidade de desenvolver conteúdos
                                             inovadores e relevantes, além de
@@ -709,6 +717,7 @@
                                     </article>
                                     <article class="modulo2-slider-slide"
                                         aria-hidden="true">
+                                        <h3 class="visually-hidden">Avaliação e feedback</h3>
                                         <p><strong>Avaliação e feedback:</strong>
                                             capacidade de criar ferramentas de
                                             avaliação que permitam medir a
@@ -718,6 +727,7 @@
                                     </article>
                                     <article class="modulo2-slider-slide"
                                         aria-hidden="true">
+                                        <h3 class="visually-hidden">Atualização contínua</h3>
                                         <p><strong>Atualização contínua:</strong>
                                             compromisso com a formação contínua,
                                             mantendo-se atualizado sobre novas
@@ -732,7 +742,7 @@
                                     <span aria-hidden="true">&rsaquo;</span>
                                 </button>
 
-                                <div class="modulo2-slider-dots"
+                                <div class="modulo2-slider-dots" role="group"
                                     aria-label="Selecionar competência">
                                     <button type="button" class="active"
                                         aria-label="Mostrar competência 1"
@@ -799,6 +809,7 @@
                                 class="questionario-aprendizagem col-lg-8 mx-auto"
                                 aria-label="Questionário de aprendizagem">
                                 <article class="questao-card" data-correct="B">
+                                    <h3 class="visually-hidden">Questão 1</h3>
                                     <div class="questao-cabecalho">
                                         <span class="questao-numero">Questão
                                             1</span>
@@ -848,6 +859,7 @@
                                 </article>
 
                                 <article class="questao-card" data-correct="C">
+                                    <h3 class="visually-hidden">Questão 2</h3>
                                     <div class="questao-cabecalho">
                                         <span class="questao-numero">Questão
                                             2</span>
@@ -914,7 +926,7 @@
                             <a href="../modulo2/aula2.html"
                                 class="botao-aula botao-proxima"
                                 aria-label="Próxima aula">
-                                <img src="../assets/imgmod2/aula1/bt_2 off.png"
+                                <img src="../assets/imgmod2/aula1/bt_2%20off.png"
                                     alt="Próxima">
                             </a>
                         </nav>
@@ -1100,4 +1112,3 @@
     </body>
 
 </html>
-
