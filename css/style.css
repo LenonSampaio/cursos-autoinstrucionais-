@@ -329,10 +329,16 @@ button:focus-visible {
     color: #ffffff;
     background: #073b7a;
     border-radius: 4px;
-    transform: translateY(-140%);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-160%);
+    transition: opacity 160ms ease, transform 160ms ease;
 }
 
-.skip-link:focus {
+.skip-link:focus,
+.skip-link:focus-visible {
+    opacity: 1;
+    pointer-events: auto;
     transform: translateY(0);
 }
 
