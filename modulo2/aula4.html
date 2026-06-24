@@ -76,11 +76,12 @@
         <div class="container-fluid p-0">
             <div class="row g-0 row-full">
                 <aside class="col-12 col-md-2 sidebar">
-                    <div class="menu-item" onclick="toggleMenu('mod1')">
-                        <h3>Módulo 1</h3>
-                        <p> - A EAD e o desenvolvimento de<br> cursos
-                            autoinstrucionais</p>
-                    </div>
+                    <button class="menu-item" type="button" onclick="toggleMenu('mod1')" aria-controls="mod1"
+                        aria-expanded="false">
+                        <span class="menu-item-title">Módulo 1</span>
+                        <span class="menu-item-description"> - A EAD e o desenvolvimento de<br> cursos
+                            autoinstrucionais</span>
+                    </button>
                     <div class="submenu" id="mod1">
                         <a href="../modulo1/aula1.html"
                             class="submenu-aula-longa"><span
@@ -107,10 +108,11 @@
                                 HTML</span></a>
                     </div>
 
-                    <div class="menu-item" onclick="toggleMenu('mod2')">
-                        <h3>Módulo 2</h3>
-                        <p> - Criação do Material Didático Digital</p>
-                    </div>
+                    <button class="menu-item" type="button" onclick="toggleMenu('mod2')" aria-controls="mod2"
+                        aria-expanded="false">
+                        <span class="menu-item-title">Módulo 2</span>
+                        <span class="menu-item-description"> - Criação do Material Didático Digital</span>
+                    </button>
                     <div class="submenu open" id="mod2">
                         <a href="../modulo2/aula1.html"><span
                                 class="submenu-aula-numero">Aula 2.1</span><span
@@ -133,7 +135,7 @@
                     </div>
 
                     <a href="../material/materialcomplementar.html" class="menu-item menu-material-complementar sidebar-material-link">
-                        <h3>Material Complementar</h3>
+                        <span class="menu-item-title">Material Complementar</span>
                     </a>
                 </aside>
 
@@ -241,21 +243,21 @@
 
                             <div
                                 class="modulo2-aula4-function-grid col-lg-8 mx-auto">
-                                <article>
+                                <div>
                                     <img
                                         src="../assets/imgmod2/aula4/Card_Hover_1.png"
                                         alt="Diagnosticar">
-                                </article>
-                                <article>
+                                </div>
+                                <div>
                                     <img
                                         src="../assets/imgmod2/aula4/Card_Hover_2.png"
                                         alt="Controlar">
-                                </article>
-                                <article>
+                                </div>
+                                <div>
                                     <img
                                         src="../assets/imgmod2/aula4/Card_Hover_3.png"
                                         alt="Classificar">
-                                </article>
+                                </div>
                             </div>
 
                             <p
@@ -312,36 +314,36 @@
 
                             <div
                                 class="modulo2-aula4-icon-grid col-lg-8 mx-auto">
-                                <article><img
+                                <div><img
                                         src="../assets/imgmod2/aula4/icon_questi.png"
-                                        alt="Questionários"><span>Questionários</span></article>
-                                <article><img
+                                        alt="Questionários"><span>Questionários</span></div>
+                                <div><img
                                         src="../assets/imgmod2/aula4/icon_exerc.png"
-                                        alt="Exercícios"><span>Exercícios</span></article>
-                                <article><img
+                                        alt="Exercícios"><span>Exercícios</span></div>
+                                <div><img
                                         src="../assets/imgmod2/aula4/icon_simula.png"
-                                        alt="Simulações"><span>Simulações</span></article>
-                                <article><img
+                                        alt="Simulações"><span>Simulações</span></div>
+                                <div><img
                                         src="../assets/imgmod2/aula4/icon_redacao.png"
-                                        alt="Redações"><span>Redações</span></article>
-                                <article><img
+                                        alt="Redações"><span>Redações</span></div>
+                                <div><img
                                         src="../assets/imgmod2/aula4/icon_debates.png"
-                                        alt="Debates"><span>Debates</span></article>
-                                <article><img
+                                        alt="Debates"><span>Debates</span></div>
+                                <div><img
                                         src="../assets/imgmod2/aula4/icon_entrevista.png"
                                         alt="Entrevistas com estudantes"><span>Entrevistas
-                                        com<br>estudantes</span></article>
-                                <article><img
+                                        com<br>estudantes</span></div>
+                                <div><img
                                         src="../assets/imgmod2/aula4/icon_historico.png"
                                         alt="Análise do histórico escolar"><span>Análise
-                                        do<br>histórico escolar</span></article>
-                                <article><img
+                                        do<br>histórico escolar</span></div>
+                                <div><img
                                         src="../assets/imgmod2/aula4/icon_grupo.png"
                                         alt="Dinâmica de grupos"><span>Dinâmica<br>de
-                                        grupos</span></article>
-                                <article><img
+                                        grupos</span></div>
+                                <div><img
                                         src="../assets/imgmod2/aula4/icon_projet.png"
-                                        alt="Projetos práticos"><span>Projetos<br>práticos</span></article>
+                                        alt="Projetos práticos"><span>Projetos<br>práticos</span></div>
                             </div>
 
                             <p
@@ -452,20 +454,20 @@
                                 de:</p>
                             <div
                                 class="modulo2-aula4-card-grid col-lg-8 mx-auto">
-                                <article><img
+                                <div><img
                                         src="../assets/imgmod2/aula4/icon_testes.png"
-                                        alt="" aria-hidden="true"><strong>Testes</strong></article>
-                                <article><img
+                                        alt="" aria-hidden="true"><strong>Testes</strong></div>
+                                <div><img
                                         src="../assets/imgmod2/aula4/icon_projects.png"
-                                        alt="" aria-hidden="true"><strong>Projetos</strong></article>
-                                <article><img
+                                        alt="" aria-hidden="true"><strong>Projetos</strong></div>
+                                <div><img
                                         src="../assets/imgmod2/aula4/icon_trab.png"
                                         alt="" aria-hidden="true"><strong>Trabalhos<br>em
-                                        grupo</strong></article>
-                                <article><img
+                                        grupo</strong></div>
+                                <div><img
                                         src="../assets/imgmod2/aula4/icon_aula.png"
                                         alt="" aria-hidden="true"><strong>Discussões
-                                        em<br>sala de aula</strong></article>
+                                        em<br>sala de aula</strong></div>
                             </div>
 
                             <h2 class="titulo-secao">Avaliação somativa</h2>
@@ -721,6 +723,7 @@
                                 <div class="modulo2-slider-track">
                                     <article class="modulo2-slider-slide active"
                                         aria-hidden="false">
+                                        <h3 class="visually-hidden">Facilitador</h3>
                                         <p><strong>Facilitador</strong><br>
                                             Apresenta o erro identificado e
                                             oferece comentários e orientações
@@ -731,6 +734,7 @@
                                     </article>
                                     <article class="modulo2-slider-slide"
                                         aria-hidden="true">
+                                        <h3 class="visually-hidden">Diretivo</h3>
                                         <p><strong>Diretivo</strong><br>
                                             Indica de forma objetiva o erro que
                                             deve ser corrigido. É claro e
@@ -741,6 +745,7 @@
                                     </article>
                                     <article class="modulo2-slider-slide"
                                         aria-hidden="true">
+                                        <h3 class="visually-hidden">Formativo</h3>
                                         <p><strong>Formativo</strong><br>
                                             É um recurso pedagógico essencial,
                                             pois comunica informações que ajudam
@@ -761,7 +766,7 @@
                                     <span aria-hidden="true">&rsaquo;</span>
                                 </button>
 
-                                <div class="modulo2-slider-dots"
+                                <div class="modulo2-slider-dots" role="group"
                                     aria-label="Selecionar feedback recomendado">
                                     <button type="button" class="active"
                                         aria-label="Mostrar feedback recomendado 1"
@@ -788,6 +793,7 @@
                                 <div class="modulo2-slider-track">
                                     <article class="modulo2-slider-slide active"
                                         aria-hidden="false">
+                                        <h3 class="visually-hidden">Insignificante</h3>
                                         <p><strong>Insignificante</strong><br>
                                             Não acrescenta informações
                                             relevantes ao estudante. Geralmente
@@ -802,6 +808,7 @@
                                     </article>
                                     <article class="modulo2-slider-slide"
                                         aria-hidden="true">
+                                        <h3 class="visually-hidden">Ofensivo</h3>
                                         <p><strong>Ofensivo</strong><br>
                                             Traz características negativas e
                                             inadequadas ao ambiente educacional.
@@ -821,7 +828,7 @@
                                     <span aria-hidden="true">&rsaquo;</span>
                                 </button>
 
-                                <div class="modulo2-slider-dots"
+                                <div class="modulo2-slider-dots" role="group"
                                     aria-label="Selecionar feedback não recomendado">
                                     <button type="button" class="active"
                                         aria-label="Mostrar feedback não recomendado 1"
@@ -967,6 +974,7 @@
                                 class="questionario-aprendizagem col-lg-8 mx-auto"
                                 aria-label="Questionário de aprendizagem">
                                 <article class="questao-card" data-correct="B">
+                                    <h3 class="visually-hidden">Questão 1</h3>
                                     <div class="questao-cabecalho">
                                         <span class="questao-numero">Questão
                                             1</span>
@@ -1019,6 +1027,7 @@
                                 </article>
 
                                 <article class="questao-card" data-correct="C">
+                                    <h3 class="visually-hidden">Questão 2</h3>
                                     <div class="questao-cabecalho">
                                         <span class="questao-numero">Questão
                                             2</span>
@@ -1083,7 +1092,7 @@
                             <a href="../encerramento/encerramento.html"
                                 class="botao-aula botao-encerramento"
                                 aria-label="Encerramento">
-                                <img src="../assets/imgmod2/aula4/bt_5 off.png"
+                                <img src="../assets/imgmod2/aula4/bt_5%20off.png"
                                     alt="Encerramento">
                             </a>
                         </nav>
