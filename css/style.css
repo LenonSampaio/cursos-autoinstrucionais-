@@ -1119,6 +1119,13 @@ body.modulo2-page.home-page {
     display: block;
 }
 
+.logo-home-link .logo-move.logo-right {
+    width: auto;
+    height: 60px;
+    max-width: min(48vw, 180px);
+    object-fit: contain;
+}
+
 @media (max-width: 768px) {
     :root {
         --banner-text-left: 11.4vw;
