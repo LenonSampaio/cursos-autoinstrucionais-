@@ -9138,6 +9138,31 @@ body.encerramento-page-body:not(.home-page) .tarja-container {
     transform: none;
 }
 
+.sidebar .menu-item:hover,
+.sidebar .menu-item:focus-visible,
+.sidebar-material-link:hover,
+.sidebar-material-link:focus-visible {
+    color: #ffffff;
+    background: #8a1f88;
+    transform: none;
+}
+
+.sidebar .submenu a:hover,
+.sidebar .submenu a:focus-visible {
+    color: #4c1d95;
+    background: #f3d7ff;
+    box-shadow: inset 5px 0 0 #c026d3;
+}
+
+.sidebar .submenu a.active:hover,
+.sidebar .submenu a.active:focus-visible,
+.sidebar .submenu a[aria-current="page"]:hover,
+.sidebar .submenu a[aria-current="page"]:focus-visible {
+    color: #ffffff !important;
+    background: #4c1d95 !important;
+    box-shadow: inset 5px 0 0 #ffbf47;
+}
+
 .menu-item:focus-visible {
     outline: 3px solid #ffbf47;
     outline-offset: -3px;
