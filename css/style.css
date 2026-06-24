@@ -1121,8 +1121,8 @@ body.modulo2-page.home-page {
 
 .logo-home-link .logo-move.logo-right {
     width: auto;
-    height: 60px;
-    max-width: min(48vw, 180px);
+    height: clamp(74px, 5.6vw, 104px);
+    max-width: min(22vw, 270px);
     object-fit: contain;
 }
 
@@ -1137,6 +1137,11 @@ body.modulo2-page.home-page {
 
     .logo-move {
         margin-left: 0;
+    }
+
+    .logo-home-link .logo-move.logo-right {
+        height: clamp(40px, 11vw, 54px);
+        max-width: min(48vw, 180px);
     }
 
     .logo-right-wrap,
