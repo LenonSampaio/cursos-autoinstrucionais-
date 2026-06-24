@@ -1826,7 +1826,9 @@ body.modulo2-page.home-page {
     font-weight: 700;
 }
 
-.menu-item p {
+.menu-item p,
+.menu-item-description {
+    display: block;
     margin: 0;
     font-size: 13px;
 }
@@ -1939,7 +1941,8 @@ body.modulo2-page.home-page {
         font-size: 16px;
     }
 
-    .menu-item p {
+    .menu-item p,
+    .menu-item-description {
         font-size: 13px;
     }
 }
@@ -1975,7 +1978,8 @@ body.modulo2-page.home-page {
         font-size: 15px;
     }
 
-    .menu-item p {
+    .menu-item p,
+    .menu-item-description {
         font-size: 12px;
     }
 
@@ -2020,7 +2024,8 @@ body.modulo2-page.home-page {
         margin-bottom: 4px;
     }
 
-    .menu-item p {
+    .menu-item p,
+    .menu-item-description {
         font-size: 11px;
     }
 
