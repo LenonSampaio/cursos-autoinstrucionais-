@@ -409,6 +409,10 @@ button:focus-visible {
     background: #7d007a;
 }
 
+.lesson-banner .navbar .container-fluid {
+    padding-right: clamp(18px, 2.2vw, 42px);
+}
+
 .banner img {
     height: auto;
 }
