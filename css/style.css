@@ -22,6 +22,56 @@
     margin-right: auto;
 }
 
+.home-feature-label {
+    color: #9f3d96;
+}
+
+.home-card-divider {
+    width: 150px;
+}
+
+.home-footer {
+    transform: translateX(5px);
+}
+
+.home-page .logo-home-link .logo-move.logo-right {
+    max-width: 59%;
+}
+
+.text-black-custom {
+    color: #000000;
+}
+
+.mt-26 {
+    margin-top: 26px;
+}
+
+.my-26 {
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mb-0-custom {
+    margin-bottom: 0;
+}
+
+.text-size-base {
+    font-size: 1rem;
+}
+
+.img-25-auto {
+    width: 25px;
+    height: auto;
+}
+
+.img-max-105 {
+    max-width: 105%;
+}
+
 body.home-page {
     background: #ffffff;
 }
