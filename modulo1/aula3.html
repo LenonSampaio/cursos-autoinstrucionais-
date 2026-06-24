@@ -69,11 +69,12 @@
             <!-- Início do aside sidebar -->
             <aside class="col-12 col-md-2 sidebar">
 
-                <div class="menu-item" onclick="toggleMenu('mod1')">
-                    <h3>Módulo 1</h3>
-                    <p> - A EAD e o desenvolvimento de<br> cursos
-                        autoinstrucionais</p>
-                </div>
+                <button class="menu-item" type="button" onclick="toggleMenu('mod1')" aria-controls="mod1"
+                    aria-expanded="false">
+                    <span class="menu-item-title">Módulo 1</span>
+                    <span class="menu-item-description"> - A EAD e o desenvolvimento de<br> cursos
+                        autoinstrucionais</span>
+                </button>
                 <div class="submenu" id="mod1">
                     <a href="../modulo1/aula1.html" class="submenu-aula-longa"><span class="submenu-aula-numero">Aula
                             1.1</span><span class="submenu-aula-titulo">–
@@ -96,10 +97,11 @@
                             HTML</span></a>
                 </div>
 
-                <div class="menu-item" onclick="toggleMenu('mod2')">
-                    <h3>Módulo 2</h3>
-                    <p> - Criação do Material Didático Digital</p>
-                </div>
+                <button class="menu-item" type="button" onclick="toggleMenu('mod2')" aria-controls="mod2"
+                    aria-expanded="false">
+                    <span class="menu-item-title">Módulo 2</span>
+                    <span class="menu-item-description"> - Criação do Material Didático Digital</span>
+                </button>
                 <div class="submenu" id="mod2">
                     <a href="../modulo2/aula1.html"><span class="submenu-aula-numero">Aula 2.1</span><span
                             class="submenu-aula-titulo">– O
@@ -118,7 +120,7 @@
                 </div>
 
                 <a href="../material/materialcomplementar.html" class="menu-item menu-material-complementar sidebar-material-link">
-                        <h3>Material Complementar</h3>
+                        <span class="menu-item-title">Material Complementar</span>
                     </a>
 
             </aside>
@@ -271,7 +273,7 @@
                         </p>
                     </section>
 
-                    <section class="aula3-purple-list col-lg-8 mx-auto">
+                    <section class="aula3-purple-list col-lg-8 mx-auto" aria-label="Atuação do designer educacional">
                         <div class="aula3-purple-item">
                             <img src="../assets/imgmod1/aula3/tag.png" alt="" class="aula3-purple-icon"
                                 aria-hidden="true">
@@ -1226,7 +1228,7 @@ atividades colaborativas etc.).</span></p>
                             até o ajuste pós-lançamento.
                         </p>
 
-                        <div class="aula3-timeline"
+                        <div class="aula3-timeline" role="group"
                             aria-label="Passo a passo do material do curso até o ajuste pós-lançamento">
                             <div class="aula3-timeline-item left"><span>Recebimento
                                     do<br>material
@@ -1297,6 +1299,7 @@ atividades colaborativas etc.).</span></p>
 
                         <section class="questionario-aprendizagem" aria-label="Questionário de aprendizagem">
                             <article class="questao-card" data-correct="C">
+                                <h3 class="visually-hidden">Questão 1</h3>
                                 <div class="questao-cabecalho">
                                     <span class="questao-numero">Questão
                                         1</span>
@@ -1364,6 +1367,7 @@ atividades colaborativas etc.).</span></p>
                             </article>
 
                             <article class="questao-card" data-correct="B">
+                                <h3 class="visually-hidden">Questão 2</h3>
                                 <div class="questao-cabecalho">
                                     <span class="questao-numero">Questão
                                         2</span>
@@ -1432,7 +1436,7 @@ atividades colaborativas etc.).</span></p>
                         </a>
 
                         <a href="../modulo1/aula4.html" class="botao-aula botao-proxima" aria-label="Próxima aula">
-                            <img src="../assets/imgmod1/aula3/bt_1 off.png" alt="Próxima">
+                            <img src="../assets/imgmod1/aula3/bt_1%20off.png" alt="Próxima">
                         </a>
                     </div>
                 </div>
