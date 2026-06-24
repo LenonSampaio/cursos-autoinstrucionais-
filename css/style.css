@@ -928,7 +928,7 @@ em {
 }
 
 .index-footer .footer-logos {
-    transform: translateX(12px);
+    transform: translateX(22px);
 }
 
 @media (max-width: 768px) {
@@ -950,7 +950,7 @@ em {
     }
 
     .index-footer .footer-logos {
-        transform: translateX(14px);
+        transform: translateX(24px);
     }
 
 }
