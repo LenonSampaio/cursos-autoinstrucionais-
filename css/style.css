@@ -4067,7 +4067,8 @@ body.modulo2-page.home-page {
     margin-bottom: 46px;
 }
 
-.modulo2-aula4-function-grid article {
+.modulo2-aula4-function-grid article,
+.modulo2-aula4-function-grid > div {
     position: relative;
     overflow: visible;
     border-radius: 0;
@@ -4075,14 +4076,16 @@ body.modulo2-page.home-page {
     box-shadow: none;
 }
 
-.modulo2-aula4-function-grid article > img:first-child {
+.modulo2-aula4-function-grid article > img:first-child,
+.modulo2-aula4-function-grid > div > img:first-child {
     display: block;
     width: 100%;
     height: auto;
     object-fit: contain;
 }
 
-.modulo2-aula4-function-grid article > img:nth-child(2) {
+.modulo2-aula4-function-grid article > img:nth-child(2),
+.modulo2-aula4-function-grid > div > img:nth-child(2) {
     position: absolute;
     top: 58px;
     left: 50%;
@@ -4136,6 +4139,8 @@ body.modulo2-page.home-page {
 }
 
 .modulo2-aula4-icon-grid article,
+.modulo2-aula4-icon-grid > div,
+.modulo2-aula4-card-grid > div,
 .modulo2-aula4-card-grid article {
     display: grid;
     justify-items: center;
@@ -4145,6 +4150,16 @@ body.modulo2-page.home-page {
     font-weight: 800;
     line-height: 1.12;
     text-align: center;
+}
+
+.modulo2-aula4-icon-grid span,
+.modulo2-aula4-card-grid strong {
+    display: block;
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
 }
 
 .modulo2-aula4-icon-grid img {
@@ -4167,7 +4182,8 @@ body.modulo2-page.home-page {
     margin-bottom: 48px;
 }
 
-.modulo2-aula4-card-grid article {
+.modulo2-aula4-card-grid article,
+.modulo2-aula4-card-grid > div {
     min-height: 250px;
     padding: 34px 26px 28px;
     border-radius: 20px;
@@ -4342,11 +4358,13 @@ body.modulo2-page.home-page {
         gap: 18px;
     }
 
-    .modulo2-aula4-function-grid article {
+    .modulo2-aula4-function-grid article,
+    .modulo2-aula4-function-grid > div {
         border-radius: 0;
     }
 
-    .modulo2-aula4-function-grid article > img:nth-child(2) {
+    .modulo2-aula4-function-grid article > img:nth-child(2),
+    .modulo2-aula4-function-grid > div > img:nth-child(2) {
         top: 42px;
         width: 96px;
     }
@@ -4371,7 +4389,8 @@ body.modulo2-page.home-page {
         gap: 18px;
     }
 
-    .modulo2-aula4-card-grid article {
+    .modulo2-aula4-card-grid article,
+    .modulo2-aula4-card-grid > div {
         min-height: 190px;
         font-size: 1.15rem;
     }
