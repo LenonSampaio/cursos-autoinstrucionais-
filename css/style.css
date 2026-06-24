@@ -3824,6 +3824,7 @@ body.modulo2-page.home-page {
     text-align: left;
 }
 
+.modulo2-aula3-recursos-table tbody th,
 .modulo2-aula3-recursos-table td {
     width: auto;
     border: 2px solid #222222;
@@ -3831,6 +3832,14 @@ body.modulo2-page.home-page {
     font-weight: 700;
 }
 
+.modulo2-aula3-recursos-table tbody th {
+    color: #222222;
+    font-size: 1rem;
+    line-height: 1.24;
+    text-align: left;
+}
+
+.modulo2-aula3-recursos-table tbody tr:nth-child(odd) th,
 .modulo2-aula3-recursos-table tbody tr:nth-child(odd) td {
     background: #f8e7f0;
 }
