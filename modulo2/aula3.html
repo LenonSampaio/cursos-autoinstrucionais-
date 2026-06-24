@@ -76,11 +76,12 @@
         <div class="container-fluid p-0">
             <div class="row g-0 row-full">
                 <aside class="col-12 col-md-2 sidebar">
-                    <div class="menu-item" onclick="toggleMenu('mod1')">
-                        <h3>Módulo 1</h3>
-                        <p> - A EAD e o desenvolvimento de<br> cursos
-                            autoinstrucionais</p>
-                    </div>
+                    <button class="menu-item" type="button" onclick="toggleMenu('mod1')" aria-controls="mod1"
+                        aria-expanded="false">
+                        <span class="menu-item-title">Módulo 1</span>
+                        <span class="menu-item-description"> - A EAD e o desenvolvimento de<br> cursos
+                            autoinstrucionais</span>
+                    </button>
                     <div class="submenu" id="mod1">
                         <a href="../modulo1/aula1.html"
                             class="submenu-aula-longa"><span
@@ -108,10 +109,11 @@
                                 HTML</span></a>
                     </div>
 
-                    <div class="menu-item" onclick="toggleMenu('mod2')">
-                        <h3>Módulo 2</h3>
-                        <p> - Criação do Material Didático Digital</p>
-                    </div>
+                    <button class="menu-item" type="button" onclick="toggleMenu('mod2')" aria-controls="mod2"
+                        aria-expanded="false">
+                        <span class="menu-item-title">Módulo 2</span>
+                        <span class="menu-item-description"> - Criação do Material Didático Digital</span>
+                    </button>
                     <div class="submenu open" id="mod2">
                         <a href="../modulo2/aula1.html"><span
                                 class="submenu-aula-numero">Aula 2.1</span><span
@@ -134,7 +136,7 @@
                     </div>
 
                     <a href="../material/materialcomplementar.html" class="menu-item menu-material-complementar sidebar-material-link">
-                        <h3>Material Complementar</h3>
+                        <span class="menu-item-title">Material Complementar</span>
                     </a>
                 </aside>
 
@@ -690,7 +692,7 @@
                             </figure>
 
                             <div
-                                class="modulo2-aula3-access-notes mx-auto"
+                                class="modulo2-aula3-access-notes mx-auto" role="group"
                                 aria-label="Recomendações de acessibilidade para materiais didáticos">
                                 <ul class="modulo2-aula3-access-list">
                                     <li>As imagens devem ter descrição, falada ou escrita, garantindo a acessibilidade aos estudantes.</li>
@@ -777,6 +779,7 @@
                                 class="questionario-aprendizagem col-lg-8 mx-auto"
                                 aria-label="Questionário de aprendizagem">
                                 <article class="questao-card" data-correct="C">
+                                    <h3 class="visually-hidden">Questão 1</h3>
                                     <div class="questao-cabecalho">
                                         <span class="questao-numero">Questão
                                             1</span>
@@ -824,6 +827,7 @@
                                 </article>
 
                                 <article class="questao-card" data-correct="C">
+                                    <h3 class="visually-hidden">Questão 2</h3>
                                     <div class="questao-cabecalho">
                                         <span class="questao-numero">Questão
                                             2</span>
@@ -883,7 +887,7 @@
                             <a href="../modulo2/aula4.html"
                                 class="botao-aula botao-proxima"
                                 aria-label="Próxima aula">
-                                <img src="../assets/imgmod2/aula3/bt_2 off.png"
+                                <img src="../assets/imgmod2/aula3/bt_2%20off.png"
                                     alt="Próxima">
                             </a>
                         </nav>
