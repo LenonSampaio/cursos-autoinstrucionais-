@@ -6538,9 +6538,11 @@ body.modulo2-page.home-page {
 
 .aula3-icon-list {
     margin: 22px auto 28px;
+    padding-left: 0;
+    list-style: none;
 }
 
-.aula3-icon-list p {
+.aula3-icon-list li {
     display: grid;
     grid-template-columns: 42px 1fr;
     align-items: flex-start;
@@ -7045,7 +7047,7 @@ body.modulo2-page.home-page {
         overflow-wrap: anywhere;
     }
 
-    .aula3-icon-list p {
+    .aula3-icon-list li {
         display: grid;
         grid-template-columns: 42px 1fr;
         font-size: 0.95rem;
@@ -7232,7 +7234,7 @@ body.modulo2-page.home-page {
         transform: translateY(-50%);
     }
 
-    .aula3-icon-list p {
+    .aula3-icon-list li {
         font-size: 0.95rem;
     }
 }
