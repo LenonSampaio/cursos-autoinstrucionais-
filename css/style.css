@@ -2228,12 +2228,14 @@ body.modulo2-page.home-page {
 .video-frame-card {
     position: relative;
     padding: 0 !important;
-    background: #0b0920;
+    background: transparent;
 }
 
 .video-frame-card .video-player {
     display: block;
     width: 100%;
+    border-radius: 35px;
+    background: transparent;
 }
 
 .video-transcricao {
@@ -2332,6 +2334,15 @@ body.modulo2-page.home-page {
 }
 
 @media (max-width: 575.98px) {
+    .video-frame-card {
+        border-radius: 24px !important;
+        box-shadow: none !important;
+    }
+
+    .video-frame-card .video-player {
+        border-radius: 18px;
+    }
+
     .video-transcricao summary {
         top: 10px;
         right: 10px;
