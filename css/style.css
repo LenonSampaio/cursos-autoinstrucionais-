@@ -6468,6 +6468,59 @@ body.modulo2-page.home-page {
     height: auto;
 }
 
+.aula4-license-zoom {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    background: transparent;
+    cursor: zoom-in;
+}
+
+.aula4-license-zoom:focus-visible {
+    outline: 3px solid #5925a6;
+    outline-offset: 4px;
+}
+
+.aula4-license-zoom-icon {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    display: grid;
+    width: 32px;
+    height: 32px;
+    place-items: center;
+    border-radius: 50%;
+    background: #5925a6;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.aula4-license-zoom:hover .aula4-license-zoom-icon,
+.aula4-license-zoom:focus-visible .aula4-license-zoom-icon {
+    opacity: 1;
+}
+
+.aula4-license-modal-content {
+    border: 0;
+}
+
+.aula4-license-modal-content .modal-body {
+    padding: 1rem;
+}
+
+.aula4-license-modal-content .modal-body img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .aula4-license-figure figcaption {
     margin-top: 4px;
     color: #555555;
