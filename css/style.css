@@ -6507,18 +6507,102 @@ body.modulo2-page.home-page {
     opacity: 1;
 }
 
-.aula4-license-modal-content {
+.aula4-license-dialog {
+    width: min(calc(100vw - 48px), 1200px);
+    max-width: 100%;
+    max-height: calc(100dvh - 48px);
+    padding: 0;
+    overflow: hidden;
     border: 0;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 20px 56px rgba(0, 0, 0, 0.3);
 }
 
-.aula4-license-modal-content .modal-body {
+.aula4-license-dialog::backdrop {
+    background: rgba(21, 17, 30, 0.72);
+}
+
+.aula4-license-dialog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid #ded9e8;
+}
+
+.aula4-license-dialog-header h2 {
+    margin: 0;
+    color: #333333;
+    font-size: 1.125rem;
+}
+
+.aula4-license-dialog-close {
+    display: grid;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    place-items: center;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: #333333;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.aula4-license-dialog-close:hover,
+.aula4-license-dialog-close:focus-visible {
+    background: #f0ecf7;
+}
+
+.aula4-license-dialog-close:focus-visible {
+    outline: 3px solid #5925a6;
+    outline-offset: 2px;
+}
+
+.aula4-license-dialog-body {
+    max-height: calc(100dvh - 136px);
     padding: 1rem;
+    overflow: auto;
 }
 
-.aula4-license-modal-content .modal-body img {
+.aula4-license-dialog-body img {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
+}
+
+@media (max-width: 575.98px) {
+    .aula4-license-zoom-icon {
+        right: 8px;
+        bottom: 8px;
+        width: 28px;
+        height: 28px;
+        opacity: 1;
+    }
+
+    .aula4-license-dialog {
+        width: calc(100vw - 16px);
+        max-height: calc(100dvh - 16px);
+    }
+
+    .aula4-license-dialog-header {
+        padding: 0.625rem 0.75rem;
+    }
+
+    .aula4-license-dialog-header h2 {
+        font-size: 1rem;
+    }
+
+    .aula4-license-dialog-body {
+        max-height: calc(100dvh - 112px);
+        padding: 0.75rem;
+    }
 }
 
 .aula4-license-figure figcaption {

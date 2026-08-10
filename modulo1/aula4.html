@@ -1148,8 +1148,8 @@ simultaneamente para garantir as melhores funcionalidades dos dois modelos.</p>
 
                             <figure
                                 class="aula4-license-figure col-lg-8 mx-auto">
-                                <button type="button" class="aula4-license-zoom"
-                                    data-bs-toggle="modal" data-bs-target="#aula4-license-modal"
+                                <button type="button" class="aula4-license-zoom" id="aula4-license-zoom-trigger"
+                                    aria-controls="aula4-license-dialog" aria-haspopup="dialog"
                                     aria-label="Ampliar imagem dos níveis de licenças de uso">
                                     <img
                                         src="../assets/imgmod1/aula4/img_grafico.png"
@@ -1161,21 +1161,43 @@ simultaneamente para garantir as melhores funcionalidades dos dois modelos.</p>
                                     wikipedia.org</figcaption>
                             </figure>
 
-                            <div class="modal fade" id="aula4-license-modal" tabindex="-1"
-                                aria-labelledby="aula4-license-modal-title" aria-hidden="true">
-                                <div class="modal-dialog modal-xl modal-dialog-centered">
-                                    <div class="modal-content aula4-license-modal-content">
-                                        <div class="modal-header">
-                                            <h2 class="modal-title fs-5" id="aula4-license-modal-title">Níveis de Licenças de Uso</h2>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="../assets/imgmod1/aula4/img_grafico.png" class="img-fluid"
-                                                alt="Níveis de licenças de uso">
-                                        </div>
-                                    </div>
+                            <dialog class="aula4-license-dialog" id="aula4-license-dialog"
+                                aria-labelledby="aula4-license-dialog-title">
+                                <div class="aula4-license-dialog-header">
+                                    <h2 id="aula4-license-dialog-title">Níveis de Licenças de Uso</h2>
+                                    <button type="button" class="aula4-license-dialog-close"
+                                        aria-label="Fechar imagem ampliada">&times;</button>
                                 </div>
-                            </div>
+                                <div class="aula4-license-dialog-body">
+                                    <img src="../assets/imgmod1/aula4/img_grafico.png"
+                                        alt="Níveis de licenças de uso">
+                                </div>
+                            </dialog>
+
+                            <script>
+                                (() => {
+                                    const trigger = document.getElementById('aula4-license-zoom-trigger');
+                                    const dialog = document.getElementById('aula4-license-dialog');
+                                    const closeButton = dialog?.querySelector('.aula4-license-dialog-close');
+
+                                    if (!trigger || !dialog || !closeButton) return;
+
+                                    const closeDialog = () => {
+                                        if (dialog.open) dialog.close();
+                                        trigger.focus();
+                                    };
+
+                                    trigger.addEventListener('click', () => dialog.showModal());
+                                    closeButton.addEventListener('click', closeDialog);
+                                    dialog.addEventListener('click', event => {
+                                        if (event.target === dialog) closeDialog();
+                                    });
+                                    dialog.addEventListener('cancel', event => {
+                                        event.preventDefault();
+                                        closeDialog();
+                                    });
+                                })();
+                            </script>
 
                             <div class="aula4-license-section col-lg-8 mx-auto">
                                 <p>Para educadores que utilizam plataformas como
